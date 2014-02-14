@@ -1,0 +1,6 @@
+C:\Users\epita\Documents\TryAgain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\TryAgain.exe
+C:\Users\epita\Documents\TryAgain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\TryAgain.pdb
+C:\Users\epita\Documents\TryAgain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.csprojResolveAssemblyReference.cache
+C:\Users\epita\Documents\TryAgain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\epita\Documents\TryAgain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.exe
+C:\Users\epita\Documents\TryAgain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.pdb
