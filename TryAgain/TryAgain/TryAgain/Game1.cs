@@ -18,11 +18,14 @@ namespace TryAgain
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Hero Pierre;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            graphics.PreferredBackBufferWidth = Tilemap.lgmap * 64;
+            graphics.PreferredBackBufferHeight = Tilemap.lgmap * 64;
         }
 
         /// <summary>
@@ -33,9 +36,10 @@ namespace TryAgain
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-
+            // TODO: Add your initialization logic here    
             base.Initialize();
+            Tilemap.MapFullINIT();
+            Pierre = new Hero("Pierre", Classes.Classe.gunner, Textures.persopierre_texture);
         }
 
         /// <summary>
@@ -46,7 +50,7 @@ namespace TryAgain
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            Textures.load(Content);
             // TODO: use this.Content to load your game content here
         }
 
@@ -81,10 +85,13 @@ namespace TryAgain
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
-
-            // TODO: Add your drawing code here
-
+            GraphicsDevice.Clear(Color.White);
+            spriteBatch.Begin();
+            if(Tilemap.Walkable(Textures.herbe_texture))
+                Tilemap.Drawmap(spriteBatch, Tilemap.map1);
+            //spriteBatch.Draw(Textures.persopierre_texture, Vector2.Zero, Color.White); 
+            Pierre.Draw(spriteBatch);
+            spriteBatch.End();
             base.Draw(gameTime);
         }
     }
