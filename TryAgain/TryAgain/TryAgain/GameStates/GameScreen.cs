@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using TryAgain.Characters;
 
 namespace TryAgain.GameStates
 {
@@ -24,6 +25,7 @@ namespace TryAgain.GameStates
             KeyboardState newState = Keyboard.GetState();
             if (newState.IsKeyDown(Keys.Escape))
                 return ScreenType.Quit;
+            hero.update();
             return this.GetState();
         }
         public override void draw(SpriteBatch sb)

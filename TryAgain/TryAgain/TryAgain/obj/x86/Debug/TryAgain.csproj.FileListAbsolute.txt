@@ -1,0 +1,9 @@
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tileherbe.xnb
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilesable.xnb
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\persopierre.xnb
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\TryAgain.exe
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\TryAgain.pdb
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.csprojResolveAssemblyReference.cache
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.exe
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.pdb
