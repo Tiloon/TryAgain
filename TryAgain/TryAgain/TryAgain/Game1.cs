@@ -16,7 +16,7 @@ namespace TryAgain
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Screen screen = new GameScreen();
+        Screen screen = new MainMenuScreen();
         ScreenType gamestate;
 
         public Game1()
@@ -29,9 +29,10 @@ namespace TryAgain
 
         protected override void Initialize()
         {
+            IsMouseVisible = true;
             // TODO: Add your initialization logic here    
             base.Initialize();
-            screen.init();
+            screen.init(graphics.GraphicsDevice);
             gamestate = screen.GetState();
         }
 
@@ -62,7 +63,8 @@ namespace TryAgain
                 else
                 {
                     Screen.ChangeScreen(ref screen, newscreen);
-                    screen.init();
+                    screen.init(graphics.GraphicsDevice);
+                    gamestate = screen.GetState();
                 }
             }
             base.Update(gameTime);
@@ -72,7 +74,7 @@ namespace TryAgain
         {
             GraphicsDevice.Clear(Color.White);
             spriteBatch.Begin();
-            screen.draw(spriteBatch);
+            screen.draw(spriteBatch, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
             spriteBatch.End();
             base.Draw(gameTime);
         }

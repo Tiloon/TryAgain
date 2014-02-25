@@ -7,3 +7,12 @@ C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\T
 C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.exe
 C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.pdb
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\About.xnb
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Bordel.xnb
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_About.xnb
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Exit.xnb
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Option.xnb
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Play.xnb
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Return.xnb
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MainMenu.xnb
+C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Option.xnb

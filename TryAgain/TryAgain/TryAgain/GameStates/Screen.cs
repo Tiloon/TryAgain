@@ -22,8 +22,8 @@ namespace TryAgain.GameStates
     {
         protected ScreenType state;
         public abstract ScreenType update();
-        public abstract void draw(SpriteBatch sb);
-        public abstract void init();
+        public abstract void draw(SpriteBatch sb, int Width, int Height);
+        public abstract void init(GraphicsDevice graphics);
         public ScreenType GetState()
         {
             return this.state;

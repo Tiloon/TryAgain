@@ -22,19 +22,20 @@ namespace TryAgain.GameStates
         }
         public override ScreenType update()
         {
+            hero.update();
             KeyboardState newState = Keyboard.GetState();
             if (newState.IsKeyDown(Keys.Escape))
                 return ScreenType.Quit;
             hero.update();
             return this.GetState();
         }
-        public override void draw(SpriteBatch sb)
+        public override void draw(SpriteBatch sb, int Width, int Height)
         {
             if (Tilemap.Walkable(Textures.herbe_texture))
                 Tilemap.Drawmap(sb, Tilemap.map1);
             hero.Draw(sb);
         }
-        public override void init()
+        public override void init(GraphicsDevice graphics)
         {
             hero = new Hero("Pierre", Classes.Classe.gunner, Textures.persopierre_texture);
             Tilemap.MapFullINIT();
