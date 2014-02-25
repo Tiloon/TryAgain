@@ -33,7 +33,7 @@ namespace TryAgain
 
         public Hero(string name, Classes.Classe classe, Texture2D apparence)
         {
-            positionhero = new Vector2(64, 0);
+            positionhero = new Vector2(64, 64);
             this.name = name;
             this.classe = classe;
             this.apparence = apparence;

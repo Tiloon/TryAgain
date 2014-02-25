@@ -8,17 +8,16 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using TryAgain.GameStates;
 
 namespace TryAgain
 {
-    /// <summary>
-    /// This is the main type for your game
-    /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Hero Pierre;
+        Screen screen = new GameScreen();
+        ScreenType gamestate;
 
         public Game1()
         {
@@ -28,69 +27,52 @@ namespace TryAgain
             graphics.PreferredBackBufferHeight = Tilemap.lgmap * 64;
         }
 
-        /// <summary>
-        /// Allows the game to perform any initialization it needs to before starting to run.
-        /// This is where it can query for any required services and load any non-graphic
-        /// related content.  Calling base.Initialize will enumerate through any components
-        /// and initialize them as well.
-        /// </summary>
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here    
             base.Initialize();
-            Tilemap.MapFullINIT();
-            Pierre = new Hero("Pierre", Classes.Classe.gunner, Textures.persopierre_texture);
+            screen.init();
+            gamestate = screen.GetState();
         }
 
-        /// <summary>
-        /// LoadContent will be called once per game and is the place to load
-        /// all of your content.
-        /// </summary>
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Textures.load(Content);
-            // TODO: use this.Content to load your game content here
         }
 
-        /// <summary>
-        /// UnloadContent will be called once per game and is the place to unload
-        /// all content.
-        /// </summary>
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
         }
 
-        /// <summary>
-        /// Allows the game to run logic such as updating the world,
-        /// checking for collisions, gathering input, and playing audio.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            // TODO: Add your update logic here
-
+            ScreenType newscreen = screen.update();
+            if (newscreen != gamestate)
+            {
+                if (newscreen == ScreenType.Quit)
+                {
+                    this.Exit();
+                }
+                else
+                {
+                    Screen.ChangeScreen(ref screen, newscreen);
+                    screen.init();
+                }
+            }
             base.Update(gameTime);
         }
 
-        /// <summary>
-        /// This is called when the game should draw itself.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.White);
             spriteBatch.Begin();
-            if(Tilemap.Walkable(Textures.herbe_texture))
-                Tilemap.Drawmap(spriteBatch, Tilemap.map1);
-            //spriteBatch.Draw(Textures.persopierre_texture, Vector2.Zero, Color.White); 
-            Pierre.Draw(spriteBatch);
+            screen.draw(spriteBatch);
             spriteBatch.End();
             base.Draw(gameTime);
         }

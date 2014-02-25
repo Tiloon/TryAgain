@@ -107,6 +107,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameStates\GameScreen.cs" />
+    <Compile Include="GameStates\MainMenuScreen.cs" />
+    <Compile Include="GameStates\Screen.cs" />
     <Compile Include="Hero.cs" />
     <Compile Include="Items.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
