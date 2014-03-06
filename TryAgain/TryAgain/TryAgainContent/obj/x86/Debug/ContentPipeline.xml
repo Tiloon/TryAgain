@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tileherbe.xnb</Output>
-      <Time>2014-02-25T13:25:32.9491725+01:00</Time>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tileherbe.xnb</Output>
+      <Time>2014-02-25T17:22:30+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\tilesable.bmp</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilesable.xnb</Output>
-      <Time>2014-02-25T13:25:32.9511739+01:00</Time>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilesable.xnb</Output>
+      <Time>2014-02-25T17:22:30+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\persopierre.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\persopierre.xnb</Output>
-      <Time>2014-02-25T13:25:32.9461541+01:00</Time>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\persopierre.xnb</Output>
+      <Time>2014-02-25T17:22:30+01:00</Time>
     </Item>
     <Item>
       <Source>Menu\About.png</Source>
@@ -34,62 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\About.xnb</Output>
-      <Time>2014-02-25T16:36:32.9847135+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\Bordel.png</Source>
-      <Name>Menu\Bordel</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Bordel.xnb</Output>
-      <Time>2014-02-25T16:36:32.9857129+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\Button_About.png</Source>
-      <Name>Menu\Button_About</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_About.xnb</Output>
-      <Time>2014-02-25T16:36:32.9867145+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\Button_Exit.png</Source>
-      <Name>Menu\Button_Exit</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Exit.xnb</Output>
-      <Time>2014-02-25T16:36:32.9877156+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\Button_Option.png</Source>
-      <Name>Menu\Button_Option</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Option.xnb</Output>
-      <Time>2014-02-25T16:36:32.9887154+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\Button_Play.png</Source>
-      <Name>Menu\Button_Play</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Play.xnb</Output>
-      <Time>2014-02-25T16:36:32.9897162+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\Button_Return.png</Source>
-      <Name>Menu\Button_Return</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Return.xnb</Output>
-      <Time>2014-02-25T16:36:32.9817105+01:00</Time>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\About.xnb</Output>
+      <Time>2014-02-25T17:22:30+01:00</Time>
     </Item>
     <Item>
       <Source>Menu\MainMenu.png</Source>
@@ -97,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MainMenu.xnb</Output>
-      <Time>2014-02-25T16:36:32.9827116+01:00</Time>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MainMenu.xnb</Output>
+      <Time>2014-03-01T12:40:44+01:00</Time>
     </Item>
     <Item>
       <Source>Menu\Option.png</Source>
@@ -106,8 +52,143 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Option.xnb</Output>
-      <Time>2014-02-25T16:36:32.9837136+01:00</Time>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Option.xnb</Output>
+      <Time>2014-03-06T00:32:12+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\Button_About.png</Source>
+      <Name>Menu\Button_About</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_About.xnb</Output>
+      <Time>2014-03-04T11:06:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\Button_Exit.png</Source>
+      <Name>Menu\Button_Exit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Exit.xnb</Output>
+      <Time>2014-03-04T11:06:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\Button_Option.png</Source>
+      <Name>Menu\Button_Option</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Option.xnb</Output>
+      <Time>2014-03-04T11:06:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\Button_Play.png</Source>
+      <Name>Menu\Button_Play</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Play.xnb</Output>
+      <Time>2014-03-04T11:06:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\Button_Return.png</Source>
+      <Name>Menu\Button_Return</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Return.xnb</Output>
+      <Time>2014-03-04T11:06:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\tilecaillou.bmp</Source>
+      <Name>Sprites\tilecaillou</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilecaillou.xnb</Output>
+      <Time>2014-03-05T23:57:24+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\tileneige.bmp</Source>
+      <Name>Sprites\tileneige</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tileneige.xnb</Output>
+      <Time>2014-03-05T23:58:40+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Unwalkable\tileneigetrou.bmp</Source>
+      <Name>Sprites\Unwalkable\tileneigetrou</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tileneigetrou.xnb</Output>
+      <Time>2014-03-06T00:00:44+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Unwalkable\tilecascadegauche.bmp</Source>
+      <Name>Sprites\Unwalkable\tilecascadegauche</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tilecascadegauche.xnb</Output>
+      <Time>2014-03-06T00:02:18+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Unwalkable\tilecascadedroite.bmp</Source>
+      <Name>Sprites\Unwalkable\tilecascadedroite</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tilecascadedroite.xnb</Output>
+      <Time>2014-03-06T00:02:20+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Unwalkable\Arbre\013.bmp</Source>
+      <Name>Sprites\Unwalkable\Arbre\013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\013.xnb</Output>
+      <Time>2014-03-06T00:09:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Unwalkable\Arbre\017.bmp</Source>
+      <Name>Sprites\Unwalkable\Arbre\017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\017.xnb</Output>
+      <Time>2014-03-06T00:10:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Unwalkable\Arbre\026.bmp</Source>
+      <Name>Sprites\Unwalkable\Arbre\026</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\026.xnb</Output>
+      <Time>2014-03-06T00:10:24+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Halfwalkable\tileaqua.bmp</Source>
+      <Name>Sprites\Halfwalkable\tileaqua</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Halfwalkable\tileaqua.xnb</Output>
+      <Time>2014-03-06T00:15:26+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Halfwalkable\tilefire.bmp</Source>
+      <Name>Sprites\Halfwalkable\tilefire</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Halfwalkable\tilefire.xnb</Output>
+      <Time>2014-03-06T00:23:50+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -115,39 +196,39 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgainContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgainContent\</RootDirectory>
+      <LoggerRootDirectory>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\</LoggerRootDirectory>
+      <IntermediateDirectory>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+02:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2010-08-23T13:41:18+02:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+02:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+02:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+02:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2010-08-23T13:41:18+02:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-12-25T19:39:19.7481345+01:00</Value>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-08-03T17:33:58.6222029+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

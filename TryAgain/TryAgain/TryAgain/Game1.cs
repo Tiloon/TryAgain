@@ -23,7 +23,7 @@ namespace TryAgain
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            graphics.PreferredBackBufferWidth = Tilemap.lgmap * 64;
+            graphics.PreferredBackBufferWidth = Tilemap.lgmap * 64 + Tilemap.variationsizegraphicsX * 2;
             graphics.PreferredBackBufferHeight = Tilemap.lgmap * 64;
         }
 

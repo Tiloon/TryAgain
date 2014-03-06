@@ -39,33 +39,28 @@ namespace TryAgain.GameStates
             {
 
                 case MenuState.MainMenu:
-                    if (ButtonPlay.isClicked == true)
+                    if (ButtonPlay.IsClicked(mouse))
                         return ScreenType.Game;
-
-                    if (ButtonExit.isClicked == true)
+                    if (ButtonExit.IsClicked(mouse))
                         return ScreenType.Quit;
-
-                    ButtonPlay.Update(mouse);
-                    if (ButtonOption.isClicked == true)
+                    if (ButtonOption.IsClicked(mouse))
                         CurrentMenuState = MenuState.Option;
-                    ButtonOption.Update(mouse);
-
-                    if (ButtonAbout.isClicked == true)
+                    if (ButtonAbout.IsClicked(mouse))
                         CurrentMenuState = MenuState.About;
-                    ButtonAbout.Update(mouse);
-                    ButtonExit.Update(mouse);
-
                     break;
-
                 case MenuState.About:
-                case MenuState.Option:
-                    if (ButtonReturn.isClicked == true)
+                    if (ButtonReturn.IsClicked(mouse))
                         CurrentMenuState = MenuState.MainMenu;
-                    ButtonReturn.Update(mouse);
+                    break;
+                case MenuState.Option:
+                    if (ButtonReturn.IsClicked(mouse))
+                        CurrentMenuState = MenuState.MainMenu;
                     break;
             }
             return this.GetState();
         }
+
+
         public override void draw(SpriteBatch sb, int Width, int Height)
         {
             switch (CurrentMenuState)
@@ -92,15 +87,15 @@ namespace TryAgain.GameStates
         public override void init(GraphicsDevice graphics)
         {
             ButtonPlay = new cButton(Textures.Button_Play, graphics);
-            ButtonPlay.SetPosition(new Vector2(562, 145));       // A regler une fois immage définitive
+            ButtonPlay.SetPosition(new Vector2(1062, 145+150));  
             ButtonOption = new cButton(Textures.Button_Option, graphics);
-            ButtonOption.SetPosition(new Vector2(562, 225));
-            ButtonExit = new cButton(Textures.Button_Exit, graphics);
-            ButtonExit.SetPosition(new Vector2(562, 382));
+            ButtonOption.SetPosition(new Vector2(1062, 235+150+50));
             ButtonAbout = new cButton(Textures.Button_About, graphics);
-            ButtonAbout.SetPosition(new Vector2(562, 303));
+            ButtonAbout.SetPosition(new Vector2(1062, 313+150+100));
+            ButtonExit = new cButton(Textures.Button_Exit, graphics);
+            ButtonExit.SetPosition(new Vector2(1062, 392 + 150 + 150));
             ButtonReturn = new cButton(Textures.Button_Return, graphics);
-            ButtonReturn.SetPosition(new Vector2(graphics.Viewport.Width - 230, graphics.Viewport.Height - 90));
+            ButtonReturn.SetPosition(new Vector2(1062, 704+100));
         }
     }
 }

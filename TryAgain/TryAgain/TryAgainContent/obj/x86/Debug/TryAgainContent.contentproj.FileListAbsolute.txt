@@ -1,1 +1,9 @@
 C:\Users\g33kp_000\Workspace\tryagain\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
+C:\Users\Tony\Desktop\Pimzero-tryagain-3bf672c1ea4f\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
+E:\PROJET\ProjectVersions\v7\Pimzero-tryagain-3bf672c1ea4f\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
+F:\PROJET\ProjectVersions\v7\Pimzero-tryagain-3bf672c1ea4f\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
+E:\PROJET\ProjectVersions\v8\Pimzero-tryagain-3bf672c1ea4f\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
+E:\PROJET\ProjectVersions\v9-reparerreturn\Pimzero-tryagain-3bf672c1ea4f\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
+C:\Users\Aldric\Desktop\v9-reparerreturn\Pimzero-tryagain-3bf672c1ea4f\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
+E:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
+F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
