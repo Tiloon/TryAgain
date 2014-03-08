@@ -16,7 +16,6 @@ namespace TryAgain.Characters
     {
         protected Vector2 position;
         protected Texture2D apparence;
-        protected CharacterStats stats;
         public string name;
         public int longueur, largeur;
         public void Draw(SpriteBatch sb)
@@ -25,10 +24,7 @@ namespace TryAgain.Characters
         }
         public abstract void update();
 
-        public CharacterStats getStats()
-        {
-            return stats;
-        }
+
 
         public bool NotCollision(Character perso)
         {

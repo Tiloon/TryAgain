@@ -19,6 +19,7 @@ namespace TryAgain
         public static Texture2D cascadedroite_unwkbtexture, cascadegauche_unwkbtexture,
                                 neigetrou_unwkbtexture;
         public static Texture2D persopierre_texture;
+        public static Texture2D bebeglauque_texture;
 
         public static Texture2D Button_Play, Button_Option, Button_Exit, Button_About, Button_Return;
         public static Texture2D MainMenuBG, OptionBG, AboutBG;
@@ -39,6 +40,7 @@ namespace TryAgain
             neigetrou_unwkbtexture = cm.Load<Texture2D>(@"Sprites\Unwalkable\tileneigetrou");
 
             persopierre_texture = cm.Load<Texture2D>(@"Sprites\persopierre");
+            bebeglauque_texture = cm.Load<Texture2D>(@"Sprites\Monsters\bebeglauque");
             //On quitte les textures purgame
             Button_Play = cm.Load<Texture2D>(@"Menu\Button_Play");
             Button_Option = cm.Load<Texture2D>(@"Menu\Button_Option");

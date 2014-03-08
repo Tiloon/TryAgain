@@ -15,6 +15,11 @@ namespace TryAgain.Characters
 
     class Hero : Character
     {
+        protected CharacterStats stats;
+        public CharacterStats getStats()
+        {
+            return stats;
+        }
         Classes.Classe classe;
         Keys keyup, keydown, keyleft, keyright;
 

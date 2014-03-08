@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using TryAgain.Characters;
 
 
 namespace TryAgain
@@ -19,14 +20,19 @@ namespace TryAgain
                                                            // si vous voulez pas de contour, mettez la à 0
         public static int lgmap = 15;
         public static int lgbigmapunscrolled = 100;
+
         public static Texture2D[,] map1 = new Texture2D[lgmap, lgmap];
+        public static Item[,] map1contains = new Item[lgmap, lgmap];
+        public static Monster[,] map1monsters = new Monster[lgmap, lgmap];
+
         public static Texture2D[,] map2 = new Texture2D[lgbigmapunscrolled, lgbigmapunscrolled];
-        public static string[,] map1contains = new string[lgmap, lgmap];
-        public static string[,] map2contains = new string[lgbigmapunscrolled, lgbigmapunscrolled];
+        public static Item[,] map2contains = new Item[lgbigmapunscrolled, lgbigmapunscrolled];
+        public static Monster[,] map2monsters = new Monster[lgbigmapunscrolled, lgbigmapunscrolled];
+
         public static void MapFullINIT()
         {
             //map1 : une map non scrollée qui fait la longueur de l'écran, ni plus ni moins, minimap classique
-            MapFirstInit(map1, map1contains, Textures.herbe_texture);
+            MapFirstInit(map1, Textures.herbe_texture);
             Mapmodify(map1, Textures.sable_texture, 7, lgmap-1, 10, lgmap-1);
             Mapmodify(map1, Textures.solrocailleux_texture, 0, 6, lgmap-2, lgmap-1);
             Mapmodify(map1, Textures.aqua_halfwkbtexture, lgmap-2, lgmap-1, 0, 3);
@@ -34,17 +40,16 @@ namespace TryAgain
             Mapmodify(map1, Textures.cascadedroite_unwkbtexture, lgmap-1, 0);
 
             //map2 : grosse et scrollable
-            MapFirstInit(map2, map2contains, Textures.solrocailleux_texture);
+            MapFirstInit(map2, Textures.solrocailleux_texture);
 
         }
 
-        public static void MapFirstInit(Texture2D[,] map, string[,] mapcont, Texture2D basetile)
+        public static void MapFirstInit(Texture2D[,] map, Texture2D basetile)
         {
             for (int i = 0; i < lgmap; i++)
                 for (int j = 0; j < lgmap; j++)
                 {
                     map[i, j] = basetile;
-                    mapcont[i, j] = null;
                 }
         }
 

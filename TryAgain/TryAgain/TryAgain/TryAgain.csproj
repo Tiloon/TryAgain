@@ -114,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameElements\Characters\Character.cs" />
+    <Compile Include="GameElements\Characters\Monster.cs" />
     <Compile Include="GameElements\Characters\Stats.cs" />
     <Compile Include="GameElements\misc\UI.cs" />
     <Compile Include="GameStates\GameScreen.cs" />
