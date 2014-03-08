@@ -19,7 +19,7 @@ namespace TryAgain.Characters
         public int mpmax;
         public int force;
         public int intelligence;
-        public int defence;
+        public int defense;
         public int criticalrate;
         public int speed;
         public static CharacterStats operator +(CharacterStats s1, CharacterStats s2)
@@ -37,7 +37,7 @@ namespace TryAgain.Characters
             stats.mpmax = s1.mpmax + s2.mpmax;
             stats.force = s1.force + s2.force;
             stats.intelligence = s1.intelligence + s2.intelligence;
-            stats.defence = s1.defence + s2.defence;
+            stats.defense = s1.defense + s2.defense;
             stats.criticalrate = s1.criticalrate + s2.criticalrate;
             stats.speed = s1.speed + s2.speed;
             return stats;
@@ -63,9 +63,9 @@ namespace TryAgain.Characters
                 stats.mpmax = 0;
                 stats.force = 10;
                 stats.intelligence = 10;
-                stats.defence = 10;
+                stats.defense = 10;
                 stats.criticalrate = 0;
-                stats.speed = 5;
+                stats.speed = 7;
             }
             else
             {
@@ -81,7 +81,7 @@ namespace TryAgain.Characters
                 stats.mpmax = 5;
                 stats.force = 1;
                 stats.intelligence = 1;
-                stats.defence = 1;
+                stats.defense = 1;
                 stats.criticalrate = 1;
                 stats.speed = 0;
             }
