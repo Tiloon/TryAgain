@@ -207,9 +207,12 @@
       <Name>Sprites\Monsters\bebeglauque</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Monsters\bebeglauque.xnb</Output>
-      <Time>2014-03-08T21:26:30.3107217+01:00</Time>
+      <Time>2014-03-08T23:46:57.8217477+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

@@ -19,6 +19,8 @@ namespace TryAgain.GameStates
         UI userinterface = new UI();
         Hero hero;
         Hero hero2;
+        Monster monster1;
+        static public int actualmap = 1;
 
         public GameScreen()
         {
@@ -32,14 +34,18 @@ namespace TryAgain.GameStates
             hero.update();
             hero2.update();
             userinterface.update(ref hero);
+            /*if (actualmap == 1)
+                foreach (Monster m in Tilemap.map1monsters)
+                    m.update();*/
             return this.GetState();
         }
         public override void draw(SpriteBatch sb, int Width, int Height)
         {
-            /*if (Tilemap.Walkable(Textures.herbe_texture))*/
-            Tilemap.Drawmap(sb, Tilemap.map1);
+            if (actualmap == 1)
+                Tilemap.Drawmap(sb, Tilemap.map1);
             hero.Draw(sb);
             hero2.Draw(sb);
+            monster1.Draw(sb);
             userinterface.Draw(sb);
         }
         public override void init(GraphicsDevice graphics)
@@ -49,6 +55,7 @@ namespace TryAgain.GameStates
             hero = new Hero("Pierre", Classes.Classe.gunner, Textures.persopierre_texture, Keys.Up, Keys.Down, Keys.Left, Keys.Right, pos1);
             hero2 = new Hero("Tony", Classes.Classe.gunner, Textures.persopierre_texture, Keys.Z, Keys.S, Keys.Q, Keys.D, pos2);
             Tilemap.MapFullINIT();
+            monster1 = new Monster(Monstertype.bebeglauque, 50, 10, 20, 10, new Vector2(5, 5), ref Tilemap.map1monsters); //initialiser le monstre l'ajoute au tableau automatiquement
         }
     }
 }
