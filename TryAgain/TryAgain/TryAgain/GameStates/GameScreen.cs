@@ -10,11 +10,13 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using TryAgain.Characters;
+using TryAgain.GameElements.misc;
 
 namespace TryAgain.GameStates
 {
     class GameScreen : Screen
     {
+        UI userinterface = new UI();
         Hero hero;
         Hero hero2;
 
@@ -29,6 +31,7 @@ namespace TryAgain.GameStates
                 return ScreenType.Quit;
             hero.update();
             hero2.update();
+            userinterface.update(ref hero);
             return this.GetState();
         }
         public override void draw(SpriteBatch sb, int Width, int Height)
@@ -37,6 +40,7 @@ namespace TryAgain.GameStates
             Tilemap.Drawmap(sb, Tilemap.map1);
             hero.Draw(sb);
             hero2.Draw(sb);
+            userinterface.Draw(sb);
         }
         public override void init(GraphicsDevice graphics)
         {

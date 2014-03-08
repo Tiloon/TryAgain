@@ -25,6 +25,11 @@ namespace TryAgain.Characters
         }
         public abstract void update();
 
+        public CharacterStats getStats()
+        {
+            return stats;
+        }
+
         public bool NotCollision(Character perso)
         {
             return (position.X <= perso.position.X) && (position.Y <= perso.position.Y)

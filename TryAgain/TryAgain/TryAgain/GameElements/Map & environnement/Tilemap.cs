@@ -18,17 +18,24 @@ namespace TryAgain
         public static int variationsizegraphicsX = 64 * 4; // contour blanc en largeur de cette longueur à gauche et à droite
                                                            // si vous voulez pas de contour, mettez la à 0
         public static int lgmap = 15;
+        public static int lgbigmapunscrolled = 100;
         public static Texture2D[,] map1 = new Texture2D[lgmap, lgmap];
+        public static Texture2D[,] map2 = new Texture2D[lgbigmapunscrolled, lgbigmapunscrolled];
         public static string[,] map1contains = new string[lgmap, lgmap];
-
+        public static string[,] map2contains = new string[lgbigmapunscrolled, lgbigmapunscrolled];
         public static void MapFullINIT()
         {
+            //map1 : une map non scrollée qui fait la longueur de l'écran, ni plus ni moins, minimap classique
             MapFirstInit(map1, map1contains, Textures.herbe_texture);
             Mapmodify(map1, Textures.sable_texture, 7, lgmap-1, 10, lgmap-1);
             Mapmodify(map1, Textures.solrocailleux_texture, 0, 6, lgmap-2, lgmap-1);
             Mapmodify(map1, Textures.aqua_halfwkbtexture, lgmap-2, lgmap-1, 0, 3);
             Mapmodify(map1, Textures.cascadegauche_unwkbtexture, lgmap-2, 0);
             Mapmodify(map1, Textures.cascadedroite_unwkbtexture, lgmap-1, 0);
+
+            //map2 : grosse et scrollable
+            MapFirstInit(map2, map2contains, Textures.solrocailleux_texture);
+
         }
 
         public static void MapFirstInit(Texture2D[,] map, string[,] mapcont, Texture2D basetile)
@@ -59,6 +66,10 @@ namespace TryAgain
                 {
                     sb.Draw(map[i, j], new Vector2(variationsizegraphicsX + 64 * i, 64 * j), Color.White);
                 }
+        }
+
+        public static void Drawmap(SpriteBatch sb, Texture2D[,] map, int scale)
+        {
         }
 
         public static bool Walkable(Texture2D tx)

@@ -7,3 +7,5 @@ E:\PROJET\ProjectVersions\v9-reparerreturn\Pimzero-tryagain-3bf672c1ea4f\TryAgai
 C:\Users\Aldric\Desktop\v9-reparerreturn\Pimzero-tryagain-3bf672c1ea4f\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
 E:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
 F:\PROJET\ProjectVersions\v10-pleintextures\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
+E:\PROJET\ProjectVersions\v11\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
+C:\Users\Pim\Downloads\v11\v11\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache

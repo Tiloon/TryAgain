@@ -90,6 +90,12 @@
     <Reference Include="mscorlib">
       <Private>False</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Noesis.Javascript">
+      <HintPath>libs\x86\Noesis.Javascript.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <Private>False</Private>
     </Reference>
@@ -109,6 +115,7 @@
   <ItemGroup>
     <Compile Include="GameElements\Characters\Character.cs" />
     <Compile Include="GameElements\Characters\Stats.cs" />
+    <Compile Include="GameElements\misc\UI.cs" />
     <Compile Include="GameStates\GameScreen.cs" />
     <Compile Include="GameStates\MainMenuScreen.cs" />
     <Compile Include="GameStates\Screen.cs" />
@@ -120,6 +127,7 @@
     <Compile Include="Game1.cs" />
     <Compile Include="GameElements\Textures.cs" />
     <Compile Include="GameElements\Map &amp; environnement\Tilemap.cs" />
+    <Compile Include="GameElements\misc\Target.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
