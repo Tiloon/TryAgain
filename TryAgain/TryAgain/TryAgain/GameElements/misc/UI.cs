@@ -22,6 +22,7 @@ namespace TryAgain.GameElements.misc
         int mp, mpmax;
         int lvl;
         int force, intelligence, defense, criticalrate, speed;
+        Item[] items = new Item[10];
 
         public void Draw(SpriteBatch sb)
         {
@@ -35,9 +36,22 @@ namespace TryAgain.GameElements.misc
             sb.DrawString(Textures.UIfont, "defense :" + defense.ToString(), new Vector2(15, 180), caracolor);
             sb.DrawString(Textures.UIfont, "criticalrate :" + criticalrate.ToString(), new Vector2(15, 200), caracolor);
             sb.DrawString(Textures.UIfont, "speed :" + speed.ToString(), new Vector2(15, 220), caracolor);
+            for (int i = 0; i < 10; i++)
+            {
+                sb.Draw(Textures.UIitemHolder, new Rectangle(300 + 80*i, 884, 64, 64), Color.White);
+                if(items[i] != null)
+                    sb.Draw(items[i].getIcon(), new Rectangle(300 + 80 * i, 884, 64, 64), Color.White);
+            }
         }
         public void update(ref Hero hero)
         {
+
+            //Test des items
+            Tuple<String, String> jsonUpdates = (hero.getItemList()[0]).useItem(hero, hero);
+            hero.jsonUpdate(jsonUpdates.Item1); // As user
+            hero.jsonUpdate(jsonUpdates.Item2); // As target
+
+
             lp = hero.getStats().lp;
             lpmax = hero.getStats().lpmax;
             cp = hero.getStats().ch;
@@ -51,6 +65,7 @@ namespace TryAgain.GameElements.misc
             defense = hero.getStats().defense;
             criticalrate = hero.getStats().criticalrate;
             speed = hero.getStats().speed;
+            items = hero.getItemList();
         }
     }
 }

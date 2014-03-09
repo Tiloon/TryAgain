@@ -18,6 +18,7 @@ namespace TryAgain
         SpriteBatch spriteBatch;
         Screen screen = new MainMenuScreen();
         ScreenType gamestate;
+        public static GraphicsDeviceManager gamegfx;
 
         public Game1()
         {
@@ -34,6 +35,7 @@ namespace TryAgain
             base.Initialize();
             screen.init(graphics.GraphicsDevice);
             gamestate = screen.GetState();
+            gamegfx = graphics;
         }
 
         protected override void LoadContent()

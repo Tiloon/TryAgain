@@ -23,7 +23,7 @@ namespace TryAgain.Characters
             sb.Draw(apparence, position, Color.White);
         }
         public abstract void update();
-
+        public abstract void jsonUpdate(string json);
 
 
         public bool NotCollision(Character perso)

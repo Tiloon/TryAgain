@@ -1,0 +1,44 @@
+[Items][Modding]
+(rev 0.1)
+An item is a bunch of files which identify it in the game and scripts what it does.
+To add your own item in this game, go to "[game root]/elements/items/" then :
+- Add "YourItemId.json", "YourItemId.data.json" and "YourItemId.use.js" (and you can also add "YourItemId.ico.png" as icon (size 64*64))
+- Edit "itemslist.json", add a new line and add an entry with your ItemID in the json array. It should look like : 
+[
+	"FirstItem",
+	"SecondItem",
+	"AnotherItem",
+	"YourItemId"
+]
+
+Then, in "YourItemId.json", you'll have to set your item's parameters like this (double slashes are comments, so I'm sure you'll understand :3):
+{
+	"itemid": "YourItemId", // You never write it enough
+	"itemname": "My item", // Your item's name
+	"online": 0, // 1 if the item is usable online, 0 if not. It's used because when you play online, items are edited by the server
+	"onuseScript": "YourItemId.use.js",  // The path for the script
+	"icon": "ItemIcon.ico.png", // Icon Paths
+	"Type": "Weapon" // Your item's type*(see note 1)
+	"data": "YourItemId.data.json" // Contains your own data for your item, like durability, etc...
+}
+
+In "YourItemId.data.json", put every data you want to access in your item's script (it's JSON, so it's pretty easy to make something well).
+
+In "YourItemId.use.js", there is your script when you use your item. Because it's rev 0.1, it's very basic. Write what you want in javascript.
+Variables are :
+name	| Usage
+--------------
+item	| Object containing the item's own clone of "YourItemId.data.json"
+target	| Object containing the target
+user	| Object containing the item's user
+msg		| Message box allowing to show a Messagebox with your string inside (MUST BE A STRING). Warning : DEBUGING PURPOSE ONLY !
+
+
+*Note 1
+Item types :
+name	| usage
+-----------------
+none	| Do not use
+undef	| Something that is not yet defined (ex : "Phone")
+meleWeapon	| A mele weapon (eg : swords)
+food	| food (eg : Burger)

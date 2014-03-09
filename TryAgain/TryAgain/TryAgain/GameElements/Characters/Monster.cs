@@ -87,6 +87,10 @@ namespace TryAgain.Characters
             Moverandom();
         }
 
+        public override void jsonUpdate(string json)
+        {
+            
+        }
 
     }
 }

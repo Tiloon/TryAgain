@@ -9,13 +9,18 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using System.Runtime.Serialization.Json;
+using Newtonsoft.Json;
 
 namespace TryAgain.Characters
 {
+    [Serializable()]
 
     class Hero : Character
     {
-        protected CharacterStats stats;
+   
+        private Item[] items = new Item[10];
+        public CharacterStats stats;
         public CharacterStats getStats()
         {
             return stats;
@@ -25,6 +30,7 @@ namespace TryAgain.Characters
 
         public Hero(string name, Classes.Classe classe, Texture2D apparence, Keys keyup, Keys keydown, Keys keyleft, Keys keyright, Vector2 position)
         {
+            this.items[0] = new MeleWeapon();
             this.longueur = 66;
             this.largeur = 25;
             this.position = position;
@@ -53,9 +59,21 @@ namespace TryAgain.Characters
                 this.position += new Vector2(-7, 0);
         }
 
+        public override void jsonUpdate(string json)
+        {
+            Hero data = JsonConvert.DeserializeObject<Hero>(json);
+            this.items = data.items;
+            this.stats = data.stats;
+        }
+
         public void Levelup()
         {
             stats = stats + Stats.GetStats(stats.lvl);
+        }
+
+        internal Item[] getItemList()
+        {
+            return this.items;
         }
     }
 
