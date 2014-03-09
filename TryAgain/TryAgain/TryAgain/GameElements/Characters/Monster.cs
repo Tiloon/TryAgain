@@ -22,27 +22,31 @@ namespace TryAgain.Characters
         public int speed;
         int posmin = 0;
         int posmax = Tilemap.lgmap;
+        Vector2 postablo;
 
-        public Monster(Monstertype mst, int hp, int dmgmin, int dmgmax, int speed, Vector2 position)
+        public Monster(Monstertype mst, int hp, int dmgmin, int dmgmax, int speed, Vector2 postablo, ref Monster[,] mapmonster)
         {
             this.hp = hp;
             this.dmgmin = dmgmin;
             this.dmgmax = dmgmax;
             this.speed = speed;
-            this.position = position;
+            this.postablo = postablo;
+            this.position = new Vector2 (Tilemap.variationsizegraphicsX + postablo.X * 64, postablo.Y * 64);
+
             if (mst == Monstertype.bebeglauque)
                 this.apparence = Textures.bebeglauque_texture;
+            mapmonster[(int)postablo.X, (int)postablo.Y] = this;
         }
 
-        public void Moverandom()
+        public void Moverandom(ref Monster[,] mapmonster)
         {
             Random rand = new Random();
             int direction = rand.Next(8);
-            Vector2 newposition = position;
+            Vector2 newposition = postablo;
             switch (direction)
             {
                 case 0:
-                    if (position.X > posmin)
+                    if (postablo.X > posmin)
                         newposition = new Vector2(position.X - 1, position.Y);
                     break;
                 case 1:
@@ -74,17 +78,33 @@ namespace TryAgain.Characters
                         newposition = new Vector2(position.X, position.Y + 1);
                     break;
             }
-            newposition = position;
+            if (mapmonster[(int)newposition.X, (int)newposition.Y] == null)
+            {
+                mapmonster[(int)position.X, (int)position.Y] = null;
+                mapmonster[(int)newposition.X, (int)newposition.Y] = this;
+                //monsteranimation(direction);
+                position = newposition;
+            }
         }
 
-        public static void AddMonster(Monster Monster, Monster[,] MapMonster, int i, int j)
+        public void AddMonster(ref Monster[,] MapMonster, int i, int j)
         {
-            MapMonster[i, j] = Monster;
+            MapMonster[i, j] = this;
         }
+
+        /*public static void AddMultipleMonsters(Monster Monster, ref Monster[,] MapMonster, int lengthmap, int maxmob)
+        {
+            Random rd = new Random();
+            for (int n = 0; n < maxmob; n++)
+                MapMonster[rd.Next(lengthmap), rd.Next(lengthmap)] = Monster;
+        }*/
 
         public override void update()
         {
-            Moverandom();
+            if (GameStates.GameScreen.actualmap == 1)
+                Moverandom(ref Tilemap.map1monsters);
+            else if(GameStates.GameScreen.actualmap == 2)
+                Moverandom(ref Tilemap.map2monsters);
         }
 
         public override void jsonUpdate(string json)

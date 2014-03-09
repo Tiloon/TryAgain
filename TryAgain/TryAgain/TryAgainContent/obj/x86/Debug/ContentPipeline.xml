@@ -216,9 +216,17 @@
       <Name>UI\uiitems</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\uiitems.xnb</Output>
       <Time>2014-03-08T23:11:20.1493793+01:00</Time>
+=======
+      <Output>C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Monsters\bebeglauque.xnb</Output>
+      <Time>2014-03-08T23:46:57.8217477+01:00</Time>
+>>>>>>> 161c0ae86bf23d131585e3bbd6fe27e3fbf1ae23
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
