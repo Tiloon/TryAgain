@@ -79,6 +79,7 @@ namespace TryAgain
             GraphicsDevice.Clear(Color.White);
             spriteBatch.Begin();
             screen.draw(spriteBatch, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
+            spriteBatch.Draw(Textures.Button_OnePlayer, new Vector2(0, 0), Color.White);
             spriteBatch.End();
             base.Draw(gameTime);
         }

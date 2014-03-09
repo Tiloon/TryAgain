@@ -27,6 +27,9 @@ namespace TryAgain.GameStates
         cButton ButtonAbout;
         cButton ButtonExit;
         cButton ButtonReturn;
+        cButton ButtonOnePlayer;
+        cButton ButtonTwoPlayers;
+
         public MainMenuScreen()
         {
             this.state = ScreenType.MainMenu;
@@ -71,6 +74,8 @@ namespace TryAgain.GameStates
                     ButtonOption.Draw(sb);
                     ButtonExit.Draw(sb);
                     ButtonAbout.Draw(sb);
+                    ButtonOnePlayer.Draw(sb);
+                    ButtonTwoPlayers.Draw(sb);
                     break;
 
                 case MenuState.Option:
@@ -96,6 +101,11 @@ namespace TryAgain.GameStates
             ButtonExit.SetPosition(new Vector2(1062, 392 + 150 + 150));
             ButtonReturn = new cButton(Textures.Button_Return, graphics);
             ButtonReturn.SetPosition(new Vector2(1062, 704+100));
+            
+            ButtonOnePlayer = new cButton(Textures.Button_OnePlayer, graphics);
+            ButtonOnePlayer.SetPosition(new Vector2(1062, 900));
+            ButtonTwoPlayers = new cButton(Textures.Button_TwoPlayers, graphics);
+            ButtonTwoPlayers.SetPosition(new Vector2(1062, 1000));
         }
     }
 }
