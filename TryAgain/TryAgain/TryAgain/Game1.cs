@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using TryAgain.GameStates;
+using TryAgain.Datas;
 
 namespace TryAgain
 {
@@ -36,6 +37,7 @@ namespace TryAgain
             screen.init(graphics.GraphicsDevice);
             gamestate = screen.GetState();
             gamegfx = graphics;
+            Initializer.InitAll();
         }
 
         protected override void LoadContent()

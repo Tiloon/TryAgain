@@ -14,6 +14,7 @@ namespace TryAgain
 {
     class Textures
     {
+        public static Dictionary<String, Texture2D> Cache = new Dictionary<string,Texture2D>();
         public static Texture2D herbe_texture, sable_texture, neige_texture, solrocailleux_texture;
         public static Texture2D aqua_halfwkbtexture, fire_hakfwkbtexture;
         public static Texture2D cascadedroite_unwkbtexture, cascadegauche_unwkbtexture,

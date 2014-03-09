@@ -8,6 +8,8 @@ using Microsoft.Xna.Framework.Input;
 using Noesis.Javascript;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using System.IO;
+using TryAgain.Datas;
 
 namespace TryAgain
 {
@@ -20,7 +22,18 @@ namespace TryAgain
     }
     class Items
     {
+        public static Dictionary<String, Item> itemsBank = new Dictionary<string,Item>();
         public static JavascriptContext jscontext = new JavascriptContext();
+
+        public static void initializeItemBank()
+        {
+            String[] itemIdList = JsonConvert.DeserializeObject<String[]>(Initializer.ReadTextFile(@"elements\items\itemslist.json"));
+            foreach (var id in itemIdList)
+            {
+                //MessageBox.Show(id);
+                itemsBank[id] = Item.mkItemFromFile(id + ".json");
+            }
+        }
 
         //
         public static Func<Object, String> msg { get; set; }
@@ -34,6 +47,17 @@ namespace TryAgain
             jscontext.Run(script);
             return new Tuple<String, String>(jscontext.GetParameter("user").ToString(), jscontext.GetParameter("target").ToString());
         }
+    }
+
+    public struct ItemDefinition
+    {
+        public String itemid;
+	    public String itemname;
+	    public int online;
+        public String onuseScript;
+	    public String icon;
+	    public String Type;
+        public String data;
     }
 
     class Item
@@ -64,12 +88,25 @@ namespace TryAgain
             return this.icon;
         }
 
-        public Item(Texture2D icon, string script) : this("00undef", "Undefined", icon, script, "undef", null)
+        public Item(Texture2D icon, string script)
+            : this("00undef", "Undefined", icon, script, "undef", null)
         {
         }
         public Item()
             : this(null, "")
         {
+        }
+
+        public static Item mkItemFromFile(String path)
+        {
+            ItemDefinition e = JsonConvert.DeserializeObject<ItemDefinition>(Initializer.ReadTextFile(@"elements\items\" + path));
+            String script = "";
+            script = Initializer.ReadTextFile(@"elements\items\" + e.onuseScript);
+            if (!Textures.Cache.ContainsKey(e.icon))
+            {
+                Textures.Cache[e.icon] = Texture2D.FromStream(Game1.gamegfx.GraphicsDevice, new FileStream(@"elements\items\" + e.icon, FileMode.Open)); 
+            }
+            return new Item(Textures.Cache[e.icon], script);
         }
     }
 

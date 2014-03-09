@@ -115,6 +115,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datas\Initializer.cs" />
     <Compile Include="GameElements\Characters\Character.cs" />
     <Compile Include="GameElements\Characters\Monster.cs" />
     <Compile Include="GameElements\Characters\Stats.cs" />

@@ -1,0 +1,9 @@
+{
+	"itemid": "sword00",
+	"itemname": "Epee de base",
+	"online": 0,
+	"onuseScript": "sword00.use.js",
+	"icon": "sword00.ico.png",
+	"Type": "meleWeapon",
+	"data": "sword00.data.json"
+}

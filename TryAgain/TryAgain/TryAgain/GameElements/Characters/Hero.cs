@@ -30,7 +30,7 @@ namespace TryAgain.Characters
 
         public Hero(string name, Classes.Classe classe, Texture2D apparence, Keys keyup, Keys keydown, Keys keyleft, Keys keyright, Vector2 position)
         {
-            this.items[0] = new MeleWeapon();
+            this.items[0] = Items.itemsBank["sword00"];
             this.longueur = 66;
             this.largeur = 25;
             this.position = position;
