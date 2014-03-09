@@ -23,11 +23,9 @@ namespace TryAgain
 
         public static Texture2D[,] map1 = new Texture2D[lgmap, lgmap];
         public static Item[,] map1contains = new Item[lgmap, lgmap];
-        public static Monster[,] map1monsters = new Monster[lgmap, lgmap];
 
         public static Texture2D[,] map2 = new Texture2D[lgbigmapunscrolled, lgbigmapunscrolled];
         public static Item[,] map2contains = new Item[lgbigmapunscrolled, lgbigmapunscrolled];
-        public static Monster[,] map2monsters = new Monster[lgbigmapunscrolled, lgbigmapunscrolled];
 
         public static void MapFullINIT()
         {

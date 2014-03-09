@@ -20,5 +20,5 @@ Content\Sprites\Unwalkable\Arbre\026.xnb
 Content\Sprites\Halfwalkable\tileaqua.xnb
 Content\Sprites\Halfwalkable\tilefire.xnb
 Content\Sprites\Monsters\bebeglauque.xnb
-Content\Fonts\UIfont.xnb
 Content\UI\uiitems.xnb
+Content\Fonts\UIfont.xnb

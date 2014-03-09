@@ -13,98 +13,103 @@ using Microsoft.Xna.Framework.Media;
 namespace TryAgain.Characters
 {
     enum Monstertype { bebeglauque, biotech1, biotech2, biotech3, biotech4, biotech5 }
-
+    enum Monsterstate { normal, enraged, weaken, friendly, dead }
+                              //dmg*=2   dmg/=2  dmg=0                   
     class Monster : Character
     {
+        int compteurvitesse = 0;
         public int hp;
         public int dmgmin;
         public int dmgmax;
         public int speed;
+        Random rand = new Random();
         int posmin = 0;
-        int posmax = Tilemap.lgmap;
-        Vector2 postablo;
-
-        public Monster(Monstertype mst, int hp, int dmgmin, int dmgmax, int speed, Vector2 postablo, ref Monster[,] mapmonster)
+        int posmax = Tilemap.lgmap - 1;
+        Vector2 posmap;
+        
+        public Monster(Monstertype mst, int hp, int dmgmin, int dmgmax, int speed, Vector2 posmap)
         {
             this.hp = hp;
             this.dmgmin = dmgmin;
             this.dmgmax = dmgmax;
             this.speed = speed;
-            this.postablo = postablo;
-            this.position = new Vector2 (Tilemap.variationsizegraphicsX + postablo.X * 64, postablo.Y * 64);
-
+            this.posmap = posmap;
+            this.position = new Vector2(Tilemap.variationsizegraphicsX + posmap.X * 64, posmap.Y * 64);
             if (mst == Monstertype.bebeglauque)
+            {
                 this.apparence = Textures.bebeglauque_texture;
-            mapmonster[(int)postablo.X, (int)postablo.Y] = this;
+                this.longueur = 64;
+                this.largeur = 64;
+            }
         }
 
-        public void Moverandom(ref Monster[,] mapmonster)
+        public void Moverandom()   //Cette methode sera seulement appliquée lorsque des monstres subiront des altérations d'état qui leur empêchent d'utiliser leur "IA" pour trouver le joueur
+                                   //ou par les monstres cons tout simplement
         {
-            Random rand = new Random();
-            int direction = rand.Next(8);
-            Vector2 newposition = postablo;
+            int direction = rand.Next(0, 8);
+            Vector2 newposmap = posmap;
             switch (direction)
             {
                 case 0:
-                    if (postablo.X > posmin)
-                        newposition = new Vector2(position.X - 1, position.Y);
+                    if (posmap.X > posmin)
+                        newposmap = new Vector2(posmap.X - 1, posmap.Y);
                     break;
                 case 1:
-                    if (position.X < posmax && position.Y < posmax)
-                        newposition = new Vector2(position.X + 1, position.Y + 1);
+                    if (posmap.X < posmax && posmap.Y < posmax)
+                        newposmap = new Vector2(posmap.X + 1, posmap.Y + 1);
                     break;
                 case 2:
-                    if (position.X < posmax)
-                        newposition = new Vector2(position.X + 1, position.Y);
+                    if (posmap.X < posmax)
+                        newposmap = new Vector2(posmap.X + 1, posmap.Y);
                     break;
                 case 3:
-                    if (position.X < posmax && position.Y > posmin)
-                        newposition = new Vector2(position.X + 1, position.Y - 1);
+                    if (posmap.X < posmax && posmap.Y > posmin)
+                        newposmap = new Vector2(posmap.X + 1, posmap.Y - 1);
                     break;
                 case 4:
-                    if (position.X > posmin && position.Y > posmin)
-                        newposition = new Vector2(position.X - 1, position.Y - 1);
+                    if (posmap.X > posmin && posmap.Y > posmin)
+                        newposmap = new Vector2(posmap.X - 1, posmap.Y - 1);
                     break;
                 case 5:
-                    if (position.X > posmin && position.Y < posmax)
-                        newposition = new Vector2(position.X - 1, position.Y + 1);
+                    if (posmap.X > posmin && posmap.Y < posmax)
+                        newposmap = new Vector2(posmap.X - 1, posmap.Y + 1);
                     break;
                 case 6:
-                    if (position.Y > posmin)
-                        newposition = new Vector2(position.X, position.Y - 1);
+                    if (posmap.Y > posmin)
+                        newposmap = new Vector2(posmap.X, posmap.Y - 1);
                     break;
-                default:
-                    if (position.Y < posmax)
-                        newposition = new Vector2(position.X, position.Y + 1);
+                case 7:
+                    if (posmap.Y < posmax)
+                        newposmap = new Vector2(posmap.X, posmap.Y + 1);
                     break;
             }
-            if (mapmonster[(int)newposition.X, (int)newposition.Y] == null)
-            {
-                mapmonster[(int)position.X, (int)position.Y] = null;
-                mapmonster[(int)newposition.X, (int)newposition.Y] = this;
-                //monsteranimation(direction);
-                position = newposition;
-            }
+            posmap = newposmap;
+            //Animation()
+            position = new Vector2(Tilemap.variationsizegraphicsX + posmap.X*64, posmap.Y * 64);
         }
 
-        public void AddMonster(ref Monster[,] MapMonster, int i, int j)
-        {
-            MapMonster[i, j] = this;
-        }
+        public void Collision()
+        { }
 
-        /*public static void AddMultipleMonsters(Monster Monster, ref Monster[,] MapMonster, int lengthmap, int maxmob)
+        public void AddMonster(Monster[] MapMonster, int i)
         {
-            Random rd = new Random();
-            for (int n = 0; n < maxmob; n++)
-                MapMonster[rd.Next(lengthmap), rd.Next(lengthmap)] = Monster;
-        }*/
+           MapMonster[i] = this;
+        }
+        public void AddMonster(Monster[] MapMonster, int i, Vector2 posmap)
+        {
+            MapMonster[i] = this;
+            MapMonster[i].posmap = posmap;
+            MapMonster[i].position = new Vector2(Tilemap.variationsizegraphicsX + posmap.X * 64, posmap.Y * 64);
+        }
 
         public override void update()
         {
-            if (GameStates.GameScreen.actualmap == 1)
-                Moverandom(ref Tilemap.map1monsters);
-            else if(GameStates.GameScreen.actualmap == 2)
-                Moverandom(ref Tilemap.map2monsters);
+            compteurvitesse++;
+            if (compteurvitesse > 30 - speed)
+            {
+                Moverandom();
+                compteurvitesse = 0;
+            }
         }
 
         public override void jsonUpdate(string json)
