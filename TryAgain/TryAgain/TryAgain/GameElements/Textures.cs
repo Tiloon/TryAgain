@@ -22,7 +22,7 @@ namespace TryAgain
         public static Texture2D persopierre_texture;
         public static Texture2D bebeglauque_texture;
 
-        public static Texture2D Button_Play, Button_Option, Button_Exit, Button_About, Button_Return;
+        public static Texture2D Button_Play, Button_Option, Button_Exit, Button_About, Button_Return, Button_OnePlayer, Button_TwoPlayers;
         public static Texture2D MainMenuBG, OptionBG, AboutBG;
 
         public static SpriteFont UIfont;
@@ -49,6 +49,8 @@ namespace TryAgain
             Button_Exit = cm.Load<Texture2D>(@"Menu\Button_Exit");
             Button_About = cm.Load<Texture2D>(@"Menu\Button_About");
             Button_Return = cm.Load<Texture2D>(@"Menu\Button_Return");
+            Button_OnePlayer = cm.Load<Texture2D>(@"Menu\Button_1player");
+            Button_TwoPlayers = cm.Load<Texture2D>(@"Menu\Button_2players");
 
             MainMenuBG = cm.Load<Texture2D>(@"Menu\MainMenu");
             OptionBG = cm.Load<Texture2D>(@"Menu\Option");
