@@ -22,3 +22,4 @@ Content\Sprites\Halfwalkable\tilefire.xnb
 Content\Sprites\Monsters\bebeglauque.xnb
 Content\UI\uiitems.xnb
 Content\Fonts\UIfont.xnb
+Content\UI\uiselected.xnb

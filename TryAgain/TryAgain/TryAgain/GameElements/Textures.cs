@@ -26,7 +26,7 @@ namespace TryAgain
         public static Texture2D MainMenuBG, OptionBG, AboutBG;
 
         public static SpriteFont UIfont;
-        public static Texture2D UIitemHolder;
+        public static Texture2D UIitemHolder, UIitemSelected;
         public static void load(ContentManager cm)
         {
             herbe_texture = cm.Load<Texture2D>(@"Sprites\tileherbe");          //0
@@ -56,6 +56,7 @@ namespace TryAgain
 
             UIfont = cm.Load<SpriteFont>(@"Fonts\UIfont");
             UIitemHolder = cm.Load<Texture2D>(@"UI\uiitems");
+            UIitemSelected = cm.Load<Texture2D>(@"UI\uiselected");
 
         }
     }

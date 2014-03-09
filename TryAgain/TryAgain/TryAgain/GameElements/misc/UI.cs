@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using TryAgain.Characters;
+using TryAgain.GameStates;
 
 namespace TryAgain.GameElements.misc
 {
@@ -21,6 +22,7 @@ namespace TryAgain.GameElements.misc
         int cp, cpmax;
         int mp, mpmax;
         int lvl;
+        int equiped;
         int force, intelligence, defense, criticalrate, speed;
         Item[] items = new Item[10];
 
@@ -39,26 +41,27 @@ namespace TryAgain.GameElements.misc
             for (int i = 0; i < 10; i++)
             {
                 sb.Draw(Textures.UIitemHolder, new Rectangle(300 + 80*i, 884, 64, 64), Color.White);
-                if(items[i] != null)
-                    sb.Draw(items[i].getIcon(), new Rectangle(300 + 80 * i, 884, 64, 64), Color.White);
+                if(equiped == i)
+                    sb.Draw(Textures.UIitemSelected, new Rectangle(300 + 80 * i, 884, 64, 64), Color.White);
+                if (items[i] != null)
+                {
+                    if (items[i].exists)
+                        sb.Draw(items[i].getIcon(), new Rectangle(300 + 80 * i, 884, 64, 64), Color.White);
+                    else
+                        items[i] = null;
+                }
             }
         }
         public void update(ref Hero hero)
         {
-
-            //Test des items
-            Tuple<String, String> jsonUpdates = (hero.getItemList()[0]).useItem(hero, hero);
-            hero.jsonUpdate(jsonUpdates.Item1); // As user
-            hero.jsonUpdate(jsonUpdates.Item2); // As target
-
-
+            
             lp = hero.getStats().lp;
             lpmax = hero.getStats().lpmax;
             cp = hero.getStats().ch;
             cpmax = hero.getStats().chmax;
             mp = hero.getStats().mh;
             mpmax = hero.getStats().mhmax;
-
+            equiped = hero.getEquipedItem();
             lvl = hero.getStats().lvl;
             force = hero.getStats().force;
             intelligence = hero.getStats().intelligence;

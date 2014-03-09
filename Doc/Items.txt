@@ -29,41 +29,10 @@ Variables are :
 name	| Usage
 --------------
 item	| Object containing the item's own clone of "YourItemId.data.json"
-item_delete	| Delete the item
-item.delete	| Delete the item, alias of item_delete
 target	| Object containing the target
 user	| Object containing the item's user
 msg		| Message box allowing to show a Messagebox with your string inside (MUST BE A STRING). Warning : DEBUGING PURPOSE ONLY !
 
-target and user properties :
-name	| Usage :
-------------------
-.type	| Get the element's type (Read only)
-.uid	| Get the element's UID (Read only)
-.stats	| Character's stats
-.position	| "X, Y" position on the map
-.name	| Character's name
-
-
-"stats" object :
-.lvl;
-.lp; // Life points
-.lpmax;
-.mh; // Mental Health
-.mhmax;
-.ch; // Cafeine health
-.chmax;
-.cbonus; // cafeine bonus
-.mp; // Magic points
-.mpmax;
-.force;
-.intelligence;
-.defense;
-.criticalrate;
-.speed;
-
-
-------------------------
 
 *Note 1
 Item types :

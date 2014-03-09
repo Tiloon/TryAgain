@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using Newtonsoft.Json;
 
 namespace TryAgain.Characters
 {
@@ -18,7 +19,6 @@ namespace TryAgain.Characters
     class Monster : Character
     {
         int compteurvitesse = 0;
-        public int hp;
         public int dmgmin;
         public int dmgmax;
         public int speed;
@@ -26,20 +26,22 @@ namespace TryAgain.Characters
         int posmin = 0;
         int posmax = Tilemap.lgmap - 1;
         Vector2 posmap;
-        
+
         public Monster(Monstertype mst, int hp, int dmgmin, int dmgmax, int speed, Vector2 posmap)
+            : base("Monster", "Monster")
         {
-            this.hp = hp;
             this.dmgmin = dmgmin;
             this.dmgmax = dmgmax;
             this.speed = speed;
             this.posmap = posmap;
+            this.stats.lp = 60;
             this.position = new Vector2(Tilemap.variationsizegraphicsX + posmap.X * 64, posmap.Y * 64);
             if (mst == Monstertype.bebeglauque)
             {
                 this.apparence = Textures.bebeglauque_texture;
                 this.longueur = 64;
                 this.largeur = 43;
+                this.size = new Vector2(this.longueur, this.largeur);
             }
         }
 
@@ -104,6 +106,7 @@ namespace TryAgain.Characters
 
         public override void update()
         {
+            base.update();
             compteurvitesse++;
             if (compteurvitesse > 30 - speed)
             {
@@ -114,7 +117,10 @@ namespace TryAgain.Characters
 
         public override void jsonUpdate(string json)
         {
-            
+            base.jsonUpdate(json);
+            Monster data = JsonConvert.DeserializeObject<Monster>(json);
+            this.stats = data.stats;
+            this.position = data.position;
         }
 
     }

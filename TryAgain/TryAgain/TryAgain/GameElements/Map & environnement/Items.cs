@@ -38,13 +38,16 @@ namespace TryAgain
         //
         public static Func<Object, String> msg { get; set; }
 
-        public static Tuple<String, String> useOnTarget(string script, object user, object target)
+        public static Tuple<String, String> useOnTarget(Item item, string script, object user, object target)
         {
+            jscontext.SetParameter("item_delete", (Func<bool>)(() => item.exists = false));
+            jscontext.SetParameter("item", item.data);
             jscontext.SetParameter("user", JsonConvert.SerializeObject(user));
             jscontext.SetParameter("target", JsonConvert.SerializeObject(target));
             msg = x => { MessageBox.Show(x.ToString()); return ""; };
             jscontext.SetParameter("msg", msg);
             jscontext.Run(script);
+            item.data = jscontext.GetParameter("item").ToString();
             return new Tuple<String, String>(jscontext.GetParameter("user").ToString(), jscontext.GetParameter("target").ToString());
         }
     }
@@ -67,20 +70,21 @@ namespace TryAgain
         protected string itemID;
         protected string itemName;
         protected string script;
-        protected Object data;
+        public String data = " ";
+        public bool exists = true;
         // private delegate Target useItem(Target t) ;
         public Func<Object, Object, Tuple<String, String>> useItem { get; set; }
 
-        public Item(string itemID, string itemName, Texture2D icon, string script, String type, Object data)
+        public Item(string itemID, string itemName, Texture2D icon, string script, String type, String data)
         {
             this.itemID = itemID;
             this.itemName = itemName;
             this.data = data;
             this.icon = icon;
-            this.script = "var target = JSON.parse(target), user = JSON.parse(user);" + script + "target = JSON.stringify(target);user = JSON.stringify(user);";
+            this.script = "var target = JSON.parse(target), item = JSON.parse(item), user = JSON.parse(user);item.delete = item_delete;" + script + "target = JSON.stringify(target);user = JSON.stringify(user);item = JSON.stringify(item);";
             this.type = type;
             this.itemID = "undefined";
-            this.useItem = (u, t) => { return Items.useOnTarget(this.script, u, t); };
+            this.useItem = (u, t) => { return Items.useOnTarget(this, this.script, u, t); };
         }
 
         public Texture2D getIcon()
@@ -89,7 +93,7 @@ namespace TryAgain
         }
 
         public Item(Texture2D icon, string script)
-            : this("00undef", "Undefined", icon, script, "undef", null)
+            : this("00undef", "Undefined", icon, script, "undef", "")
         {
         }
         public Item()
@@ -106,7 +110,8 @@ namespace TryAgain
             {
                 Textures.Cache[e.icon] = Texture2D.FromStream(Game1.gamegfx.GraphicsDevice, new FileStream(@"elements\items\" + e.icon, FileMode.Open)); 
             }
-            return new Item(Textures.Cache[e.icon], script);
+            String data = Initializer.ReadTextFile(@"elements\items\" + e.data);
+            return new Item(e.itemid, e.itemname, Textures.Cache[e.icon], script, e.Type, data);
         }
     }
 

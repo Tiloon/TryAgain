@@ -223,6 +223,15 @@
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfont.xnb</Output>
       <Time>2014-03-08T18:21:04.6132676+01:00</Time>
     </Item>
+    <Item>
+      <Source>UI\uiselected.png</Source>
+      <Name>UI\uiselected</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\uiselected.xnb</Output>
+      <Time>2014-03-09T17:05:54.4390159+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
