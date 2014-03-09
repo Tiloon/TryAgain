@@ -51,10 +51,32 @@ namespace TryAgain.GameElements.misc
                         items[i] = null;
                 }
             }
+
+            if (true) // Debug shit
+            {
+                for (int i = 0; i < GameScreen.GOList.Count; i++)
+                {
+                    //sb.DrawString(Textures.UIfont, GameScreen.GOList[i].UID, new Vector2(1280, 220 + 20*i), caracolor);
+                }
+
+                for (int i = 0; i < GameObject.GobjectList.Count; i++)
+                {
+                    sb.DrawString(Textures.UIfont, GameObject.GobjectList.ToList()[i].Value.UID, new Vector2(1280, 220 + 20 * i), caracolor);
+                }
+            }
         }
         public void update(ref Hero hero)
         {
-            
+            MouseState mouse = Mouse.GetState();
+            Rectangle mouse_rectangle = new Rectangle(mouse.X, mouse.Y, 1, 1);
+            for (int i = 0; i < 10; i++)
+            {
+                Rectangle rectangle = new Rectangle(300 + 80 * i, 884, 64, 64);
+                if ((mouse_rectangle.Intersects(rectangle)) && (mouse.LeftButton == ButtonState.Pressed)) {
+                    hero.setEquipedItem(i);
+                }
+            }
+                        
             lp = hero.getStats().lp;
             lpmax = hero.getStats().lpmax;
             cp = hero.getStats().ch;

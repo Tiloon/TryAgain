@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Newtonsoft.Json;
+using TryAgain.GameElements;
 
 namespace TryAgain.Characters
 {
@@ -121,6 +122,8 @@ namespace TryAgain.Characters
             Monster data = JsonConvert.DeserializeObject<Monster>(json);
             this.stats = data.stats;
             this.position = data.position;
+            GameObject gob = data;
+            Delete(ref gob);
         }
 
     }

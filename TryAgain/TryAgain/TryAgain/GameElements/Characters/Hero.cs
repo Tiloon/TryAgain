@@ -11,6 +11,8 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using System.Runtime.Serialization.Json;
 using Newtonsoft.Json;
+using TryAgain.GameStates;
+using TryAgain.GameElements;
 
 namespace TryAgain.Characters
 {
@@ -57,6 +59,15 @@ namespace TryAgain.Characters
                 this.position += new Vector2(7, 0);
             if (newState.IsKeyDown(keyleft) && position.X > Tilemap.variationsizegraphicsX)
                 this.position += new Vector2(-7, 0);
+            if (newState.IsKeyDown(Keys.G))
+            {
+                if ((equiped != -1) && (this.items[equiped] != null))
+                {
+                    GObItem gobitem = new GObItem(this.items[equiped], this.position);
+                    GameScreen.GOList.Add(gobitem);
+                    this.items[equiped] = null;
+                }
+            }
         }
 
         public override void jsonUpdate(string json)
@@ -66,6 +77,8 @@ namespace TryAgain.Characters
             this.items = data.items;
             this.stats = data.stats;
             this.position = data.position;
+            GameObject gob = data;
+            Delete(ref gob);
         }
 
         public void Levelup()
@@ -96,6 +109,19 @@ namespace TryAgain.Characters
         public int getEquipedItem()
         {
             return this.equiped;
+        }
+
+        public bool addItem(GObItem item)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                if (items[i] == null)
+                {
+                    items[i] = item.item();
+                    return true;
+                }
+            }
+            return false;
         }
 
     }

@@ -33,7 +33,9 @@ namespace TryAgain.Characters
         public override void update()
         {
             if (this.stats.lp <= 0)
+            {
                 this.exists = false;
+            }
         }
 
         public Character(String type, String UID) : base("Character" + type, UID)

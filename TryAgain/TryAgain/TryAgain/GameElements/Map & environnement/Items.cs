@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Newtonsoft.Json;
 using System.IO;
 using TryAgain.Datas;
+using TryAgain.GameElements;
 
 namespace TryAgain
 {
@@ -65,6 +66,7 @@ namespace TryAgain
 
     class Item
     {
+        protected String UID;
         protected String type;
         protected Texture2D icon;
         protected string itemID;
@@ -74,6 +76,16 @@ namespace TryAgain
         public bool exists = true;
         // private delegate Target useItem(Target t) ;
         public Func<Object, Object, Tuple<String, String>> useItem { get; set; }
+
+        public String GetUID()
+        {
+            return this.UID;
+        }
+
+        public String GetItemID()
+        {
+            return this.itemID;
+        }
 
         public Item(string itemID, string itemName, Texture2D icon, string script, String type, String data)
         {
@@ -115,12 +127,31 @@ namespace TryAgain
         }
     }
 
-    class MeleWeapon : Item
+    class GObItem : GameObject
     {
-        public MeleWeapon()
-            : base(Textures.neige_texture, "target.stats.lp-=user.stats.force;")
+        private Item bindedItem;
+        public Item item()
         {
-            //this.useItem = (t) => { return t; };
+            return bindedItem;
+        }
+        public GObItem(Item item, Vector2 pos)
+            : base("GObItem", item.GetItemID() + item.GetUID())
+        {
+            this.bindedItem = item;
+            this.position = pos;
+            this.size = new Vector2(64, 64);
+        }
+        public override void update()
+        {
+
+        }
+        public override void jsonUpdate(String json)
+        {
+
+        }
+        public override void Draw(SpriteBatch sb)
+        {
+            sb.Draw(this.bindedItem.getIcon(),  this.position, Color.White);
         }
     }
 }

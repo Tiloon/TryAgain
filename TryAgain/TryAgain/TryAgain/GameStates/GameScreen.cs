@@ -21,7 +21,7 @@ namespace TryAgain.GameStates
         Hero hero;
         Hero hero2;
 
-        List<GameObject> GOList = new List<GameObject>();
+        public static List<GameObject> GOList = new List<GameObject>();
 
         static public int actualmap = 1;
 
@@ -33,13 +33,22 @@ namespace TryAgain.GameStates
         {
             MouseState mouse = Mouse.GetState();
             GameObject gob = null;
-            if ((mouse.LeftButton == ButtonState.Pressed) && (hero.equipedItem() != null))
+            if (mouse.LeftButton == ButtonState.Pressed)
                 gob = this.GetClicked(mouse);
             if (gob != null)
             {
-                Tuple<String, String> jsonUpdates = (hero.equipedItem()).useItem(hero, gob);
-                hero.jsonUpdate(jsonUpdates.Item1); // As user
-                gob.jsonUpdate(jsonUpdates.Item2); // As target
+                if (gob.Type == "GameObject,GObItem") // If it's an item, player take it
+                {
+                    hero.addItem((GObItem)gob);
+                    GOList.Remove(gob);
+                    GameObject.Delete(ref gob);
+                }
+                else if (hero.equipedItem() != null)// Else, player use it's item
+                {
+                    Tuple<String, String> jsonUpdates = (hero.equipedItem()).useItem(hero, gob);
+                    hero.jsonUpdate(jsonUpdates.Item1); // As user
+                    gob.jsonUpdate(jsonUpdates.Item2); // As target
+                }
             }
 
             KeyboardState newState = Keyboard.GetState();
@@ -50,6 +59,7 @@ namespace TryAgain.GameStates
             {
                 if (!GOList[i].toRemove())
                 {
+                    GameObject.GobjectList.Remove(GOList[i].UID);
                     GOList.RemoveAt(i);
                     --i;
                 }

@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using TryAgain.GameElements.misc;
 
 namespace TryAgain.GameElements
 {
@@ -37,6 +38,12 @@ namespace TryAgain.GameElements
                 ++i;
             this.UID = UID + i.ToString();
             GobjectList.Add(this.UID, this);
+        }
+
+        public static void Delete(ref GameObject gob)
+        {
+            GobjectList.Remove(gob.UID);
+            gob = null;
         }
 
         public abstract void update();
