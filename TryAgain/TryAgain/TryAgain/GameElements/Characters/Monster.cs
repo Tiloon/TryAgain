@@ -39,7 +39,7 @@ namespace TryAgain.Characters
             {
                 this.apparence = Textures.bebeglauque_texture;
                 this.longueur = 64;
-                this.largeur = 64;
+                this.largeur = 43;
             }
         }
 
@@ -85,7 +85,7 @@ namespace TryAgain.Characters
             }
             posmap = newposmap;
             //Animation()
-            position = new Vector2(Tilemap.variationsizegraphicsX + posmap.X*64, posmap.Y * 64);
+            position = new Vector2(Tilemap.variationsizegraphicsX + posmap.X*43, posmap.Y * 64);
         }
 
         public void Collision()
