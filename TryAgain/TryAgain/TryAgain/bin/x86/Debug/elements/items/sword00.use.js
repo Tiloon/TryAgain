@@ -1,3 +1,5 @@
+try
+  {
 if(target.UID != user.UID) {
 	if(!(item.hasOwnProperty('refresh'))) {
 		item["refresh"] = -1;
@@ -8,3 +10,8 @@ if(target.UID != user.UID) {
 	}
 	item.refresh = time;
 }
+  }
+catch(err)
+  {
+  //Handle errors here
+  }

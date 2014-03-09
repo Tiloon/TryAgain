@@ -1,0 +1,9 @@
+{
+	"itemid": "banana00",
+	"itemname": "Banane",
+	"online": 0,
+	"onuseScript": "banana00.use.js",
+	"icon": "banana00.ico.png",
+	"Type": "food",
+	"data": "banana00.data.json"
+}

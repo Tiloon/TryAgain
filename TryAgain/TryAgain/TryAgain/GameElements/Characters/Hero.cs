@@ -30,6 +30,7 @@ namespace TryAgain.Characters
             : base("Hero", "Hero00")
         {
             this.items[0] = Items.itemsBank["sword00"];
+            this.items[1] = Items.itemsBank["banana00"];
             this.equiped = 0;
             this.longueur = 66;
             this.largeur = 25;

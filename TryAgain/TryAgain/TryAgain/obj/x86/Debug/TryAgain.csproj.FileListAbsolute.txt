@@ -319,3 +319,5 @@ C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debu
 C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\uiselected.xnb
 C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_1player.xnb
 C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_2players.xnb
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_1player.xnb
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_2players.xnb

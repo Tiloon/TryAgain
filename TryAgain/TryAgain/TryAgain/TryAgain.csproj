@@ -120,6 +120,7 @@
     <Compile Include="GameElements\Characters\Monster.cs" />
     <Compile Include="GameElements\Characters\Stats.cs" />
     <Compile Include="GameElements\GameObject.cs" />
+    <Compile Include="GameElements\Map &amp; environnement\GobVoid.cs" />
     <Compile Include="GameElements\misc\Debug.cs" />
     <Compile Include="GameElements\misc\UI.cs" />
     <Compile Include="GameStates\GameScreen.cs" />

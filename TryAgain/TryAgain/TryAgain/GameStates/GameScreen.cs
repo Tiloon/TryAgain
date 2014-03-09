@@ -12,11 +12,13 @@ using Microsoft.Xna.Framework.Media;
 using TryAgain.Characters;
 using TryAgain.GameElements.misc;
 using TryAgain.GameElements;
+using TryAgain.GameElements.Map___environnement;
 
 namespace TryAgain.GameStates
 {
     class GameScreen : Screen
     {
+        ButtonState previousstate;
         UI userinterface = new UI();
         Hero hero;
         Hero hero2;
@@ -28,12 +30,13 @@ namespace TryAgain.GameStates
         public GameScreen()
         {
             this.state = ScreenType.Game;
+            previousstate = Mouse.GetState().LeftButton;
         }
         public override ScreenType update()
         {
             MouseState mouse = Mouse.GetState();
             GameObject gob = null;
-            if (mouse.LeftButton == ButtonState.Pressed)
+            if ((mouse.LeftButton == ButtonState.Pressed) && (mouse.LeftButton != previousstate))
                 gob = this.GetClicked(mouse);
             if (gob != null)
             {
@@ -50,6 +53,11 @@ namespace TryAgain.GameStates
                     gob.jsonUpdate(jsonUpdates.Item2); // As target
                 }
             }
+            else if (hero.equipedItem() != null)
+            {
+                GOList.Add(new GobVoid(new Vector2(mouse.X, mouse.Y)));
+            }
+            this.previousstate = mouse.LeftButton;
 
             KeyboardState newState = Keyboard.GetState();
             if (newState.IsKeyDown(Keys.Escape))
