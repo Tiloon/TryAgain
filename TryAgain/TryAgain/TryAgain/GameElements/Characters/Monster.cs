@@ -37,6 +37,8 @@ namespace TryAgain.Characters
             this.posmap = posmap;
             this.stats.lp = 60;
             this.position = new Vector2(Tilemap.variationsizegraphicsX + posmap.X * 64, posmap.Y * 64);
+            this.X = position.X;
+            this.Y = position.Y;
             if (mst == Monstertype.bebeglauque)
             {
                 this.apparence = Textures.bebeglauque_texture;
@@ -107,7 +109,8 @@ namespace TryAgain.Characters
         public override void update()
         {
             base.update();
-            this.position += this.direction;
+            this.X += this.direction.X;
+            this.Y += this.direction.Y;
             compteurvitesse++;
             if (compteurvitesse > 30 - speed)
             {

@@ -36,9 +36,6 @@ namespace TryAgain
             }
         }
 
-        //
-        
-
         public static Tuple<String, String> useOnTarget(Item item, string script, object user, object target)
         {
             jscontext.SetParameter("item_delete", (Func<bool>)(() => item.exists = false));

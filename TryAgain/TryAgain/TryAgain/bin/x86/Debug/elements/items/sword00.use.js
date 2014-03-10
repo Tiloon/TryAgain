@@ -14,5 +14,3 @@ if((target.UID != user.UID) && (target.Type.split(',')[1] == "Character")) {
 	item.refresh.s = sec;
 	item.refresh.ms = ms;
 }
-API_msg(JSON.stringify(user));
-API_CreateParticle("coucou", 50, 50,50, 50);

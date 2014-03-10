@@ -36,6 +36,8 @@ namespace TryAgain.Characters
             this.largeur = 25;
             this.size = new Vector2(this.largeur, this.longueur);
             this.position = position;
+            this.X = position.X;
+            this.Y = position.Y;
             this.name = name;
             this.classe = classe;
             this.apparence = apparence;
@@ -52,14 +54,24 @@ namespace TryAgain.Characters
         {
             base.update();
             KeyboardState newState = Keyboard.GetState();
+            
+            Vector2 normalizedSpeed = new Vector2(0, 0);
             if (newState.IsKeyDown(keyup) && position.Y > 0)
-                this.position += new Vector2(0, -7);
+                normalizedSpeed += new Vector2(0, -1);
             if (newState.IsKeyDown(keydown) && position.Y < 64 * Tilemap.lgmap - longueur)
-                this.position += new Vector2(0, 7);
+                normalizedSpeed += new Vector2(0, 1);
             if (newState.IsKeyDown(keyright) && position.X < 64 * Tilemap.lgmap + Tilemap.variationsizegraphicsX - largeur)
-                this.position += new Vector2(7, 0);
+                normalizedSpeed += new Vector2(1, 0);
             if (newState.IsKeyDown(keyleft) && position.X > Tilemap.variationsizegraphicsX)
-                this.position += new Vector2(-7, 0);
+                normalizedSpeed += new Vector2(-1, 0);
+
+            if ((normalizedSpeed.X != 0) || (normalizedSpeed.Y != 0))
+            {
+                float sqrtsum = (float)Math.Sqrt(Math.Abs(normalizedSpeed.X) + Math.Abs(normalizedSpeed.Y));
+                this.position += normalizedSpeed * this.stats.speed / sqrtsum;
+                this.X = this.position.X + this.size.X / 2;
+                this.Y = this.position.Y + this.size.Y / 2;
+            }
             if (newState.IsKeyDown(Keys.G))
             {
                 if ((equiped != -1) && (this.items[equiped] != null))

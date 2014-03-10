@@ -33,6 +33,7 @@ namespace TryAgain.Characters
 
         public override void update()
         {
+            this.position = new Vector2(this.X, this.Y) - this.size / 2;
             if (this.stats.lp <= 0)
             {
                 this.exists = false;
