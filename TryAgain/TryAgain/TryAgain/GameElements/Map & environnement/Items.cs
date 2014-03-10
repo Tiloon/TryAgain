@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 using System.IO;
 using TryAgain.Datas;
 using TryAgain.GameElements;
+using TryAgain.GameElements.misc;
 
 namespace TryAgain
 {
@@ -23,7 +24,7 @@ namespace TryAgain
     }
     class Items
     {
-        public static Dictionary<String, Item> itemsBank = new Dictionary<string,Item>();
+        public static Dictionary<String, Item> itemsBank = new Dictionary<string, Item>();
         public static JavascriptContext jscontext = new JavascriptContext();
 
         public static void initializeItemBank()
@@ -31,13 +32,12 @@ namespace TryAgain
             String[] itemIdList = JsonConvert.DeserializeObject<String[]>(Initializer.ReadTextFile(@"elements\items\itemslist.json"));
             foreach (var id in itemIdList)
             {
-                //MessageBox.Show(id);
                 itemsBank[id] = Item.mkItemFromFile(id + ".json");
             }
         }
 
         //
-        public static Func<Object, String> msg { get; set; }
+        
 
         public static Tuple<String, String> useOnTarget(Item item, string script, object user, object target)
         {
@@ -45,8 +45,8 @@ namespace TryAgain
             jscontext.SetParameter("item", item.data);
             jscontext.SetParameter("user", JsonConvert.SerializeObject(user));
             jscontext.SetParameter("target", JsonConvert.SerializeObject(target));
-            msg = x => { MessageBox.Show(x.ToString()); return ""; };
-            jscontext.SetParameter("msg", msg);
+
+            JSAPI.setJSAPI(ref jscontext);
             jscontext.Run(script);
             item.data = jscontext.GetParameter("item").ToString();
             return new Tuple<String, String>(jscontext.GetParameter("user").ToString(), jscontext.GetParameter("target").ToString());
@@ -56,11 +56,11 @@ namespace TryAgain
     public struct ItemDefinition
     {
         public String itemid;
-	    public String itemname;
-	    public int online;
+        public String itemname;
+        public int online;
         public String onuseScript;
-	    public String icon;
-	    public String Type;
+        public String icon;
+        public String Type;
         public String data;
     }
 
@@ -93,10 +93,32 @@ namespace TryAgain
             this.itemName = itemName;
             this.data = data;
             this.icon = icon;
-            this.script = "var target = JSON.parse(target), item = JSON.parse(item), user = JSON.parse(user);item.delete = item_delete;" + script + "target = JSON.stringify(target);user = JSON.stringify(user);item = JSON.stringify(item);";
+            this.script = // the ugliest way
+                "var target = JSON.parse(target)," +
+                    "item = JSON.parse(item)," +
+                    "user = JSON.parse(user);" +
+                "item.delete = item_delete;" +
+                "/*try {*/" +
+                    script +
+                "/*} catch (err) {msg(JSON.stringify(err));};*/" +
+                "target = JSON.stringify(target);" +
+                "user = JSON.stringify(user);" +
+                "item = JSON.stringify(item);";
             this.type = type;
             this.itemID = "undefined";
-            this.useItem = (u, t) => { return Items.useOnTarget(this, this.script, u, t); };
+            this.useItem = (u, t) =>
+            {
+                try
+                {
+                    return Items.useOnTarget(this, this.script, u, t);
+                }
+                catch (Exception e)
+                {
+                    Debug.Show(e.ToString());
+                    return new Tuple<string, string>(JsonConvert.SerializeObject(u), JsonConvert.SerializeObject(t));
+                }
+                
+            };
         }
 
         public Texture2D getIcon()
@@ -120,7 +142,7 @@ namespace TryAgain
             script = Initializer.ReadTextFile(@"elements\items\" + e.onuseScript);
             if (!Textures.Cache.ContainsKey(e.icon))
             {
-                Textures.Cache[e.icon] = Texture2D.FromStream(Game1.gamegfx.GraphicsDevice, new FileStream(@"elements\items\" + e.icon, FileMode.Open)); 
+                Textures.Cache[e.icon] = Texture2D.FromStream(Game1.gamegfx.GraphicsDevice, new FileStream(@"elements\items\" + e.icon, FileMode.Open));
             }
             String data = Initializer.ReadTextFile(@"elements\items\" + e.data);
             return new Item(e.itemid, e.itemname, Textures.Cache[e.icon], script, e.Type, data);
@@ -151,7 +173,7 @@ namespace TryAgain
         }
         public override void Draw(SpriteBatch sb)
         {
-            sb.Draw(this.bindedItem.getIcon(),  this.position, Color.White);
+            sb.Draw(this.bindedItem.getIcon(), this.position, Color.White);
         }
     }
 }

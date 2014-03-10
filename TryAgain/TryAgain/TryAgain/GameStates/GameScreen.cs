@@ -37,9 +37,14 @@ namespace TryAgain.GameStates
             MouseState mouse = Mouse.GetState();
             GameObject gob = null;
             if ((mouse.LeftButton == ButtonState.Pressed) && (mouse.LeftButton != previousstate))
-                gob = this.GetClicked(mouse);
-            if (gob != null)
             {
+                gob = this.GetClicked(mouse);
+                if (gob == null)
+                {
+                    gob = new GobVoid(new Vector2(mouse.X, mouse.Y));
+                    GOList.Add(gob);
+                }
+
                 if (gob.Type == "GameObject,GObItem") // If it's an item, player take it
                 {
                     hero.addItem((GObItem)gob);
@@ -52,13 +57,13 @@ namespace TryAgain.GameStates
                     hero.jsonUpdate(jsonUpdates.Item1); // As user
                     gob.jsonUpdate(jsonUpdates.Item2); // As target
                 }
-            }
-            else if (hero.equipedItem() != null)
-            {
-                GOList.Add(new GobVoid(new Vector2(mouse.X, mouse.Y)));
-            }
-            this.previousstate = mouse.LeftButton;
 
+                else if (hero.equipedItem() != null)
+                {
+                    GOList.Add(new GobVoid(new Vector2(mouse.X, mouse.Y)));
+                }
+            }
+            previousstate = mouse.LeftButton;
             KeyboardState newState = Keyboard.GetState();
             if (newState.IsKeyDown(Keys.Escape))
                 return ScreenType.Quit;
@@ -114,8 +119,8 @@ namespace TryAgain.GameStates
             GOList.Add(hero2);
             Tilemap.MapFullINIT();
             GOList.Add(new Monster(Monstertype.bebeglauque, 50, 10, 20, 10, new Vector2(6, 8)));
-            GOList.Add( new Monster(Monstertype.bebeglauque, 50, 10, 20, 10, new Vector2(5, 5)));
-            GOList.Add( new Monster(Monstertype.bebeglauque, 50, 10, 20, 10, new Vector2(8, 8)));
+            GOList.Add(new Monster(Monstertype.bebeglauque, 50, 10, 20, 10, new Vector2(5, 5)));
+            GOList.Add(new Monster(Monstertype.bebeglauque, 50, 10, 20, 10, new Vector2(8, 8)));
         }
     }
 }

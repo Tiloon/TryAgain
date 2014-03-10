@@ -23,7 +23,7 @@ namespace TryAgain.Characters
         public int dmgmin;
         public int dmgmax;
         public int speed;
-        Random rand = new Random();
+        private Vector2 direction = new Vector2(0,0);
         int posmin = 0;
         int posmax = Tilemap.lgmap - 1;
         Vector2 posmap;
@@ -46,49 +46,48 @@ namespace TryAgain.Characters
             }
         }
 
-        public void Moverandom()   //Cette methode sera seulement appliquée lorsque des monstres subiront des altérations d'état qui leur empêchent d'utiliser leur "IA" pour trouver le joueur
+        public static Random rand = new Random();
+        public static void Moverandom(ref Vector2 direction, Vector2 posmap, int posmin, int posmax)   //Cette methode sera seulement appliquée lorsque des monstres subiront des altérations d'état qui leur empêchent d'utiliser leur "IA" pour trouver le joueur
                                    //ou par les monstres cons tout simplement
         {
-            int direction = rand.Next(0, 8);
+            
+            int d = rand.Next(0, 8);
             Vector2 newposmap = posmap;
-            switch (direction)
+            switch (d)
             {
                 case 0:
                     if (posmap.X > posmin)
-                        newposmap = new Vector2(posmap.X - 1, posmap.Y);
+                        direction = new Vector2(-1, 0);
                     break;
                 case 1:
                     if (posmap.X < posmax && posmap.Y < posmax)
-                        newposmap = new Vector2(posmap.X + 1, posmap.Y + 1);
+                        direction = new Vector2((float)(Math.Sqrt(2) / 2), (float)(Math.Sqrt(2) / 2));
                     break;
                 case 2:
                     if (posmap.X < posmax)
-                        newposmap = new Vector2(posmap.X + 1, posmap.Y);
+                        direction = new Vector2(1, 0);
                     break;
                 case 3:
                     if (posmap.X < posmax && posmap.Y > posmin)
-                        newposmap = new Vector2(posmap.X + 1, posmap.Y - 1);
+                        direction = new Vector2((float)(Math.Sqrt(2) / 2), -(float)(Math.Sqrt(2) / 2));
                     break;
                 case 4:
                     if (posmap.X > posmin && posmap.Y > posmin)
-                        newposmap = new Vector2(posmap.X - 1, posmap.Y - 1);
+                        direction = new Vector2(-(float)(Math.Sqrt(2) / 2), -(float)(Math.Sqrt(2) / 2));
                     break;
                 case 5:
                     if (posmap.X > posmin && posmap.Y < posmax)
-                        newposmap = new Vector2(posmap.X - 1, posmap.Y + 1);
+                        direction = new Vector2(-(float)(Math.Sqrt(2) / 2), (float)(Math.Sqrt(2) / 2));
                     break;
                 case 6:
                     if (posmap.Y > posmin)
-                        newposmap = new Vector2(posmap.X, posmap.Y - 1);
+                        direction = new Vector2(0, -1);
                     break;
                 case 7:
                     if (posmap.Y < posmax)
-                        newposmap = new Vector2(posmap.X, posmap.Y + 1);
+                        direction = new Vector2(0, 1);
                     break;
             }
-            posmap = newposmap;
-            //Animation()
-            position = new Vector2(Tilemap.variationsizegraphicsX + posmap.X*43, posmap.Y * 64);
         }
 
         public void Collision()
@@ -108,10 +107,11 @@ namespace TryAgain.Characters
         public override void update()
         {
             base.update();
+            this.position += this.direction;
             compteurvitesse++;
             if (compteurvitesse > 30 - speed)
             {
-                Moverandom();
+                Moverandom(ref this.direction, this.posmap, this.posmin, this.posmax);
                 compteurvitesse = 0;
             }
         }

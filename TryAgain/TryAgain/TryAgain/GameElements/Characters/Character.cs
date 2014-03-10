@@ -39,7 +39,7 @@ namespace TryAgain.Characters
             }
         }
 
-        public Character(String type, String UID) : base("Character" + type, UID)
+        public Character(String type, String UID) : base("Character," + type, UID)
         {
         }
 
