@@ -54,14 +54,18 @@ namespace TryAgain.Characters
         {
             base.update();
             KeyboardState newState = Keyboard.GetState();
-            
+
             Vector2 normalizedSpeed = new Vector2(0, 0);
             if (newState.IsKeyDown(keyup) && position.Y > 0)
-                normalizedSpeed += new Vector2(0, -1);
+                if (!new Rectangle((int)position.X, (int)position.Y - 2, largeur, longueur).Intersects
+                    (new Rectangle(Tilemap.variationsizegraphicsX + (Tilemap.lgmap - 2) * 64, 0, 64 * 2, 64 * 4))) //collision cascade et mer
+                    normalizedSpeed += new Vector2(0, -1);
             if (newState.IsKeyDown(keydown) && position.Y < 64 * Tilemap.lgmap - longueur)
                 normalizedSpeed += new Vector2(0, 1);
             if (newState.IsKeyDown(keyright) && position.X < 64 * Tilemap.lgmap + Tilemap.variationsizegraphicsX - largeur)
-                normalizedSpeed += new Vector2(1, 0);
+                if (!new Rectangle((int)position.X + 2, (int)position.Y, largeur, longueur).Intersects             //collision cascade et mer
+                  (new Rectangle(Tilemap.variationsizegraphicsX + (Tilemap.lgmap - 2) * 64, 0, 64 * 2, 64 * 4)))    
+                    normalizedSpeed += new Vector2(1, 0);
             if (newState.IsKeyDown(keyleft) && position.X > Tilemap.variationsizegraphicsX)
                 normalizedSpeed += new Vector2(-1, 0);
 
