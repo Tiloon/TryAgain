@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tileherbe.xnb</Output>
-      <Time>2014-03-10T12:24:49.6328801+01:00</Time>
+      <Time>2014-03-10T20:09:43.9213422+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\tilesable.bmp</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilesable.xnb</Output>
-      <Time>2014-03-08T15:16:27.9877208+01:00</Time>
+      <Time>2014-03-10T20:19:02.691302+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\persopierre.png</Source>
@@ -110,7 +110,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilecaillou.xnb</Output>
-      <Time>2014-03-08T15:16:27.9487186+01:00</Time>
+      <Time>2014-03-10T20:13:47.9142978+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\tileneige.bmp</Source>
@@ -182,7 +182,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Halfwalkable\tileaqua.xnb</Output>
-      <Time>2014-03-08T15:16:28.0067219+01:00</Time>
+      <Time>2014-03-10T20:17:45.9939151+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Halfwalkable\tilefire.bmp</Source>
@@ -249,6 +249,24 @@
       <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfont.xnb</Output>
       <Time>2014-03-08T18:21:04.6132676+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\herbe_roche.png</Source>
+      <Name>Sprites\herbe_roche</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\herbe_roche.xnb</Output>
+      <Time>2014-03-10T20:55:50.9466069+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\halfsable.png</Source>
+      <Name>Sprites\halfsable</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\halfsable.xnb</Output>
+      <Time>2014-03-10T21:10:28.7728157+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

@@ -22,6 +22,8 @@ namespace TryAgain
         public static Texture2D persopierre_texture;
         public static Texture2D bebeglauque_texture;
 
+        public static Texture2D roche_herbe, halfsable;
+
         public static Texture2D Button_Play, Button_Option, Button_Exit, Button_About, Button_Return, Button_OnePlayer, Button_TwoPlayers;
         public static Texture2D MainMenuBG, OptionBG, AboutBG;
 
@@ -60,6 +62,9 @@ namespace TryAgain
             UIitemHolder = cm.Load<Texture2D>(@"UI\uiitems");
             UIitemSelected = cm.Load<Texture2D>(@"UI\uiselected");
 
+            roche_herbe = cm.Load<Texture2D>(@"Sprites\herbe_roche");
+            halfsable = cm.Load<Texture2D>(@"Sprites\halfsable");
         }
+
     }
 }
