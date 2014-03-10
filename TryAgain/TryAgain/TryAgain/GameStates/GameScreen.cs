@@ -24,7 +24,7 @@ namespace TryAgain.GameStates
         Hero hero2;
 
         public static List<GameObject> GOList = new List<GameObject>();
-
+        
         static public int actualmap = 1;
 
         public GameScreen()

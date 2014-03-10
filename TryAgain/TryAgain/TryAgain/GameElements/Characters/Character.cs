@@ -49,7 +49,19 @@ namespace TryAgain.Characters
             // Stats should be updated here
         }
 
-        public bool NotCollision(Character perso)
+
+        public bool Collision(Rectangle truc, Direction dir)
+        {
+            if (dir == Direction.haut)
+                return new Rectangle((int)position.X, (int)position.Y -5, largeur, longueur).Intersects(truc);
+            else if (dir== Direction.droite)
+                return new Rectangle((int)position.X, (int)position.Y, largeur + 5, longueur).Intersects(truc);
+            else if (dir == Direction.gauche)
+                return new Rectangle((int)position.X-5, (int)position.Y, largeur, longueur).Intersects(truc);
+            else
+                return new Rectangle((int)position.X, (int)position.Y, largeur, longueur+5).Intersects(truc);
+        }
+        /*public bool NotCollision(Character perso)               //méthodes non optis car bloquent toutes les touches quand false
         {
             return (position.X <= perso.position.X) && (position.Y <= perso.position.Y)
                  && (position.X >= position.X + perso.longueur) && (position.Y >= position.Y + perso.largeur);
@@ -75,6 +87,6 @@ namespace TryAgain.Characters
                 return (position.X >= perso2.position.X + perso2.largeur);
             else
                 return (position.X <= perso2.position.X);
-        }
+        }*/
     }
 }

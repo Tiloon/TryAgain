@@ -20,7 +20,6 @@ namespace TryAgain.Characters
 
     class Hero : Character
     {
-
         private Item[] items = new Item[10];
         Classes.Classe classe;
         Keys keyup, keydown, keyleft, keyright;
@@ -50,6 +49,8 @@ namespace TryAgain.Characters
                 stats = Stats.GetStats(0);
             }
         }
+
+        Rectangle rectangcascade = new Rectangle(Tilemap.variationsizegraphicsX + (Tilemap.lgmap - 2) * 64, 0, 64 * 2, 64 * 4);
         public override void update()
         {
             base.update();
@@ -57,14 +58,12 @@ namespace TryAgain.Characters
 
             Vector2 normalizedSpeed = new Vector2(0, 0);
             if (newState.IsKeyDown(keyup) && position.Y > 0)
-                if (!new Rectangle((int)position.X, (int)position.Y - 2, largeur, longueur).Intersects
-                    (new Rectangle(Tilemap.variationsizegraphicsX + (Tilemap.lgmap - 2) * 64, 0, 64 * 2, 64 * 4))) //collision cascade et mer
+                if (!Collision(rectangcascade, Direction.haut)) //collision cascade et mer
                     normalizedSpeed += new Vector2(0, -1);
             if (newState.IsKeyDown(keydown) && position.Y < 64 * Tilemap.lgmap - longueur)
                 normalizedSpeed += new Vector2(0, 1);
             if (newState.IsKeyDown(keyright) && position.X < 64 * Tilemap.lgmap + Tilemap.variationsizegraphicsX - largeur)
-                if (!new Rectangle((int)position.X + 2, (int)position.Y, largeur, longueur).Intersects             //collision cascade et mer
-                  (new Rectangle(Tilemap.variationsizegraphicsX + (Tilemap.lgmap - 2) * 64, 0, 64 * 2, 64 * 4)))    
+                if (!Collision(rectangcascade, Direction.droite)) //collision cascade et mer
                     normalizedSpeed += new Vector2(1, 0);
             if (newState.IsKeyDown(keyleft) && position.X > Tilemap.variationsizegraphicsX)
                 normalizedSpeed += new Vector2(-1, 0);
