@@ -11,3 +11,4 @@ E:\PROJET\ProjectVersions\v11\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\Tr
 C:\Users\Pim\Downloads\v11\v11\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
 C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
+C:\Users\epita\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
