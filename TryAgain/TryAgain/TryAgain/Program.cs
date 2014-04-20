@@ -12,7 +12,7 @@ namespace TryAgain
         {
             using (Game1 game = new Game1())
             {
-                game.Run(); //bouh <- TG denis
+                game.Run(); // try avec git
             }
         }
     }
