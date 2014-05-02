@@ -15,7 +15,7 @@ namespace TryAgain
 {
     public class Game1 : Microsoft.Xna.Framework.Game
     {
-        GraphicsDeviceManager graphics;
+        static public GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Screen screen = new MainMenuScreen();
         ScreenType gamestate;
@@ -56,7 +56,6 @@ namespace TryAgain
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-
             ScreenType newscreen = screen.update();
             if (newscreen != gamestate)
             {

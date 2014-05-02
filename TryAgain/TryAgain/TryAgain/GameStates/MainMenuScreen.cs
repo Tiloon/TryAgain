@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using TryAgain.Menu;
+using System.Windows.Forms;
 
 namespace TryAgain.GameStates
 {
@@ -27,6 +28,9 @@ namespace TryAgain.GameStates
         cButton ButtonAbout;
         cButton ButtonExit;
         cButton ButtonReturn;
+        cButton ButtonFullscreen;
+        cButton ButtonFenetre;
+        static public bool fullscreen = false;
 
         public MainMenuScreen()
         {
@@ -56,6 +60,22 @@ namespace TryAgain.GameStates
                 case MenuState.Option:
                     if (ButtonReturn.IsClicked(mouse))
                         CurrentMenuState = MenuState.MainMenu;
+                    if (ButtonFullscreen.IsClicked(mouse))
+                    {
+                        if(!Game1.graphics.IsFullScreen)
+                        {
+                        Game1.graphics.IsFullScreen = true;
+                        Game1.graphics.ApplyChanges();
+                        }
+                    }
+                    if (ButtonFenetre.IsClicked(mouse))
+                    {
+                        if (Game1.graphics.IsFullScreen)
+                        {
+                            Game1.graphics.IsFullScreen = false;
+                            Game1.graphics.ApplyChanges();
+                        }
+                    }
                     break;
             }
             return this.GetState();
@@ -79,6 +99,8 @@ namespace TryAgain.GameStates
                 case MenuState.Option:
                     //sb.Draw(Content.Load<Texture2D>("Option"), new Rectangle(0, 0, screenWidth, screenHigh), Color.White);
                     ButtonReturn.Draw(sb);
+                    ButtonFullscreen.Draw(sb);
+                    ButtonFenetre.Draw(sb);
                     break;
 
                 case MenuState.About:
@@ -99,6 +121,10 @@ namespace TryAgain.GameStates
             ButtonExit.SetPosition(new Vector2(1062, 392 + 150 + 150));
             ButtonReturn = new cButton(Textures.Cache["UIBreturn"], graphics);
             ButtonReturn.SetPosition(new Vector2(1062, 704+100));
+            ButtonFullscreen = new cButton(Textures.FullscreenBG, graphics);
+            ButtonFullscreen.SetPosition(new Vector2(500, 100));
+            ButtonFenetre = new cButton(Textures.FenetreBG, graphics);
+            ButtonFenetre.SetPosition(new Vector2(500, 300));
             /*
             ButtonOnePlayer = new cButton(Textures.Button_OnePlayer, graphics);
             ButtonOnePlayer.SetPosition(new Vector2(1062, 900));

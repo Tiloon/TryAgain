@@ -21,7 +21,7 @@ namespace TryAgain
 
         public static Texture2D roche_herbe, halfsable;
 
-        public static Texture2D MainMenuBG, OptionBG, AboutBG;
+        public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG;
 
         public static SpriteFont UIfont;
         public static Texture2D UIitemHolder, UIitemSelected;
@@ -44,6 +44,8 @@ namespace TryAgain
             MainMenuBG = cm.Load<Texture2D>(@"Menu\MainMenu");
             OptionBG = cm.Load<Texture2D>(@"Menu\Option");
             AboutBG = cm.Load<Texture2D>(@"Menu\About");
+            FullscreenBG = cm.Load<Texture2D>(@"Menu\fullscreen");
+            FenetreBG = cm.Load<Texture2D>(@"Menu\fenetre");
 
             UIfont = cm.Load<SpriteFont>(@"Fonts\UIfont");
             UIitemHolder = cm.Load<Texture2D>(@"UI\uiitems");
