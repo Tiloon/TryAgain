@@ -19,16 +19,12 @@ namespace TryAgain.GameStates
         {
             MainMenu,
             Option,
-            About
         }
         MenuState CurrentMenuState = MenuState.MainMenu;
         cButton ButtonPlay;
         cButton ButtonOption;
-        cButton ButtonAbout;
         cButton ButtonExit;
         cButton ButtonReturn;
-        cButton ButtonOnePlayer;
-        cButton ButtonTwoPlayers;
 
         public PauseScreen()
         {
@@ -48,12 +44,6 @@ namespace TryAgain.GameStates
                         return ScreenType.Quit;
                     if (ButtonOption.IsClicked(mouse))
                         CurrentMenuState = MenuState.Option;
-                    if (ButtonAbout.IsClicked(mouse))
-                        CurrentMenuState = MenuState.About;
-                    break;
-                case MenuState.About:
-                    if (ButtonReturn.IsClicked(mouse))
-                        CurrentMenuState = MenuState.MainMenu;
                     break;
                 case MenuState.Option:
                     if (ButtonReturn.IsClicked(mouse))
@@ -69,13 +59,11 @@ namespace TryAgain.GameStates
             switch (CurrentMenuState)
             {
                 case MenuState.MainMenu:
-                    sb.Draw(Textures.MainMenuBG, new Rectangle(0, 0, Width, Height), Color.White);
+                    //sb.Draw(Textures.MainMenuBG, new Rectangle(Width, 0, Width, Height), Color.White);
+                    sb.Draw(Textures.Cache["UISTRpause"], new Rectangle(Width / 4, Height / 12, Width / 2, Height / 8), Color.White);
                     ButtonPlay.Draw(sb);
                     ButtonOption.Draw(sb);
                     ButtonExit.Draw(sb);
-                    ButtonAbout.Draw(sb);
-                    ButtonOnePlayer.Draw(sb);
-                    ButtonTwoPlayers.Draw(sb);
                     break;
 
                 case MenuState.Option:
@@ -83,29 +71,19 @@ namespace TryAgain.GameStates
                     ButtonReturn.Draw(sb);
                     break;
 
-                case MenuState.About:
-                    //sb.Draw(Content.Load<Texture2D>("About"), new Rectangle(0, 0, screenWidth, screenHigh), Color.White);
-                    ButtonReturn.Draw(sb);
-                    break;
             }
         }
         public override void init(GraphicsDevice graphics)
         {
-            ButtonPlay = new cButton(Textures.Button_Play, graphics);
-            ButtonPlay.SetPosition(new Vector2(1062, 145+150));  
-            ButtonOption = new cButton(Textures.Button_Option, graphics);
-            ButtonOption.SetPosition(new Vector2(1062, 235+150+50));
-            ButtonAbout = new cButton(Textures.Button_About, graphics);
-            ButtonAbout.SetPosition(new Vector2(1062, 313+150+100));
-            ButtonExit = new cButton(Textures.Button_Exit, graphics);
+
+            ButtonPlay = new cButton(Textures.Cache["UIBplay"], graphics);
+            ButtonPlay.SetPosition(new Vector2(1062, 145 + 150));
+            ButtonOption = new cButton(Textures.Cache["UIBoption"], graphics);
+            ButtonOption.SetPosition(new Vector2(1062, 235 + 150 + 50));
+            ButtonExit = new cButton(Textures.Cache["UIBexit"], graphics);
             ButtonExit.SetPosition(new Vector2(1062, 392 + 150 + 150));
-            ButtonReturn = new cButton(Textures.Button_Return, graphics);
-            ButtonReturn.SetPosition(new Vector2(1062, 704+100));
-            
-            ButtonOnePlayer = new cButton(Textures.Button_OnePlayer, graphics);
-            ButtonOnePlayer.SetPosition(new Vector2(1062, 900));
-            ButtonTwoPlayers = new cButton(Textures.Button_TwoPlayers, graphics);
-            ButtonTwoPlayers.SetPosition(new Vector2(1062, 1000));
+            ButtonReturn = new cButton(Textures.Cache["UIBreturn"], graphics);
+            ButtonReturn.SetPosition(new Vector2(1062, 704 + 100));
         }
     }
 }

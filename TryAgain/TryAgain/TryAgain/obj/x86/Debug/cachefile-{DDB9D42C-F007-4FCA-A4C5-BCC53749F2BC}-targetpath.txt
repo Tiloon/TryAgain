@@ -27,3 +27,4 @@ Content\Menu\Button_2players.xnb
 Content\Sprites\herbe_roche.xnb
 Content\Sprites\halfsable.xnb
 Content\Fonts\UIfont.xnb
+Content\Menu\pause.xnb

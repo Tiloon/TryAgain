@@ -364,3 +364,4 @@ C:\Users\epita\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\De
 C:\Users\epita\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\epita\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.exe
 C:\Users\epita\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.pdb
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\pause.xnb

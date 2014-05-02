@@ -268,6 +268,15 @@
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfont.xnb</Output>
       <Time>2014-03-08T18:21:04.6132676+01:00</Time>
     </Item>
+    <Item>
+      <Source>Menu\pause.png</Source>
+      <Name>Menu\pause</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\pause.xnb</Output>
+      <Time>2014-05-02T17:02:10.1059681+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
