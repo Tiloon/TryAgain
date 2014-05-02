@@ -14,7 +14,7 @@ using TryAgain.GameElements;
 
 namespace TryAgain.Characters
 {
-    enum Monstertype { bebeglauque, biotech1, biotech2, biotech3, biotech4, biotech5 }
+    enum Monstertype { minion, biotech1, biotech2, biotech3, biotech4, biotech5 }
     enum Monsterstate { normal, enraged, weaken, friendly, dead }
                               //dmg*=2   dmg/=2  dmg=0                   
     class Monster : Character
@@ -39,9 +39,9 @@ namespace TryAgain.Characters
             this.position = new Vector2(Tilemap.variationsizegraphicsX + posmap.X * 64, posmap.Y * 64);
             this.X = position.X;
             this.Y = position.Y;
-            if (mst == Monstertype.bebeglauque)
+            if (mst == Monstertype.minion)
             {
-                this.apparence = Textures.bebeglauque_texture;
+                this.apparence = Textures.Cache["Tminion"];
                 this.longueur = 64;
                 this.largeur = 43;
                 this.size = new Vector2(this.longueur, this.largeur);

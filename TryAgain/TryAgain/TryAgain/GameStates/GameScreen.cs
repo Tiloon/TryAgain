@@ -20,11 +20,11 @@ namespace TryAgain.GameStates
     {
         ButtonState previousstate;
         UI userinterface = new UI();
-        Hero hero;
-        Hero hero2;
+        static Hero hero;
 
         public static List<GameObject> GOList = new List<GameObject>();
-        
+        private static bool hasStarted = false;
+
         static public int actualmap = 1;
 
         public GameScreen()
@@ -66,7 +66,7 @@ namespace TryAgain.GameStates
             previousstate = mouse.LeftButton;
             KeyboardState newState = Keyboard.GetState();
             if (newState.IsKeyDown(Keys.Escape))
-                return ScreenType.Quit;
+                return ScreenType.Pause;
 
             for (int i = 0; i < GOList.Count; i++)
             {
@@ -88,7 +88,7 @@ namespace TryAgain.GameStates
         public override void draw(SpriteBatch sb, int Width, int Height)
         {
             if (actualmap == 1)
-                Tilemap.Drawmap(sb, Tilemap.map1);
+                Tilemap.Drawmap(sb, Tilemap.tiles);
             foreach (var todraw in GOList)
             {
                 todraw.Draw(sb);
@@ -111,16 +111,21 @@ namespace TryAgain.GameStates
 
         public override void init(GraphicsDevice graphics)
         {
-            Vector2 pos1 = new Vector2(Tilemap.variationsizegraphicsX + 64, 64);
-            Vector2 pos2 = new Vector2(Tilemap.variationsizegraphicsX + (Tilemap.lgmap - 4) * 64, 64);
-            hero = new Hero("Pierre", Classes.Classe.gunner, Textures.persopierre_texture, Keys.Up, Keys.Down, Keys.Left, Keys.Right, pos1);
-            GOList.Add(hero);
-            hero2 = new Hero("Tony", Classes.Classe.gunner, Textures.persopierre_texture, Keys.Z, Keys.S, Keys.Q, Keys.D, pos2);
-            GOList.Add(hero2);
-            Tilemap.MapFullINIT();
-            GOList.Add(new Monster(Monstertype.bebeglauque, 50, 10, 20, 10, new Vector2(6, 8)));
-            GOList.Add(new Monster(Monstertype.bebeglauque, 50, 10, 20, 10, new Vector2(5, 5)));
-            GOList.Add(new Monster(Monstertype.bebeglauque, 50, 10, 20, 10, new Vector2(8, 8)));
+            if (!hasStarted)
+            {
+                Vector2 pos1 = new Vector2(Tilemap.variationsizegraphicsX + 64, 64);
+                Vector2 pos2 = new Vector2(Tilemap.variationsizegraphicsX + (Tilemap.lgmap - 4) * 64, 64);
+                hero = new Hero("Pierre", Classes.Classe.gunner, Textures.Cache["Tpierre"], Keys.Up, Keys.Down, Keys.Left, Keys.Right, pos1);
+                GOList.Add(hero);
+                /*hero2 = new Hero("Tony", Classes.Classe.gunner, Textures.persopierre_texture, Keys.Z, Keys.S, Keys.Q, Keys.D, pos2);
+                GOList.Add(hero2);*/
+                Tilemap.MapFullINIT();
+                GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 10, new Vector2(6, 8)));
+                GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 10, new Vector2(5, 5)));
+                GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 10, new Vector2(8, 8)));
+
+                hasStarted = true;
+            }
         }
     }
 }

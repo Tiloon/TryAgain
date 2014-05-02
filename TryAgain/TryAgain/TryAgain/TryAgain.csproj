@@ -123,8 +123,10 @@
     <Compile Include="GameElements\GameObject.cs" />
     <Compile Include="GameElements\Map &amp; environnement\GobParticle.cs" />
     <Compile Include="GameElements\Map &amp; environnement\GobVoid.cs" />
+    <Compile Include="GameElements\Map &amp; environnement\Tile.cs" />
     <Compile Include="GameElements\misc\Debug.cs" />
     <Compile Include="GameElements\misc\UI.cs" />
+    <Compile Include="GameStates\PauseScreen.cs" />
     <Compile Include="GameStates\GameScreen.cs" />
     <Compile Include="GameStates\MainMenuScreen.cs" />
     <Compile Include="GameStates\Screen.cs" />

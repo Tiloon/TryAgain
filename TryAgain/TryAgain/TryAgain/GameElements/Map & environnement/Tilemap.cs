@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using TryAgain.Characters;
+using TryAgain.GameElements.Map___environnement;
 
 
 namespace TryAgain
@@ -21,7 +22,9 @@ namespace TryAgain
         public static int lgmap = 15;
         public static int lgbigmapunscrolled = 100;
 
-        public static Texture2D[,] map1 = new Texture2D[lgmap, lgmap];
+        
+        //public static Texture2D[,] map1 = new Texture2D[lgmap, lgmap];
+        public static Tile[,] tiles = new Tile[lgmap, lgmap];
         public static Item[,] map1contains = new Item[lgmap, lgmap];
 
         public static Texture2D[,] map2 = new Texture2D[lgbigmapunscrolled, lgbigmapunscrolled];
@@ -31,65 +34,63 @@ namespace TryAgain
 
         public static void MapFullINIT()
         {
-
             // Chargement des textures mixtes
-            melanges.Add(Textures.solrocailleux_texture, Textures.roche_herbe);
-            melanges.Add(Textures.sable_texture, Textures.halfsable);
+            //melanges.Add(Textures.solrocailleux_texture, Textures.roche_herbe);
+            //melanges.Add(Textures.sable_texture, Textures.halfsable);
 
             //map1 : une map non scrollée qui fait la longueur de l'écran, ni plus ni moins, minimap classique
-            MapFirstInit(map1, Textures.herbe_texture);
-            Mapmodify(map1, Textures.sable_texture, 7, lgmap - 1, 10, lgmap - 1);
-            Mapmodify(map1, Textures.solrocailleux_texture, 0, 6, lgmap - 2, lgmap - 1);
-            Mapmodify(map1, Textures.aqua_halfwkbtexture, lgmap - 2, lgmap - 1, 0, 3);
-            Mapmodify(map1, Textures.cascadegauche_unwkbtexture, lgmap - 2, 0);
-            Mapmodify(map1, Textures.cascadedroite_unwkbtexture, lgmap - 1, 0);
+            MapFirstInit(ref tiles, "Therbe");
+            Mapmodify(tiles, "Tsable", 7, lgmap - 1, 10, lgmap - 1);
+            Mapmodify(tiles, "Tcaillou", 0, 6, lgmap - 2, lgmap - 1);
+            Mapmodify(tiles, "Taqua", lgmap - 2, lgmap - 1, 0, 3);
 
             //map2 : grosse et scrollable
 
 
-            MapFirstInit(map2, Textures.solrocailleux_texture);
+            //MapFirstInit(map2, Textures.solrocailleux_texture);
 
         }
 
-        public static void MapFirstInit(Texture2D[,] map, Texture2D basetile)
+        public static void MapFirstInit(ref Tile[,] map, String basetile)
         {
+            Tile tile = new Tile(basetile);
             for (int i = 0; i < lgmap; i++)
                 for (int j = 0; j < lgmap; j++)
-                {
-                    map[i, j] = basetile;
-                }
+                    map[i, j] = tile;
         }
 
-        public static void Mapmodify(Texture2D[,] map, Texture2D newtile, int imin, int imax, int jmin, int jmax) //max et min a modifier en fait
+        public static void Mapmodify(Tile[,] map, String newtile, int imin, int imax, int jmin, int jmax) //max et min a modifier en fait
         {
+            Tile tile = new Tile(newtile);
             for (int i = imin; i <= imax; i++)
                 for (int j = jmin; j <= jmax; j++)
-                    map[i, j] = newtile;
+                    map[i, j] = tile;
         }
+
         public static void Mapmodify(Texture2D[,] map, Texture2D newtile, int i, int j)
         {
             map[i, j] = newtile;
         }
 
-        public static void Drawmap(SpriteBatch sb, Texture2D[,] map)
+        public static void Drawmap(SpriteBatch sb, Tile[,] map)
         {
             for (int i = 0; i < lgmap; i++)
                 for (int j = 0; j < lgmap; j++)
                 {
                     //sb.Draw(map[i, j], new Vector2(variationsizegraphicsX + 64 * i, 64 * j), Color.White);
-                    sb.Draw(map[i, j], new Rectangle(variationsizegraphicsX + 64 * i, 64 * j, 64, 64), Color.White);
+                    sb.Draw(map[i, j].getTexture(), new Rectangle(variationsizegraphicsX + 64 * i, 64 * j, 64, 64), Color.White);
                     if (j >= 1)
                     {
-                        if ((map[i, j] != map[i, j - 1]) && melanges.ContainsKey(map[i, j]))
+                        if ((map[i, j] != map[i, j - 1]) && melanges.ContainsKey(map[i, j].getTexture()))
                         {
-                            sb.Draw(melanges[map[i, j]], new Rectangle(variationsizegraphicsX + 64 * i, 64 * j - 64, 64, 64), Color.White);
+                            sb.Draw(melanges[map[i, j].getTexture()], new Rectangle(variationsizegraphicsX + 64 * i, 64 * j - 64, 64, 64), Color.White);
                         }
                     }
                     if (i >= 1)
                     {
-                        if ((map[i, j] != map[i - 1, j]) && melanges.ContainsKey(map[i, j]))
+                        if ((map[i, j] != map[i - 1, j]) && melanges.ContainsKey(map[i, j].getTexture()))
                         {
-                            sb.Draw(melanges[map[i, j]], new Rectangle(variationsizegraphicsX + 64 * i - 64, 64 * j + 64, 64, 64), null, Color.White, (float)-Math.PI / 2, new Vector2(0, 0), SpriteEffects.None, 0f);
+                            sb.Draw(melanges[map[i, j].getTexture()], new Rectangle(variationsizegraphicsX + 64 * i - 64, 64 * j + 64, 64, 64), null, Color.White, (float)-Math.PI / 2, new Vector2(0, 0), SpriteEffects.None, 0f);
                         }
                     }
 
@@ -100,9 +101,9 @@ namespace TryAgain
         {
         }
 
-        public static bool Walkable(Texture2D tx)
+        public static bool Walkable(Tile tx)
         {
-            return (tx == Textures.herbe_texture | tx == Textures.sable_texture | tx == Textures.neige_texture | tx == Textures.solrocailleux_texture);
+            return tx.IsWalkable();
         }
 
         public static void Popitem(string[,] mapcontenu, int i, int j, string item)

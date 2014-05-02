@@ -1,4 +1,4 @@
-using System;
+ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
@@ -32,7 +32,7 @@ namespace TryAgain
         protected override void Initialize()
         {
             IsMouseVisible = true;
-            // TODO: Add your initialization logic here    
+            // TODO: Add your initialization logic here
             base.Initialize();
             screen.init(graphics.GraphicsDevice);
             gamestate = screen.GetState();

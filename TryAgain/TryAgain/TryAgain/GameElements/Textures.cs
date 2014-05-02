@@ -9,18 +9,15 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using Newtonsoft.Json;
+using TryAgain.Datas;
+using System.Windows.Forms;
 
 namespace TryAgain
 {
     class Textures
     {
         public static Dictionary<String, Texture2D> Cache = new Dictionary<string,Texture2D>();
-        public static Texture2D herbe_texture, sable_texture, neige_texture, solrocailleux_texture;
-        public static Texture2D aqua_halfwkbtexture, fire_hakfwkbtexture;
-        public static Texture2D cascadedroite_unwkbtexture, cascadegauche_unwkbtexture,
-                                neigetrou_unwkbtexture;
-        public static Texture2D persopierre_texture;
-        public static Texture2D bebeglauque_texture;
 
         public static Texture2D roche_herbe, halfsable;
 
@@ -31,20 +28,13 @@ namespace TryAgain
         public static Texture2D UIitemHolder, UIitemSelected;
         public static void load(ContentManager cm)
         {
-            herbe_texture = cm.Load<Texture2D>(@"Sprites\tileherbe");          //0
-            sable_texture = cm.Load<Texture2D>(@"Sprites\tilesable");          //1
-            neige_texture = cm.Load<Texture2D>(@"Sprites\tileneige");          //2
-            solrocailleux_texture = cm.Load<Texture2D>(@"Sprites\tilecaillou");//3 
+            Tuple<String, String>[] texturesList = JsonConvert.DeserializeObject<Tuple<String, String>[]>(Initializer.ReadTextFile(@"elements\textures\texturesList.json"));
 
-            aqua_halfwkbtexture = cm.Load<Texture2D>(@"Sprites\Halfwalkable\tileaqua");
-            fire_hakfwkbtexture = cm.Load<Texture2D>(@"Sprites\Halfwalkable\tilefire");
-
-            cascadegauche_unwkbtexture = cm.Load<Texture2D>(@"Sprites\Unwalkable\tilecascadegauche");
-            cascadedroite_unwkbtexture = cm.Load<Texture2D>(@"Sprites\Unwalkable\tilecascadedroite");
-            neigetrou_unwkbtexture = cm.Load<Texture2D>(@"Sprites\Unwalkable\tileneigetrou");
-
-            persopierre_texture = cm.Load<Texture2D>(@"Sprites\persopierre");
-            bebeglauque_texture = cm.Load<Texture2D>(@"Sprites\Monsters\bebeglauque");
+            foreach (var t in texturesList)
+            {
+                Cache[t.Item1] = cm.Load<Texture2D>(t.Item2);
+            }
+            
             //On quitte les textures purgame
             Button_Play = cm.Load<Texture2D>(@"Menu\Button_Play");
             Button_Option = cm.Load<Texture2D>(@"Menu\Button_Option");
