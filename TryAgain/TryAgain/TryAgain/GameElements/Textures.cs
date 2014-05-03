@@ -55,5 +55,42 @@ namespace TryAgain
             halfsable = cm.Load<Texture2D>(@"Sprites\halfsable");
         }
 
+        public static Texture2D Crop(Texture2D image, Rectangle source)
+        {
+            var graphics = image.GraphicsDevice;
+            var ret = new RenderTarget2D(graphics, source.Width, source.Height);
+            var sb = new SpriteBatch(graphics);
+
+            graphics.SetRenderTarget(ret); // draw to image
+            graphics.Clear(new Color(0, 0, 0, 0));
+
+            sb.Begin();
+            sb.Draw(image, Vector2.Zero, source, Color.White);
+            sb.End();
+
+            graphics.SetRenderTarget(null); // set back to main window
+
+            return (Texture2D)ret;
+        }
+
+        public static Texture2D Add(Texture2D txa, Texture2D txb, Rectangle txbPos)
+        {
+            var graphics = txa.GraphicsDevice;
+            var ret = new RenderTarget2D(graphics, txa.Bounds.Width, txa.Bounds.Height);
+            var sb = new SpriteBatch(graphics);
+
+            graphics.SetRenderTarget(ret); // draw to image
+            graphics.Clear(new Color(0, 0, 0, 0));
+
+            sb.Begin();
+            sb.Draw(txa, txa.Bounds, Color.White);
+            sb.Draw(txb, txbPos, Color.White);
+            sb.End();
+
+            graphics.SetRenderTarget(null); // set back to main window
+
+            return (Texture2D)ret;
+        }
+
     }
 }

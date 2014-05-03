@@ -123,6 +123,7 @@
     <Compile Include="GameElements\GameObject.cs" />
     <Compile Include="GameElements\Map &amp; environnement\GobParticle.cs" />
     <Compile Include="GameElements\Map &amp; environnement\GobVoid.cs" />
+    <Compile Include="GameElements\Map &amp; environnement\TextureBlend.cs" />
     <Compile Include="GameElements\Map &amp; environnement\Tile.cs" />
     <Compile Include="GameElements\misc\Debug.cs" />
     <Compile Include="GameElements\misc\UI.cs" />
@@ -175,6 +176,9 @@
       <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Server\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />

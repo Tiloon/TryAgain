@@ -41,7 +41,8 @@ namespace TryAgain
             //map1 : une map non scrollée qui fait la longueur de l'écran, ni plus ni moins, minimap classique
             MapFirstInit(ref tiles, "Therbe");
             Mapmodify(tiles, "Tsable", 7, lgmap - 1, 10, lgmap - 1);
-            Mapmodify(tiles, "Tcaillou", 0, 6, lgmap - 2, lgmap - 1);
+            Mapmodify(tiles, "Tcaillou", 1, 5, lgmap - 3, lgmap - 1);
+            Mapmodify(tiles, "Tcaillou", 1, 5, 5, 7);
             Mapmodify(tiles, "Taqua", lgmap - 2, lgmap - 1, 0, 3);
 
             //map2 : grosse et scrollable
@@ -79,21 +80,29 @@ namespace TryAgain
                 {
                     //sb.Draw(map[i, j], new Vector2(variationsizegraphicsX + 64 * i, 64 * j), Color.White);
                     sb.Draw(map[i, j].getTexture(), new Rectangle(variationsizegraphicsX + 64 * i, 64 * j, 64, 64), Color.White);
-                    if (j >= 1)
+                    if(!map[i, j].isBlended)
                     {
-                        if ((map[i, j] != map[i, j - 1]) && melanges.ContainsKey(map[i, j].getTexture()))
+                        if (j >= 1)
                         {
-                            sb.Draw(melanges[map[i, j].getTexture()], new Rectangle(variationsizegraphicsX + 64 * i, 64 * j - 64, 64, 64), Color.White);
+                            if (map[i, j].type != map[i, j - 1].type)
+                            {
+                                Tile fadedTile = new Tile(TextureBlend.DrawL(map[i, j].getTexture(), map[i, j - 1].getTexture(), j, i), map[i, j].IsWalkable());
+                                fadedTile.isBlended = true;
+                                fadedTile.type = map[i, j].type;
+                                map[i, j] = fadedTile;
+                            }
+                        }
+                        if (i >= 1)
+                        {
+                            if (map[i, j].type != map[i - 1, j].type)
+                            {
+                                Tile fadedTile = new Tile(TextureBlend.DrawD(map[i, j].getTexture(), map[i - 1, j].getTexture(), i, j), map[i, j].IsWalkable());
+                                fadedTile.isBlended = true;
+                                fadedTile.type = map[i, j].type;
+                                map[i, j] = fadedTile;
+                            }
                         }
                     }
-                    if (i >= 1)
-                    {
-                        if ((map[i, j] != map[i - 1, j]) && melanges.ContainsKey(map[i, j].getTexture()))
-                        {
-                            sb.Draw(melanges[map[i, j].getTexture()], new Rectangle(variationsizegraphicsX + 64 * i - 64, 64 * j + 64, 64, 64), null, Color.White, (float)-Math.PI / 2, new Vector2(0, 0), SpriteEffects.None, 0f);
-                        }
-                    }
-
                 }
         }
 

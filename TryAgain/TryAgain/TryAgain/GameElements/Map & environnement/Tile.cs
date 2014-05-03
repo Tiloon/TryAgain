@@ -18,6 +18,8 @@ namespace TryAgain.GameElements.Map___environnement
     {
         private Texture2D t;
         private bool walkable = true;
+        public bool isBlended = false;
+        public string type = "UNDEF";
 
         public bool IsWalkable()
         {
@@ -40,6 +42,7 @@ namespace TryAgain.GameElements.Map___environnement
             Tuple<bool> props = JsonConvert.DeserializeObject<Tuple<bool>>(Initializer.ReadTextFile(@"elements\textures\" + name + ".json"));
             this.walkable = props.Item1;
             this.t = Textures.Cache[name];
+            this.type = name;
         }
     }
 }
