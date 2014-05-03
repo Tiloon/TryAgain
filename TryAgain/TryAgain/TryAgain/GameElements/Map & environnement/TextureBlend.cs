@@ -98,12 +98,12 @@ namespace TryAgain.GameElements.Map___environnement
             for (int i = 0; i < bl1.Length; i++)
             {
                 if (bl1[i])
-                    txa = Textures.Add(txa, Textures.Crop(txb, new Rectangle(i * 8, 0, 8, 8)), new Rectangle(i * 8, 0, 8, 8));
+                    txa = Textures.Add(txa, Textures.Crop(txb, new Rectangle(i * 8 + 8, 8, 8, 8)), new Rectangle(i * 8, 0, 8, 8));
             }
             for (int i = 0; i < bl2.Length; i++)
             {
                 if (bl2[i])
-                    txa = Textures.Add(txa, Textures.Crop(txb, new Rectangle(i * 8, 0, 8, 8)), new Rectangle(i * 8 + 64, 0, 8, 8));
+                    txa = Textures.Add(txa, Textures.Crop(txb, new Rectangle(i * 8 + 8, 8, 8, 8)), new Rectangle(i * 8 + 64, 0, 8, 8));
             }
             return txa;
         }
@@ -116,12 +116,12 @@ namespace TryAgain.GameElements.Map___environnement
             for (int i = 0; i < bl1.Length; i++)
             {
                 if (bl1[i])
-                    txa = Textures.Add(txa, Textures.Crop(txb, new Rectangle(i * 8, 0, 8, 8)), new Rectangle(0, i * 8, 8, 8));
+                    txa = Textures.Add(txa, Textures.Crop(txb, new Rectangle(i * 8 + 8, 8, 8, 8)), new Rectangle(0, i * 8, 8, 8));
             }
             for (int i = 0; i < bl2.Length; i++)
             {
                 if (bl2[i])
-                    txa = Textures.Add(txa, Textures.Crop(txb, new Rectangle(i * 8, 0, 8, 8)), new Rectangle(0, i * 8 + 64, 8, 8));
+                    txa = Textures.Add(txa, Textures.Crop(txb, new Rectangle(i * 8 + 8, 8, 8, 8)), new Rectangle(0, i * 8 + 64, 8, 8));
             }
             return txa;
         }
