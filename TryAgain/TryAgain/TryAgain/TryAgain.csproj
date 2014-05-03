@@ -90,6 +90,12 @@
     <Reference Include="mscorlib">
       <Private>False</Private>
     </Reference>
+    <Reference Include="NAudio">
+      <HintPath>libs\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WindowsMediaFormat">
+      <HintPath>libs\NAudio.WindowsMediaFormat.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>libs\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -139,6 +145,7 @@
     <Compile Include="Game1.cs" />
     <Compile Include="GameElements\Textures.cs" />
     <Compile Include="GameElements\Map &amp; environnement\Tilemap.cs" />
+    <Compile Include="Sounds\Themes.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

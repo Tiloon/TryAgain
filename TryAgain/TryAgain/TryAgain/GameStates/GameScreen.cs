@@ -13,6 +13,7 @@ using TryAgain.Characters;
 using TryAgain.GameElements.misc;
 using TryAgain.GameElements;
 using TryAgain.GameElements.Map___environnement;
+using TryAgain.Sounds;
 
 namespace TryAgain.GameStates
 {
@@ -113,6 +114,7 @@ namespace TryAgain.GameStates
         {
             if (!hasStarted)
             {
+                Themes.currentTheme = 1;
                 Vector2 pos1 = new Vector2(Tilemap.variationsizegraphicsX + 64, 64);
                 Vector2 pos2 = new Vector2(Tilemap.variationsizegraphicsX + (Tilemap.lgmap - 4) * 64, 64);
                 hero = new Hero("Pierre", Classes.Classe.gunner, Textures.Cache["Tpierre"], Keys.Up, Keys.Down, Keys.Left, Keys.Right, pos1);

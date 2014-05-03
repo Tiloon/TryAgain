@@ -12,6 +12,7 @@ using Microsoft.Xna.Framework.Media;
 using Newtonsoft.Json;
 using TryAgain.Datas;
 using System.Windows.Forms;
+using TryAgain.Sounds;
 
 namespace TryAgain
 {
@@ -53,6 +54,8 @@ namespace TryAgain
 
             roche_herbe = cm.Load<Texture2D>(@"Sprites\herbe_roche");
             halfsable = cm.Load<Texture2D>(@"Sprites\halfsable");
+
+            Themes.PlayTheme();
         }
 
         public static Texture2D Crop(Texture2D image, Rectangle source)

@@ -1,4 +1,5 @@
 using System;
+using TryAgain.Sounds;
 
 namespace TryAgain
 {
@@ -14,6 +15,7 @@ namespace TryAgain
             {
                 game.Run();
             }
+            Themes.Stop();
         }
     }
 #endif
