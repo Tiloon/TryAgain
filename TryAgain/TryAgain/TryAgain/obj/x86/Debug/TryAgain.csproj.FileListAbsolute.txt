@@ -407,3 +407,5 @@ C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAg
 C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.pdb
 C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fenetre.xnb
 C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fullscreen.xnb
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fenetre.xnb
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fullscreen.xnb

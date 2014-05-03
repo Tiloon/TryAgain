@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TryAgain</title>
+	<link href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		html,body {
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+		}
+		#home {
+			background-color: #75B;
+			width: 100%;
+			height: 100%;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			position: relative;
+		}
+		h1 {
+			padding: 0;
+			margin: 0;
+			font-size: 8em;
+			text-shadow: #FFF 1px 1px, #FFF -1px 1px, #FFF -1px -1px, #FFF 1px -1px;
+			font-family: 'Sue Ellen Francisco', cursive;
+		}
+		h3 {
+			padding: 0;
+			margin: 0;
+			font-size: 2em;
+		}
+		.overlay {
+			text-shadow: #000 1px 1px, #000 -1px 1px, #000 -1px -1px, #000 1px -1px;
+		}
+		#home h1 {
+			margin-top: -5%;
+			font-size: 10em;
+		}
+		#what {
+			background-color: #483;
+			width: 100%;
+			height: 93%;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			position: relative;
+		}
+		#who {
+			background-color: #c65;
+			width: 100%;
+			height: 93%;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			position: relative;
+		}
+		nav ul {
+			padding: 0;
+			margin: 0;
+			display: -webkit-flex;
+			display: flex;
+			list-style: none;
+			-webkit-flex-wrap: nowrap;
+			flex-wrap: nowrap;
+		}
+		nav li {
+			font-family: 'Sue Ellen Francisco', cursive;
+			-webkit-flex: 1 150px;
+			flex: 1 150px;
+			font-size: 300%;
+		}
+
+		.flex {
+			display: -webkit-flex;
+			-webkit-flex-flow: row wrap;
+			display: flex;
+			flex-flow: row wrap;
+			position:absolute;
+			width: 100%;
+			height: 45%;
+			bottom: 15%;
+			margin: 0;
+			padding: 0;
+			justify-content: center;
+			list-style: none;
+		}
+		#home .flex li {
+			background: #f64;
+		}
+		#who .flex li {
+			background: #A36;
+		}
+		#what .flex li {
+			background: #6be;
+		}
+		.enormous {
+			font-size: 700%;
+		}
+		.enormous:hover {
+			background-color: transparent !important;
+			-webkit-animation: super-rainbow 0.4s infinite linear;
+			-moz-animation: super-rainbow 0.4s infinite linear;
+		}
+		@-webkit-keyframes super-rainbow {
+			0% {
+				color: #ffff00;
+			}
+			20% {
+				color: #ffcd00;
+			}
+			40% {
+				color: #c3d74b;
+			}
+			60% {
+				color: #c3d7d7;
+			}
+			80% {
+				color: #ffc39b;
+			}
+			100% {
+				color: #ffff00;
+			}
+		}
+		@-moz-keyframes super-rainbow {
+			0% {
+				color: #ffff00;
+			}
+			20% {
+				color: #ffcd00;
+			}
+			40% {
+				color: #c3d74b;
+			}
+			60% {
+				color: #c3d7d7;
+			}
+			80% {
+				color: #ffc39b;
+			}
+			100% {
+				color: #ffff00;
+			}
+		}
+		.flex li {
+			text-align: center;
+			outline: 1px solid #333;
+			margin-right: 2em;
+			margin-left: 2em;
+			color: #fff;
+			padding: 10px;
+			list-style: none;
+			
+			-webkit-flex: 1 150px;
+			flex: 1 150px;
+		}
+
+		header {
+			background-color: #ACF;
+			color: #000;
+			overflow: hidden;
+			text-align: center;
+			width: 100%;
+			z-index: 5;
+			font-size: 0.8em;
+			border-top-width: 1px;
+			
+			height: 7%;
+		}
+		.unsticky {
+			position: relative;
+			top: 93%;
+		}
+		.nphshown, .nphhiden {
+			position: relative;
+			top: 93%;
+			height: 7%;
+		}
+		.nphhiden {
+			display: none;
+		}
+
+		.sticky {
+			position: fixed;
+			top: 0;
+		}
+		article {
+			text-align: left;
+		}
+		img {
+			width: 100%;
+			image-rendering: -webkit-optimize-contrast;
+			ms-interpolation-mode: nearest-neighbor;
+			image-rendering: -moz-crisp-edges;
+		}
+		footer {
+			background-color: #ACF;
+			color: #000;
+			overflow: hidden;
+			position: fixed;
+			text-align: center;
+			width: 100%;
+			z-index: 5;
+			font-size: 0.8em;
+			border-top-width: 1px;
+			bottom: 0;
+			height: 1.6em;
+		}
+	</style>
+</head>
+<body>
+	<div id="home">
+		<div id="navplaceholder" class="nphhiden"></div>
+		<header id="nav" class="unsticky">
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#what" onclick="jgo();">What ?</a></li>
+					<li><a href="#who" onclick="jgo();">Who ?</a></li>
+					<li><a href="./TryAgain.zip">Download !</a></li>
+					<li><a href="./res.html">Ressources ?!?</a></li>
+				</ul>
+			</nav>
+		</header>
+		<h1>TryAgain</h1>
+		<ul class="flex">
+			<li class="overlay">
+				<h2>Qu'est ce que TryAgain :</h2>
+				TryAgain est un projet ambitieux : un jeu classique du type survival, mais avec des caractéristiques particulières que vous découvrirez plus bas, pour permettre une intense immersion du joueur dans le jeu et son univers. De même le groupe a de grandes ambitions: nous avons de l’expérience en programmation de jeu vidéo donc nous n’aurons pas de problèmes particuliers pour obtenir un jeu fonctionnel. Nous avons également de l'expérience en gaming, nous apportant donc des connaissances sur les attentes du joueur, et nous avons la motivation donc le projet va durer.
+			</li>
+			<li>
+				<h2 class="overlay">Dernier article :</h2>
+				<h3 class="overlay">[Items][Modding]</h3>
+				<article class="overlay">
+					(rev 0.1)<br>
+					An item is a bunch of files which identify it in the game and scripts what it does.<br>
+					To add your own item in this game, go to "[game root]/elements/items/" then :<br>
+					- Add "YourItemId.json", "YourItemId.data.json" and "YourItemId.use.js" (and you can also add "YourItemId.ico.png" as icon (size 64*64))<br>
+					- Edit "itemslist.json", add a new line and add an entry with your ItemID in the json array. It should look like : <br>
+					<code>[<br>
+						<span style="margin-left: 4em;">"FirstItem",<br></span>
+						<span style="margin-left: 4em;">"SecondItem",<br></span>
+						<span style="margin-left: 4em;">"AnotherItem",<br></span>
+						<span style="margin-left: 4em;">"YourItemId"<br></span>
+						]</code><br>
+					</article><a href="./items.txt">...(Read more)</a>
+				</li>
+				<li class="overlay">
+					<h2>Meilleurs scores :</h2>
+					Personne :'(
+				</li>
+			</ul>
+		</div>
+		<div id="what">
+			<h1><abbr title="Because we can do Web2.0 webpages with big numbers too.">WTF ?</abbr></h1>
+			<ul class="flex overlay">
+				<li>
+					<div class="enormous">1200</div>
+					Lignes de code.
+				</li>
+				<li>
+					<div class="enormous">3000</div>
+					Litres de soda pour nourrir Pierre.
+				</li>
+				<li>
+					<div class="enormous">16</div>
+					Pages de LaTeX.
+				</li>
+			</ul>
+
+		</div>
+		<div id="who">
+			<h1>Team Pim's 4</h1>
+			<ul class="flex">
+				<li>
+					<h2>Denis "Tilon" Cast&eacute;ran</h2>
+					<div style="text-align: right;float: left; width: 70%">
+						Je suis fortement intéréssé par tout ce qui touche à l'informatique, l'idée de faire un jeu vidéo, de construire le projet de A à Z est une expérience unique dans la scolarité. Cette idée de projet de groupe me parait vraiment intéressante. C’est pourquoi, je pense que faire un jeu nous permettra de nous amuser, tout en développant nos compétences et produire quelque chose de cool au passage.
+					</div>
+					<div style="float: right; width: 30%">
+						<img src="./DeN.png" alt="Denis extravagant." />
+					</div>
+				</li>
+				<li>
+					<h2>Tony "Gigatank3000" Huang</h2>
+					<div style="float: left; width: 30%">
+						<img src="./ToN.png" alt="Tony chic." />
+					</div>
+					<div style="text-align: left;float: right; width: 70%">
+						Mon profil n'est pas celui d'un joueur acharné mais j'apprécie les jeux vidéos. L’idée d’en programmer un par moi-même me plait donc, en particuler le fait de créer un jeu de qualité qui me rendrait fier et me permetrait de tester mes limites. Je suis plus attiré par le travail d’ingénieur que celui d’informaticien, (j’aime le rôle de l’ingénieur par rapport aux composantes innovation/solutions technologique), mais je n'en n’aime pas moins l’informatique, qui est indéniablement un secteur d’avenir et d'intérêt à mes yeux. Je pense que ce projet nous permettra d’avoir un avant goût de notre futur travail dans ces deux domaines : ingénierie et informtique, c'est pourquoi je compte particulièrement m'y appliquer.
+					</div>
+				</li>
+				<li>
+					<h2>Pierre "Pim" Marsais</h2>
+					<div style="text-align: right;float: left; width: 70%">
+						Passionné par approximativement tout ce qui touche au domaine de l’informatique (et des poneys) depuis des années, j’adore écrire les lignes de code qui permettent de résoudre un quelconque problème de nature algorithmique. C'est pour quoi la création d’un jeu vidéo, contenant une grande variété d’algorithmes (globalement triviaux) à implémenter, me parait très interessante. De plus, grâce à ce projet, j’ai l’opportunité de faire quelque chose que je n’aurais probablement pas l’occasion de refaire dans le futur : du \LaTeX{} (euh, je voulais dire “un jeu vidéo”).
+					</div>
+					<div style="float: right; width: 30%">
+						<img src="./PiR.png" alt="Pierre sans son coca." />
+					</div>
+				</li>
+				<li>
+					<h2>Aldric "Albatroce" Charles</h2>
+					<div style="float: left; width: 30%">
+						<img src="./AlD.png" alt="Aldric normal." />
+					</div>
+					<div style="text-align: left;float: right; width: 70%">
+						Passionné de jeux vidéos depuis mon plus jeune âge, j’ai même participé à quelques tournois assez prestigieux. Même si coder n’est pas la plus grande de mes qualités, je m’intéresse de près à tout ce qui touche à l’informatique et je suis sûr que ce projet peut m’apporter une expérience intéressante. Artiste dans l’âme, je joue d’un instrument depuis plus de onze ans, je m’occuperai ainsi surtout des idées, de la musique et des graphismes du jeux.
+					</div>
+				</li>
+			</ul>
+		</div>
+
+
+		<!-- <footer>Con&ccedil;u &agrave; l'arache par <b>Albatroce</b> et <b>Pimzero</b>.</footer> -->
+		<script type="text/javascript">
+			var p = false;
+			window.onscroll = function() {
+				if((document.body.scrollTop*100 > window.innerHeight*93) && (!p)) {
+					p = true;
+					document.getElementById("nav").className = "sticky";
+					document.getElementById("navplaceholder").className = "nphshown";
+				} else if ((document.body.scrollTop*100  < window.innerHeight*93) && (p)) {
+					p = false;
+					document.getElementById("nav").className = "unsticky";
+					document.getElementById("navplaceholder").className = "nphhiden";
+				}
+			}
+		</script>
+	</body>
+	</html>
