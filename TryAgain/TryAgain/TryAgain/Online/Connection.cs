@@ -95,29 +95,36 @@ namespace TryAgain.Online
             String serverReq;
             while (server_socket.Connected && online)
             {
-                if (server_socket.Poll(10, SelectMode.SelectRead))
+                try
                 {
-                    serverReq = servReader.ReadLine();
-                    if (serverReq == "Pong")
+                    if (server_socket.Poll(10, SelectMode.SelectRead))
                     {
-                        pingSent = false;
-                        int pingint = DateTime.Now.Millisecond - lastPing.Millisecond;
-                        if(pingint < 0)
-                            pingint += 1000;
-                        ping = pingint.ToString();
-                        lastPing = DateTime.Now;
+                        serverReq = servReader.ReadLine();
+                        if (serverReq == "Pong")
+                        {
+                            pingSent = false;
+                            int pingint = DateTime.Now.Millisecond - lastPing.Millisecond;
+                            if (pingint < 0)
+                                pingint += 1000;
+                            ping = pingint.ToString();
+                            lastPing = DateTime.Now;
+                        }
                     }
-                }
-                if (DateTime.Now.Second != lastPing.Second)
-                {
-                    if (pingSent == true) // Ping superieur à une seconde, donc on se déconnecte
-                        online = false;
-                    pingSent = true;
-                    lastPing = DateTime.Now;
-                    servWriter.WriteLine("Ping");
-                    servWriter.Flush();
-                }
+                    if (DateTime.Now.Second != lastPing.Second)
+                    {
+                        if (pingSent == true) // Ping superieur à une seconde, donc on se déconnecte
+                            online = false;
+                        pingSent = true;
+                        lastPing = DateTime.Now;
+                        servWriter.WriteLine("Ping");
+                        servWriter.Flush();
+                    }
 
+                }
+                catch (Exception)
+                {
+                    online = false;
+                } 
             }
         }
     }

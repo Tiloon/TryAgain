@@ -115,17 +115,16 @@ namespace TryAgain.GameStates
             if (!hasStarted)
             {
                 Themes.currentTheme = 1;
-                Vector2 pos1 = new Vector2(Tilemap.variationsizegraphicsX + 64, 64);
-                Vector2 pos2 = new Vector2(Tilemap.variationsizegraphicsX + (Tilemap.lgmap - 4) * 64, 64);
+                Vector2 pos1 = new Vector2(3, 3);
                 hero = new Hero("Pierre", Classes.Classe.gunner, Textures.Cache["Tpierre"], Keys.Up, Keys.Down, Keys.Left, Keys.Right, pos1);
                 GOList.Add(hero);
                 /*hero2 = new Hero("Tony", Classes.Classe.gunner, Textures.persopierre_texture, Keys.Z, Keys.S, Keys.Q, Keys.D, pos2);
                 GOList.Add(hero2);*/
                 Tilemap.MapFullINIT();
-                GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 10, new Vector2(6, 8)));
+                /*GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 10, new Vector2(6, 8)));
                 GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 10, new Vector2(5, 5)));
                 GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 10, new Vector2(8, 8)));
-
+                */
                 hasStarted = true;
             }
         }

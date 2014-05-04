@@ -23,10 +23,10 @@ namespace TryAgain
         public static int lgmap = 15;
         public static int lgbigmapunscrolled = 100;
 
-        
+
         //public static Texture2D[,] map1 = new Texture2D[lgmap, lgmap];
-        public static Tile[,] tiles = new Tile[lgmap, lgmap];
-        public static Item[,] map1contains = new Item[lgmap, lgmap];
+        public static Tile[,] tiles = new Tile[24, 24];
+        public static Item[,] map1contains = new Item[lgmap + 3, lgmap + 3];
 
         public static Texture2D[,] map2 = new Texture2D[lgbigmapunscrolled, lgbigmapunscrolled];
         public static Item[,] map2contains = new Item[lgbigmapunscrolled, lgbigmapunscrolled];
@@ -38,7 +38,7 @@ namespace TryAgain
             String[][] mapArray = JsonConvert.DeserializeObject<String[][]>(JSON);
             for (int i = 0; i < mapArray.Length; i++)
                 for (int j = 0; j < mapArray[i].Length; j++)
-                    if((mapArray[i][j] != null) && (mapArray[i][j] != ""))
+                    if ((mapArray[i][j] != null) && (mapArray[i][j] != ""))
                         MapSetTile(tiles, mapArray[i][j], i, j);
         }
 
@@ -50,7 +50,7 @@ namespace TryAgain
             MapFirstInit(ref tiles, "Therbe");
 
             MapLoadFromJSON(
-                "[[\"Tsable\",\"Tsable\", \"\",\"Tsable\", \"\"]]");
+                "[[\"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\", \"Tsable\", \"\", \"Taqua\", \"Tsable\", \"Tsable\", \"\", \"Tsable\", \"\", \"Taqua\", \"Tsable\", \"Tsable\", \"\", \"Tsable\", \"\",\"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"\", \"\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"\", \"\", \"\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\"]]");
 
             //map1 : une map non scrollée qui fait la longueur de l'écran, ni plus ni moins, minimap classique
             /*
@@ -70,8 +70,8 @@ namespace TryAgain
         public static void MapFirstInit(ref Tile[,] map, String basetile)
         {
             Tile tile = new Tile(basetile);
-            for (int i = 0; i < lgmap; i++)
-                for (int j = 0; j < lgmap; j++)
+            for (int i = 0; i < map.GetLength(0); i++)
+                for (int j = 0; j < map.GetLength(1); j++)
                     map[i, j] = tile;
         }
 
@@ -96,35 +96,46 @@ namespace TryAgain
 
         public static void Drawmap(SpriteBatch sb, Tile[,] map)
         {
-            for (int i = 0; i < lgmap; i++)
-                for (int j = 0; j < lgmap; j++)
+
+            for (int i = -2; i < Hero.view.Width + 1; i++)
+            {
+
+                for (int j = -2; j < Hero.view.Height + 1; j++)
                 {
                     //sb.Draw(map[i, j], new Vector2(variationsizegraphicsX + 64 * i, 64 * j), Color.White);
-                    sb.Draw(map[i, j].getTexture(), new Rectangle(variationsizegraphicsX + 64 * i, 64 * j, 64, 64), Color.White);
-                    if(!map[i, j].isBlended)
+                    int x = (map.GetLength(0) + ((i + Hero.view.X) % map.GetLength(0))) % map.GetLength(0),
+                        y = (map.GetLength(1) + ((j + Hero.view.Y) % map.GetLength(1))) % map.GetLength(1);
+                    sb.Draw(
+                        map[x, y].getTexture(), new Rectangle(
+                        (int)(variationsizegraphicsX + 64 * (i - Hero.padding.X)),
+                        (int)(64 * (j - Hero.padding.Y)), 64, 64), Color.White);
+                    if (!map[x, y].isBlended)
                     {
-                        if (j >= 1)
+                        if (y >= 1)
                         {
-                            if (map[i, j].type != map[i, j - 1].type)
+                            if (map[x, y].type != map[x, y - 1].type)
                             {
-                                Tile fadedTile = new Tile(TextureBlend.DrawL(map[i, j].getTexture(), map[i, j - 1].getTexture(), j, i), map[i, j].IsWalkable());
+                                Tile fadedTile = new Tile(TextureBlend.DrawL(map[x, y].getTexture(), map[x, y - 1].getTexture(), y, x), map[x, y].IsWalkable());
                                 fadedTile.isBlended = true;
-                                fadedTile.type = map[i, j].type;
-                                map[i, j] = fadedTile;
+                                fadedTile.type = map[x, y].type;
+                                map[x, y] = fadedTile;
                             }
                         }
-                        if (i >= 1)
+                        if (x >= 1)
                         {
-                            if (map[i, j].type != map[i - 1, j].type)
+                            if (map[x, y].type != map[x - 1, y].type)
                             {
-                                Tile fadedTile = new Tile(TextureBlend.DrawD(map[i, j].getTexture(), map[i - 1, j].getTexture(), i, j), map[i, j].IsWalkable());
+                                Tile fadedTile = new Tile(TextureBlend.DrawD(map[x, y].getTexture(), map[x - 1, y].getTexture(), x, y), map[x, y].IsWalkable());
                                 fadedTile.isBlended = true;
-                                fadedTile.type = map[i, j].type;
-                                map[i, j] = fadedTile;
+                                fadedTile.type = map[x, y].type;
+                                map[x, y] = fadedTile;
                             }
                         }
                     }
                 }
+            }
+            Textures.DrawRectangle(sb, new Rectangle(0, 0, variationsizegraphicsX, 15 * 64), Color.White);
+            Textures.DrawRectangle(sb, new Rectangle(variationsizegraphicsX + 15*64, 0, variationsizegraphicsX, 15 * 64), Color.White);
         }
 
         public static void Drawmap(SpriteBatch sb, Texture2D[,] map, int scale)

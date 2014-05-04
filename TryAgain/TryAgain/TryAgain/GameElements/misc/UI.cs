@@ -23,7 +23,8 @@ namespace TryAgain.GameElements.misc
         int mp, mpmax;
         int lvl;
         int equiped;
-        int force, intelligence, defense, criticalrate, speed;
+        int force, intelligence, defense, criticalrate;
+        float speed;
         Item[] items = new Item[10];
 
         public void Draw(SpriteBatch sb)

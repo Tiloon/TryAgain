@@ -23,6 +23,7 @@ namespace TryAgain
         public static Texture2D roche_herbe, halfsable;
 
         public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG;
+        private static Texture2D whitePixel;
 
         public static SpriteFont UIfont;
         public static Texture2D UIitemHolder, UIitemSelected;
@@ -54,7 +55,7 @@ namespace TryAgain
 
             roche_herbe = cm.Load<Texture2D>(@"Sprites\herbe_roche");
             halfsable = cm.Load<Texture2D>(@"Sprites\halfsable");
-
+            whitePixel = cm.Load<Texture2D>(@"UI/pxl");
             Themes.PlayTheme();
         }
 
@@ -118,6 +119,11 @@ namespace TryAgain
             graphics.SetRenderTarget(null); // set back to main window
 
             return (Texture2D)ret;
+        }
+
+        public static void DrawRectangle(SpriteBatch sb, Rectangle position, Color color)
+        {
+            sb.Draw(whitePixel, position, color);
         }
     }
 }

@@ -36,7 +36,7 @@ namespace TryAgain.Characters
             this.speed = speed;
             this.posmap = posmap;
             this.stats.lp = 60;
-            this.position = new Vector2(Tilemap.variationsizegraphicsX + posmap.X * 64, posmap.Y * 64);
+            this.position = new Vector2(posmap.X, posmap.Y);
             this.X = position.X;
             this.Y = position.Y;
             if (mst == Monstertype.minion)

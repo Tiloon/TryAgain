@@ -21,7 +21,7 @@ namespace TryAgain.Characters
         public int intelligence;
         public int defense;
         public int criticalrate;
-        public int speed;
+        public float speed;
         public static CharacterStats operator +(CharacterStats s1, CharacterStats s2)
         {
             CharacterStats stats;
@@ -65,7 +65,7 @@ namespace TryAgain.Characters
                 stats.intelligence = 10;
                 stats.defense = 10;
                 stats.criticalrate = 0;
-                stats.speed = 7;
+                stats.speed = 0.15F;
             }
             else
             {

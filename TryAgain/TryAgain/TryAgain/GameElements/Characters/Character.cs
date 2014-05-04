@@ -28,12 +28,16 @@ namespace TryAgain.Characters
         public int longueur, largeur;
         public override void Draw(SpriteBatch sb)
         {
-            sb.Draw(apparence, position, Color.White);
+            if((position.X >= (float)(Hero.view.X) + Hero.padding.X) && 
+               (position.Y >= (float)(Hero.view.Y) + Hero.padding.Y) && 
+               (position.X <= (float)(Hero.view.X + Hero.view.Width) + Hero.padding.X) && 
+               (position.Y <= (float)(Hero.view.Y + Hero.view.Height) + Hero.padding.Y))
+                sb.Draw(apparence, new Vector2((position.X - (Hero.view.X + Hero.padding.X)) * 64 + 64 * 4, (position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), Color.White);
         }
 
         public override void update()
         {
-            this.position = new Vector2(this.X, this.Y) - this.size / 2;
+            /*this.position = new Vector2(this.X, this.Y) - this.size / 2;*/
             if (this.stats.lp <= 0)
             {
                 this.exists = false;

@@ -30,3 +30,4 @@ Content\Menu\pause.xnb
 Content\Menu\fenetre.xnb
 Content\Menu\fullscreen.xnb
 Content\Fonts\UIfont.xnb
+Content\UI\pxl.xnb
