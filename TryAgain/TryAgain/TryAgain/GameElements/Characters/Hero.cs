@@ -56,6 +56,14 @@ namespace TryAgain.Characters
             base.update();
             KeyboardState newState = Keyboard.GetState();
 
+            //collision monstre = degats subis
+            foreach (GameObject obj in GameScreen.GOList)
+            {
+                if ((obj.Type == "GameObject,Character,Monster") && (stats.lp > 0) &&
+                    (new Rectangle((int)position.X, (int)position.Y, largeur, longueur).Intersects(new Rectangle((int)obj.getPosition().X, (int)obj.getPosition().Y, (int)obj.getSize().X, (int)obj.getSize().Y))))
+                    stats.lp--;
+            }
+
             Vector2 normalizedSpeed = new Vector2(0, 0);
             if (newState.IsKeyDown(keyup) && position.Y > 0)
                 if (!Collision(rectangcascade, Direction.haut)) //collision cascade et mer
