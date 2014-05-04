@@ -1,0 +1,4 @@
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\bin\Debug\Server.exe
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\bin\Debug\Server.pdb
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\obj\x86\Debug\Server.exe
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\obj\x86\Debug\Server.pdb

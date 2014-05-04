@@ -95,7 +95,13 @@ namespace TryAgain
             return (Texture2D)ret;
         }
 
+
         public static Texture2D GetStringTexture(Texture2D tx, String str, Rectangle size)
+        {
+            return GetStringTexture(tx, str, size, Color.Blue);
+        }
+
+        public static Texture2D GetStringTexture(Texture2D tx, String str, Rectangle size, Color color)
         {
             var graphics = tx.GraphicsDevice;
             var ret = new RenderTarget2D(graphics, size.Width, size.Height);
@@ -106,7 +112,7 @@ namespace TryAgain
 
             sb.Begin();
             //sb.Draw(txa, txa.Bounds, Color.White);
-            sb.DrawString(Textures.UIfont, str, new Vector2(size.X, size.Y), Color.Blue);
+            sb.DrawString(Textures.UIfont, str, new Vector2(size.X, size.Y), color);
             sb.End();
 
             graphics.SetRenderTarget(null); // set back to main window

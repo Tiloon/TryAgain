@@ -11,6 +11,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using TryAgain.Characters;
 using TryAgain.GameElements.Map___environnement;
+using Newtonsoft.Json;
 
 
 namespace TryAgain
@@ -32,19 +33,33 @@ namespace TryAgain
 
         private static Dictionary<Texture2D, Texture2D> melanges = new Dictionary<Texture2D, Texture2D>();
 
+        public static void MapLoadFromJSON(String JSON)
+        {
+            String[][] mapArray = JsonConvert.DeserializeObject<String[][]>(JSON);
+            for (int i = 0; i < mapArray.Length; i++)
+                for (int j = 0; j < mapArray[i].Length; j++)
+                    if((mapArray[i][j] != null) && (mapArray[i][j] != ""))
+                        MapSetTile(tiles, mapArray[i][j], i, j);
+        }
+
         public static void MapFullINIT()
         {
             // Chargement des textures mixtes
             //melanges.Add(Textures.solrocailleux_texture, Textures.roche_herbe);
             //melanges.Add(Textures.sable_texture, Textures.halfsable);
+            MapFirstInit(ref tiles, "Therbe");
+
+            MapLoadFromJSON(
+                "[[\"Tsable\",\"Tsable\", \"\",\"Tsable\", \"\"]]");
 
             //map1 : une map non scrollée qui fait la longueur de l'écran, ni plus ni moins, minimap classique
+            /*
             MapFirstInit(ref tiles, "Therbe");
             Mapmodify(tiles, "Tsable", 7, lgmap - 1, 10, lgmap - 1);
             Mapmodify(tiles, "Tcaillou", 1, 5, lgmap - 3, lgmap - 1);
             Mapmodify(tiles, "Tcaillou", 1, 5, 5, 7);
             Mapmodify(tiles, "Taqua", lgmap - 2, lgmap - 1, 0, 3);
-
+            */
             //map2 : grosse et scrollable
 
 
@@ -66,6 +81,12 @@ namespace TryAgain
             for (int i = imin; i <= imax; i++)
                 for (int j = jmin; j <= jmax; j++)
                     map[i, j] = tile;
+        }
+
+        public static void MapSetTile(Tile[,] map, String newtile, int i, int j)
+        {
+            Tile tile = new Tile(newtile);
+            map[i, j] = tile;
         }
 
         public static void Mapmodify(Texture2D[,] map, Texture2D newtile, int i, int j)

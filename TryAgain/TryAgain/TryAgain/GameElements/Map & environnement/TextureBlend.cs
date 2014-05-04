@@ -80,13 +80,13 @@ namespace TryAgain.GameElements.Map___environnement
         private static bool[] GetBitArray(int x, int y)
         {
             if (x % 2 == 0)
-                return bits4[(x + y) % bits4.Length];
+                return bits4[(Math.Abs(x + y)) % bits4.Length];
             else
             {
                 if (y % 2 == 0)
-                    return bits3[(x + y) % bits3.Length];
+                    return bits3[(Math.Abs(x + y)) % bits3.Length];
                 else
-                    return bits5[(x + y) % bits5.Length];
+                    return bits5[(Math.Abs(x + y)) % bits5.Length];
             }
         }
 

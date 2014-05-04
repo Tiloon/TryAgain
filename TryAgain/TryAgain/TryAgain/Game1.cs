@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using TryAgain.GameStates;
 using TryAgain.Datas;
+using TryAgain.Online;
 
 namespace TryAgain
 {
@@ -78,6 +79,7 @@ namespace TryAgain
             GraphicsDevice.Clear(Color.White);
             spriteBatch.Begin();
             screen.draw(spriteBatch, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
+            Connection.Draw(spriteBatch);
             spriteBatch.End();
             base.Draw(gameTime);
         }

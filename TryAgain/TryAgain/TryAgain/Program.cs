@@ -1,5 +1,6 @@
 using System;
 using TryAgain.Sounds;
+using TryAgain.Online;
 
 namespace TryAgain
 {
@@ -11,11 +12,13 @@ namespace TryAgain
         /// </summary>
         static void Main(string[] args)
         {
+            Connection.Connect(); 
             using (Game1 game = new Game1())
             {
                 game.Run();
             }
             Themes.Stop();
+            Connection.Stop();
         }
     }
 #endif
