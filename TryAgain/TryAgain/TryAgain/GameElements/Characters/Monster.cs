@@ -128,6 +128,5 @@ namespace TryAgain.Characters
             GameObject gob = data;
             Delete(ref gob);
         }
-
     }
 }

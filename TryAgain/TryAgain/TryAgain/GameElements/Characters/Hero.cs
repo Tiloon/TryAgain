@@ -128,9 +128,7 @@ namespace TryAgain.Characters
                         Hero.view.Y += 1 + (int)Math.Ceiling(Hero.padding.Y);
                         Hero.padding.Y -= 1 + (float)Math.Ceiling(Hero.padding.Y);
                     }
-
                 }
-
             }
             if (newState.IsKeyDown(Keys.G))
             {
