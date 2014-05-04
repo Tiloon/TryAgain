@@ -121,11 +121,31 @@ namespace TryAgain
                                 map[x, y] = fadedTile;
                             }
                         }
+                        else // y = 0 ou moins
+                        {
+                            if (map[x, y].type != map[x, map.GetLength(1) - 1].type)
+                            {
+                                Tile fadedTile = new Tile(TextureBlend.DrawL(map[x, y].getTexture(), map[x, map.GetLength(1) - 1].getTexture(), y, x), map[x, y].IsWalkable());
+                                fadedTile.isBlended = true;
+                                fadedTile.type = map[x, y].type;
+                                map[x, y] = fadedTile;
+                            }
+                        }
                         if (x >= 1)
                         {
                             if (map[x, y].type != map[x - 1, y].type)
                             {
                                 Tile fadedTile = new Tile(TextureBlend.DrawD(map[x, y].getTexture(), map[x - 1, y].getTexture(), x, y), map[x, y].IsWalkable());
+                                fadedTile.isBlended = true;
+                                fadedTile.type = map[x, y].type;
+                                map[x, y] = fadedTile;
+                            }
+                        }
+                        else
+                        {
+                            if (map[x, y].type != map[map.GetLength(0) - 1, y].type)
+                            {
+                                Tile fadedTile = new Tile(TextureBlend.DrawD(map[x, y].getTexture(), map[map.GetLength(0) - 1, y].getTexture(), x, y), map[x, y].IsWalkable());
                                 fadedTile.isBlended = true;
                                 fadedTile.type = map[x, y].type;
                                 map[x, y] = fadedTile;

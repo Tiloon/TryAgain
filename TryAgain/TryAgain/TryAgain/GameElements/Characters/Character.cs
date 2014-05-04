@@ -65,32 +65,5 @@ namespace TryAgain.Characters
             else
                 return new Rectangle((int)position.X, (int)position.Y, largeur, longueur+5).Intersects(truc);
         }
-        /*public bool NotCollision(Character perso)               //méthodes non optis car bloquent toutes les touches quand false
-        {
-            return (position.X <= perso.position.X) && (position.Y <= perso.position.Y)
-                 && (position.X >= position.X + perso.longueur) && (position.Y >= position.Y + perso.largeur);
-        }
-        public bool NotCollision(Character perso2, Direction direction, Vector2 newpos)
-        {
-            if (direction == Direction.haut)
-                return (newpos.Y < perso2.position.Y + perso2.longueur);
-            else if (direction == Direction.bas)
-                return (newpos.Y <= perso2.position.Y);
-            else if (direction == Direction.gauche)
-                return (newpos.X >= perso2.position.X + perso2.largeur);
-            else
-                return (newpos.X <= perso2.position.X);
-        }
-        public bool NotCollision(Character perso2, Direction direction)
-        {
-            if (direction == Direction.haut)
-                return (position.Y < perso2.position.Y + perso2.longueur);
-            else if (direction == Direction.bas)
-                return (position.Y <= perso2.position.Y);
-            else if (direction == Direction.gauche)
-                return (position.X >= perso2.position.X + perso2.largeur);
-            else
-                return (position.X <= perso2.position.X);
-        }*/
     }
 }

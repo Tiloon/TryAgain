@@ -66,7 +66,7 @@ namespace TryAgain.Characters
             foreach (GameObject obj in GameScreen.GOList)
             {
                 if ((obj.Type == "GameObject,Character,Monster") && (stats.lp > 0) &&
-                    (new Rectangle((int)position.X, (int)position.Y, largeur, longueur).Intersects(new Rectangle((int)obj.getPosition().X, (int)obj.getPosition().Y, (int)obj.getSize().X, (int)obj.getSize().Y))))
+                    (new Rectangle((int)position.X, (int)position.Y, 1, 1).Intersects(new Rectangle((int)obj.getPosition().X, (int)obj.getPosition().Y, 1, 1))))
                     stats.lp--;
             }
 
@@ -141,8 +141,6 @@ namespace TryAgain.Characters
                     this.items[equiped] = null;
                 }
             }
-
-            
         }
 
         public override void jsonUpdate(string json)

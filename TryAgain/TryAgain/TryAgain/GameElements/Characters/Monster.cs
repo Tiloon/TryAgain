@@ -22,13 +22,13 @@ namespace TryAgain.Characters
         int compteurvitesse = 0;
         public int dmgmin;
         public int dmgmax;
-        public int speed;
+        public float speed;
         private Vector2 direction = new Vector2(0,0);
         int posmin = 0;
         int posmax = Tilemap.lgmap - 1;
         Vector2 posmap;
 
-        public Monster(Monstertype mst, int hp, int dmgmin, int dmgmax, int speed, Vector2 posmap)
+        public Monster(Monstertype mst, int hp, int dmgmin, int dmgmax, float speed, Vector2 posmap)
             : base("Monster", "Monster")
         {
             this.dmgmin = dmgmin;
