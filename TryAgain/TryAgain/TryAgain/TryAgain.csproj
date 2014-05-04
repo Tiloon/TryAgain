@@ -133,6 +133,7 @@
     <Compile Include="GameElements\Map &amp; environnement\Tile.cs" />
     <Compile Include="GameElements\misc\Debug.cs" />
     <Compile Include="GameElements\misc\UI.cs" />
+    <Compile Include="GameStates\OptionScreen.cs" />
     <Compile Include="GameStates\PauseScreen.cs" />
     <Compile Include="GameStates\GameScreen.cs" />
     <Compile Include="GameStates\MainMenuScreen.cs" />

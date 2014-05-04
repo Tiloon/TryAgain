@@ -17,6 +17,7 @@ namespace TryAgain.GameStates
         MainMenu,
         Game,
         Pause,
+        Options,
         Quit
 	}
     abstract class Screen
@@ -41,6 +42,9 @@ namespace TryAgain.GameStates
                     break;
                 case ScreenType.Pause:
                     sc = new PauseScreen();
+                    break;
+                case ScreenType.Options:
+                    sc = new OptionScreen();
                     break;
                 default:
                     break;

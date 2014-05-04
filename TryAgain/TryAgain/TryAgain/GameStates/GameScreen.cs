@@ -129,5 +129,10 @@ namespace TryAgain.GameStates
                 hasStarted = true;
             }
         }
+
+        public static bool IsGameStarted()
+        {
+            return hasStarted;
+        }
     }
 }

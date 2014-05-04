@@ -43,7 +43,7 @@ namespace TryAgain.GameStates
                     if (ButtonExit.IsClicked(mouse))
                         return ScreenType.Quit;
                     if (ButtonOption.IsClicked(mouse))
-                        CurrentMenuState = MenuState.Option;
+                        return ScreenType.Options;
                     break;
                 case MenuState.Option:
                     if (ButtonReturn.IsClicked(mouse))
@@ -65,12 +65,6 @@ namespace TryAgain.GameStates
                     ButtonOption.Draw(sb);
                     ButtonExit.Draw(sb);
                     break;
-
-                case MenuState.Option:
-                    //sb.Draw(Content.Load<Texture2D>("Option"), new Rectangle(0, 0, screenWidth, screenHigh), Color.White);
-                    ButtonReturn.Draw(sb);
-                    break;
-
             }
         }
         public override void init(GraphicsDevice graphics)
