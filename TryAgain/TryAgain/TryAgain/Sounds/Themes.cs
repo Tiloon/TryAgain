@@ -82,6 +82,7 @@ namespace TryAgain.Sounds
     class Themes
     {
         public volatile static int currentTheme = 0;
+        public volatile static float volume = 1.0F;
         public volatile static bool soundPlaying = true;
 
         private static String[] themes = 
@@ -104,11 +105,13 @@ namespace TryAgain.Sounds
 
             while (soundPlaying)
             {
+                bool isPlaying = true;
                 themeid = currentTheme;
+                WaveFileReader reader = new WaveFileReader(themes[themeid]);
+                LoopStream loop = new LoopStream(reader);
                 if (waveOut == null)
                 {
-                    WaveFileReader reader = new WaveFileReader(themes[themeid]);
-                    LoopStream loop = new LoopStream(reader);
+                    loop.EnableLooping = true;
                     waveOut = new WaveOut();
                     waveOut.Init(loop);
                     waveOut.Play();
@@ -120,10 +123,16 @@ namespace TryAgain.Sounds
                     waveOut = null;
                 }
                 
-                while(soundPlaying && (themeid == currentTheme))
-                {
+                while(soundPlaying && (themeid == currentTheme)){
+                    if (waveOut.Volume != volume)
+                        waveOut.Volume = volume;
                 };
+                loop.EnableLooping = false;
 
+                waveOut.PlaybackStopped += new EventHandler<StoppedEventArgs>((e, a) => {
+                    isPlaying = false;
+                });
+                while (isPlaying && soundPlaying) { };
                 waveOut.Stop();
                 waveOut.Dispose();
                 waveOut = null;
