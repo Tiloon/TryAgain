@@ -95,5 +95,23 @@ namespace TryAgain
             return (Texture2D)ret;
         }
 
+        public static Texture2D GetStringTexture(Texture2D tx, String str, Rectangle size)
+        {
+            var graphics = tx.GraphicsDevice;
+            var ret = new RenderTarget2D(graphics, size.Width, size.Height);
+            var sb = new SpriteBatch(graphics);
+
+            graphics.SetRenderTarget(ret); // draw to image
+            graphics.Clear(new Color(0, 0, 0, 0));
+
+            sb.Begin();
+            //sb.Draw(txa, txa.Bounds, Color.White);
+            sb.DrawString(Textures.UIfont, str, new Vector2(size.X, size.Y), Color.Blue);
+            sb.End();
+
+            graphics.SetRenderTarget(null); // set back to main window
+
+            return (Texture2D)ret;
+        }
     }
 }
