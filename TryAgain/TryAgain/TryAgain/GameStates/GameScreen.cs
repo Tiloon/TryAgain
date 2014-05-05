@@ -71,7 +71,6 @@ namespace TryAgain.GameStates
             KeyboardState newState = Keyboard.GetState();
             if (newState.IsKeyDown(Keys.Escape))
                 return ScreenType.Pause;
-
             for (int i = 0; i < GOList.Count; i++)
             {
                 if (!GOList[i].toRemove())
@@ -100,6 +99,13 @@ namespace TryAgain.GameStates
 
             userinterface.Draw(sb);
             Chat.Draw(sb);
+
+            //code tony pas super propre mais bon, j'ai la flemme d'utiliser ton screentype que j'ai jamais used ^^
+            KeyboardState newState = Keyboard.GetState();
+            if (newState.IsKeyDown(Keys.C))
+            {
+                Craft.Draw(sb);
+            }
         }
 
         public GameObject GetClicked(MouseState mouse)

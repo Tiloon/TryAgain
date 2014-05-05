@@ -69,9 +69,8 @@ namespace TryAgain.GameElements
         }
         static public void Draw(SpriteBatch sb)
         {
-            sb.Begin();
             sb.Draw(Textures.CraftInterface, new Vector2(Tilemap.variationsizegraphicsX, 0), Color.White);
-            sb.End();
+            sb.DrawString(Textures.UIfont, "Ressources              Crafts              Recette", new Vector2(Tilemap.variationsizegraphicsX, 120), Color.Blue);
         }
     }
 }
