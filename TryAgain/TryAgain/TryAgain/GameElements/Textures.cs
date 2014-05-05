@@ -22,11 +22,15 @@ namespace TryAgain
 
         public static Texture2D roche_herbe, halfsable;
 
+        public static Texture2D O, I, II, III, IV, V, VI, VII, VIII, IX, X, XI;  //numéros de ressources, se reférer à la clase craftinterface
+
+
         public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG;
         public static Texture2D whitePixel;
 
         public static SpriteFont UIfont, UIfontSmall;
         public static Texture2D UIitemHolder, UIitemSelected;
+
         public static void load(ContentManager cm)
         {
             Tuple<String, String>[] texturesList = JsonConvert.DeserializeObject<Tuple<String, String>[]>(Initializer.ReadTextFile(@"elements\textures\texturesList.json"));
@@ -43,6 +47,20 @@ namespace TryAgain
             Button_About = cm.Load<Texture2D>(@"Menu\Button_About");
             Button_Return = cm.Load<Texture2D>(@"Menu\Button_Return");
             */
+
+            I = cm.Load<Texture2D>(@"Sprites\Ressources\1");
+            II = cm.Load<Texture2D>(@"Sprites\Ressources\2");
+            III = cm.Load<Texture2D>(@"Sprites\Ressources\3");
+            IV = cm.Load<Texture2D>(@"Sprites\Ressources\4");
+            V = cm.Load<Texture2D>(@"Sprites\Ressources\5");
+            VI = cm.Load<Texture2D>(@"Sprites\Ressources\6");
+            VII = cm.Load<Texture2D>(@"Sprites\Ressources\7");
+            VIII = cm.Load<Texture2D>(@"Sprites\Ressources\8");
+            IX = cm.Load<Texture2D>(@"Sprites\Ressources\9");
+            X = cm.Load<Texture2D>(@"Sprites\Ressources\10");
+            XI = cm.Load<Texture2D>(@"Sprites\Ressources\11");
+
+
             MainMenuBG = cm.Load<Texture2D>(@"Menu\MainMenu");
             OptionBG = cm.Load<Texture2D>(@"Menu\Option");
             AboutBG = cm.Load<Texture2D>(@"Menu\About");
