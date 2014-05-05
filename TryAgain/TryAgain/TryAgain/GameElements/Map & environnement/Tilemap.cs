@@ -103,8 +103,14 @@ namespace TryAgain
                 for (int j = -2; j < Hero.view.Height + 1; j++)
                 {
                     //sb.Draw(map[i, j], new Vector2(variationsizegraphicsX + 64 * i, 64 * j), Color.White);
-                    int x = (map.GetLength(0) + ((i + Hero.view.X) % map.GetLength(0))) % map.GetLength(0),
-                        y = (map.GetLength(1) + ((j + Hero.view.Y) % map.GetLength(1))) % map.GetLength(1);
+      
+                    int x = (i + Hero.view.X) % map.GetLength(0),
+                        y = (j + Hero.view.Y) % map.GetLength(1);
+
+                    if (x < 0)
+                        x += map.GetLength(0);
+                    if (y < 0)
+                        y += map.GetLength(1);
                     sb.Draw(
                         map[x, y].getTexture(), new Rectangle(
                         (int)(variationsizegraphicsX + 64 * (i - Hero.padding.X)),

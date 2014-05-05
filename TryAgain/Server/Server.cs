@@ -82,10 +82,15 @@ namespace Server
                             continue;
                         }
 
-                        Console.WriteLine(client.name + " : " + message);
+                        if (message.StartsWith("msg:"))
+                        {
+                            message = message.Remove(0, 4);
+                            Console.WriteLine(client.name + " : " + message);
 
-                        foreach (Client sclient in clients)
-                            sclient.Send(client.name + ": " + message);
+                            foreach (Client sclient in clients)
+                                sclient.Send("msg:" + client.name + ": " + message);
+                            continue;
+                        }
                     }
                 }
             }

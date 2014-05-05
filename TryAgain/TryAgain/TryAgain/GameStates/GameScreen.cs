@@ -98,6 +98,7 @@ namespace TryAgain.GameStates
             }
 
             userinterface.Draw(sb);
+            Chat.Draw(sb);
         }
 
         public GameObject GetClicked(MouseState mouse)

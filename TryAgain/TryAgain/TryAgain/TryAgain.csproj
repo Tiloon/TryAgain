@@ -131,6 +131,7 @@
     <Compile Include="GameElements\Map &amp; environnement\GobVoid.cs" />
     <Compile Include="GameElements\Map &amp; environnement\TextureBlend.cs" />
     <Compile Include="GameElements\Map &amp; environnement\Tile.cs" />
+    <Compile Include="GameElements\misc\Chat.cs" />
     <Compile Include="GameElements\misc\Debug.cs" />
     <Compile Include="GameElements\misc\UI.cs" />
     <Compile Include="GameStates\OptionScreen.cs" />

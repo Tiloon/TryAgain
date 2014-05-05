@@ -7,6 +7,7 @@ using System.Threading;
 using System.Net.Sockets;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using TryAgain.GameElements.misc;
 
 namespace TryAgain.Online
 {
@@ -88,6 +89,15 @@ namespace TryAgain.Online
                 sb.DrawString(Textures.UIfont, "Offline", new Vector2(0, 0), Color.Red);
         }
 
+        public static void SendMessage(String str)
+        {
+            if (online)
+            {
+                servWriter.WriteLine("msg:" + str);
+                servWriter.Flush();
+            }
+        }
+
         public static void ClientThread()
         {
             DateTime lastPing = DateTime.Now;
@@ -108,6 +118,10 @@ namespace TryAgain.Online
                                 pingint += 1000;
                             ping = pingint.ToString();
                             lastPing = DateTime.Now;
+                        }
+                        if (serverReq.StartsWith("msg:"))
+                        {
+                            Chat.AddMessage(serverReq.Remove(0, 4));
                         }
                     }
                     if (DateTime.Now.Second != lastPing.Second)

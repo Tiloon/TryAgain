@@ -23,9 +23,9 @@ namespace TryAgain
         public static Texture2D roche_herbe, halfsable;
 
         public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG;
-        private static Texture2D whitePixel;
+        public static Texture2D whitePixel;
 
-        public static SpriteFont UIfont;
+        public static SpriteFont UIfont, UIfontSmall;
         public static Texture2D UIitemHolder, UIitemSelected;
         public static void load(ContentManager cm)
         {
@@ -50,6 +50,7 @@ namespace TryAgain
             FenetreBG = cm.Load<Texture2D>(@"Menu\fenetre");
 
             UIfont = cm.Load<SpriteFont>(@"Fonts\UIfont");
+            UIfontSmall = cm.Load<SpriteFont>(@"Fonts\UIfontsmall");
             UIitemHolder = cm.Load<Texture2D>(@"UI\uiitems");
             UIitemSelected = cm.Load<Texture2D>(@"UI\uiselected");
 

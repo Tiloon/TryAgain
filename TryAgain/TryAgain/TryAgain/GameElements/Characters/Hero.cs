@@ -13,6 +13,7 @@ using System.Runtime.Serialization.Json;
 using Newtonsoft.Json;
 using TryAgain.GameStates;
 using TryAgain.GameElements;
+using TryAgain.GameElements.misc;
 
 namespace TryAgain.Characters
 {
@@ -59,12 +60,11 @@ namespace TryAgain.Characters
 
 
         //Rectangle rectangcascade = new Rectangle(Tilemap.variationsizegraphicsX + (Tilemap.lgmap - 2) * 64, 0, 64 * 2, 64 * 4);
-        private KeyboardState oldKeyboardState,
-            newState;
+        private KeyboardState oldKeyboardState, newState;
         public override void update()
         {
             base.update();
-
+            Chat.Write();
             //collision monstre = degats subis
             foreach (GameObject obj in GameScreen.GOList)
             {
