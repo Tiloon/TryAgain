@@ -112,6 +112,26 @@ namespace TryAgain.GameElements.misc
                         bufferStr += 'y';
                     if (newState.IsKeyDown(Keys.Z) && !oldKeyboardState.IsKeyDown(Keys.Z))
                         bufferStr += 'z';
+                    if (newState.IsKeyDown(Keys.D0) && !oldKeyboardState.IsKeyDown(Keys.D0))
+                        bufferStr += '0';
+                    if (newState.IsKeyDown(Keys.D1) && !oldKeyboardState.IsKeyDown(Keys.D1))
+                        bufferStr += '1';
+                    if (newState.IsKeyDown(Keys.D2) && !oldKeyboardState.IsKeyDown(Keys.D2))
+                        bufferStr += '2';
+                    if (newState.IsKeyDown(Keys.D3) && !oldKeyboardState.IsKeyDown(Keys.D3))
+                        bufferStr += '3';
+                    if (newState.IsKeyDown(Keys.D4) && !oldKeyboardState.IsKeyDown(Keys.D4))
+                        bufferStr += '4';
+                    if (newState.IsKeyDown(Keys.D5) && !oldKeyboardState.IsKeyDown(Keys.D5))
+                        bufferStr += '5';
+                    if (newState.IsKeyDown(Keys.D6) && !oldKeyboardState.IsKeyDown(Keys.D6))
+                        bufferStr += '6';
+                    if (newState.IsKeyDown(Keys.D7) && !oldKeyboardState.IsKeyDown(Keys.D7))
+                        bufferStr += '7';
+                    if (newState.IsKeyDown(Keys.D8) && !oldKeyboardState.IsKeyDown(Keys.D8))
+                        bufferStr += '8';
+                    if (newState.IsKeyDown(Keys.D9) && !oldKeyboardState.IsKeyDown(Keys.D9))
+                        bufferStr += '9';
                     if (newState.IsKeyDown(Keys.Space) && !oldKeyboardState.IsKeyDown(Keys.Space))
                         bufferStr += ' ';
                 }

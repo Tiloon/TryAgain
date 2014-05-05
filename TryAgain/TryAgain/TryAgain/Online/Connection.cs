@@ -8,13 +8,23 @@ using System.Net.Sockets;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using TryAgain.GameElements.misc;
+using Newtonsoft.Json;
+using TryAgain.Datas;
 
 namespace TryAgain.Online
 {
+
+    public struct ProfileDefinition
+    {
+        public String avatar;
+        public String name;
+    }
+
     class Connection
     {
         public static Thread clientThread;
         public volatile static String UserID = "IUSer";
+        public volatile static String avatar = "Ppim";
         public volatile static String host = "127.0.0.1";
         public volatile static int port = 4242;
         static volatile Socket server_socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -24,6 +34,18 @@ namespace TryAgain.Online
         static volatile String ping = "0";
 
         public bool Connected { get { return server_socket.Connected; } }
+
+        public static void Init(String profile)
+        {
+            try
+            {
+                ProfileDefinition p = JsonConvert.DeserializeObject<ProfileDefinition>(Initializer.ReadTextFile(@"User\" + profile));
+                UserID = p.name;
+                avatar = p.avatar;
+            }
+            catch (Exception)
+            { }
+        }
 
         public static void Connect()
         {
@@ -84,7 +106,7 @@ namespace TryAgain.Online
         public static void Draw(SpriteBatch sb)
         {
             if (server_socket.Connected && online)
-                sb.DrawString(Textures.UIfont, "Online (" + ping + ")", new Vector2(0, 0), Color.Green);
+                sb.DrawString(Textures.UIfont, "Online (" + ping + ") as " + UserID, new Vector2(0, 0), Color.Green);
             else
                 sb.DrawString(Textures.UIfont, "Offline", new Vector2(0, 0), Color.Red);
         }
@@ -94,6 +116,15 @@ namespace TryAgain.Online
             if (online)
             {
                 servWriter.WriteLine("msg:" + str);
+                servWriter.Flush();
+            }
+        }
+
+        public static void Command(String str)
+        {
+            if (online)
+            {
+                servWriter.WriteLine("cmd:" + str);
                 servWriter.Flush();
             }
         }

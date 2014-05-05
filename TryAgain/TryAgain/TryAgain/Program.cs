@@ -12,6 +12,14 @@ namespace TryAgain
         /// </summary>
         static void Main(string[] args)
         {
+            if (args.Length == 0)
+            {
+                Connection.Init("user.json");
+            }
+            else
+            {
+                Connection.Init(args[0] + ".json");
+            }
             Connection.Connect(); 
             using (Game1 game = new Game1())
             {
