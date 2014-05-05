@@ -313,6 +313,15 @@
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
       <Time>2014-05-05T13:26:37.1132165+02:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\persotony.png</Source>
+      <Name>Sprites\persotony</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\persotony.xnb</Output>
+      <Time>2014-05-05T15:52:20.7943264+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

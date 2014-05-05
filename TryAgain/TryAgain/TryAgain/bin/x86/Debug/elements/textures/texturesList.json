@@ -28,6 +28,10 @@
 		"Item2": "Sprites\\persopierre",
 	},
 	{
+		"Item1": "Ttony",
+		"Item2": "Sprites\\persotony",
+	},
+	{
 		"Item1": "Tminion",
 		"Item2": "Sprites\\Monsters\\bebeglauque",
 	},

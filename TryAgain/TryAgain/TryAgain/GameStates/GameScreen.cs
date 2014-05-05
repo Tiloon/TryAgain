@@ -14,6 +14,7 @@ using TryAgain.GameElements.misc;
 using TryAgain.GameElements;
 using TryAgain.GameElements.Map___environnement;
 using TryAgain.Sounds;
+using TryAgain.Online;
 
 namespace TryAgain.GameStates
 {
@@ -119,7 +120,7 @@ namespace TryAgain.GameStates
             {
                 Themes.currentTheme = 1;
                 Vector2 pos1 = new Vector2(3, 3);
-                hero = new Hero("Pierre", Classes.Classe.gunner, Textures.Cache["Tpierre"], Keys.Up, Keys.Down, Keys.Left, Keys.Right, pos1);
+                hero = new Hero("Pierre", Classes.Classe.gunner, Textures.Cache[Connection.avatar], Keys.Up, Keys.Down, Keys.Left, Keys.Right, pos1);
                 GOList.Add(hero);
                 /*hero2 = new Hero("Tony", Classes.Classe.gunner, Textures.persopierre_texture, Keys.Z, Keys.S, Keys.Q, Keys.D, pos2);
                 GOList.Add(hero2);*/

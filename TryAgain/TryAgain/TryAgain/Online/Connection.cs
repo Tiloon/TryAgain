@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework;
 using TryAgain.GameElements.misc;
 using Newtonsoft.Json;
 using TryAgain.Datas;
+using System.Net;
 
 namespace TryAgain.Online
 {
@@ -18,6 +19,8 @@ namespace TryAgain.Online
     {
         public String avatar;
         public String name;
+        public String server;
+
     }
 
     class Connection
@@ -42,6 +45,7 @@ namespace TryAgain.Online
                 ProfileDefinition p = JsonConvert.DeserializeObject<ProfileDefinition>(Initializer.ReadTextFile(@"User\" + profile));
                 UserID = p.name;
                 avatar = p.avatar;
+                host = p.server;
             }
             catch (Exception)
             { }
