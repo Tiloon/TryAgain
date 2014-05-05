@@ -55,7 +55,9 @@ namespace TryAgain.GameStates
                 else if (hero.equipedItem() != null)// Else, player use it's item
                 {
                     Tuple<String, String> jsonUpdates = (hero.equipedItem()).useItem(hero, gob);
+                    Vector2 heroPos = hero.getPosition();
                     hero.jsonUpdate(jsonUpdates.Item1); // As user
+                    hero.SetPosition(heroPos);
                     gob.jsonUpdate(jsonUpdates.Item2); // As target
                 }
 

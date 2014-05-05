@@ -21,7 +21,7 @@ namespace TryAgain.Characters
     class Hero : Character
     {
         public static Rectangle view = new Rectangle(0, 0, 15, 15);
-        public static Vector2 padding = new Vector2(0, 0); 
+        public static Vector2 padding = new Vector2(0, 0);
         // Si quelqu'un trouve un meilleur nom de variable.... Décalage pour rendre le déplacement de l'écran fluide.
 
         private Item[] items = new Item[10];
@@ -52,15 +52,18 @@ namespace TryAgain.Characters
             {
                 stats = Stats.GetStats(0);
             }
+
+            oldKeyboardState = newState = Keyboard.GetState();
         }
 
-        
+
 
         //Rectangle rectangcascade = new Rectangle(Tilemap.variationsizegraphicsX + (Tilemap.lgmap - 2) * 64, 0, 64 * 2, 64 * 4);
+        private KeyboardState oldKeyboardState,
+            newState;
         public override void update()
         {
             base.update();
-            KeyboardState newState = Keyboard.GetState();
 
             //collision monstre = degats subis
             foreach (GameObject obj in GameScreen.GOList)
@@ -70,66 +73,63 @@ namespace TryAgain.Characters
                     stats.lp--;
             }
 
+            oldKeyboardState = newState;
+            newState = Keyboard.GetState();
+            bool altIsDown = oldKeyboardState.IsKeyDown(Keys.LeftAlt) && newState.IsKeyDown(Keys.LeftAlt);
+
             Vector2 normalizedSpeed = new Vector2(0, 0);
             if (newState.IsKeyDown(keyup))
-                    normalizedSpeed += new Vector2(0, -1);
+                normalizedSpeed += new Vector2(0, -1);
             if (newState.IsKeyDown(keydown))
                 normalizedSpeed += new Vector2(0, 1);
             if (newState.IsKeyDown(keyright))
-                    normalizedSpeed += new Vector2(1, 0);
+                normalizedSpeed += new Vector2(1, 0);
             if (newState.IsKeyDown(keyleft))
                 normalizedSpeed += new Vector2(-1, 0);
 
-            if ((normalizedSpeed.X != 0) || (normalizedSpeed.Y != 0))
+            if (altIsDown && ((normalizedSpeed.X != 0) || (normalizedSpeed.Y != 0)))
             {
                 float sqrtsum = (float)Math.Sqrt(Math.Abs(normalizedSpeed.X) + Math.Abs(normalizedSpeed.Y));
-                this.position += normalizedSpeed * this.stats.speed / sqrtsum;
-                //if (!Tilemap.tiles[((int)this.position.X) % Tilemap.tiles.GetLength(0), ((int)this.position.Y) % Tilemap.tiles.GetLength(1)].IsWalkable()) 
-                if (!Tilemap.tiles[
-                    (Tilemap.tiles.GetLength(0) + (((int)(this.position.X + this.size.X / 128)) % Tilemap.tiles.GetLength(0))) % Tilemap.tiles.GetLength(0),
-                    (Tilemap.tiles.GetLength(1) + (((int)(this.position.Y + 3*(this.size.Y / 256))) % Tilemap.tiles.GetLength(1))) % Tilemap.tiles.GetLength(1)].IsWalkable())
-                        this.position -= normalizedSpeed * this.stats.speed / sqrtsum;
-
-                this.X = this.position.X;//+this.size.X / 2;
-                this.Y = this.position.Y; //+this.size.Y / 2;
-
-                if (this.X > Hero.view.X + Hero.view.Width - 2)
+                Hero.padding.X += normalizedSpeed.X * this.stats.speed / sqrtsum;
+                if (Hero.padding.X > 1)
                 {
-                    Hero.padding.X += normalizedSpeed.X * this.stats.speed / sqrtsum;
-                    if(Hero.padding.X > 1) {
-                        Hero.view.X += (int)Math.Floor(Hero.padding.X);
-                        Hero.padding.X -= (float)Math.Floor(Hero.padding.X);
-                    }
+                    Hero.view.X += (int)Math.Floor(Hero.padding.X);
+                    Hero.padding.X -= (float)Math.Floor(Hero.padding.X);
                 }
-                if (this.X < Hero.view.X + 1)
+                if (Hero.padding.X <= -1)
                 {
-                    Hero.padding.X += normalizedSpeed.X * this.stats.speed / sqrtsum;
-                    if (Hero.padding.X <= -1)
-                    {
-                        Hero.view.X += 1 + (int)Math.Ceiling(Hero.padding.X);
-                        Hero.padding.X -= 1 + (float)Math.Ceiling(Hero.padding.X);
-                    }
-                    
+                    Hero.view.X += 1 + (int)Math.Ceiling(Hero.padding.X);
+                    Hero.padding.X -= 1 + (float)Math.Ceiling(Hero.padding.X);
                 }
-                if (this.Y > Hero.view.Y + Hero.view.Height - 2)
+                Hero.padding.Y += normalizedSpeed.Y * this.stats.speed / sqrtsum;
+                if (Hero.padding.Y > 1)
                 {
-                    Hero.padding.Y += normalizedSpeed.Y * this.stats.speed / sqrtsum;
-                    if (Hero.padding.Y > 1)
-                    {
-                        Hero.view.Y += (int)Math.Floor(Hero.padding.Y);
-                        Hero.padding.Y -= (float)Math.Floor(Hero.padding.Y);
-                    }
+                    Hero.view.Y += (int)Math.Floor(Hero.padding.Y);
+                    Hero.padding.Y -= (float)Math.Floor(Hero.padding.Y);
                 }
-                if (this.Y < Hero.view.Y + 2)
+                if (Hero.padding.Y <= -1)
                 {
-                    Hero.padding.Y += normalizedSpeed.Y * this.stats.speed / sqrtsum;
-                    if (Hero.padding.Y <= -1)
-                    {
-                        Hero.view.Y += 1 + (int)Math.Ceiling(Hero.padding.Y);
-                        Hero.padding.Y -= 1 + (float)Math.Ceiling(Hero.padding.Y);
-                    }
+                    Hero.view.Y += 1 + (int)Math.Ceiling(Hero.padding.Y);
+                    Hero.padding.Y -= 1 + (float)Math.Ceiling(Hero.padding.Y);
                 }
             }
+            else
+            {
+                if ((normalizedSpeed.X != 0) || (normalizedSpeed.Y != 0))
+                {
+                    float sqrtsum = (float)Math.Sqrt(Math.Abs(normalizedSpeed.X) + Math.Abs(normalizedSpeed.Y));
+                    this.position += normalizedSpeed * this.stats.speed / sqrtsum;
+                    //if (!Tilemap.tiles[((int)this.position.X) % Tilemap.tiles.GetLength(0), ((int)this.position.Y) % Tilemap.tiles.GetLength(1)].IsWalkable()) 
+                    if (!Tilemap.tiles[
+                        (Tilemap.tiles.GetLength(0) + (((int)(this.position.X + this.size.X / 128)) % Tilemap.tiles.GetLength(0))) % Tilemap.tiles.GetLength(0),
+                        (Tilemap.tiles.GetLength(1) + (((int)(this.position.Y + 3 * (this.size.Y / 256))) % Tilemap.tiles.GetLength(1))) % Tilemap.tiles.GetLength(1)].IsWalkable())
+                        this.position -= normalizedSpeed * this.stats.speed / sqrtsum;
+
+                    this.X = this.position.X;//+this.size.X / 2;
+                    this.Y = this.position.Y; //+this.size.Y / 2;
+                }
+            }
+
             if (newState.IsKeyDown(Keys.G))
             {
                 if ((equiped != -1) && (this.items[equiped] != null))

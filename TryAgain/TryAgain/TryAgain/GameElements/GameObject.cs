@@ -55,6 +55,13 @@ namespace TryAgain.GameElements
             return exists;
         }
 
+        public void SetPosition(Vector2 position)
+        {
+            this.position = position;
+            this.X = position.X;
+            this.Y = position.Y;
+        }
+
         public abstract void jsonUpdate(string json);
     }
 }
