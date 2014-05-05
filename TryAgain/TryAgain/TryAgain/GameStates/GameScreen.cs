@@ -22,7 +22,7 @@ namespace TryAgain.GameStates
     {
         ButtonState previousstate;
         UI userinterface = new UI();
-        static Hero hero;
+        public static Hero hero;
 
         public static List<GameObject> GOList = new List<GameObject>();
         private static bool hasStarted = false;
@@ -118,6 +118,7 @@ namespace TryAgain.GameStates
         {
             if (!hasStarted)
             {
+                Connection.Command("login");
                 Themes.currentTheme = 1;
                 Vector2 pos1 = new Vector2(3, 3);
                 hero = new Hero("Pierre", Classes.Classe.gunner, Textures.Cache[Connection.avatar], Keys.Up, Keys.Down, Keys.Left, Keys.Right, pos1);

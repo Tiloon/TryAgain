@@ -11,6 +11,7 @@ using TryAgain.GameElements.misc;
 using Newtonsoft.Json;
 using TryAgain.Datas;
 using System.Net;
+using TryAgain.GameStates;
 
 namespace TryAgain.Online
 {
@@ -128,7 +129,7 @@ namespace TryAgain.Online
         {
             if (online)
             {
-                servWriter.WriteLine("cmd:" + str);
+                servWriter.WriteLine(str);
                 servWriter.Flush();
             }
         }
@@ -154,9 +155,18 @@ namespace TryAgain.Online
                             ping = pingint.ToString();
                             lastPing = DateTime.Now;
                         }
+
+                        if (serverReq == "?getpos")
+                        {
+                            servWriter.WriteLine("pos:" + BitConverter.ToString(BitConverter.GetBytes(GameScreen.hero.X)) + "x" + BitConverter.ToString(BitConverter.GetBytes(GameScreen.hero.Y)));
+                        }
                         if (serverReq.StartsWith("msg:"))
                         {
                             Chat.AddMessage(serverReq.Remove(0, 4));
+                        }
+                        if (serverReq.StartsWith("kick:"))
+                        {
+                            Chat.AddMessage("KICK:" + serverReq.Remove(0, 5), Color.Red);
                         }
                     }
                     if (DateTime.Now.Second != lastPing.Second)

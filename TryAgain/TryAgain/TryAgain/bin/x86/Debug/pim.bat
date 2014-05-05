@@ -1,2 +1,2 @@
-TryAgain.exe user2
+TryAgain.exe userPim
 pause

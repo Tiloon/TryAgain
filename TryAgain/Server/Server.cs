@@ -16,7 +16,10 @@ namespace Server
         LinkedList<Client> clients;
         Socket socket;
 
-        
+        List<String> igIDs = new List<string>();
+        Dictionary<String, GameObject> goblist = new Dictionary<String, GameObject>();
+
+
         public Server(int port)
         {
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -56,10 +59,20 @@ namespace Server
 
         public void Chat()
         {
+
+            DateTime lastTick = DateTime.Now;
             while (true)
             {
                 if (clients.Count == 0)
                     continue;
+
+                if (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > 20)
+                {
+                    foreach (Client sclient in clients)
+                        if(sclient.online)
+                            sclient.Send("?getpos");
+                    lastTick = DateTime.Now;
+                }
 
                 for (int i = 0; i < clients.Count; i++)
                 {
@@ -72,6 +85,12 @@ namespace Server
                         if (message == null)
                         {
                             Console.WriteLine("Client " + client.name + " disconnected");
+                            if (client.online)
+                            {
+                                goblist.Remove(client.name);
+                                igIDs.Remove(client.name);
+                            }
+                                
                             clients.Remove(client);
                             continue;
                         }
@@ -82,6 +101,26 @@ namespace Server
                             continue;
                         }
 
+                        if (message == "login")
+                        {
+                            if (goblist.ContainsKey(client.name))
+                            {
+                                client.Send("kick:Id already in use");
+                                clients.Remove(client);
+                            }
+                            else
+                            {
+                                GameObject el = new GameObject();
+                                el.name = client.name;
+                                el.ID = client.name;
+                                goblist.Add(client.name, el);
+                                igIDs.Add(client.name);
+                                client.online = true;
+                            }
+
+                            continue;
+                        }
+
                         if (message.StartsWith("msg:"))
                         {
                             message = message.Remove(0, 4);
@@ -89,6 +128,14 @@ namespace Server
 
                             foreach (Client sclient in clients)
                                 sclient.Send("msg:" + client.name + ": " + message);
+                            continue;
+                        }
+
+                        if (message.StartsWith("pos:"))
+                        {
+                            float x, y;
+                            message = message.Remove(0, 4);
+                            Console.WriteLine(client.name + ".pos = " + message);
                             continue;
                         }
                     }

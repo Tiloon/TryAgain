@@ -9,6 +9,7 @@ namespace Server
 {
     class Client
     {
+        public bool online = false;
         public String name { get; private set; }
         String host;
         int port;

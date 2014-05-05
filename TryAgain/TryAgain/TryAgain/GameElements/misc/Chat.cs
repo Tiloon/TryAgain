@@ -13,20 +13,30 @@ namespace TryAgain.GameElements.misc
     {
         public volatile static bool isWriting = false;
         private volatile static String[] lastMessages = new String[8];
+        private volatile static Color[] lastMessagesColor = new Color[8];
         private static String bufferStr = "";
         private static float opacity = 1.0F;
         private static KeyboardState oldKeyboardState, newState;
 
-        public static void AddMessage(String str)
+        public static void AddMessage(String str, Color color)
         {
             String oldMessage;
+            Color oldColor;
             for (int i = 0; i < lastMessages.Length; i++)
             {
                 oldMessage = lastMessages[i];
                 lastMessages[i] = str;
                 str = oldMessage;
+                oldColor = lastMessagesColor[i];
+                lastMessagesColor[i] = color;
+                color = oldColor;
             }
             opacity = 1.0F;
+        }
+
+        public static void AddMessage(String str)
+        {
+            AddMessage(str, Color.DarkGray);
         }
 
         public static void Draw(SpriteBatch sb)
@@ -35,7 +45,7 @@ namespace TryAgain.GameElements.misc
             for (int i = 0; i < lastMessages.Length; i++)
             {
                 if((lastMessages[i] != null) && (lastMessages[i] != ""))
-                    sb.DrawString(Textures.UIfontSmall, lastMessages[i], new Vector2(0, 720 + 128 - (i + 1) * 15 - 4), Color.DarkGray * (opacity / 2 + 0.5F));
+                    sb.DrawString(Textures.UIfontSmall, lastMessages[i], new Vector2(0, 720 + 128 - (i + 1) * 15 - 4), lastMessagesColor[i] * (opacity / 2 + 0.5F));
             }
             if (true)
             {
@@ -141,6 +151,7 @@ namespace TryAgain.GameElements.misc
 
                 if (newState.IsKeyDown(Keys.Enter) && !oldKeyboardState.IsKeyDown(Keys.Enter))
                 {
+                    isWriting = false;
                     Connection.SendMessage(bufferStr);
                     bufferStr = "";
                 }
