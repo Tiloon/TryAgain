@@ -23,7 +23,7 @@ namespace TryAgain
         public static Texture2D roche_herbe, halfsable;
 
         public static Texture2D O, I, II, III, IV, V, VI, VII, VIII, IX, X, XI;  //numéros de ressources, se reférer à la clase craftinterface
-
+        public static Texture2D CraftInterface;
 
         public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG;
         public static Texture2D whitePixel;
@@ -59,7 +59,7 @@ namespace TryAgain
             IX = cm.Load<Texture2D>(@"Sprites\Ressources\9");
             X = cm.Load<Texture2D>(@"Sprites\Ressources\10");
             XI = cm.Load<Texture2D>(@"Sprites\Ressources\11");
-
+            CraftInterface = cm.Load<Texture2D>(@"Menu\CraftInterface");
 
             MainMenuBG = cm.Load<Texture2D>(@"Menu\MainMenu");
             OptionBG = cm.Load<Texture2D>(@"Menu\Option");

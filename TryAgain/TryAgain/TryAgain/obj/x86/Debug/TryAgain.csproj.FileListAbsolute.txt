@@ -502,3 +502,4 @@ C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debu
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\7.xnb
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\8.xnb
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\9.xnb
+C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb

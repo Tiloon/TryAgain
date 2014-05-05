@@ -70,7 +70,7 @@ namespace TryAgain.GameElements
         static public void Draw(SpriteBatch sb)
         {
             sb.Begin();
-            //sb.Draw(le gros truc qui servira d'interface)
+            sb.Draw(Textures.CraftInterface, new Vector2(Tilemap.variationsizegraphicsX, 0), Color.White);
             sb.End();
         }
     }

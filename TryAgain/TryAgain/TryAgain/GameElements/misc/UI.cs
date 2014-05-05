@@ -39,6 +39,13 @@ namespace TryAgain.GameElements.misc
             sb.DrawString(Textures.UIfont, "defense :" + defense.ToString(), new Vector2(15, 180), caracolor);
             sb.DrawString(Textures.UIfont, "criticalrate :" + criticalrate.ToString(), new Vector2(15, 200), caracolor);
             sb.DrawString(Textures.UIfont, "speed :" + speed.ToString(), new Vector2(15, 220), caracolor);
+
+            sb.DrawString(Textures.UIfont, "Quelques commandes: ", new Vector2(15, 260), caracolor);
+            sb.DrawString(Textures.UIfont, "Echap: Pause", new Vector2(15, 280), caracolor);
+            sb.DrawString(Textures.UIfont, "Enter: ecrire", new Vector2(15, 300), caracolor);
+            sb.DrawString(Textures.UIfont, "Alt: gerer la camera", new Vector2(15, 320), caracolor);
+            sb.DrawString(Textures.UIfont, "G: jeter l'objet", new Vector2(15, 340), caracolor);
+            sb.DrawString(Textures.UIfont, "Clic gauche: things", new Vector2(15, 360), caracolor);
             for (int i = 0; i < 10; i++)
             {
                 sb.Draw(Textures.UIitemHolder, new Rectangle(300 + 80*i, 884, 64, 64), Color.White);
