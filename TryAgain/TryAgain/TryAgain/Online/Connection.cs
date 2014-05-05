@@ -79,6 +79,7 @@ namespace TryAgain.Online
                 }
                 else
                 {
+                    System.Windows.Forms.MessageBox.Show("v");
                     online = false;
                     Close();
                     server_socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -136,8 +137,11 @@ namespace TryAgain.Online
 
         public static void ClientThread()
         {
+            float x = 0, y = 0;
+            DateTime lastTick = DateTime.Now;
             DateTime lastPing = DateTime.Now;
             bool pingSent = false;
+            bool logged = false;
             String serverReq;
             while (server_socket.Connected && online)
             {
@@ -155,35 +159,50 @@ namespace TryAgain.Online
                             ping = pingint.ToString();
                             lastPing = DateTime.Now;
                         }
-
-                        if (serverReq == "?getpos")
+                        else if (serverReq == "?getpos")
                         {
                             servWriter.WriteLine("pos:" + BitConverter.ToString(BitConverter.GetBytes(GameScreen.hero.X)) + "x" + BitConverter.ToString(BitConverter.GetBytes(GameScreen.hero.Y)));
+                            servWriter.Flush();
                         }
-                        if (serverReq.StartsWith("msg:"))
+                        else if (serverReq.StartsWith("msg:"))
                         {
                             Chat.AddMessage(serverReq.Remove(0, 4));
                         }
-                        if (serverReq.StartsWith("kick:"))
+                        else if (serverReq.StartsWith("kick:"))
                         {
                             Chat.AddMessage("KICK:" + serverReq.Remove(0, 5), Color.Red);
+                        }
+                        else if (serverReq.StartsWith("logged:"))
+                        {
+                            logged = true;
                         }
                     }
                     if (DateTime.Now.Second != lastPing.Second)
                     {
-                        if (pingSent == true) // Ping superieur à une seconde, donc on se déconnecte
-                            online = false;
+                        /*if (pingSent == true) // Ping superieur à une seconde, donc on se déconnecte
+                            online = false;*/
                         pingSent = true;
                         lastPing = DateTime.Now;
                         servWriter.WriteLine("Ping");
                         servWriter.Flush();
                     }
 
+                    if (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > 200) // Tick
+                    {
+                        if ((x != GameScreen.hero.X) || (y != GameScreen.hero.Y))
+                        {
+                            x = GameScreen.hero.X;
+                            y = GameScreen.hero.Y;
+                            servWriter.WriteLine("pos:" + Convert.ToBase64String(BitConverter.GetBytes(GameScreen.hero.X)) + "x" + Convert.ToBase64String(BitConverter.GetBytes(GameScreen.hero.Y)));
+                            servWriter.Flush();
+                        }
+                        lastTick = DateTime.Now;
+                    }
+
                 }
                 catch (Exception)
                 {
-                    online = false;
-                } 
+                }
             }
         }
     }

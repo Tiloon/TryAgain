@@ -65,14 +65,14 @@ namespace Server
             {
                 if (clients.Count == 0)
                     continue;
-
-                if (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > 20)
+                /*
+                if (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > 200)
                 {
                     foreach (Client sclient in clients)
                         if(sclient.online)
                             sclient.Send("?getpos");
                     lastTick = DateTime.Now;
-                }
+                }*/
 
                 for (int i = 0; i < clients.Count; i++)
                 {
@@ -80,8 +80,9 @@ namespace Server
 
                     if (client.sock.Poll(1, SelectMode.SelectRead))
                     {
-                        string message = client.Receive();
 
+                        string message = client.Receive();
+                        
                         if (message == null)
                         {
                             Console.WriteLine("Client " + client.name + " disconnected");
@@ -95,6 +96,7 @@ namespace Server
                             continue;
                         }
 
+                        Console.WriteLine(message);
                         if (message == "Ping")
                         {
                             client.Send("Pong");
@@ -116,6 +118,7 @@ namespace Server
                                 goblist.Add(client.name, el);
                                 igIDs.Add(client.name);
                                 client.online = true;
+                                client.Send("logged:");
                             }
 
                             continue;
@@ -133,9 +136,11 @@ namespace Server
 
                         if (message.StartsWith("pos:"))
                         {
-                            float x, y;
-                            message = message.Remove(0, 4);
-                            Console.WriteLine(client.name + ".pos = " + message);
+
+                            goblist[client.name].X = message.Substring(4, 8);
+                            goblist[client.name].Y = message.Substring(13, 8);
+                            Console.WriteLine(client.name + "pos : \n{\n    x : " + System.BitConverter.ToSingle(Convert.FromBase64String(goblist[client.name].X), 0) +
+                                                                     "\n    y : " + System.BitConverter.ToSingle(Convert.FromBase64String(goblist[client.name].Y), 0) + "\n}");
                             continue;
                         }
                     }
