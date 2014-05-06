@@ -46,7 +46,7 @@ namespace TryAgain.GameElements.misc
             sb.DrawString(Textures.UIfont, "Alt: gerer la camera", new Vector2(15, 320), caracolor);
             sb.DrawString(Textures.UIfont, "G: jeter l'objet", new Vector2(15, 340), caracolor);
             sb.DrawString(Textures.UIfont, "C: CraftInterface", new Vector2(15, 360), caracolor);
-            sb.DrawString(Textures.UIfont, "Clic gauche: trucs!", new Vector2(15, 380), caracolor);
+            sb.DrawString(Textures.UIfont, "Clic gauche: bcp trucs!", new Vector2(15, 380), caracolor);
             for (int i = 0; i < 10; i++)
             {
                 sb.Draw(Textures.UIitemHolder, new Rectangle(300 + 80*i, 884, 64, 64), Color.White);

@@ -67,7 +67,7 @@ namespace TryAgain.GameElements
             else
                 return false;   //pas encore prêts les autres trucs
         }
-        static public void Draw(SpriteBatch sb)
+        static public void Draw(SpriteBatch sb)    // ici, drawer les images des ressources et des items craftés a coté des quantités
         {
             sb.Draw(Textures.CraftInterface, new Vector2(Tilemap.variationsizegraphicsX, 0), Color.White);
             sb.DrawString(Textures.UIfont, "Ressources              Crafts              Recette", new Vector2(Tilemap.variationsizegraphicsX, 120), Color.Blue);
