@@ -17,9 +17,11 @@ namespace TryAgain.GameElements
     {
         public static Dictionary<String, GameObject> GobjectList = new Dictionary<string,GameObject>();
         public readonly String Type;
-        public readonly String UID; // Unique IDentifier
+        //public readonly String UID; // Unique IDentifier
+        public String UID; // Unique IDentifier
         protected Vector2 position;
         protected Vector2 size;
+        public bool ticked;
         public float X, Y;
         public Vector2 getPosition()
         {

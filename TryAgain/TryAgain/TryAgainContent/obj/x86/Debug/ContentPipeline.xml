@@ -430,15 +430,6 @@
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
       <Time>2014-05-05T13:26:37.1132165+02:00</Time>
     </Item>
-    <Item>
-      <Source>Menu\GameOver-temporaire.png</Source>
-      <Name>Menu\GameOver-temporaire</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\GameOver-temporaire.xnb</Output>
-      <Time>2014-05-05T23:44:21.1586634+02:00</Time>
-    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

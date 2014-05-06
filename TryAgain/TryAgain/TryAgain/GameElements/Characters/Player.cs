@@ -17,7 +17,7 @@ namespace TryAgain.GameElements.Characters
 {
     class Player: Character
     {
-        public Player(String sprite, Vector2 position)
+        public Player(String name, String sprite, Vector2 position)
             : base("Player", "Player")
         {
             this.stats.lp = 60;
@@ -28,6 +28,7 @@ namespace TryAgain.GameElements.Characters
                 this.apparence = Textures.Cache[sprite];
             else
                 this.apparence = Textures.Cache["Tminion"];
+            this.UID = name;
         }
 
         public void Collision()

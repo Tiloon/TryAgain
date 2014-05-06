@@ -48,6 +48,7 @@ namespace TryAgain
             Button_About = cm.Load<Texture2D>(@"Menu\Button_About");
             Button_Return = cm.Load<Texture2D>(@"Menu\Button_Return");
             */
+            whitePixel = cm.Load<Texture2D>(@"UI/pxl");
 
             I = cm.Load<Texture2D>(@"Sprites\Ressources\1");
             II = cm.Load<Texture2D>(@"Sprites\Ressources\2");
@@ -61,7 +62,7 @@ namespace TryAgain
             X = cm.Load<Texture2D>(@"Sprites\Ressources\10");
             XI = cm.Load<Texture2D>(@"Sprites\Ressources\11");
             CraftInterface = cm.Load<Texture2D>(@"Menu\CraftInterface");
-            GameOver = cm.Load<Texture2D>(@"Menu\GameOver-temporaire");
+            GameOver = whitePixel;
 
             MainMenuBG = cm.Load<Texture2D>(@"Menu\MainMenu");
             OptionBG = cm.Load<Texture2D>(@"Menu\Option");

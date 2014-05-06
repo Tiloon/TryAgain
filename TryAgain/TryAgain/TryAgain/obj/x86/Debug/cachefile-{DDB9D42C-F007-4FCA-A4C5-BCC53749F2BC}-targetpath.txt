@@ -45,8 +45,3 @@ Content\Sprites\Ressources\9.xnb
 Content\Menu\CraftInterface.xnb
 Content\Fonts\UIfont.xnb
 Content\Fonts\UIfontsmall.xnb
-<<<<<<< HEAD
-=======
-Content\Menu\CraftInterface.xnb
-Content\Menu\GameOver-temporaire.xnb
->>>>>>> 98932281bfac40e23f5f19249c3536417723b585

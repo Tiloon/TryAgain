@@ -142,28 +142,28 @@ namespace Server
                         if (message.StartsWith("view:"))
                         {
                             message = message.Remove(0, 5);
-                            Console.WriteLine(message);
+                            //Console.WriteLine(message);
                             //message = message.Remove(0, 1).Remove(message.Length - 2);
                             SRectangle rect = JsonConvert.DeserializeObject<SRectangle>(message);
-                            goblist[client.name].view.X = rect.X;
-                            goblist[client.name].view.Y = rect.Y;
-                            goblist[client.name].view.Width = rect.Width;
-                            goblist[client.name].view.Height = rect.Height;
+                            Rectangle view = new Rectangle(rect.X, rect.Y, rect.Width, rect.Height);
+                            goblist[client.name].SetView(view);
                             List<GameObject> gobjects = new List<GameObject>();
                             foreach (String item in igIDs)
                             {
                                 //Console.WriteLine("bit");
-                                if ((client.name != item) && (goblist[client.name].view.Intersects(new Rectangle((int)goblist[item].x, (int)goblist[item].y, 1, 1))))
+                                if ((client.name != item) && (goblist[client.name].GetView().Intersects(new Rectangle((int)goblist[item].x, (int)goblist[item].y, 1, 1))))
                                 {
                                     gobjects.Add(goblist[item]);
+                                    client.Send("add:" + JsonConvert.SerializeObject(goblist[item]));
                                 }
                             }
+                            /*
                             if (gobjects.Count > 0)
                             {
                                 client.Send("msg:COUCOUPD");
                                 client.Send("gobs:" + JsonConvert.SerializeObject(gobjects));
                                 Console.WriteLine(JsonConvert.SerializeObject(gobjects));
-                            }
+                            }*/
                             continue;
                         }
 

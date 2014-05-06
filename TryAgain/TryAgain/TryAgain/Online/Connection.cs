@@ -183,15 +183,15 @@ namespace TryAgain.Online
                             //System.Windows.Forms.MessageBox.Show(JsonConvert.SerializeObject(serverReq));
                             //System.Windows.Forms.MessageBox.Show(42.ToString());
                             Server.GameObject[] newgoblist = JsonConvert.DeserializeObject<Server.GameObject[]>(serverReq.Remove(0, 5));
-                            
-                            
+
+
                             System.Windows.Forms.MessageBox.Show(newgoblist.Length.ToString());
                             foreach (Server.GameObject gob in newgoblist)
                             {
-                                
+
                                 if (GameScreen.GOList.Exists(z => z.UID == gob.ID))
                                 {
-                                    System.Windows.Forms.MessageBox.Show(gob.ID);
+                                    //System.Windows.Forms.MessageBox.Show(gob.ID);
                                     int pos = GameScreen.GOList.FindIndex(z => z.UID == gob.ID);
                                     /*GameScreen.GOList[pos].X = System.BitConverter.ToSingle(Convert.FromBase64String(gob.X), 0);
                                     GameScreen.GOList[pos].Y = System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0);*/
@@ -201,11 +201,48 @@ namespace TryAgain.Online
                                 }
                                 else
                                 {
-                                    System.Windows.Forms.MessageBox.Show(gob.ID);
-                                    GameScreen.GOList.Add(new Player(gob.spr, new Vector2(
+                                    //System.Windows.Forms.MessageBox.Show(gob.ID);
+                                    GameScreen.GOList.Add(new Player(gob.ID, gob.spr, new Vector2(
                                         System.BitConverter.ToSingle(Convert.FromBase64String(gob.X), 0),
                                         System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0))));
                                 }
+                            }
+                        }
+                        if (serverReq.StartsWith("add:"))
+                        {
+                            Server.GameObject newgob;
+                            try
+                            {
+                                newgob = JsonConvert.DeserializeObject<Server.GameObject>(serverReq.Remove(0, 4));
+
+                            }
+                            catch (Exception e)
+                            {
+                                System.Windows.Forms.MessageBox.Show(e.Message);
+                                throw;
+                            }
+                            //System.Windows.Forms.MessageBox.Show(serverReq.Remove(0, 4));
+
+
+                            if (GameScreen.GOList.Exists(z => z.UID == newgob.ID))
+                            {
+                                //System.Windows.Forms.MessageBox.Show(newgob.ID);
+                                int pos = GameScreen.GOList.FindIndex(z => z.UID == newgob.ID);
+                                /*GameScreen.GOList[pos].X = System.BitConverter.ToSingle(Convert.FromBase64String(gob.X), 0);
+                                GameScreen.GOList[pos].Y = System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0);*/
+                                GameScreen.GOList[pos].SetPosition(new Vector2(
+                                    System.BitConverter.ToSingle(Convert.FromBase64String(newgob.X), 0),
+                                    System.BitConverter.ToSingle(Convert.FromBase64String(newgob.Y), 0)));
+                                GameScreen.GOList[pos].ticked = true;
+                            }
+                            else
+                            {
+                                //System.Windows.Forms.MessageBox.Show(newgob.ID);
+                                Player player = new Player(newgob.ID, newgob.spr, new Vector2(
+                                    System.BitConverter.ToSingle(Convert.FromBase64String(newgob.X), 0),
+                                    System.BitConverter.ToSingle(Convert.FromBase64String(newgob.Y), 0)));
+                                player.ticked = true;
+                                GameScreen.GOList.Add(player);
                             }
                         }
                     }
@@ -219,7 +256,7 @@ namespace TryAgain.Online
                         servWriter.Flush();
                     }
 
-                    if (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > 200) // Tick
+                    if (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > 40) // Tick
                     {
                         if ((x != GameScreen.hero.X) || (y != GameScreen.hero.Y))
                         {
@@ -227,6 +264,15 @@ namespace TryAgain.Online
                             y = GameScreen.hero.Y;
                             servWriter.WriteLine("pos:" + Convert.ToBase64String(BitConverter.GetBytes(GameScreen.hero.X)) + "x" + Convert.ToBase64String(BitConverter.GetBytes(GameScreen.hero.Y)));
                             servWriter.Flush();
+                        }
+
+                        foreach (var gobject in GameScreen.GOList)
+                        {
+                            /*
+                            if (gobject.ticked == false)
+                                GameScreen.GOList.Remove(gobject);
+                            else
+                                gobject.ticked = false;*/
                         }
 
                         // UpdateGObjects

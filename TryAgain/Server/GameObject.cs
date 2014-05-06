@@ -15,6 +15,14 @@ namespace Server
         public String type;
         public String name;
         public bool changed;
-        public Rectangle view;
+        private Rectangle view;
+        public Rectangle GetView()
+        {
+            return view;
+        }
+        public void SetView(Rectangle view)
+        {
+            this.view = view;
+        }
     }
 }
