@@ -39,6 +39,7 @@ namespace TryAgain
             gamestate = screen.GetState();
             gamegfx = graphics;
             Initializer.InitAll();
+            Textures.LoadTextureList("data.textures.json");
         }
 
         protected override void LoadContent()

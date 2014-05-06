@@ -36,8 +36,8 @@ namespace TryAgain.Characters
             this.items[0] = Items.itemsBank["sword00"];
             this.items[1] = Items.itemsBank["banana00"];
             this.equiped = 0;
-            this.longueur = 66;
-            this.largeur = 25;
+            this.longueur = 64;
+            this.largeur = 64;
             this.size = new Vector2(this.largeur, this.longueur);
             this.position = position;
             this.X = position.X;

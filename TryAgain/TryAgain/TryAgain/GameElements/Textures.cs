@@ -13,6 +13,7 @@ using Newtonsoft.Json;
 using TryAgain.Datas;
 using System.Windows.Forms;
 using TryAgain.Sounds;
+using System.IO;
 
 namespace TryAgain
 {
@@ -40,7 +41,7 @@ namespace TryAgain
             {
                 Cache[t.Item1] = cm.Load<Texture2D>(t.Item2);
             }
-            
+
             //On quitte les textures purgame
             /*Button_Play = cm.Load<Texture2D>(@"Menu\Button_Play");
             Button_Option = cm.Load<Texture2D>(@"Menu\Button_Option");
@@ -146,6 +147,23 @@ namespace TryAgain
         public static void DrawRectangle(SpriteBatch sb, Rectangle position, Color color)
         {
             sb.Draw(whitePixel, position, color);
+        }
+
+        public static void LoadTexture(String str, String file)
+        {
+            if (!Textures.Cache.ContainsKey(str))
+            {
+                Textures.Cache.Add(str, Texture2D.FromStream(Game1.gamegfx.GraphicsDevice, new FileStream(@"data\" + file, FileMode.Open)));
+            }
+        }
+        public static void LoadTextureList(String file)
+        {
+            Tuple<String, String>[]  texturesList = JsonConvert.DeserializeObject<Tuple<String, String>[]>(Initializer.ReadTextFile(@"elements\textures\" + file));
+
+            foreach (var t in texturesList)
+            {
+                LoadTexture(t.Item1, t.Item2);
+            }
         }
     }
 }

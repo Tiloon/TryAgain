@@ -16,6 +16,7 @@ namespace Server
         public String name;
         public bool changed;
         private Rectangle view;
+        private List<GameObject> near = new List<GameObject>();
         public Rectangle GetView()
         {
             return view;
