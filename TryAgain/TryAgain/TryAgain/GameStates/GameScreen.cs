@@ -111,10 +111,13 @@ namespace TryAgain.GameStates
             Chat.Draw(sb);
 
             //code tony pas super propre mais bon, j'ai la flemme d'utiliser ton screentype que j'ai jamais used ^^
-            KeyboardState newState = Keyboard.GetState();
-            if (newState.IsKeyDown(Keys.C))
+            if (!Chat.isWriting) // Moi non plus
             {
-                Craft.Draw(sb);
+                KeyboardState newState = Keyboard.GetState();
+                if (newState.IsKeyDown(Keys.C))
+                {
+                    Craft.Draw(sb);
+                }
             }
         }
 

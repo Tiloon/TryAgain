@@ -14,7 +14,9 @@ namespace Server
         public String spr;
         public String type;
         public String name;
+        public String datas;
         public bool changed;
+
         private Rectangle view;
         public Rectangle GetView()
         {
