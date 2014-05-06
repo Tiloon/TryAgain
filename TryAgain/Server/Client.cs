@@ -32,8 +32,15 @@ namespace Server
 
         public void Send(string message)
         {
-            clientWriter.WriteLine(message);
-            clientWriter.Flush();
+            try
+            {
+                clientWriter.WriteLine(message);
+                clientWriter.Flush();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         public string Receive()

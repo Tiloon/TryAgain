@@ -37,8 +37,11 @@ namespace TryAgain.Online
         static volatile StreamWriter servWriter;
         static volatile StreamReader servReader;
         static volatile bool online;
+        static volatile bool update = true;
         static volatile String ping = "0";
 
+
+        public static bool Updated { get { return update; } }
         public bool Connected { get { return server_socket.Connected; } }
 
         public static void Init(String profile)
@@ -137,6 +140,16 @@ namespace TryAgain.Online
             }
         }
 
+        public static void HeroDead()
+        {
+            if (online)
+            {
+                servWriter.WriteLine("rm:" + UserID);
+                servWriter.Flush();
+                update = false;
+            }
+        }
+
         public static void ClientThread()
         {
             float x = 0, y = 0;
@@ -177,6 +190,16 @@ namespace TryAgain.Online
                         else if (serverReq.StartsWith("logged:"))
                         {
                             logged = true;
+                        }
+                        else if (serverReq.StartsWith("rm:"))
+                        {
+                            string message = serverReq.Remove(0, 3);
+                            if (GameScreen.GOList.Exists(z => z.UID == message))
+                            {
+                                int pos = GameScreen.GOList.FindIndex(z => z.UID == message);
+                                GameScreen.GOList[pos].toupdate = false;
+                            }
+
                         }
                         if (serverReq.StartsWith("gobs:"))
                         {
@@ -233,6 +256,7 @@ namespace TryAgain.Online
                                     System.BitConverter.ToSingle(Convert.FromBase64String(newgob.X), 0),
                                     System.BitConverter.ToSingle(Convert.FromBase64String(newgob.Y), 0)));
                                 GameScreen.GOList[pos].ticked = true;
+                                GameScreen.GOList[pos].toupdate = true;
                             }
                             else
                             {
@@ -247,6 +271,7 @@ namespace TryAgain.Online
                                     System.BitConverter.ToSingle(Convert.FromBase64String(newgob.X), 0),
                                     System.BitConverter.ToSingle(Convert.FromBase64String(newgob.Y), 0)));
                                 gobElement.ticked = true;
+                                gobElement.toupdate = true;
                                 GameScreen.GOList.Add(gobElement);
                             }
                         }
@@ -261,7 +286,7 @@ namespace TryAgain.Online
                         servWriter.Flush();
                     }
 
-                    if (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > 40) // Tick
+                    if (update && (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > 100)) // Tick
                     {
                         if ((x != GameScreen.hero.X) || (y != GameScreen.hero.Y))
                         {
@@ -273,11 +298,19 @@ namespace TryAgain.Online
 
                         foreach (var gobject in GameScreen.GOList)
                         {
-                            /*
-                            if (gobject.ticked == false)
-                                GameScreen.GOList.Remove(gobject);
-                            else
-                                gobject.ticked = false;*/
+                            if (gobject.UID != GameScreen.hero.UID)
+                            {
+                                if (gobject.ticked == false)
+                                {
+                                    /*
+                                    GameScreen.GOList.Remove(gobject);
+                                    TryAgain.GameElements.GameObject.GobjectList.Remove(gobject.UID);
+                                    */
+                                    //gobject.toupdate = false;
+                                }
+                                else
+                                    gobject.ticked = false;
+                            }
                         }
 
                         // UpdateGObjects
@@ -292,7 +325,6 @@ namespace TryAgain.Online
                         servWriter.Flush();
                         lastTick = DateTime.Now;
                     }
-
                 }
                 catch (Exception)
                 {

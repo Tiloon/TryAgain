@@ -21,7 +21,7 @@ namespace TryAgain.GameElements
         public String UID; // Unique IDentifier
         protected Vector2 position;
         protected Vector2 size;
-        public bool ticked;
+        public bool ticked, toupdate = true;
         public float X, Y;
         public Vector2 getPosition()
         {

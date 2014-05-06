@@ -145,6 +145,20 @@ namespace Server
                             continue;
                         }
 
+                        if (message.StartsWith("rm:"))
+                        {
+                            message = message.Remove(0, 3);
+                            Console.WriteLine(message + " is removed");
+                            if (goblist.ContainsKey(message))
+                            {
+                                goblist.Remove(message);
+                                igIDs.Remove(message);
+                            }
+                            foreach (Client sclient in clients)
+                                sclient.Send("rm:" + message);
+                            continue;
+                        }
+
                         if (message.StartsWith("view:"))
                         {
                             message = message.Remove(0, 5);

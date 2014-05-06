@@ -38,6 +38,10 @@ namespace TryAgain.GameStates
         {
             MouseState mouse = Mouse.GetState();
             GameObject gob = null;
+
+            if ((hero.stats.lp <= 0) && (Connection.Updated))
+                Connection.HeroDead();
+
             if ((mouse.LeftButton == ButtonState.Pressed) && (mouse.LeftButton != previousstate))
             {
                 gob = this.GetClicked(mouse);
@@ -53,7 +57,7 @@ namespace TryAgain.GameStates
                     GOList.Remove(gob);
                     GameObject.Delete(ref gob);
                 }
-                else if (hero.equipedItem() != null)// Else, player use it's item
+                else if (hero.equipedItem() != null)// Else, player use its item
                 {
                     Tuple<String, String> jsonUpdates = (hero.equipedItem()).useItem(hero, gob);
                     Vector2 heroPos = hero.getPosition();
@@ -67,13 +71,14 @@ namespace TryAgain.GameStates
                     GOList.Add(new GobVoid(new Vector2(mouse.X, mouse.Y)));
                 }
             }
+            
             previousstate = mouse.LeftButton;
             KeyboardState newState = Keyboard.GetState();
             if (newState.IsKeyDown(Keys.Escape))
                 return ScreenType.Pause;
             for (int i = 0; i < GOList.Count; i++)
             {
-                if (!GOList[i].toRemove())
+                if (!GOList[i].toRemove()) // || !GOList[i].toupdate ???
                 {
                     GameObject.GobjectList.Remove(GOList[i].UID);
                     GOList.RemoveAt(i);
@@ -81,7 +86,8 @@ namespace TryAgain.GameStates
                 }
                 else
                 {
-                    GOList[i].update();
+                    if(GOList[i].toupdate)
+                        GOList[i].update();
                 }
             }
 
@@ -97,7 +103,8 @@ namespace TryAgain.GameStates
                 /*
                 if(todraw.UID != hero.UID)
                     Chat.AddMessage((todraw.UID));*/
-                todraw.Draw(sb);
+                if(todraw.toupdate)
+                    todraw.Draw(sb);
             }
 
             userinterface.Draw(sb);
