@@ -79,10 +79,15 @@ namespace TryAgain.Sounds
         }
     }
 
+    enum AudioFade { In, Out, none, wait };
+
     class Themes
     {
         public volatile static int currentTheme = 0;
         public volatile static float volume = 1.0F;
+        public volatile static float fade = 1.0F;
+        public volatile static AudioFade fadeType = AudioFade.Out;
+
         public volatile static bool soundPlaying = true;
 
         private static String[] themes = 
@@ -127,12 +132,27 @@ namespace TryAgain.Sounds
                     if (waveOut.Volume != volume)
                         waveOut.Volume = volume;
                 };
+
                 loop.EnableLooping = false;
 
-                waveOut.PlaybackStopped += new EventHandler<StoppedEventArgs>((e, a) => {
-                    isPlaying = false;
-                });
-                while (isPlaying && soundPlaying) { };
+                if (fadeType == AudioFade.wait)
+                {
+                    waveOut.PlaybackStopped += new EventHandler<StoppedEventArgs>((e, a) =>
+                    {
+                        isPlaying = false;
+                    });
+                    while (isPlaying && soundPlaying) { };
+                }
+                else if (fadeType == AudioFade.Out)
+                {
+                    fade = 1.0f;
+                    while (fade >= 0f) {
+                        waveOut.Volume = volume * fade;
+                        Thread.Sleep(50);
+                        fade -= 0.01f;
+                    };
+                    waveOut.Volume = volume;
+                }
                 waveOut.Stop();
                 waveOut.Dispose();
                 waveOut = null;
@@ -149,6 +169,7 @@ namespace TryAgain.Sounds
 
         public static void Stop()
         {
+            fadeType = AudioFade.none;
             soundPlaying = false;
         }
     }

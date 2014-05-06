@@ -11,3 +11,11 @@ C:\Users\Tony\Documents\tryagain\TryAgain\Server\obj\x86\Debug\Server.pdb
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.pdb
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.xml
+C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\Server\bin\Debug\Server.exe
+C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\Server\bin\Debug\Server.pdb
+C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.dll
+C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.xml
+C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\Server\obj\x86\Debug\Server.exe
+C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\Server\obj\x86\Debug\Server.pdb
