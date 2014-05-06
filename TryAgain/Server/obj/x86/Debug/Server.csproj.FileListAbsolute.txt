@@ -8,3 +8,6 @@ C:\Users\Tony\Documents\tryagain\TryAgain\Server\bin\Debug\Server.pdb
 C:\Users\Tony\Documents\tryagain\TryAgain\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
 C:\Users\Tony\Documents\tryagain\TryAgain\Server\obj\x86\Debug\Server.exe
 C:\Users\Tony\Documents\tryagain\TryAgain\Server\obj\x86\Debug\Server.pdb
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.xml

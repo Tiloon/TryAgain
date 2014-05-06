@@ -121,10 +121,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datas\GameObject.cs" />
     <Compile Include="Datas\Initializer.cs" />
     <Compile Include="Datas\JSAPI.cs" />
+    <Compile Include="Datas\Serialized.cs" />
     <Compile Include="GameElements\Characters\Character.cs" />
     <Compile Include="GameElements\Characters\Monster.cs" />
+    <Compile Include="GameElements\Characters\Player.cs" />
     <Compile Include="GameElements\Characters\Stats.cs" />
     <Compile Include="GameElements\CraftInterface.cs" />
     <Compile Include="GameElements\GameObject.cs" />

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Threading;
 using System.Net.Sockets;
 using System.Net;
+using Newtonsoft.Json;
+using Microsoft.Xna.Framework;
 
 
 namespace Server
@@ -96,18 +98,20 @@ namespace Server
                             continue;
                         }
 
-                        Console.WriteLine(message);
+                        //Console.WriteLine(message);
                         if (message == "Ping")
                         {
                             client.Send("Pong");
                             continue;
                         }
 
-                        if (message == "login")
+                        if (message.StartsWith("login:"))
                         {
+                            Console.WriteLine(client.name + " Logged");
+
                             if (goblist.ContainsKey(client.name))
                             {
-                                client.Send("kick:Id already in use");
+                                client.Send("kick:ID already in use");
                                 clients.Remove(client);
                             }
                             else
@@ -115,6 +119,7 @@ namespace Server
                                 GameObject el = new GameObject();
                                 el.name = client.name;
                                 el.ID = client.name;
+                                el.spr = message.Substring(6);
                                 goblist.Add(client.name, el);
                                 igIDs.Add(client.name);
                                 client.online = true;
@@ -134,13 +139,56 @@ namespace Server
                             continue;
                         }
 
+                        if (message.StartsWith("view:"))
+                        {
+                            message = message.Remove(0, 5);
+                            Console.WriteLine(message);
+                            //message = message.Remove(0, 1).Remove(message.Length - 2);
+                            SRectangle rect = JsonConvert.DeserializeObject<SRectangle>(message);
+                            goblist[client.name].view.X = rect.X;
+                            goblist[client.name].view.Y = rect.Y;
+                            goblist[client.name].view.Width = rect.Width;
+                            goblist[client.name].view.Height = rect.Height;
+                            List<GameObject> gobjects = new List<GameObject>();
+                            foreach (String item in igIDs)
+                            {
+                                //Console.WriteLine("bit");
+                                if ((client.name != item) && (goblist[client.name].view.Intersects(new Rectangle((int)goblist[item].x, (int)goblist[item].y, 1, 1))))
+                                {
+                                    gobjects.Add(goblist[item]);
+                                }
+                            }
+                            if (gobjects.Count > 0)
+                            {
+                                client.Send("msg:COUCOUPD");
+                                client.Send("gobs:" + JsonConvert.SerializeObject(gobjects));
+                                Console.WriteLine(JsonConvert.SerializeObject(gobjects));
+                            }
+                            continue;
+                        }
+
                         if (message.StartsWith("pos:"))
                         {
+                            if (goblist.ContainsKey(client.name))
+                            {
 
-                            goblist[client.name].X = message.Substring(4, 8);
-                            goblist[client.name].Y = message.Substring(13, 8);
-                            Console.WriteLine(client.name + "pos : \n{\n    x : " + System.BitConverter.ToSingle(Convert.FromBase64String(goblist[client.name].X), 0) +
-                                                                     "\n    y : " + System.BitConverter.ToSingle(Convert.FromBase64String(goblist[client.name].Y), 0) + "\n}");
+                                goblist[client.name].X = message.Substring(4, 8);
+                                goblist[client.name].x = System.BitConverter.ToSingle(Convert.FromBase64String(goblist[client.name].X), 0);
+                                goblist[client.name].Y = message.Substring(13, 8);
+                                goblist[client.name].y = System.BitConverter.ToSingle(Convert.FromBase64String(goblist[client.name].Y), 0);
+                            }
+                            else
+                            {
+                                GameObject gob = new GameObject();
+                                gob.X = message.Substring(4, 8);
+                                gob.x = System.BitConverter.ToSingle(Convert.FromBase64String(gob.X), 0);
+                                gob.Y = message.Substring(13, 8);
+                                gob.y = System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0);
+                                gob.name = client.name;
+                                goblist.Add(client.name, gob);
+                            }
+                            //Console.WriteLine(client.name + "pos : \n{\n    x : " + System.BitConverter.ToSingle(Convert.FromBase64String(goblist[client.name].X), 0) +
+                            //                                         "\n    y : " + System.BitConverter.ToSingle(Convert.FromBase64String(goblist[client.name].Y), 0) + "\n}");
                             continue;
                         }
                     }

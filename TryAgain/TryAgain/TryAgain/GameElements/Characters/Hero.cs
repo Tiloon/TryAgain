@@ -65,12 +65,14 @@ namespace TryAgain.Characters
         {
             base.update();
             //collision monstre = degats subis
-            foreach (GameObject obj in GameScreen.GOList)
+            /*foreach (GameObject obj in GameScreen.GOList)
             {
+                
                 if ((obj.Type == "GameObject,Character,Monster") && (stats.lp > 0) &&
                     (new Rectangle((int)position.X, (int)position.Y, 1, 1).Intersects(new Rectangle((int)obj.getPosition().X, (int)obj.getPosition().Y, 1, 1))))
                     stats.lp--;
-            }
+                
+            }*/
 
             oldKeyboardState = newState;
             newState = Keyboard.GetState();

@@ -42,6 +42,6 @@ Content\Sprites\Ressources\6.xnb
 Content\Sprites\Ressources\7.xnb
 Content\Sprites\Ressources\8.xnb
 Content\Sprites\Ressources\9.xnb
+Content\Menu\CraftInterface.xnb
 Content\Fonts\UIfont.xnb
 Content\Fonts\UIfontsmall.xnb
-Content\Menu\CraftInterface.xnb

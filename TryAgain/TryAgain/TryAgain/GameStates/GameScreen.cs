@@ -94,6 +94,8 @@ namespace TryAgain.GameStates
                 Tilemap.Drawmap(sb, Tilemap.tiles);
             foreach (var todraw in GOList)
             {
+                if(todraw.UID != hero.UID)
+                    Chat.AddMessage((todraw.UID));
                 todraw.Draw(sb);
             }
 
@@ -124,7 +126,7 @@ namespace TryAgain.GameStates
         {
             if (!hasStarted)
             {
-                Connection.Command("login");
+                Connection.Command("login:" + Connection.avatar);
                 Themes.currentTheme = 1;
                 Vector2 pos1 = new Vector2(3, 3);
                 hero = new Hero("Pierre", Classes.Classe.gunner, Textures.Cache[Connection.avatar], Keys.Up, Keys.Down, Keys.Left, Keys.Right, pos1);

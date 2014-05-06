@@ -12,6 +12,8 @@ using Newtonsoft.Json;
 using TryAgain.Datas;
 using System.Net;
 using TryAgain.GameStates;
+using TryAgain.Characters;
+using TryAgain.GameElements.Characters;
 
 namespace TryAgain.Online
 {
@@ -176,11 +178,41 @@ namespace TryAgain.Online
                         {
                             logged = true;
                         }
+                        if (serverReq.StartsWith("gobs:"))
+                        {
+                            //System.Windows.Forms.MessageBox.Show(JsonConvert.SerializeObject(serverReq));
+                            //System.Windows.Forms.MessageBox.Show(42.ToString());
+                            Server.GameObject[] newgoblist = JsonConvert.DeserializeObject<Server.GameObject[]>(serverReq.Remove(0, 5));
+                            
+                            
+                            System.Windows.Forms.MessageBox.Show(newgoblist.Length.ToString());
+                            foreach (Server.GameObject gob in newgoblist)
+                            {
+                                
+                                if (GameScreen.GOList.Exists(z => z.UID == gob.ID))
+                                {
+                                    System.Windows.Forms.MessageBox.Show(gob.ID);
+                                    int pos = GameScreen.GOList.FindIndex(z => z.UID == gob.ID);
+                                    /*GameScreen.GOList[pos].X = System.BitConverter.ToSingle(Convert.FromBase64String(gob.X), 0);
+                                    GameScreen.GOList[pos].Y = System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0);*/
+                                    GameScreen.GOList[pos].SetPosition(new Vector2(
+                                        System.BitConverter.ToSingle(Convert.FromBase64String(gob.X), 0),
+                                        System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0)));
+                                }
+                                else
+                                {
+                                    System.Windows.Forms.MessageBox.Show(gob.ID);
+                                    GameScreen.GOList.Add(new Player(gob.spr, new Vector2(
+                                        System.BitConverter.ToSingle(Convert.FromBase64String(gob.X), 0),
+                                        System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0))));
+                                }
+                            }
+                        }
                     }
                     if (DateTime.Now.Second != lastPing.Second)
                     {
-                        /*if (pingSent == true) // Ping superieur à une seconde, donc on se déconnecte
-                            online = false;*/
+                        if (pingSent == true) // Ping superieur à une seconde, donc on se déconnecte
+                            online = false;
                         pingSent = true;
                         lastPing = DateTime.Now;
                         servWriter.WriteLine("Ping");
@@ -196,6 +228,17 @@ namespace TryAgain.Online
                             servWriter.WriteLine("pos:" + Convert.ToBase64String(BitConverter.GetBytes(GameScreen.hero.X)) + "x" + Convert.ToBase64String(BitConverter.GetBytes(GameScreen.hero.Y)));
                             servWriter.Flush();
                         }
+
+                        // UpdateGObjects
+                        Datas.SRectangle rect;
+                        rect.X = Hero.view.X;
+                        rect.Y = Hero.view.Y;
+                        rect.Width = Hero.view.Width;
+                        rect.Height = Hero.view.Height;
+
+                        servWriter.WriteLine("view:" + JsonConvert.SerializeObject(rect));
+                        //System.Windows.Forms.MessageBox.Show(JsonConvert.SerializeObject(Hero.view));
+                        servWriter.Flush();
                         lastTick = DateTime.Now;
                     }
 
