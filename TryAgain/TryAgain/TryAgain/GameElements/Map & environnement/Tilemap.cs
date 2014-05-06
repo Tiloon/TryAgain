@@ -160,8 +160,6 @@ namespace TryAgain
                     }
                 }
             }
-            Textures.DrawRectangle(sb, new Rectangle(0, 0, variationsizegraphicsX, 15 * 64), Color.White);
-            Textures.DrawRectangle(sb, new Rectangle(variationsizegraphicsX + 15*64, 0, variationsizegraphicsX, 15 * 64), Color.White);
         }
 
         public static void Drawmap(SpriteBatch sb, Texture2D[,] map, int scale)
