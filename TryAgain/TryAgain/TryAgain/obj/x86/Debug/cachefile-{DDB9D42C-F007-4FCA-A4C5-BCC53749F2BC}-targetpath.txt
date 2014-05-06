@@ -4,11 +4,6 @@ Content\Sprites\persopierre.xnb
 Content\Menu\About.xnb
 Content\Menu\MainMenu.xnb
 Content\Menu\Option.xnb
-Content\Menu\Button_About.xnb
-Content\Menu\Button_Exit.xnb
-Content\Menu\Button_Option.xnb
-Content\Menu\Button_Play.xnb
-Content\Menu\Button_Return.xnb
 Content\Sprites\tilecaillou.xnb
 Content\Sprites\tileneige.xnb
 Content\Sprites\Unwalkable\tileneigetrou.xnb
@@ -44,7 +39,13 @@ Content\Menu\CraftInterface.xnb
 Content\Menu\storyboard.xnb
 Content\Fonts\UIfont.xnb
 Content\Fonts\UIfontsmall.xnb
+Content\Menu\Button_About.xnb
+Content\Menu\Button_Exit.xnb
+Content\Menu\Button_Option.xnb
+Content\Menu\Button_Play.xnb
+Content\Menu\Button_Return.xnb
 Content\Menu\fullscreen.xnb
-Content\Menu\fenetre.xnb
 Content\Menu\Button_SondOff.xnb
 Content\Menu\Button_SondOn.xnb
+Content\Menu\MenuOption.xnb
+Content\Menu\fenetre.xnb

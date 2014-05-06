@@ -98,6 +98,7 @@ namespace TryAgain.GameStates
         {
 
             //sb.Draw(Content.Load<Texture2D>("Option"), new Rectangle(0, 0, screenWidth, screenHigh), Color.White);
+            sb.Draw(Textures.MenuOption, new Rectangle(0, 0, Width, Height), Color.White);
             ButtonReturn.Draw(sb);
             if (Game1.graphics.IsFullScreen)
                 ButtonFenetre.Draw(sb);

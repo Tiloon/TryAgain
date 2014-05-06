@@ -27,7 +27,7 @@ namespace TryAgain
         public static Texture2D CraftInterface;
         public static Texture2D GameOver, storyboard;
 
-        public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG;
+        public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG, MenuOption;
         public static Texture2D whitePixel;
 
         public static SpriteFont UIfont, UIfontSmall;
@@ -71,6 +71,7 @@ namespace TryAgain
             AboutBG = cm.Load<Texture2D>(@"Menu\About");
             FullscreenBG = cm.Load<Texture2D>(@"Menu\fullscreen");
             FenetreBG = cm.Load<Texture2D>(@"Menu\fenetre");
+            MenuOption = cm.Load<Texture2D>(@"Menu\MenuOption");
 
             UIfont = cm.Load<SpriteFont>(@"Fonts\UIfont");
             UIfontSmall = cm.Load<SpriteFont>(@"Fonts\UIfontsmall");
