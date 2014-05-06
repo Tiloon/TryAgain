@@ -24,7 +24,7 @@ namespace TryAgain.Characters
         public static Rectangle view = new Rectangle(0, 0, 15, 15);
         public static Vector2 padding = new Vector2(0, 0);
         // Si quelqu'un trouve un meilleur nom de variable.... Décalage pour rendre le déplacement de l'écran fluide.
-
+        public static Direction directiontournee = Direction.bas;
         private Item[] items = new Item[10];
         Classes.Classe classe;
         Keys keyup, keydown, keyleft, keyright;
@@ -86,13 +86,25 @@ namespace TryAgain.Characters
 
                 Vector2 normalizedSpeed = new Vector2(0, 0);
                 if (newState.IsKeyDown(keyup))
+                {
                     normalizedSpeed += new Vector2(0, -1);
+                    directiontournee = Direction.haut;
+                }
                 if (newState.IsKeyDown(keydown))
+                {
                     normalizedSpeed += new Vector2(0, 1);
+                    directiontournee = Direction.bas;
+                }
                 if (newState.IsKeyDown(keyright))
+                {
                     normalizedSpeed += new Vector2(1, 0);
+                    directiontournee = Direction.droite;
+                }
                 if (newState.IsKeyDown(keyleft))
+                {
                     normalizedSpeed += new Vector2(-1, 0);
+                    directiontournee = Direction.gauche;
+                }
 
                 if (altIsDown && ((normalizedSpeed.X != 0) || (normalizedSpeed.Y != 0)))
                 {
