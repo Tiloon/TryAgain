@@ -337,13 +337,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu\fullscreen.png">
-      <Name>fullscreen</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Menu\fenetre.png">
       <Name>fenetre</Name>
       <Importer>TextureImporter</Importer>
@@ -360,6 +353,13 @@
   <ItemGroup>
     <Compile Include="Menu\Button_SondOn.png">
       <Name>Button_SondOn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\fullscreen.png">
+      <Name>fullscreen</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
