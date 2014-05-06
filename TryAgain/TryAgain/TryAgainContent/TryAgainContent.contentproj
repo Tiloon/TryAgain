@@ -366,14 +366,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu\fullscreen.png">
-      <Name>fullscreen</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <ProcessorParameters_ColorKeyColor>0, 255, 0, 255</ProcessorParameters_ColorKeyColor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Menu\MenuOption.png">
       <Name>MenuOption</Name>
       <Importer>TextureImporter</Importer>

@@ -46,13 +46,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MainMenu.xnb</Output>
-      <Time>2014-03-08T15:16:27.8277117+01:00</Time>
-=======
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MainMenu.xnb</Output>
-      <Time>2014-05-06T22:09:23.5682611+02:00</Time>
->>>>>>> 7c3fec888797e33c1a8506f2039dbd9ab5fc3bc3
+      <Time>2014-05-06T23:04:44.2120822+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\Option.png</Source>
@@ -64,54 +59,66 @@
       <Time>2014-03-08T15:16:27.8377123+01:00</Time>
     </Item>
     <Item>
-<<<<<<< HEAD
       <Source>Menu\Button_About.png</Source>
       <Name>Menu\Button_About</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_About.xnb</Output>
-      <Time>2014-05-06T22:44:26.7344465+02:00</Time>
+      <Time>2014-05-06T23:04:44.1880809+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\Button_Exit.png</Source>
       <Name>Menu\Button_Exit</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Exit.xnb</Output>
-      <Time>2014-05-06T22:44:26.7384467+02:00</Time>
+      <Time>2014-05-06T23:04:44.191081+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\Button_Option.png</Source>
       <Name>Menu\Button_Option</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Option.xnb</Output>
-      <Time>2014-05-06T22:44:26.7414469+02:00</Time>
+      <Time>2014-05-06T23:04:44.1930811+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\Button_Play.png</Source>
       <Name>Menu\Button_Play</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Play.xnb</Output>
-      <Time>2014-05-06T22:44:26.7444471+02:00</Time>
+      <Time>2014-05-06T23:04:44.1960813+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\Button_Return.png</Source>
       <Name>Menu\Button_Return</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Return.xnb</Output>
-      <Time>2014-05-06T22:44:26.7474472+02:00</Time>
+      <Time>2014-05-06T23:04:44.1980814+02:00</Time>
     </Item>
     <Item>
-=======
->>>>>>> 7c3fec888797e33c1a8506f2039dbd9ab5fc3bc3
       <Source>Sprites\tilecaillou.bmp</Source>
       <Name>Sprites\tilecaillou</Name>
       <Importer>TextureImporter</Importer>
@@ -416,6 +423,9 @@
       <Name>Menu\fenetre</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fenetre.xnb</Output>
       <Time>2014-05-06T23:02:36.5557807+02:00</Time>
@@ -425,48 +435,42 @@
       <Name>Menu\Button_SondOff</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_SondOff.xnb</Output>
       <Time>2014-05-06T23:03:08.3886014+02:00</Time>
     </Item>
     <Item>
-<<<<<<< HEAD
       <Source>Menu\Button_SondOn.png</Source>
       <Name>Menu\Button_SondOn</Name>
-=======
-      <Source>Menu\Button_About.png</Source>
-      <Name>Menu\Button_About</Name>
->>>>>>> 7c3fec888797e33c1a8506f2039dbd9ab5fc3bc3
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_SondOn.xnb</Output>
       <Time>2014-05-06T23:03:11.178761+02:00</Time>
     </Item>
     <Item>
-      <Source>Menu\fullscreen.png</Source>
-      <Name>Menu\fullscreen</Name>
-=======
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_About.xnb</Output>
-      <Time>2014-05-06T22:33:31.0900546+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\Button_Exit.png</Source>
-      <Name>Menu\Button_Exit</Name>
->>>>>>> 7c3fec888797e33c1a8506f2039dbd9ab5fc3bc3
+      <Source>Menu\MenuOption.png</Source>
+      <Name>Menu\MenuOption</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
-      </Parameters>
       <Options>None</Options>
-<<<<<<< HEAD
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MenuOption.xnb</Output>
+      <Time>2014-05-06T23:08:05.4175905+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\fullscreen.png</Source>
+      <Name>Menu\fullscreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fullscreen.xnb</Output>
-      <Time>2014-05-06T23:01:19.5713774+02:00</Time>
+      <Time>2014-05-06T23:08:55.2774423+02:00</Time>
     </Item>
     <Item>
       <Source>Fonts\UIfont.spritefont</Source>
@@ -485,103 +489,6 @@
       <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
       <Time>2014-05-05T13:26:37.1132165+02:00</Time>
-=======
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Exit.xnb</Output>
-      <Time>2014-05-06T22:33:40.2625792+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\Button_Option.png</Source>
-      <Name>Menu\Button_Option</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Option.xnb</Output>
-      <Time>2014-05-06T22:33:51.0661972+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\Button_Play.png</Source>
-      <Name>Menu\Button_Play</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Play.xnb</Output>
-      <Time>2014-05-06T22:33:58.0645974+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\Button_Return.png</Source>
-      <Name>Menu\Button_Return</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_Return.xnb</Output>
-      <Time>2014-05-06T22:34:06.5900851+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\fullscreen.png</Source>
-      <Name>Menu\fullscreen</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fullscreen.xnb</Output>
-      <Time>2014-05-06T22:43:46.9222782+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\Button_SondOff.png</Source>
-      <Name>Menu\Button_SondOff</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_SondOff.xnb</Output>
-      <Time>2014-05-06T22:34:36.4397924+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\Button_SondOn.png</Source>
-      <Name>Menu\Button_SondOn</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_SondOn.xnb</Output>
-      <Time>2014-05-06T22:34:43.060171+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\MenuOption.png</Source>
-      <Name>Menu\MenuOption</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MenuOption.xnb</Output>
-      <Time>2014-05-06T22:41:05.7080573+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\fenetre.png</Source>
-      <Name>Menu\fenetre</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fenetre.xnb</Output>
-      <Time>2014-05-06T22:36:39.2288155+02:00</Time>
->>>>>>> 7c3fec888797e33c1a8506f2039dbd9ab5fc3bc3
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
