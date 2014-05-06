@@ -120,6 +120,7 @@ namespace Server
                                 el.name = client.name;
                                 el.ID = client.name;
                                 el.spr = message.Substring(6);
+                                el.type = "Player";
                                 goblist.Add(client.name, el);
                                 igIDs.Add(client.name);
                                 client.online = true;

@@ -214,7 +214,6 @@ namespace TryAgain.Online
                             try
                             {
                                 newgob = JsonConvert.DeserializeObject<Server.GameObject>(serverReq.Remove(0, 4));
-
                             }
                             catch (Exception e)
                             {
@@ -238,11 +237,17 @@ namespace TryAgain.Online
                             else
                             {
                                 //System.Windows.Forms.MessageBox.Show(newgob.ID);
-                                Player player = new Player(newgob.ID, newgob.spr, new Vector2(
+                                TryAgain.GameElements.GameObject gobElement;
+                                if (newgob.type == "Player")
+                                    gobElement = new Player(newgob.ID, newgob.spr, new Vector2(
                                     System.BitConverter.ToSingle(Convert.FromBase64String(newgob.X), 0),
                                     System.BitConverter.ToSingle(Convert.FromBase64String(newgob.Y), 0)));
-                                player.ticked = true;
-                                GameScreen.GOList.Add(player);
+                                else
+                                    gobElement = new Player(newgob.ID, newgob.spr, new Vector2(
+                                    System.BitConverter.ToSingle(Convert.FromBase64String(newgob.X), 0),
+                                    System.BitConverter.ToSingle(Convert.FromBase64String(newgob.Y), 0)));
+                                gobElement.ticked = true;
+                                GameScreen.GOList.Add(gobElement);
                             }
                         }
                     }
