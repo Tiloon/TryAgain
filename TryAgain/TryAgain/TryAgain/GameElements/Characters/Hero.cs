@@ -153,8 +153,8 @@ namespace TryAgain.Characters
 
                         //if (!Tilemap.tiles[((int)this.position.X) % Tilemap.tiles.GetLength(0), ((int)this.position.Y) % Tilemap.tiles.GetLength(1)].IsWalkable()) 
                         if (Tilemap.tiles[
-                            (Tilemap.tiles.GetLength(0) + (((int)(this.position.X + this.size.X / 128)) % Tilemap.tiles.GetLength(0))) % Tilemap.tiles.GetLength(0),
-                            (Tilemap.tiles.GetLength(1) + (((int)(this.position.Y + 3 * (this.size.Y / 256))) % Tilemap.tiles.GetLength(1))) % Tilemap.tiles.GetLength(1)].IsWalkable())
+                            (Tilemap.tiles.GetLength(0) + (((int)(this.position.X + this.size.X / 128 + speed.X)) % Tilemap.tiles.GetLength(0))) % Tilemap.tiles.GetLength(0),
+                            (Tilemap.tiles.GetLength(1) + (((int)(this.position.Y + 3 * (this.size.Y / 256) + speed.Y)) % Tilemap.tiles.GetLength(1))) % Tilemap.tiles.GetLength(1)].IsWalkable())
                         {
                             Hero.padding += speed;
                             if ((Math.Abs(Hero.padding.X) >= 1) || (Math.Abs(Hero.padding.Y) >= 1))

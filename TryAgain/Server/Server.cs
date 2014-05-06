@@ -94,7 +94,10 @@ namespace Server
                                 igIDs.Remove(client.name);
 
                                 foreach (Client sclient in clients)
+                                {
                                     sclient.Send("msg:" + client.name + " logged out.");
+                                    sclient.Send("rm:" + client.name);
+                                }
                             }
                                 
                             clients.Remove(client);
