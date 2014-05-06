@@ -67,13 +67,13 @@ namespace TryAgain.Characters
             //collision monstre = degats subis
             foreach (GameObject obj in GameScreen.GOList)
             {
-                
+
                 /*if ((obj.Type == "GameObject,Character,Monster") && (stats.lp > 0) &&
                     (new Rectangle((int)position.X, (int)position.Y, 1, 1).Intersects(new Rectangle((int)obj.getPosition().X, (int)obj.getPosition().Y, 1, 1))))*/
                 if ((stats.lp > 0) && (obj.UID != GameScreen.hero.UID) && (obj.toupdate) &&
                     (new Rectangle((int)position.X, (int)position.Y, 1, 1).Intersects(new Rectangle((int)obj.getPosition().X, (int)obj.getPosition().Y, 1, 1))))
                     stats.lp--;
-                
+
             }
 
             oldKeyboardState = newState;
@@ -111,27 +111,36 @@ namespace TryAgain.Characters
                 if (altIsDown && ((normalizedSpeed.X != 0) || (normalizedSpeed.Y != 0)))
                 {
                     float sqrtsum = (float)Math.Sqrt(Math.Abs(normalizedSpeed.X) + Math.Abs(normalizedSpeed.Y));
-                    Hero.padding.X += normalizedSpeed.X * this.stats.speed / sqrtsum;
-                    if (Hero.padding.X > 1)
+                    Vector2 speed = normalizedSpeed * (this.stats.speed / sqrtsum);
+                    if (((this.position.X > (Hero.padding.X + Hero.view.X + 1)) || speed.X < 0) &&
+                        ((this.position.X < (Hero.padding.X + Hero.view.X + Hero.view.Width - 1)) || speed.X > 0))
                     {
-                        Hero.view.X += (int)Math.Floor(Hero.padding.X);
-                        Hero.padding.X -= (float)Math.Floor(Hero.padding.X);
+                        Hero.padding.X += speed.X;
+                        if (Hero.padding.X > 1)
+                        {
+                            Hero.view.X += (int)Math.Floor(Hero.padding.X);
+                            Hero.padding.X -= (float)Math.Floor(Hero.padding.X);
+                        }
+                        if (Hero.padding.X <= -1)
+                        {
+                            Hero.view.X += 1 + (int)Math.Ceiling(Hero.padding.X);
+                            Hero.padding.X -= 1 + (float)Math.Ceiling(Hero.padding.X);
+                        }
                     }
-                    if (Hero.padding.X <= -1)
+                    if (((this.position.Y > (Hero.padding.Y + Hero.view.Y + 1)) || speed.Y < 0) &&
+                        ((this.position.Y < (Hero.padding.Y + Hero.view.Y + Hero.view.Height - 3)) || speed.Y > 0))
                     {
-                        Hero.view.X += 1 + (int)Math.Ceiling(Hero.padding.X);
-                        Hero.padding.X -= 1 + (float)Math.Ceiling(Hero.padding.X);
-                    }
-                    Hero.padding.Y += normalizedSpeed.Y * this.stats.speed / sqrtsum;
-                    if (Hero.padding.Y > 1)
-                    {
-                        Hero.view.Y += (int)Math.Floor(Hero.padding.Y);
-                        Hero.padding.Y -= (float)Math.Floor(Hero.padding.Y);
-                    }
-                    if (Hero.padding.Y <= -1)
-                    {
-                        Hero.view.Y += 1 + (int)Math.Ceiling(Hero.padding.Y);
-                        Hero.padding.Y -= 1 + (float)Math.Ceiling(Hero.padding.Y);
+                        Hero.padding.Y += speed.Y;
+                        if (Hero.padding.Y > 1)
+                        {
+                            Hero.view.Y += (int)Math.Floor(Hero.padding.Y);
+                            Hero.padding.Y -= (float)Math.Floor(Hero.padding.Y);
+                        }
+                        if (Hero.padding.Y <= -1)
+                        {
+                            Hero.view.Y += 1 + (int)Math.Ceiling(Hero.padding.Y);
+                            Hero.padding.Y -= 1 + (float)Math.Ceiling(Hero.padding.Y);
+                        }
                     }
                 }
                 else
@@ -141,7 +150,7 @@ namespace TryAgain.Characters
                         float sqrtsum = (float)Math.Sqrt(Math.Abs(normalizedSpeed.X) + Math.Abs(normalizedSpeed.Y));
                         Vector2 speed = normalizedSpeed * this.stats.speed / sqrtsum;
                         Vector2 newpos = this.position + speed;
-                        
+
                         //if (!Tilemap.tiles[((int)this.position.X) % Tilemap.tiles.GetLength(0), ((int)this.position.Y) % Tilemap.tiles.GetLength(1)].IsWalkable()) 
                         if (Tilemap.tiles[
                             (Tilemap.tiles.GetLength(0) + (((int)(this.position.X + this.size.X / 128)) % Tilemap.tiles.GetLength(0))) % Tilemap.tiles.GetLength(0),
