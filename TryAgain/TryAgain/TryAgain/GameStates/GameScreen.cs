@@ -94,8 +94,9 @@ namespace TryAgain.GameStates
                 Tilemap.Drawmap(sb, Tilemap.tiles);
             foreach (var todraw in GOList)
             {
+                /*
                 if(todraw.UID != hero.UID)
-                    Chat.AddMessage((todraw.UID));
+                    Chat.AddMessage((todraw.UID));*/
                 todraw.Draw(sb);
             }
 
