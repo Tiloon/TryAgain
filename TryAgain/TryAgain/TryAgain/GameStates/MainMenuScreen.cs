@@ -73,7 +73,8 @@ namespace TryAgain.GameStates
                     break;
 
                 case MenuState.About:
-                    //sb.Draw(Content.Load<Texture2D>("About"), new Rectangle(0, 0, screenWidth, screenHigh), Color.White);
+                    sb.Draw(Textures.storyboard, Vector2.Zero, Color.White);
+                    sb.DrawString(Textures.UIfont, "Voici le beau scenario de TryAgain", new Vector2(1050, 100), Color.Black);
                     ButtonReturn.Draw(sb);
                     break;
             }

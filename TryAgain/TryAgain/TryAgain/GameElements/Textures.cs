@@ -25,7 +25,7 @@ namespace TryAgain
 
         public static Texture2D O, I, II, III, IV, V, VI, VII, VIII, IX, X, XI;  //numéros de ressources, se reférer à la clase craftinterface
         public static Texture2D CraftInterface;
-        public static Texture2D GameOver;
+        public static Texture2D GameOver, storyboard;
 
         public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG;
         public static Texture2D whitePixel;
@@ -64,6 +64,7 @@ namespace TryAgain
             XI = cm.Load<Texture2D>(@"Sprites\Ressources\11");
             CraftInterface = cm.Load<Texture2D>(@"Menu\CraftInterface");
             GameOver = whitePixel;
+            storyboard = cm.Load<Texture2D>(@"Menu\storyboard");
 
             MainMenuBG = cm.Load<Texture2D>(@"Menu\MainMenu");
             OptionBG = cm.Load<Texture2D>(@"Menu\Option");
