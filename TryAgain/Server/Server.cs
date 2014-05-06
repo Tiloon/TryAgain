@@ -67,14 +67,18 @@ namespace Server
             {
                 if (clients.Count == 0)
                     continue;
-                /*
-                if (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > 200)
+                
+                if (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > 40) // Tick
                 {
-                    foreach (Client sclient in clients)
-                        if(sclient.online)
-                            sclient.Send("?getpos");
+                    foreach (String id in igIDs)
+                    {
+                        if (goblist[id].IsToUpdate())
+                        {
+                            goblist[id].Update();
+                        }
+                    }
                     lastTick = DateTime.Now;
-                }*/
+                }
 
                 for (int i = 0; i < clients.Count; i++)
                 {
@@ -138,6 +142,29 @@ namespace Server
                             continue;
                         }
 
+                        if (message.StartsWith("msg:cmd "))
+                        {
+                            message = message.Remove(0, 8);
+                            if (message == "add")
+                            {
+                                if (!goblist.ContainsKey("monster00"))
+                                {
+                                    Console.WriteLine("monstre spawned");
+                                    GameObject el = new GameObject();
+                                    el.name = "monster00";
+                                    el.ID = "monster00";
+                                    el.spr = "Mbio1";
+                                    el.type = "Monster";
+                                    el.x = 3.0f;
+                                    el.X = Convert.ToBase64String(BitConverter.GetBytes(el.x));
+                                    el.y = 3.0f;
+                                    el.Y = Convert.ToBase64String(BitConverter.GetBytes(el.y));
+                                    goblist.Add("monster00", el);
+                                    igIDs.Add("monster00");
+                                }
+                            }
+                        }
+
                         if (message.StartsWith("msg:"))
                         {
                             message = message.Remove(0, 4);
@@ -176,6 +203,8 @@ namespace Server
                                 //Console.WriteLine("bit");
                                 if ((client.name != item) && (goblist[client.name].GetView().Intersects(new Rectangle((int)goblist[item].x, (int)goblist[item].y, 1, 1))))
                                 {
+                                    goblist[item].ToUpdate(true);
+                                    goblist[item].NewTarget(goblist[client.name]);
                                     gobjects.Add(goblist[item]);
                                     client.Send("add:" + JsonConvert.SerializeObject(goblist[item]));
                                 }
@@ -183,7 +212,7 @@ namespace Server
                             /*
                             if (gobjects.Count > 0)
                             {
-                                client.Send("msg:COUCOUPD");
+                                client.Send("msg:COUCOU");
                                 client.Send("gobs:" + JsonConvert.SerializeObject(gobjects));
                                 Console.WriteLine(JsonConvert.SerializeObject(gobjects));
                             }*/

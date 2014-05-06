@@ -286,7 +286,7 @@ namespace TryAgain.Online
                         servWriter.Flush();
                     }
 
-                    if (update && (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > 100)) // Tick
+                    if (update && (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > 40)) // Tick
                     {
                         if ((x != GameScreen.hero.X) || (y != GameScreen.hero.Y))
                         {
