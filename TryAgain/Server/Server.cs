@@ -92,6 +92,9 @@ namespace Server
                             {
                                 goblist.Remove(client.name);
                                 igIDs.Remove(client.name);
+
+                                foreach (Client sclient in clients)
+                                    sclient.Send("msg:" + client.name + " logged out.");
                             }
                                 
                             clients.Remove(client);
@@ -125,6 +128,8 @@ namespace Server
                                 igIDs.Add(client.name);
                                 client.online = true;
                                 client.Send("logged:");
+                                foreach (Client sclient in clients)
+                                    sclient.Send("msg:" + client.name + " logged in.");
                             }
 
                             continue;
