@@ -157,8 +157,6 @@ namespace TryAgain.Sounds
                 waveOut.Dispose();
                 waveOut = null;
             }
-
-
         }
 
         public static void PlayTheme()
