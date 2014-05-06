@@ -139,15 +139,42 @@ namespace TryAgain.Characters
                     if ((normalizedSpeed.X != 0) || (normalizedSpeed.Y != 0))
                     {
                         float sqrtsum = (float)Math.Sqrt(Math.Abs(normalizedSpeed.X) + Math.Abs(normalizedSpeed.Y));
-                        this.position += normalizedSpeed * this.stats.speed / sqrtsum;
+                        Vector2 speed = normalizedSpeed * this.stats.speed / sqrtsum;
+                        Vector2 newpos = this.position + speed;
+                        
                         //if (!Tilemap.tiles[((int)this.position.X) % Tilemap.tiles.GetLength(0), ((int)this.position.Y) % Tilemap.tiles.GetLength(1)].IsWalkable()) 
-                        if (!Tilemap.tiles[
+                        if (Tilemap.tiles[
                             (Tilemap.tiles.GetLength(0) + (((int)(this.position.X + this.size.X / 128)) % Tilemap.tiles.GetLength(0))) % Tilemap.tiles.GetLength(0),
                             (Tilemap.tiles.GetLength(1) + (((int)(this.position.Y + 3 * (this.size.Y / 256))) % Tilemap.tiles.GetLength(1))) % Tilemap.tiles.GetLength(1)].IsWalkable())
-                            this.position -= normalizedSpeed * this.stats.speed / sqrtsum;
-
-                        this.X = this.position.X;//+this.size.X / 2;
-                        this.Y = this.position.Y; //+this.size.Y / 2;
+                        {
+                            Hero.padding += speed;
+                            if ((Math.Abs(Hero.padding.X) >= 1) || (Math.Abs(Hero.padding.Y) >= 1))
+                            {
+                                if (Hero.padding.X > 1)
+                                {
+                                    Hero.view.X += (int)Math.Floor(Hero.padding.X);
+                                    Hero.padding.X -= (float)Math.Floor(Hero.padding.X);
+                                }
+                                if (Hero.padding.X <= -1)
+                                {
+                                    Hero.view.X += 1 + (int)Math.Ceiling(Hero.padding.X);
+                                    Hero.padding.X -= 1 + (float)Math.Ceiling(Hero.padding.X);
+                                }
+                                if (Hero.padding.Y > 1)
+                                {
+                                    Hero.view.Y += (int)Math.Floor(Hero.padding.Y);
+                                    Hero.padding.Y -= (float)Math.Floor(Hero.padding.Y);
+                                }
+                                if (Hero.padding.Y <= -1)
+                                {
+                                    Hero.view.Y += 1 + (int)Math.Ceiling(Hero.padding.Y);
+                                    Hero.padding.Y -= 1 + (float)Math.Ceiling(Hero.padding.Y);
+                                }
+                            }
+                            this.position += speed;
+                            this.X = this.position.X;//+this.size.X / 2;
+                            this.Y = this.position.Y; //+this.size.Y / 2;
+                        }
                     }
                 }
 
