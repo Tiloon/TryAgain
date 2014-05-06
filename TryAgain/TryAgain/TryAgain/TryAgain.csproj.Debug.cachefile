@@ -27,8 +27,6 @@ Content\Menu\Button_2players.xnb
 Content\Sprites\herbe_roche.xnb
 Content\Sprites\halfsable.xnb
 Content\Menu\pause.xnb
-Content\Menu\fenetre.xnb
-Content\Menu\fullscreen.xnb
 Content\UI\pxl.xnb
 Content\Sprites\persotony.xnb
 Content\Sprites\Ressources\1.xnb
@@ -46,3 +44,7 @@ Content\Menu\CraftInterface.xnb
 Content\Menu\storyboard.xnb
 Content\Fonts\UIfont.xnb
 Content\Fonts\UIfontsmall.xnb
+Content\Menu\fullscreen.xnb
+Content\Menu\fenetre.xnb
+Content\Menu\Button_SondOff.xnb
+Content\Menu\Button_SondOn.xnb
