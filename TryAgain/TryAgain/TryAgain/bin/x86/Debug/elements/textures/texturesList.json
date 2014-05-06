@@ -24,10 +24,6 @@
 		"Item2": "Sprites\\Halfwalkable\\tilefire",
 	},
 	{
-		"Item1": "Tpierre",
-		"Item2": "Sprites\\persopierre",
-	},
-	{
 		"Item1": "Tminion",
 		"Item2": "Sprites\\Monsters\\bebeglauque",
 	},
