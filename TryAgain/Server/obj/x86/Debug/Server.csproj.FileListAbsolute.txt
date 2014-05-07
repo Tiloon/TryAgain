@@ -27,3 +27,11 @@ C:\Users\Tony\Documents\save-tryagain\tryagain\TryAgain\Server\bin\Debug\Newtons
 C:\Users\Tony\Documents\save-tryagain\tryagain\TryAgain\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
 C:\Users\Tony\Documents\save-tryagain\tryagain\TryAgain\Server\obj\x86\Debug\Server.exe
 C:\Users\Tony\Documents\save-tryagain\tryagain\TryAgain\Server\obj\x86\Debug\Server.pdb
+I:\TryAgain\tryagain\TryAgain\Server\bin\Debug\Server.exe
+I:\TryAgain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.dll
+I:\TryAgain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.pdb
+I:\TryAgain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.xml
+I:\TryAgain\tryagain\TryAgain\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
+I:\TryAgain\tryagain\TryAgain\Server\obj\x86\Debug\Server.exe
+I:\TryAgain\tryagain\TryAgain\Server\obj\x86\Debug\Server.pdb
+I:\TryAgain\tryagain\TryAgain\Server\bin\Debug\Server.pdb

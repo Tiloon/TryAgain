@@ -29,6 +29,7 @@ namespace TryAgain.GameElements.Characters
             else
                 this.apparence = Textures.Cache["Tminion"];
             this.UID = name;
+            //System.Windows.Forms.MessageBox.Show(this.Type);
         }
 
         public void Collision()

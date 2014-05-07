@@ -70,7 +70,7 @@ namespace TryAgain.Characters
 
                 /*if ((obj.Type == "GameObject,Character,Monster") && (stats.lp > 0) &&
                     (new Rectangle((int)position.X, (int)position.Y, 1, 1).Intersects(new Rectangle((int)obj.getPosition().X, (int)obj.getPosition().Y, 1, 1))))*/
-                if ((stats.lp > 0) && (obj.UID != GameScreen.hero.UID) && (obj.toupdate) &&
+                if ((stats.lp > 0) && (obj.UID != GameScreen.hero.UID) && (obj.toupdate) && (obj.Type == "GameObject,Character,Player") &&
                     (new Rectangle((int)position.X, (int)position.Y, 1, 1).Intersects(new Rectangle((int)obj.getPosition().X, (int)obj.getPosition().Y, 1, 1))))
                     stats.lp--;
 

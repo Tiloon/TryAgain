@@ -16,3 +16,4 @@ C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAg
 C:\Users\Aldric\Documents\Tryagain\tryagain\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
 C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
 C:\Users\Tony\Documents\save-tryagain\tryagain\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache
+I:\TryAgain\tryagain\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\TryAgainContent.contentprojResolveAssemblyReference.cache

@@ -23,15 +23,18 @@ namespace Server
 
         public void Update()
         {
-            if (this.target != null)
+            if (this.type == "Monster")
             {
-                Vector2 direction = new Vector2(this.target.x - this.x, this.target.y - this.y);
-                this.x += direction.X * 0.1f;
-                this.y += direction.Y * 0.1f;
-                this.X = Convert.ToBase64String(BitConverter.GetBytes(this.x));
-                this.Y = Convert.ToBase64String(BitConverter.GetBytes(this.y));
+                if (this.target != null)
+                {
+                    Vector2 direction = new Vector2(this.target.x - this.x, this.target.y - this.y);
+                    this.x += direction.X * 0.1f;
+                    this.y += direction.Y * 0.1f;
+                    this.X = Convert.ToBase64String(BitConverter.GetBytes(this.x));
+                    this.Y = Convert.ToBase64String(BitConverter.GetBytes(this.y));
 
-                target = null;
+                    target = null;
+                }
             }
         }
 

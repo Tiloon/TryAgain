@@ -57,6 +57,11 @@ namespace TryAgain.GameStates
                     GOList.Remove(gob);
                     GameObject.Delete(ref gob);
                 }
+                if (gob.Type == "GameObject,Character,Player") // If it's an item, player take it
+                {
+                    Connection.Command("rm:" + gob.UID);
+                    //System.Windows.Forms.MessageBox.Show(gob.UID);
+                }
                 else if (hero.equipedItem() != null)// Else, player use its item
                 {
                     Tuple<String, String> jsonUpdates = (hero.equipedItem()).useItem(hero, gob);
@@ -126,7 +131,10 @@ namespace TryAgain.GameStates
             Rectangle mouse_rectangle = new Rectangle(mouse.X, mouse.Y, 1, 1);
             foreach (var gobject in GOList)
             {
-                Rectangle rectangle = new Rectangle((int)gobject.getPosition().X, (int)gobject.getPosition().Y, (int)gobject.getSize().X, (int)gobject.getSize().Y);
+                
+                //Rectangle rectangle = new Rectangle((int)gobject.getPosition().X, (int)gobject.getPosition().Y, (int)gobject.getSize().X, (int)gobject.getSize().Y);
+                //Rectangle rectangle = new Rectangle((int)gobject.getPosition().X, (int)gobject.getPosition().Y, (int)gobject.getSize().X, (int)gobject.getSize().Y);
+                Rectangle rectangle = new Rectangle((int)((gobject.X - (Hero.view.X + Hero.padding.X)) * 64 + 64 * 4), (int)((gobject.Y - (Hero.view.Y + Hero.padding.Y)) * 64), 64, 64);
                 if ((mouse_rectangle.Intersects(rectangle)) && (mouse.LeftButton == ButtonState.Pressed))
                     return gobject;
             }

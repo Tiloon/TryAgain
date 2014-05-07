@@ -147,8 +147,11 @@ namespace TryAgain.GameElements.misc
                 }
 
                 if (newState.IsKeyDown(Keys.Back) && !oldKeyboardState.IsKeyDown(Keys.Back))
-                    bufferStr = bufferStr.Remove(bufferStr.Length - 1);
-
+                {
+                    if (bufferStr.Length >= 1)
+                       bufferStr = bufferStr.Remove(bufferStr.Length - 1);
+                }
+               
                 if (newState.IsKeyDown(Keys.Enter) && !oldKeyboardState.IsKeyDown(Keys.Enter))
                 {
                     isWriting = false;
