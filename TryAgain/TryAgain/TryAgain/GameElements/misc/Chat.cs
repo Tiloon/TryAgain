@@ -70,6 +70,13 @@ namespace TryAgain.GameElements.misc
                 newState = Keyboard.GetState();
                 if (bufferStr.Length < 24)
                 {
+                    if ((newState.IsKeyDown(Keys.RightAlt) && !oldKeyboardState.IsKeyDown(Keys.D9)) &&
+                        (newState.IsKeyDown(Keys.D8) && !oldKeyboardState.IsKeyDown(Keys.D8)))
+                    {
+                        bufferStr += '\\';
+                        return;
+                    }
+
                     if (newState.IsKeyDown(Keys.A) && !oldKeyboardState.IsKeyDown(Keys.A))
                         bufferStr += 'a';
                     if (newState.IsKeyDown(Keys.B) && !oldKeyboardState.IsKeyDown(Keys.B))
@@ -142,6 +149,7 @@ namespace TryAgain.GameElements.misc
                         bufferStr += '8';
                     if (newState.IsKeyDown(Keys.D9) && !oldKeyboardState.IsKeyDown(Keys.D9))
                         bufferStr += '9';
+
                     if (newState.IsKeyDown(Keys.Space) && !oldKeyboardState.IsKeyDown(Keys.Space))
                         bufferStr += ' ';
                 }

@@ -20,6 +20,26 @@ namespace Server
         private bool toUpdate;
         private List<GameObject> near = new List<GameObject>();
         private GameObject target;
+        private Stats stats;
+
+        public GameObject()
+        {
+            stats.lvl = 1;
+            stats.lp = 1;
+            stats.lpmax = 1;
+            stats.mh = 100;
+            stats.mhmax = 100;
+            stats.ch = 80;
+            stats.chmax = 100;
+            stats.cbonus = 0;
+            stats.mp = 0;
+            stats.mpmax = 0;
+            stats.force = 10;
+            stats.intelligence = 10;
+            stats.defense = 10;
+            stats.criticalrate = 0;
+            stats.speed = 0.15F;
+        }
 
         public void Update()
         {
