@@ -36,7 +36,9 @@ namespace TryAgain.GameElements.Characters
         { }
 
         public override void update()
-        { }
+        {
+            base.update();
+        }
 
         public override void jsonUpdate(string json)
         {

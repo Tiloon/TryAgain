@@ -32,6 +32,7 @@ namespace TryAgain
 
         protected override void Initialize()
         {
+            this.IsFixedTimeStep = false;
             IsMouseVisible = true;
             // TODO: Add your initialization logic here
             base.Initialize();

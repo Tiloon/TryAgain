@@ -20,6 +20,9 @@ namespace TryAgain.GameElements
         //public readonly String UID; // Unique IDentifier
         public String UID; // Unique IDentifier
         protected Vector2 position;
+        protected Vector2 movingTo;
+        protected Vector2 speed;
+
         protected Vector2 size;
         public bool ticked, toupdate = true;
         public float X, Y;
@@ -49,12 +52,33 @@ namespace TryAgain.GameElements
             gob = null;
         }
 
-        public abstract void update();
+        public virtual void update()
+        {
+            if ((this.speed != null) && (this.movingTo != null) && (this.speed != Vector2.Zero))
+            {
+                if (new Rectangle((int)(128 * this.position.X), (int)(128 * this.position.Y), (int)(128 * this.speed.X), (int)(128 * this.speed.Y)).Intersects(
+                    new Rectangle((int)(128 * this.movingTo.X), (int)(128 * this.movingTo.Y), 1, 1))) // Ca marche pas tout le temps, faire en sorte de s'arréter lorsque l'on est au niveau du point vers lequel on va.
+                {
+                    this.speed = Vector2.Zero;
+                    this.position = this.movingTo;
+                }
+                else if (this.position != this.movingTo)
+                    this.position += this.speed;
+                
+            }
+        }
+
         public abstract void Draw(SpriteBatch sb);
         protected bool exists = true;
         public bool toRemove()
         {
             return exists;
+        }
+
+        public void TravelTo(Vector2 position, int ticks)
+        {
+            this.movingTo = position;
+            this.speed = (this.movingTo - this.position) / (float)ticks;
         }
 
         public void SetPosition(Vector2 position)

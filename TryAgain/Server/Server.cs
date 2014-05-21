@@ -15,6 +15,7 @@ namespace Server
 {
     class Server
     {
+        public const int TICKGAP = 20;
         List<Client> clients;
         Socket socket;
 
@@ -69,7 +70,7 @@ namespace Server
                 if (clients.Count == 0)
                     continue;
 
-                if (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > 40) // Tick
+                if (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > TICKGAP) // Tick
                 {
                     foreach (String id in igIDs)
                     {

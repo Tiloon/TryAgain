@@ -218,9 +218,12 @@ namespace TryAgain.Online
                                     int pos = GameScreen.GOList.FindIndex(z => z.UID == gob.ID);
                                     /*GameScreen.GOList[pos].X = System.BitConverter.ToSingle(Convert.FromBase64String(gob.X), 0);
                                     GameScreen.GOList[pos].Y = System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0);*/
-                                    GameScreen.GOList[pos].SetPosition(new Vector2(
+                                    /*GameScreen.GOList[pos].SetPosition(new Vector2(
                                         System.BitConverter.ToSingle(Convert.FromBase64String(gob.X), 0),
-                                        System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0)));
+                                        System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0)));*/
+                                    GameScreen.GOList[pos].TravelTo(new Vector2(
+                                        System.BitConverter.ToSingle(Convert.FromBase64String(gob.X), 0),
+                                        System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0)), 30);
                                 }
                                 else
                                 {
@@ -252,9 +255,12 @@ namespace TryAgain.Online
                                 int pos = GameScreen.GOList.FindIndex(z => z.UID == newgob.ID);
                                 /*GameScreen.GOList[pos].X = System.BitConverter.ToSingle(Convert.FromBase64String(gob.X), 0);
                                 GameScreen.GOList[pos].Y = System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0);*/
-                                GameScreen.GOList[pos].SetPosition(new Vector2(
+                                /*GameScreen.GOList[pos].SetPosition(new Vector2(
                                     System.BitConverter.ToSingle(Convert.FromBase64String(newgob.X), 0),
-                                    System.BitConverter.ToSingle(Convert.FromBase64String(newgob.Y), 0)));
+                                    System.BitConverter.ToSingle(Convert.FromBase64String(newgob.Y), 0)));*/
+                                GameScreen.GOList[pos].TravelTo(new Vector2(
+                                    System.BitConverter.ToSingle(Convert.FromBase64String(newgob.X), 0),
+                                    System.BitConverter.ToSingle(Convert.FromBase64String(newgob.Y), 0)), 30);
                                 GameScreen.GOList[pos].ticked = true;
                                 GameScreen.GOList[pos].toupdate = true;
                             }
