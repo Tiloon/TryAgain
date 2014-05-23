@@ -25,7 +25,7 @@ namespace TryAgain
 
 
         //public static Texture2D[,] map1 = new Texture2D[lgmap, lgmap];
-        public static Tile[,] tiles = new Tile[24, 24];
+        public static Tile[,] tiles = new Tile[32, 32];
         public static Item[,] map1contains = new Item[lgmap + 3, lgmap + 3];
 
         public static Texture2D[,] map2 = new Texture2D[lgbigmapunscrolled, lgbigmapunscrolled];
@@ -46,9 +46,10 @@ namespace TryAgain
         {
             MapFirstInit(ref tiles, "Therbe");
 
-            MapLoadFromJSON(
+            /*MapLoadFromJSON(
                 "[[\"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\", \"Tsable\", \"\", \"Taqua\", \"Tsable\", \"Tsable\", \"\", \"Tsable\", \"\", \"Taqua\", \"Tsable\", \"Tsable\", \"\", \"Tsable\", \"\",\"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"\", \"\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"\", \"\", \"\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\"]]");
-
+            */
+            MapLoadFromJSON(TryAgain.Datas.Initializer.ReadTextFile("data\\map\\chunk_0_0.json"));
         }
 
         public static void MapFirstInit(ref Tile[,] map, String basetile)
