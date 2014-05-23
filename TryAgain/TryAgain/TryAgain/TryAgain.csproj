@@ -162,8 +162,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TryAgainContent\TryAgainContent.contentproj">
-      <Name>TryAgainContent</Name>
+      <Name>TryAgainContent %28Content%29</Name>
       <XnaReferenceType>Content</XnaReferenceType>
+      <Project>{DDB9D42C-F007-4FCA-A4C5-BCC53749F2BC}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
