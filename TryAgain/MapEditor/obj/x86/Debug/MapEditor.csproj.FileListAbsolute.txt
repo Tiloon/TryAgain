@@ -1,0 +1,7 @@
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\MapEditor\obj\x86\Debug\MapEditor.Form1.resources
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\MapEditor\obj\x86\Debug\MapEditor.Properties.Resources.resources
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\MapEditor\obj\x86\Debug\MapEditor.csproj.GenerateResource.Cache
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\MapEditor\bin\Debug\MapEditor.exe
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\MapEditor\bin\Debug\MapEditor.pdb
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\MapEditor\obj\x86\Debug\MapEditor.exe
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\MapEditor\obj\x86\Debug\MapEditor.pdb

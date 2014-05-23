@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryAgainContent", "TryAgain
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{D3746253-BE5C-476F-83C1-21AD9F9A056E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapEditor", "MapEditor\MapEditor.csproj", "{9A149790-2700-4FDF-A679-9DCE4B5A91A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -23,6 +25,10 @@ Global
 		{D3746253-BE5C-476F-83C1-21AD9F9A056E}.Debug|x86.Build.0 = Debug|x86
 		{D3746253-BE5C-476F-83C1-21AD9F9A056E}.Release|x86.ActiveCfg = Release|x86
 		{D3746253-BE5C-476F-83C1-21AD9F9A056E}.Release|x86.Build.0 = Release|x86
+		{9A149790-2700-4FDF-A679-9DCE4B5A91A4}.Debug|x86.ActiveCfg = Debug|x86
+		{9A149790-2700-4FDF-A679-9DCE4B5A91A4}.Debug|x86.Build.0 = Debug|x86
+		{9A149790-2700-4FDF-A679-9DCE4B5A91A4}.Release|x86.ActiveCfg = Release|x86
+		{9A149790-2700-4FDF-A679-9DCE4B5A91A4}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
