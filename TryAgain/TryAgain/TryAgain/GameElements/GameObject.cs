@@ -56,8 +56,16 @@ namespace TryAgain.GameElements
         {
             if ((this.speed != null) && (this.movingTo != null) && (this.speed != Vector2.Zero))
             {
+                /*
                 if (new Rectangle((int)(128 * this.position.X), (int)(128 * this.position.Y), (int)(128 * this.speed.X), (int)(128 * this.speed.Y)).Intersects(
                     new Rectangle((int)(128 * this.movingTo.X), (int)(128 * this.movingTo.Y), 1, 1))) // Ca marche pas tout le temps, faire en sorte de s'arréter lorsque l'on est au niveau du point vers lequel on va.
+                
+                 */
+                if((((this.speed.X >= 0 ) && (this.movingTo.X >= this.position.X) && (this.movingTo.X <= this.position.X + this.speed.X)) ||
+                    ((this.speed.X < 0 ) && (this.movingTo.X <= this.position.X) && (this.movingTo.X >= this.position.X + this.speed.X))) && 
+                    (((this.speed.Y >= 0 ) && (this.movingTo.Y >= this.position.Y) && (this.movingTo.Y <= this.position.Y + this.speed.Y)) ||
+                    ((this.speed.Y < 0 ) && (this.movingTo.Y <= this.position.Y) && (this.movingTo.Y >= this.position.Y + this.speed.Y))))
+
                 {
                     this.speed = Vector2.Zero;
                     this.position = this.movingTo;
@@ -75,10 +83,12 @@ namespace TryAgain.GameElements
             return exists;
         }
 
-        public void TravelTo(Vector2 position, int ticks)
+        public void TravelTo(Vector2 position, float speed)
         {
             this.movingTo = position;
-            this.speed = (this.movingTo - this.position) / (float)ticks;
+            this.speed = this.movingTo - this.position;
+            this.speed.Normalize();
+            this.speed *= speed;
         }
 
         public void SetPosition(Vector2 position)
