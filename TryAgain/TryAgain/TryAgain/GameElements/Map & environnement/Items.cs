@@ -84,6 +84,8 @@ namespace TryAgain
             return this.itemID;
         }
 
+        public const Item voidItem = null;
+
         public Item(string itemID, string itemName, Texture2D icon, string script, String type, String data)
         {
             this.itemID = itemID;

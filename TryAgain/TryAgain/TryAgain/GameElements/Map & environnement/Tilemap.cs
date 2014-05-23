@@ -18,9 +18,9 @@ namespace TryAgain
 {
     class Tilemap
     {
-        public static int variationsizegraphicsX = 64 * 4; // contour blanc en largeur de cette longueur à gauche et à droite
+        public static int variationsizegraphicsX = 0; // contour blanc en largeur de cette longueur à gauche et à droite
         // si vous voulez pas de contour, mettez la à 0
-        public static int lgmap = 15;
+        public static int lgmap = 30;
         public static int lgbigmapunscrolled = 100;
 
 
@@ -44,26 +44,10 @@ namespace TryAgain
 
         public static void MapFullINIT()
         {
-            // Chargement des textures mixtes
-            //melanges.Add(Textures.solrocailleux_texture, Textures.roche_herbe);
-            //melanges.Add(Textures.sable_texture, Textures.halfsable);
             MapFirstInit(ref tiles, "Therbe");
 
             MapLoadFromJSON(
                 "[[\"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\", \"Tsable\", \"\", \"Taqua\", \"Tsable\", \"Tsable\", \"\", \"Tsable\", \"\", \"Taqua\", \"Tsable\", \"Tsable\", \"\", \"Tsable\", \"\",\"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"\", \"\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"\", \"\", \"\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\"]]");
-
-            //map1 : une map non scrollée qui fait la longueur de l'écran, ni plus ni moins, minimap classique
-            /*
-            MapFirstInit(ref tiles, "Therbe");
-            Mapmodify(tiles, "Tsable", 7, lgmap - 1, 10, lgmap - 1);
-            Mapmodify(tiles, "Tcaillou", 1, 5, lgmap - 3, lgmap - 1);
-            Mapmodify(tiles, "Tcaillou", 1, 5, 5, 7);
-            Mapmodify(tiles, "Taqua", lgmap - 2, lgmap - 1, 0, 3);
-            */
-            //map2 : grosse et scrollable
-
-
-            //MapFirstInit(map2, Textures.solrocailleux_texture);
 
         }
 

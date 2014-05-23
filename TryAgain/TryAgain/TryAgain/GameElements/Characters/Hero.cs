@@ -23,7 +23,7 @@ namespace TryAgain.Characters
 
     class Hero : Character
     {
-        public static Rectangle view = new Rectangle(0, 0, 15, 15);
+        public static Rectangle view = new Rectangle(0, 0, 24, 15);
         public static Vector2 padding = new Vector2(0, 0);
         // Si quelqu'un trouve un meilleur nom de variable.... Décalage pour rendre le déplacement de l'écran fluide.
         public static Direction directiontournee = Direction.bas;
@@ -35,8 +35,10 @@ namespace TryAgain.Characters
         public Hero(string name, Classes.Classe classe, Texture2D apparence, Keys keyup, Keys keydown, Keys keyleft, Keys keyright, Vector2 position)
             : base("Hero", "Hero00")
         {
-            this.items[0] = Items.itemsBank["sword00"];
-            this.items[1] = Items.itemsBank["banana00"];
+            for (int i = 0; i < this.items.Length; i++)
+            {
+                this.items[i] = Item.voidItem;
+            }
             this.equiped = 0;
             this.longueur = 64;
             this.largeur = 64;
@@ -115,7 +117,7 @@ namespace TryAgain.Characters
                     float sqrtsum = (float)Math.Sqrt(Math.Abs(normalizedSpeed.X) + Math.Abs(normalizedSpeed.Y));
                     Vector2 speed = normalizedSpeed * (this.stats.speed / sqrtsum);
                     if (((this.position.X > (Hero.padding.X + Hero.view.X + 1)) || speed.X < 0) &&
-                        ((this.position.X < (Hero.padding.X + Hero.view.X + Hero.view.Width - 1)) || speed.X > 0))
+                        ((this.position.X < (Hero.padding.X + Hero.view.X + Hero.view.Width - 3)) || speed.X > 0))
                     {
                         Hero.padding.X += speed.X;
                         if (Hero.padding.X > 1)
@@ -195,7 +197,7 @@ namespace TryAgain.Characters
                     {
                         GObItem gobitem = new GObItem(this.items[equiped], this.position);
                         GameScreen.GOList.Add(gobitem);
-                        this.items[equiped] = null;
+                        this.items[equiped] = Item.voidItem;
                     }
                 }
             }

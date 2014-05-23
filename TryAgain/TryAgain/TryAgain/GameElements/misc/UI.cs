@@ -29,8 +29,8 @@ namespace TryAgain.GameElements.misc
 
         public void Draw(SpriteBatch sb)
         {
-            Textures.DrawRectangle(sb, new Rectangle(0, 0, Tilemap.variationsizegraphicsX, 15 * 64), Color.White);
-            Textures.DrawRectangle(sb, new Rectangle(Tilemap.variationsizegraphicsX + 15 * 64, 0, Tilemap.variationsizegraphicsX, 15 * 64), Color.White);
+            //Textures.DrawRectangle(sb, new Rectangle(0, 0, Tilemap.variationsizegraphicsX, 15 * 64), Color.White);
+            //Textures.DrawRectangle(sb, new Rectangle(Tilemap.variationsizegraphicsX + 15 * 64, 0, Tilemap.variationsizegraphicsX, 15 * 64), Color.White);
             sb.DrawString(Textures.UIfont, "health : " + lp.ToString() + "/" + lpmax.ToString(), new Vector2(15, 12), statcolor);
             sb.DrawString(Textures.UIfont, "cafeine : " + cp.ToString() + "/" + cpmax.ToString(), new Vector2(15, 32), statcolor);
             sb.DrawString(Textures.UIfont, "mental : " + mp.ToString() + "/" + mpmax.ToString(), new Vector2(15, 52), statcolor);
