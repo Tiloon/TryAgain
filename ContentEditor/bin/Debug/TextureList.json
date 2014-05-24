@@ -1,0 +1,26 @@
+[
+	{
+		"Item1": "Therbe",
+		"Item2": "Sprites\\tileherbe.png",
+	},
+	{
+		"Item1": "Tsable",
+		"Item2": "Sprites\\tilesable.png",
+	},
+	{
+		"Item1": "Tneige",
+		"Item2": "Sprites\\tileneige.png",
+	},
+	{
+		"Item1": "Tcaillou",
+		"Item2": "Sprites\\tilecaillou.png",
+	},
+	{
+		"Item1": "Taqua",
+		"Item2": "Sprites\\tileaqua.png",
+	},
+	{
+		"Item1": "Tfire",
+		"Item2": "Sprites\\tilefire.png",
+	}
+]
