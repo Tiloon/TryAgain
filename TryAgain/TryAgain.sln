@@ -2,6 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryAgain", "TryAgain\TryAgain\TryAgain.csproj", "{0892362A-DA5A-4C72-956A-24BB8A480F1F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D3746253-BE5C-476F-83C1-21AD9F9A056E} = {D3746253-BE5C-476F-83C1-21AD9F9A056E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryAgainContent", "TryAgain\TryAgainContent\TryAgainContent.contentproj", "{DDB9D42C-F007-4FCA-A4C5-BCC53749F2BC}"
 EndProject

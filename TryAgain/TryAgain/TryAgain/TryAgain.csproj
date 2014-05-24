@@ -161,6 +161,10 @@
     <Content Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Server\Server.csproj">
+      <Project>{D3746253-BE5C-476F-83C1-21AD9F9A056E}</Project>
+      <Name>Server</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TryAgainContent\TryAgainContent.contentproj">
       <Name>TryAgainContent %28Content%29</Name>
       <XnaReferenceType>Content</XnaReferenceType>

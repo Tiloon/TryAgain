@@ -14,6 +14,7 @@ using System.Net;
 using TryAgain.GameStates;
 using TryAgain.Characters;
 using TryAgain.GameElements.Characters;
+using Server;
 
 namespace TryAgain.Online
 {
@@ -67,6 +68,16 @@ namespace TryAgain.Online
             catch (SocketException)
             {
                 online = false;
+                Server.EmbeddedServer.Launch();
+                try
+                {
+                    server_socket.Connect("127.0.0.1", 4242);
+                    online = true;
+                }
+                catch (SocketException)
+                {
+                    online = false;
+                }
             }
 
             if (online)
@@ -95,7 +106,8 @@ namespace TryAgain.Online
 
         private static void Close()
         {
-
+            if (Server.EmbeddedServer.local)
+                Server.EmbeddedServer.Stop();
             if (online)
             {
                 servWriter.Flush();
