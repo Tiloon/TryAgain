@@ -19,7 +19,7 @@ namespace TryAgain.GameElements
         public readonly String Type;
         //public readonly String UID; // Unique IDentifier
         public String UID; // Unique IDentifier
-        protected Vector2 position;
+        public Vector2 position;
         protected Vector2 movingTo;
         protected Vector2 speed;
 

@@ -43,7 +43,6 @@ namespace TryAgain.Characters
             this.longueur = 64;
             this.largeur = 64;
             this.size = new Vector2(this.largeur, this.longueur);
-            this.position = position;
             this.X = position.X;
             this.Y = position.Y;
             this.name = name;
@@ -200,6 +199,7 @@ namespace TryAgain.Characters
                         this.items[equiped] = Item.voidItem;
                     }
                 }
+
             }
             else
             {

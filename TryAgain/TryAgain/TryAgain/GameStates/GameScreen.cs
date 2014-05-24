@@ -123,6 +123,8 @@ namespace TryAgain.GameStates
                 {
                     Craft.Draw(sb);
                 }
+                //skills
+                Skills.Draw(sb, hero.getPosition(), hero, newState);
             }
         }
 

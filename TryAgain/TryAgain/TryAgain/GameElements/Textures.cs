@@ -30,6 +30,8 @@ namespace TryAgain
         public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG, MenuOption;
         public static Texture2D whitePixel;
 
+        public static Texture2D Shield;
+
         public static SpriteFont UIfont, UIfontSmall;
         public static Texture2D UIitemHolder, UIitemSelected;
 
@@ -50,6 +52,8 @@ namespace TryAgain
             Button_Return = cm.Load<Texture2D>(@"Menu\Button_Return");
             */
             whitePixel = cm.Load<Texture2D>(@"UI/pxl");
+
+            Shield = cm.Load<Texture2D>(@"Sprites\RandomAnimations\Shield");
 
             I = cm.Load<Texture2D>(@"Sprites\Ressources\1");
             II = cm.Load<Texture2D>(@"Sprites\Ressources\2");
