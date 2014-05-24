@@ -27,6 +27,7 @@ namespace TryAgain
             }
             Themes.Stop();
             Connection.Stop();
+            Server.EmbeddedServer.Stop();
         }
     }
 #endif

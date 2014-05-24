@@ -119,6 +119,8 @@ namespace TryAgain.Online
 
         public static void Stop()
         {
+            if (Server.EmbeddedServer.local)
+                Server.EmbeddedServer.Stop();
             if (online)
             {
                 clientThread.Abort();

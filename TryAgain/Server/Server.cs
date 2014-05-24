@@ -15,6 +15,7 @@ namespace Server
 {
     class Server
     {
+        public volatile static bool serverRunning = true;
         public const int TICKGAP = 20;
         List<Client> clients;
         Socket socket;
@@ -37,7 +38,7 @@ namespace Server
             Thread clientsThread = new Thread(new ThreadStart(AcceptClient));
             clientsThread.Start();
 
-            Thread clientsChat = new Thread(new ThreadStart(Chat));
+            Thread clientsChat = new Thread(new ThreadStart(Loop));
             clientsChat.Start();
 
             clientsThread.Join();
@@ -46,12 +47,12 @@ namespace Server
 
         public void AcceptClient()
         {
-            while (true)
+            while (serverRunning)
             {
                 Socket client = socket.Accept();
                 // Use the socket client to do whatever you want to do
                 IPEndPoint remote = (IPEndPoint)client.RemoteEndPoint;
-                Client myClient = new Client("Jojo", remote.Address.ToString(), remote.Port, client);
+                Client myClient = new Client("Anon", remote.Address.ToString(), remote.Port, client);
                 myClient.SetName();
                 myClient.Send("Welcome");
 
@@ -61,11 +62,10 @@ namespace Server
             }
         }
 
-        public void Chat()
+        public void Loop()
         {
-
             DateTime lastTick = DateTime.Now;
-            while (true)
+            while (serverRunning)
             {
                 if (clients.Count == 0)
                     continue;

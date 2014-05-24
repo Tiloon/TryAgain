@@ -22,6 +22,7 @@ namespace Server
 
         public static void Stop()
         {
+            Server.serverRunning = false;
             local = false;
             serverThread.Abort();
         }
