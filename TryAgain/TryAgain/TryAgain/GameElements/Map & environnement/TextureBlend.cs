@@ -90,21 +90,61 @@ namespace TryAgain.GameElements.Map___environnement
             }
         }
 
+        private static Texture2D BlendAddL(Texture2D txa, Texture2D txb, bool[] bitArray)
+        {
+            var graphics = txa.GraphicsDevice;
+            var ret = new RenderTarget2D(graphics, txa.Bounds.Width, txa.Bounds.Height);
+            var sb = new SpriteBatch(graphics);
+
+            graphics.SetRenderTarget(ret); // draw to image
+            graphics.Clear(new Color(0, 0, 0, 0));
+
+            sb.Begin();
+            sb.Draw(txa, txa.Bounds, Color.White);
+            for (int i = 0; i < bitArray.Length; i++)
+                if (bitArray[i])
+                    sb.Draw(txb, new Rectangle(i * 8, 0, 8, 8), Color.White);
+            sb.End();
+
+            graphics.SetRenderTarget(null); // set back to main window
+
+            return (Texture2D)ret;
+        }
+
+        private static Texture2D BlendAddD(Texture2D txa, Texture2D txb, bool[] bitArray)
+        {
+            var graphics = txa.GraphicsDevice;
+            var ret = new RenderTarget2D(graphics, txa.Bounds.Width, txa.Bounds.Height);
+            var sb = new SpriteBatch(graphics);
+
+            graphics.SetRenderTarget(ret); // draw to image
+            graphics.Clear(new Color(0, 0, 0, 0));
+
+            sb.Begin();
+            sb.Draw(txa, txa.Bounds, Color.White);
+            for (int i = 0; i < bitArray.Length; i++)
+                if (bitArray[i])
+                    sb.Draw(txb, new Rectangle(0, i * 8, 8, 8), Color.White);
+            sb.End();
+
+            graphics.SetRenderTarget(null); // set back to main window
+
+            return (Texture2D)ret;
+        }
+
         public static Texture2D DrawL(Texture2D txa, Texture2D txb, int x, int y)
         {
             bool[] bl1 = GetBitArray(x, y);
             bool[] bl2 = GetBitArray((x + 3) * 2, (y - 5) * 3);
+            bool[] bl = new bool[bl1.Length + bl2.Length];
 
             for (int i = 0; i < bl1.Length; i++)
-            {
-                if (bl1[i])
-                    txa = Textures.Add(txa, Textures.Crop(txb, new Rectangle(i * 8 + 8, 8, 8, 8)), new Rectangle(i * 8, 0, 8, 8));
-            }
+                bl[i] = bl1[i];
+
             for (int i = 0; i < bl2.Length; i++)
-            {
-                if (bl2[i])
-                    txa = Textures.Add(txa, Textures.Crop(txb, new Rectangle(i * 8 + 8, 8, 8, 8)), new Rectangle(i * 8 + 64, 0, 8, 8));
-            }
+                bl[i + bl1.Length] = bl2[i];
+
+            txa = BlendAddL(txa, txb, bl);
             return txa;
         }
 
@@ -112,17 +152,15 @@ namespace TryAgain.GameElements.Map___environnement
         {
             bool[] bl1 = GetBitArray(x, y);
             bool[] bl2 = GetBitArray((x + 3) * 2, (y - 5) * 3);
+            bool[] bl = new bool[bl1.Length + bl2.Length];
 
             for (int i = 0; i < bl1.Length; i++)
-            {
-                if (bl1[i])
-                    txa = Textures.Add(txa, Textures.Crop(txb, new Rectangle(i * 8 + 8, 8, 8, 8)), new Rectangle(0, i * 8, 8, 8));
-            }
+                bl[i] = bl1[i];
+
             for (int i = 0; i < bl2.Length; i++)
-            {
-                if (bl2[i])
-                    txa = Textures.Add(txa, Textures.Crop(txb, new Rectangle(i * 8 + 8, 8, 8, 8)), new Rectangle(0, i * 8 + 64, 8, 8));
-            }
+                bl[i + bl1.Length] = bl2[i];
+
+            txa = BlendAddD(txa, txb, bl);
             return txa;
         }
     }

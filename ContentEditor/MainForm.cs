@@ -23,7 +23,7 @@ namespace WinFormsGraphicsDevice
     using System;
     using Newtonsoft.Json;
 
-    
+
     /// <summary>
     /// Custom form provides the main user interface for the program.
     /// In this sample we used the designer to add a splitter pane to the form,
@@ -35,7 +35,7 @@ namespace WinFormsGraphicsDevice
         {
             InitializeComponent();
 
-            
+
         }
 
 
@@ -66,7 +66,7 @@ namespace WinFormsGraphicsDevice
         {
             string[,] strarray = new string[ShowMap.map.GetLength(0), ShowMap.map.GetLength(1)];
             for (int i = 0; i < ShowMap.map.GetLength(0); i++)
-			    for (int j = 0; j < ShowMap.map.GetLength(1); j++)
+                for (int j = 0; j < ShowMap.map.GetLength(1); j++)
                     strarray[i, j] = ShowMap.map[i, j];
 
             ShowMap.map = new string[(int)numericUpDown1.Value, ShowMap.map.GetLength(1)];
@@ -133,7 +133,7 @@ namespace WinFormsGraphicsDevice
         {
             MouseMapAction();
         }
-        
+
 
         private void spinningTriangleControl_MouseMove_1(object sender, MouseEventArgs e)
         {
@@ -169,6 +169,37 @@ namespace WinFormsGraphicsDevice
         private void numericUpDown3_ValueChanged(object sender, EventArgs e)
         {
             ShowMap.dimension = (int)numericUpDown3.Value;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+        }
+
+        private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+            try
+            {
+                String json;
+                StreamReader sr = new StreamReader(openFileDialog1.OpenFile());
+                json = sr.ReadToEnd();
+                ShowMap.map = JsonConvert.DeserializeObject<String[,]>(json);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error : not a map file or other weeblee wobly timy spacy related error.");
+            }
+        }
+
+        private void mapEditor_MouseUp(object sender, MouseEventArgs e)
+        {
+            checkBox1.Checked = false;
+        }
+
+        private void mapEditor_MouseDown(object sender, MouseEventArgs e)
+        {
+            checkBox1.Checked = true;
         }
 
     }
