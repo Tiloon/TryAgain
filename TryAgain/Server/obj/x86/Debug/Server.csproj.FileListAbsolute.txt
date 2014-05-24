@@ -35,3 +35,11 @@ I:\TryAgain\tryagain\TryAgain\Server\obj\x86\Debug\Server.csprojResolveAssemblyR
 I:\TryAgain\tryagain\TryAgain\Server\obj\x86\Debug\Server.exe
 I:\TryAgain\tryagain\TryAgain\Server\obj\x86\Debug\Server.pdb
 I:\TryAgain\tryagain\TryAgain\Server\bin\Debug\Server.pdb
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\bin\Debug\Server.exe
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\bin\Debug\Server.pdb
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\obj\x86\Debug\Server.exe
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\obj\x86\Debug\Server.pdb

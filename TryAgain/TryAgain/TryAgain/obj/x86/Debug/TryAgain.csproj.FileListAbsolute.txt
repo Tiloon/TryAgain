@@ -189,3 +189,5 @@ I:\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.exe
 I:\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.pdb
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Server.exe
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Server.pdb
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Server.exe
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Server.pdb

@@ -87,7 +87,9 @@ namespace TryAgain.GameStates
             }
             if (ButtonFullscreen.IsClicked(mouse) || ButtonFenetre.IsClicked(mouse))
             {
-                Game1.graphics.IsFullScreen = !Game1.graphics.IsFullScreen;
+                Game1.graphics.ToggleFullScreen();
+                Game1.graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.SupportedDisplayModes.Last().Width;
+                Game1.graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.SupportedDisplayModes.Last().Height;
                 Game1.graphics.ApplyChanges();
             }
             return this.GetState();
@@ -104,7 +106,7 @@ namespace TryAgain.GameStates
                 ButtonFenetre.Draw(sb);
             else
                 ButtonFullscreen.Draw(sb);
-            
+
             // La personne qui arrive à afficher quelque chose grâce à 
             resolutions[0].Item1.Draw(sb); // ça,
             foreach (Tuple<cButton, Vector2> resbutton in resolutions)
