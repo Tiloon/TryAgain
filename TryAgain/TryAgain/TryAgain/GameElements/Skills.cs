@@ -24,6 +24,11 @@ namespace TryAgain.GameElements
                 shield = true;
                 hero.stats.defense += 20;//stats a changées
             }
+            if (!keyBoardState.IsKeyDown(Keys.S) && shield)
+            {
+                shield = false;
+                hero.stats.defense -= 20;
+            }
             if (shield)
             {
                 sb.Draw(Textures.Shield, new Vector2((hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), null, Color.White, 0f, Vector2.Zero,
