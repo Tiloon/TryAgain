@@ -30,7 +30,7 @@ namespace TryAgain
         public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG, MenuOption;
         public static Texture2D whitePixel;
 
-        public static Texture2D Shield;
+        public static Texture2D Shield, Missile;
 
         public static SpriteFont UIfont, UIfontSmall;
         public static Texture2D UIitemHolder, UIitemSelected;
@@ -54,6 +54,7 @@ namespace TryAgain
             whitePixel = cm.Load<Texture2D>(@"UI/pxl");
 
             Shield = cm.Load<Texture2D>(@"Sprites\RandomAnimations\Shield");
+            Missile = cm.Load<Texture2D>(@"Sprites\RandomAnimations\Missile");
 
             I = cm.Load<Texture2D>(@"Sprites\Ressources\1");
             II = cm.Load<Texture2D>(@"Sprites\Ressources\2");

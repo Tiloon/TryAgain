@@ -505,6 +505,15 @@
       <Output>C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
       <Time>2014-05-06T21:27:15.1445376+02:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\RandomAnimations\Missile.PNG</Source>
+      <Name>Sprites\RandomAnimations\Missile</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\Missile.xnb</Output>
+      <Time>2014-05-25T20:09:40.7364983+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

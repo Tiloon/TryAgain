@@ -258,3 +258,4 @@ C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAga
 C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.exe
 C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.pdb
+C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\Missile.xnb

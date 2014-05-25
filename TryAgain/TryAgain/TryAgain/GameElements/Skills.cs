@@ -13,10 +13,30 @@ namespace TryAgain.GameElements
     {
         //proprietes
         static bool shield = false;
-
+        static bool missile = false;
+        static Vector2 missilepos;
+        static int missilespeed = 3;
         //constructor
 
         //methods
+
+        public static void Missile(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState)
+        {
+            if (keyBoardState.IsKeyDown(Keys.Space) && !missile)
+            {
+                missile = true;
+                missilepos = new Vector2((hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64);
+            }
+            if (missile)
+            {
+                sb.Draw(Textures.Missile, missilepos, null, Color.White, 0f, Vector2.Zero,
+    new Vector2(64.0F / (float)(Textures.Missile.Width), 64.0F / (float)(Textures.Missile.Height)), SpriteEffects.None, 0f);
+                missilepos.X += missilespeed;
+                if (missilepos.X - missilespeed > Game1.graphics.PreferredBackBufferWidth)
+                    missile = false;
+            }
+        }
+
         public static void Shield(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState)
         {
             if (keyBoardState.IsKeyDown(Keys.S) && !shield)
@@ -41,6 +61,7 @@ namespace TryAgain.GameElements
         static public void Draw(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState)
         {
             Shield(sb, pos, hero, keyBoardState);
+            Missile(sb, pos, hero, keyBoardState);
         }
     }
 }
