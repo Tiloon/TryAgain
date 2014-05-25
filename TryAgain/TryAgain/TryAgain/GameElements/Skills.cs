@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using TryAgain.Characters;
+using TryAgain.GameStates;
 
 namespace TryAgain.GameElements
 {
@@ -32,6 +33,14 @@ namespace TryAgain.GameElements
                 sb.Draw(Textures.Missile, missilepos, null, Color.White, 0f, Vector2.Zero,
     new Vector2(64.0F / (float)(Textures.Missile.Width), 64.0F / (float)(Textures.Missile.Height)), SpriteEffects.None, 0f);
                 missilepos.X += missilespeed;
+                foreach (GameObject obj in GameScreen.GOList)
+                {
+                    if (/*(obj.Type == "GameObject,Character,Monster") && */(new Rectangle((int)missilepos.X, (int)missilepos.Y, Textures.Missile.Width, Textures.Missile.Height).Intersects(new Rectangle((int)obj.getPosition().X, (int)obj.getPosition().Y, 60, 60))))
+                    {
+                        obj.pv -= 25;   //il faut une fonction update qui supprime l'objet quand ses pv sont à 0, car le foreach ne permet pas de ref (nécéssaire pour remove)
+                        missile = false;
+                    }
+                }
                 if (missilepos.X - missilespeed > Game1.graphics.PreferredBackBufferWidth)
                     missile = false;
             }

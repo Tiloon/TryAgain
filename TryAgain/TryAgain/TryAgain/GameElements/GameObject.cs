@@ -26,6 +26,7 @@ namespace TryAgain.GameElements
         protected Vector2 size;
         public bool ticked, toupdate = true;
         public float X, Y;
+        public int pv = 50; //utilisé si besoin seulement, et je le met comme ca pour un test
         public Vector2 getPosition()
         {
             return position;
