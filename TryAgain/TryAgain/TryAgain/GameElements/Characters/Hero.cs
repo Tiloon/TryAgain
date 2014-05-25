@@ -45,6 +45,7 @@ namespace TryAgain.Characters
             this.size = new Vector2(this.largeur, this.longueur);
             this.X = position.X;
             this.Y = position.Y;
+            this.position = position;
             this.name = name;
             this.classe = classe;
             this.apparence = apparence;
