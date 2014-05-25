@@ -31,7 +31,7 @@ namespace TryAgain.Online
     {
         public static Thread clientThread;
         public volatile static String UserID = "IUSer";
-        public volatile static String avatar = "Ppim";
+        public volatile static String avatar = "Ttony";
         public volatile static String host = "127.0.0.1";
         public volatile static int port = 4242;
         static volatile Socket server_socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);

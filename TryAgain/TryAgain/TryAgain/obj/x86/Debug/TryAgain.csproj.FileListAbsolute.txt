@@ -259,3 +259,5 @@ C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\Micros
 C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.exe
 C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.pdb
 C:\Users\Tony\Documents\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\Missile.xnb
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\Missile.xnb
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Chosen.xnb

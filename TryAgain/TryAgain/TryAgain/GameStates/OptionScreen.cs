@@ -18,6 +18,8 @@ namespace TryAgain.GameStates
         cButton ButtonReturn;
         cButton ButtonFullscreen;
         cButton ButtonFenetre;
+        cButton ButtonTony;
+        cButton ButtonPierre;
 
         Tuple<cButton, Vector2>[] resolutions;
 
@@ -78,6 +80,16 @@ namespace TryAgain.GameStates
         {
             MouseState mouse = Mouse.GetState();
 
+            if (ButtonTony.IsClicked(mouse))
+            {
+                GameScreen.name = "Tony";
+                Online.Connection.avatar = "Ttony";
+            }
+            if (ButtonPierre.IsClicked(mouse))
+            {
+                GameScreen.name = "Pierre";
+                Online.Connection.avatar = "Tpierre";
+            }
             if (ButtonReturn.IsClicked(mouse))
             {
                 if (GameScreen.IsGameStarted())
@@ -106,6 +118,17 @@ namespace TryAgain.GameStates
                 ButtonFenetre.Draw(sb);
             else
                 ButtonFullscreen.Draw(sb);
+            
+            //choix du personnage
+            sb.DrawString(Textures.UIfont, "Choix du personnage:", new Vector2(400, 10), Color.Black);
+            if (Online.Connection.avatar == "Ttony")
+                sb.Draw(Textures.Chosen, new Vector2(295, 45), Color.Black);
+            sb.DrawString(Textures.UIfont, "Tony:", new Vector2(200, 100), Color.Black);
+            ButtonPierre.Draw(sb);
+            if (Online.Connection.avatar == "Tpierre")
+                sb.Draw(Textures.Chosen, new Vector2(495, 45), Color.Black);
+            sb.DrawString(Textures.UIfont, "Pierre:", new Vector2(400, 100), Color.Black);
+            ButtonTony.Draw(sb);
 
             // La personne qui arrive à afficher quelque chose grâce à 
             resolutions[0].Item1.Draw(sb); // ça,
@@ -121,9 +144,13 @@ namespace TryAgain.GameStates
             ButtonReturn = new cButton(Textures.Cache["UIBreturn"], graphics);
             ButtonReturn.SetPosition(new Vector2(1062, 704 + 100));
             ButtonFullscreen = new cButton(Textures.FullscreenBG, graphics);
-            ButtonFullscreen.SetPosition(new Vector2(500, 100));
+            ButtonFullscreen.SetPosition(new Vector2(500, 200));
             ButtonFenetre = new cButton(Textures.FenetreBG, graphics);
-            ButtonFenetre.SetPosition(new Vector2(500, 100));
+            ButtonFenetre.SetPosition(new Vector2(500, 200));
+            ButtonTony = new cButton(Textures.buttonTony, graphics, 22*2, 65*2);
+            ButtonTony.SetPosition(new Vector2(300, 50));
+            ButtonPierre = new cButton(Textures.buttonPierre, graphics, 22*2, 65*2);
+            ButtonPierre.SetPosition(new Vector2(500, 50));
             loadResoltutions(graphics);
         }
     }

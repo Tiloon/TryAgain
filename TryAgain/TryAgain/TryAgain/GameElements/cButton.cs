@@ -20,6 +20,11 @@ namespace TryAgain.Menu
             texture = newtexture;
             size = new Vector2(graphics.Viewport.Width / 4, graphics.Viewport.Height / 10);   // règle la taille en fonction de celle de l'image
         }
+        public cButton(Texture2D newtexture, GraphicsDevice graphics, int width, int height)
+        {
+            texture = newtexture;
+            size = new Vector2(width, height);   // surcharge pour choisir la taille du boutton
+        }
 
         public bool IsClicked(MouseState mouse)  //retourne vrai si intersection bouton-souris
         {
