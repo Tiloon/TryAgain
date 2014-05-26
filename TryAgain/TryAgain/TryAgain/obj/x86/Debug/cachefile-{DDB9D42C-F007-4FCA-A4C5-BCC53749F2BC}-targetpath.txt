@@ -70,3 +70,4 @@ Content\UI\gauge\mana5.xnb
 Content\UI\gauge\mana6.xnb
 Content\UI\gauge\mana7.xnb
 Content\UI\gauge\manaBG.xnb
+Content\UI\gauge\fog.xnb

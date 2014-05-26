@@ -38,6 +38,7 @@ namespace TryAgain
         // UI gauges
         public static Texture2D[] healthGauge = new Texture2D[9]; // BG + 8 others
         public static Texture2D[] manaGauge = new Texture2D[9]; // BG + 8 others
+        public static Texture2D fogCafeine;
 
         public static void load(ContentManager cm)
         {
@@ -102,7 +103,7 @@ namespace TryAgain
             for (int i = 0; i < 8; i++)
                 manaGauge[i + 1] = cm.Load<Texture2D>(@"UI\gauge\mana" + i.ToString());
 
-
+            fogCafeine = cm.Load<Texture2D>(@"UI\gauge\fog");
 
             Themes.PlayTheme();
         }

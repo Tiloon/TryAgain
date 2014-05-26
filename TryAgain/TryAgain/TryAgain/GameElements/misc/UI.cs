@@ -32,6 +32,17 @@ namespace TryAgain.GameElements.misc
             //Textures.DrawRectangle(sb, new Rectangle(0, 0, Tilemap.variationsizegraphicsX, 15 * 64), Color.White);
             //Textures.DrawRectangle(sb, new Rectangle(Tilemap.variationsizegraphicsX + 15 * 64, 0, Tilemap.variationsizegraphicsX, 15 * 64), Color.White);
             //sb.DrawString(Textures.UIfont, "health : " + lp.ToString() + "/" + lpmax.ToString(), new Vector2(15, 12), statcolor);
+            //Cafeine
+            if (lp>0)
+            {
+                int width = (int)((sb.GraphicsDevice.Viewport.Width / 2) * 3 * (1 + 2*(float)lp / (float)lpmax) / 3), height = (int)((sb.GraphicsDevice.Viewport.Height / 2) * 3 * (1 + 2*(float)lp / (float)lpmax) / 3);
+                sb.Draw(Textures.fogCafeine, new Rectangle((sb.GraphicsDevice.Viewport.Width - width) / 2, (sb.GraphicsDevice.Viewport.Height - height) / 2, width, height), Color.White);
+                Textures.DrawRectangle(sb, new Rectangle(0, 0, (sb.GraphicsDevice.Viewport.Width - width) / 2, sb.GraphicsDevice.Viewport.Height), Color.Black);
+                Textures.DrawRectangle(sb, new Rectangle(0, 0, sb.GraphicsDevice.Viewport.Width, (sb.GraphicsDevice.Viewport.Height - height) / 2), Color.Black);
+                Textures.DrawRectangle(sb, new Rectangle((sb.GraphicsDevice.Viewport.Width + width) / 2, 0, sb.GraphicsDevice.Viewport.Width, sb.GraphicsDevice.Viewport.Height), Color.Black);
+                Textures.DrawRectangle(sb, new Rectangle(0, (sb.GraphicsDevice.Viewport.Height + height) / 2, sb.GraphicsDevice.Viewport.Width, sb.GraphicsDevice.Viewport.Height), Color.Black);
+            }
+
             // Health
             sb.Draw(Textures.healthGauge[0], new Rectangle(sb.GraphicsDevice.Viewport.Width - 136, 4, 64, 64), Color.White);
             if ((lpmax > 0) && (lp <= lpmax) && (lp > 0))

@@ -123,7 +123,7 @@ namespace TryAgain.GameStates
                 if (newState.IsKeyDown(Keys.C))
                 {
                     hero.stats.lp--;
-                    Craft.Draw(sb);
+                    //Craft.Draw(sb);
                 }
                 //skills
                 Skills.Draw(sb, hero.getPosition(), hero, newState);
