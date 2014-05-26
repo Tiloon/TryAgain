@@ -32,10 +32,13 @@ namespace TryAgain.GameElements.misc
             //Textures.DrawRectangle(sb, new Rectangle(0, 0, Tilemap.variationsizegraphicsX, 15 * 64), Color.White);
             //Textures.DrawRectangle(sb, new Rectangle(Tilemap.variationsizegraphicsX + 15 * 64, 0, Tilemap.variationsizegraphicsX, 15 * 64), Color.White);
             //sb.DrawString(Textures.UIfont, "health : " + lp.ToString() + "/" + lpmax.ToString(), new Vector2(15, 12), statcolor);
-            //Cafeine
+            //Cafeine (TODO : Change lp <-> cp)
             if (lp>0)
             {
-                int width = (int)((sb.GraphicsDevice.Viewport.Width / 2) * 3 * (1 + 2*(float)lp / (float)lpmax) / 3), height = (int)((sb.GraphicsDevice.Viewport.Height / 2) * 3 * (1 + 2*(float)lp / (float)lpmax) / 3);
+                if(lp < 20)
+                    Textures.DrawRectangle(sb, new Rectangle(0, 0, sb.GraphicsDevice.Viewport.Width, sb.GraphicsDevice.Viewport.Height), Color.Black * (1.0f - (float)lp / 20.0F));
+
+                int width = (int)((sb.GraphicsDevice.Viewport.Width / 2) * 3 * (1 + 3*(float)lp / (float)lpmax) / 4), height = (int)((sb.GraphicsDevice.Viewport.Height / 2) * 3 * (1 + 3*(float)lp / (float)lpmax) / 4);
                 sb.Draw(Textures.fogCafeine, new Rectangle((sb.GraphicsDevice.Viewport.Width - width) / 2, (sb.GraphicsDevice.Viewport.Height - height) / 2, width, height), Color.White);
                 Textures.DrawRectangle(sb, new Rectangle(0, 0, (sb.GraphicsDevice.Viewport.Width - width) / 2, sb.GraphicsDevice.Viewport.Height), Color.Black);
                 Textures.DrawRectangle(sb, new Rectangle(0, 0, sb.GraphicsDevice.Viewport.Width, (sb.GraphicsDevice.Viewport.Height - height) / 2), Color.Black);
@@ -71,9 +74,9 @@ namespace TryAgain.GameElements.misc
                 }
             }
 
-            sb.DrawString(Textures.UIfont, "cafeine : " + cp.ToString() + "/" + cpmax.ToString(), new Vector2(15, 32), statcolor);
+            //sb.DrawString(Textures.UIfont, "cafeine : " + cp.ToString() + "/" + cpmax.ToString(), new Vector2(15, 32), statcolor);
             //sb.DrawString(Textures.UIfont, "mental : " + mp.ToString() + "/" + mpmax.ToString(), new Vector2(15, 52), statcolor);
-            sb.DrawString(Textures.UIfont, "Caracteristiques :", new Vector2(15, 100), caracolor);
+            /*sb.DrawString(Textures.UIfont, "Caracteristiques :", new Vector2(15, 100), caracolor);
             sb.DrawString(Textures.UIfont, "lvl :" + lvl.ToString(), new Vector2(15, 120), caracolor);
             sb.DrawString(Textures.UIfont, "force :" + force.ToString(), new Vector2(15, 140), caracolor);
             sb.DrawString(Textures.UIfont, "intelligence :" + intelligence.ToString(), new Vector2(15, 160), caracolor);
@@ -87,7 +90,7 @@ namespace TryAgain.GameElements.misc
             sb.DrawString(Textures.UIfont, "Alt: gerer la camera", new Vector2(15, 320), caracolor);
             sb.DrawString(Textures.UIfont, "G: jeter l'objet", new Vector2(15, 340), caracolor);
             sb.DrawString(Textures.UIfont, "C: CraftInterface", new Vector2(15, 360), caracolor);
-            sb.DrawString(Textures.UIfont, "Clic gauche: beaucoup\n de choses!", new Vector2(15, 380), caracolor);
+            sb.DrawString(Textures.UIfont, "Clic gauche: beaucoup\n de choses!", new Vector2(15, 380), caracolor);*/
             for (int i = 0; i < 10; i++)
             {
                 sb.Draw(Textures.UIitemHolder, new Rectangle(300 + 80*i, 884, 64, 64), Color.White);
