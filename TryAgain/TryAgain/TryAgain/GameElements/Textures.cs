@@ -37,6 +37,7 @@ namespace TryAgain
 
         // UI gauges
         public static Texture2D[] healthGauge = new Texture2D[9]; // BG + 8 others
+        public static Texture2D[] manaGauge = new Texture2D[9]; // BG + 8 others
 
         public static void load(ContentManager cm)
         {
@@ -96,6 +97,10 @@ namespace TryAgain
             healthGauge[0] = cm.Load<Texture2D>(@"UI\gauge\healthBG");
             for (int i = 0; i < 8; i++)
                 healthGauge[i + 1] = cm.Load<Texture2D>(@"UI\gauge\health" + i.ToString());
+
+            manaGauge[0] = cm.Load<Texture2D>(@"UI\gauge\manaBG");
+            for (int i = 0; i < 8; i++)
+                manaGauge[i + 1] = cm.Load<Texture2D>(@"UI\gauge\mana" + i.ToString());
 
 
 

@@ -31,25 +31,37 @@ namespace TryAgain.GameElements.misc
         {
             //Textures.DrawRectangle(sb, new Rectangle(0, 0, Tilemap.variationsizegraphicsX, 15 * 64), Color.White);
             //Textures.DrawRectangle(sb, new Rectangle(Tilemap.variationsizegraphicsX + 15 * 64, 0, Tilemap.variationsizegraphicsX, 15 * 64), Color.White);
-            sb.DrawString(Textures.UIfont, "health : " + lp.ToString() + "/" + lpmax.ToString(), new Vector2(15, 12), statcolor);
+            //sb.DrawString(Textures.UIfont, "health : " + lp.ToString() + "/" + lpmax.ToString(), new Vector2(15, 12), statcolor);
             // Health
-            sb.Draw(Textures.healthGauge[0], new Rectangle(sb.GraphicsDevice.Viewport.Width - 68, 4, 64, 64), Color.White);
+            sb.Draw(Textures.healthGauge[0], new Rectangle(sb.GraphicsDevice.Viewport.Width - 136, 4, 64, 64), Color.White);
             if ((lpmax > 0) && (lp <= lpmax) && (lp > 0))
             {
                 int max = (lp * 8) / lpmax;
                 for (int i = 0; i < max; i++)
-                    sb.Draw(Textures.healthGauge[i + 1], new Rectangle(sb.GraphicsDevice.Viewport.Width - 68, 4, 64, 64), Color.White);
+                    sb.Draw(Textures.healthGauge[i + 1], new Rectangle(sb.GraphicsDevice.Viewport.Width - 136, 4, 64, 64), Color.White);
                 if (max < 8)
                 {
                     int fraction = lpmax / 8;
-                    sb.Draw(Textures.healthGauge[max + 1], new Rectangle(sb.GraphicsDevice.Viewport.Width - 68, 4, 64, 64), Color.White * (((float)(lp - max * fraction)) / ((float)fraction)));
+                    sb.Draw(Textures.healthGauge[max + 1], new Rectangle(sb.GraphicsDevice.Viewport.Width - 136, 4, 64, 64), Color.White * (((float)(lp - max * fraction)) / ((float)fraction)));
                 }
+            }
 
-                
+            // Mana
+            sb.Draw(Textures.manaGauge[0], new Rectangle(sb.GraphicsDevice.Viewport.Width - 68, 4, 64, 64), Color.White);
+            if ((mpmax > 0) && (mp <= mpmax) && (mp > 0))
+            {
+                int max = (mp * 8) / mpmax;
+                for (int i = 0; i < max; i++)
+                    sb.Draw(Textures.manaGauge[i + 1], new Rectangle(sb.GraphicsDevice.Viewport.Width - 68, 4, 64, 64), Color.White);
+                if (max < 8)
+                {
+                    int fraction = mpmax / 8;
+                    sb.Draw(Textures.manaGauge[max + 1], new Rectangle(sb.GraphicsDevice.Viewport.Width - 68, 4, 64, 64), Color.White * (((float)(mp - max * fraction)) / ((float)fraction)));
+                }
             }
 
             sb.DrawString(Textures.UIfont, "cafeine : " + cp.ToString() + "/" + cpmax.ToString(), new Vector2(15, 32), statcolor);
-            sb.DrawString(Textures.UIfont, "mental : " + mp.ToString() + "/" + mpmax.ToString(), new Vector2(15, 52), statcolor);
+            //sb.DrawString(Textures.UIfont, "mental : " + mp.ToString() + "/" + mpmax.ToString(), new Vector2(15, 52), statcolor);
             sb.DrawString(Textures.UIfont, "Caracteristiques :", new Vector2(15, 100), caracolor);
             sb.DrawString(Textures.UIfont, "lvl :" + lvl.ToString(), new Vector2(15, 120), caracolor);
             sb.DrawString(Textures.UIfont, "force :" + force.ToString(), new Vector2(15, 140), caracolor);
