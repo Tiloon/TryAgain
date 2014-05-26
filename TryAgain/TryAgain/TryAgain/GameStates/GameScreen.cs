@@ -122,6 +122,7 @@ namespace TryAgain.GameStates
                 KeyboardState newState = Keyboard.GetState();
                 if (newState.IsKeyDown(Keys.C))
                 {
+                    hero.stats.lp--;
                     Craft.Draw(sb);
                 }
                 //skills

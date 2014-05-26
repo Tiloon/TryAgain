@@ -19,7 +19,7 @@ namespace TryAgain
 {
     class Textures
     {
-        public static Dictionary<String, Texture2D> Cache = new Dictionary<string,Texture2D>();
+        public static Dictionary<String, Texture2D> Cache = new Dictionary<string, Texture2D>();
 
         public static Texture2D roche_herbe, halfsable;
 
@@ -34,6 +34,9 @@ namespace TryAgain
 
         public static SpriteFont UIfont, UIfontSmall;
         public static Texture2D UIitemHolder, UIitemSelected;
+
+        // UI gauges
+        public static Texture2D[] healthGauge = new Texture2D[9]; // BG + 8 others
 
         public static void load(ContentManager cm)
         {
@@ -89,6 +92,13 @@ namespace TryAgain
             roche_herbe = cm.Load<Texture2D>(@"Sprites\herbe_roche");
             halfsable = cm.Load<Texture2D>(@"Sprites\halfsable");
             whitePixel = cm.Load<Texture2D>(@"UI/pxl");
+
+            healthGauge[0] = cm.Load<Texture2D>(@"UI\gauge\healthBG");
+            for (int i = 0; i < 8; i++)
+                healthGauge[i + 1] = cm.Load<Texture2D>(@"UI\gauge\health" + i.ToString());
+
+
+
             Themes.PlayTheme();
         }
 
@@ -168,7 +178,7 @@ namespace TryAgain
         }
         public static void LoadTextureList(String file)
         {
-            Tuple<String, String>[]  texturesList = JsonConvert.DeserializeObject<Tuple<String, String>[]>(Initializer.ReadTextFile(@"elements\textures\" + file));
+            Tuple<String, String>[] texturesList = JsonConvert.DeserializeObject<Tuple<String, String>[]>(Initializer.ReadTextFile(@"elements\textures\" + file));
 
             foreach (var t in texturesList)
             {

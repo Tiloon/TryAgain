@@ -68,7 +68,7 @@ namespace TryAgain.Online
             catch (SocketException)
             {
                 online = false;
-                Server.EmbeddedServer.Launch();
+                /*Server.EmbeddedServer.Launch();
                 try
                 {
                     server_socket.Connect("127.0.0.1", 4242);
@@ -77,7 +77,7 @@ namespace TryAgain.Online
                 catch (SocketException)
                 {
                     online = false;
-                }
+                }*/
             }
 
             if (online)

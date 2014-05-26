@@ -25,6 +25,7 @@ namespace Server
             Server.serverRunning = false;
             local = false;
             serverThread.Abort();
+            serverThread.Join();
         }
     }
 }

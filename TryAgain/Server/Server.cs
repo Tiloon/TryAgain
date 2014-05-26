@@ -65,8 +65,11 @@ namespace Server
         public void Loop()
         {
             DateTime lastTick = DateTime.Now;
-            while (serverRunning)
+            while (true)
             {
+                if (!serverRunning)
+                    return;
+
                 if (clients.Count == 0)
                     continue;
 

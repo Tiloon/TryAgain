@@ -32,6 +32,22 @@ namespace TryAgain.GameElements.misc
             //Textures.DrawRectangle(sb, new Rectangle(0, 0, Tilemap.variationsizegraphicsX, 15 * 64), Color.White);
             //Textures.DrawRectangle(sb, new Rectangle(Tilemap.variationsizegraphicsX + 15 * 64, 0, Tilemap.variationsizegraphicsX, 15 * 64), Color.White);
             sb.DrawString(Textures.UIfont, "health : " + lp.ToString() + "/" + lpmax.ToString(), new Vector2(15, 12), statcolor);
+            // Health
+            sb.Draw(Textures.healthGauge[0], new Rectangle(sb.GraphicsDevice.Viewport.Width - 68, 4, 64, 64), Color.White);
+            if ((lpmax > 0) && (lp <= lpmax) && (lp > 0))
+            {
+                int max = (lp * 8) / lpmax;
+                for (int i = 0; i < max; i++)
+                    sb.Draw(Textures.healthGauge[i + 1], new Rectangle(sb.GraphicsDevice.Viewport.Width - 68, 4, 64, 64), Color.White);
+                if (max < 8)
+                {
+                    int fraction = lpmax / 8;
+                    sb.Draw(Textures.healthGauge[max + 1], new Rectangle(sb.GraphicsDevice.Viewport.Width - 68, 4, 64, 64), Color.White * (((float)(lp - max * fraction)) / ((float)fraction)));
+                }
+
+                
+            }
+
             sb.DrawString(Textures.UIfont, "cafeine : " + cp.ToString() + "/" + cpmax.ToString(), new Vector2(15, 32), statcolor);
             sb.DrawString(Textures.UIfont, "mental : " + mp.ToString() + "/" + mpmax.ToString(), new Vector2(15, 52), statcolor);
             sb.DrawString(Textures.UIfont, "Caracteristiques :", new Vector2(15, 100), caracolor);
@@ -63,7 +79,7 @@ namespace TryAgain.GameElements.misc
                 }
             }
 
-            if (true) // Debug shit
+            if (false) // Debug shit
             {
                 for (int i = 0; i < GameScreen.GOList.Count; i++)
                 {
