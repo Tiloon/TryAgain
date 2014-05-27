@@ -15,6 +15,7 @@ using TryAgain.GameElements;
 using TryAgain.GameElements.Map___environnement;
 using TryAgain.Sounds;
 using TryAgain.Online;
+using TryAgain.GameElements.Managers;
 
 namespace TryAgain.GameStates
 {
@@ -39,6 +40,8 @@ namespace TryAgain.GameStates
         {
             MouseState mouse = Mouse.GetState();
             GameObject gob = null;
+
+            TimeMGR.Update();
 
             if ((hero.stats.lp <= 0) && (Connection.Updated))
                 Connection.HeroDead();

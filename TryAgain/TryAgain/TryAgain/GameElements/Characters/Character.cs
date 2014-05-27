@@ -33,7 +33,7 @@ namespace TryAgain.Characters
                (position.X <= (float)(Hero.view.X + Hero.view.Width) + Hero.padding.X) &&
                (position.Y <= (float)(Hero.view.Y + Hero.view.Height) + Hero.padding.Y))
                 sb.Draw(apparence, new Vector2((position.X - (Hero.view.X + Hero.padding.X)) * 64, (position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), null, Color.White, 0f, Vector2.Zero,
-                    new Vector2(64.0F / (float)(apparence.Width), 64.0F / (float)(apparence.Height)), SpriteEffects.None, 0f); 
+                    new Vector2(96.0F / (float)(apparence.Width), 96.0F / (float)(apparence.Height)), SpriteEffects.None, 0f); 
                 //sb.Draw(apparence, new Vector2((position.X - (Hero.view.X + Hero.padding.X)) * 64 + 64 * 4, (position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), Color.White);
         }
 

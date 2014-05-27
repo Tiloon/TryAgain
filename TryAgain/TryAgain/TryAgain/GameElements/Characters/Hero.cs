@@ -40,8 +40,8 @@ namespace TryAgain.Characters
                 this.items[i] = Item.voidItem;
             }
             this.equiped = 0;
-            this.longueur = 64;
-            this.largeur = 64;
+            this.longueur = 96;
+            this.largeur = 96;
             this.size = new Vector2(this.largeur, this.longueur);
             this.X = position.X;
             this.Y = position.Y;
@@ -57,6 +57,8 @@ namespace TryAgain.Characters
             {
                 stats = Stats.GetStats(0);
             }
+
+            TryAgain.GameElements.Managers.TimeMGR.AddEvent("HP loss", 2000, -1, () => { if (this.stats.ch > 1) this.stats.ch--; });
 
             oldKeyboardState = newState = Keyboard.GetState();
         }
@@ -158,7 +160,10 @@ namespace TryAgain.Characters
                         //if (!Tilemap.tiles[((int)this.position.X) % Tilemap.tiles.GetLength(0), ((int)this.position.Y) % Tilemap.tiles.GetLength(1)].IsWalkable()) 
                         if (Tilemap.tiles[
                             (Tilemap.tiles.GetLength(0) + (((int)(this.position.X + this.size.X / 128 + speed.X)) % Tilemap.tiles.GetLength(0))) % Tilemap.tiles.GetLength(0),
-                            (Tilemap.tiles.GetLength(1) + (((int)(this.position.Y + 3 * (this.size.Y / 256) + speed.Y)) % Tilemap.tiles.GetLength(1))) % Tilemap.tiles.GetLength(1)].IsWalkable())
+                            (Tilemap.tiles.GetLength(1) + (((int)(this.position.Y + 3 * (this.size.Y / 256) + speed.Y)) % Tilemap.tiles.GetLength(1))) % Tilemap.tiles.GetLength(1)].IsWalkable()
+                            && (!((speed.Y > 0) && (!Tilemap.tiles[
+                                (Tilemap.tiles.GetLength(0) + (((int)(this.position.X + this.size.X / 128 + speed.X)) % Tilemap.tiles.GetLength(0))) % Tilemap.tiles.GetLength(0),
+                                (Tilemap.tiles.GetLength(1) + (((int)(this.position.Y + 4 * (this.size.Y / 256) + speed.Y)) % Tilemap.tiles.GetLength(1))) % Tilemap.tiles.GetLength(1)].IsWalkable()))))
                         {
                             Hero.padding += speed;
                             if ((Math.Abs(Hero.padding.X) >= 1) || (Math.Abs(Hero.padding.Y) >= 1))

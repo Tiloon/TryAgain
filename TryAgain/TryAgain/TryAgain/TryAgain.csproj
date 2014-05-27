@@ -132,6 +132,7 @@
     <Compile Include="GameElements\CraftInterface.cs" />
     <Compile Include="GameElements\GameObject.cs" />
     <Compile Include="GameElements\GameOver.cs" />
+    <Compile Include="GameElements\Managers\TimeMGR.cs" />
     <Compile Include="GameElements\Map &amp; environnement\GobParticle.cs" />
     <Compile Include="GameElements\Map &amp; environnement\GobVoid.cs" />
     <Compile Include="GameElements\Map &amp; environnement\TextureBlend.cs" />

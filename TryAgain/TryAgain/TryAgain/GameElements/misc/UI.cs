@@ -33,12 +33,12 @@ namespace TryAgain.GameElements.misc
             //Textures.DrawRectangle(sb, new Rectangle(Tilemap.variationsizegraphicsX + 15 * 64, 0, Tilemap.variationsizegraphicsX, 15 * 64), Color.White);
             //sb.DrawString(Textures.UIfont, "health : " + lp.ToString() + "/" + lpmax.ToString(), new Vector2(15, 12), statcolor);
             //Cafeine (TODO : Change lp <-> cp)
-            if (lp>0)
+            if (cp>0)
             {
-                if(lp < 20)
-                    Textures.DrawRectangle(sb, new Rectangle(0, 0, sb.GraphicsDevice.Viewport.Width, sb.GraphicsDevice.Viewport.Height), Color.Black * (1.0f - (float)lp / 20.0F));
+                if(cp < 40)
+                    Textures.DrawRectangle(sb, new Rectangle(0, 0, sb.GraphicsDevice.Viewport.Width, sb.GraphicsDevice.Viewport.Height), Color.Black * (1.0f - (float)cp / 40.0F));
 
-                int width = (int)((sb.GraphicsDevice.Viewport.Width / 2) * 3 * (1 + 3*(float)lp / (float)lpmax) / 4), height = (int)((sb.GraphicsDevice.Viewport.Height / 2) * 3 * (1 + 3*(float)lp / (float)lpmax) / 4);
+                int width = (int)((sb.GraphicsDevice.Viewport.Width / 2) * 3 * (1 + 3 * (float)cp / (float)cpmax) / 4), height = (int)((sb.GraphicsDevice.Viewport.Height / 2) * 3 * (1 + 3 * (float)cp / (float)cpmax) / 4);
                 sb.Draw(Textures.fogCafeine, new Rectangle((sb.GraphicsDevice.Viewport.Width - width) / 2, (sb.GraphicsDevice.Viewport.Height - height) / 2, width, height), Color.White);
                 Textures.DrawRectangle(sb, new Rectangle(0, 0, (sb.GraphicsDevice.Viewport.Width - width) / 2, sb.GraphicsDevice.Viewport.Height), Color.Black);
                 Textures.DrawRectangle(sb, new Rectangle(0, 0, sb.GraphicsDevice.Viewport.Width, (sb.GraphicsDevice.Viewport.Height - height) / 2), Color.Black);
@@ -105,6 +105,7 @@ namespace TryAgain.GameElements.misc
                 }
             }
 
+            /*
             if (false) // Debug shit
             {
                 for (int i = 0; i < GameScreen.GOList.Count; i++)
@@ -116,7 +117,7 @@ namespace TryAgain.GameElements.misc
                 {
                     sb.DrawString(Textures.UIfont, GameObject.GobjectList.ToList()[i].Value.UID, new Vector2(1280, 220 + 20 * i), caracolor);
                 }
-            }
+            }*/
         }
         public void update(ref Hero hero)
         {
