@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentEditor", "..\ContentEditor\ContentEditor.csproj", "{A8A938D0-3179-454F-B390-AA29F2606732}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{FF22677E-746D-4AA1-B8D0-4AD365F0408A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -32,6 +34,10 @@ Global
 		{A8A938D0-3179-454F-B390-AA29F2606732}.Debug|x86.Build.0 = Debug|x86
 		{A8A938D0-3179-454F-B390-AA29F2606732}.Release|x86.ActiveCfg = Release|x86
 		{A8A938D0-3179-454F-B390-AA29F2606732}.Release|x86.Build.0 = Release|x86
+		{FF22677E-746D-4AA1-B8D0-4AD365F0408A}.Debug|x86.ActiveCfg = Debug|x86
+		{FF22677E-746D-4AA1-B8D0-4AD365F0408A}.Debug|x86.Build.0 = Debug|x86
+		{FF22677E-746D-4AA1-B8D0-4AD365F0408A}.Release|x86.ActiveCfg = Release|x86
+		{FF22677E-746D-4AA1-B8D0-4AD365F0408A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

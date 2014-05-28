@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Server
+namespace Shared
 {
-    struct Stats
+    public struct Stats
     {
         public int lvl;
         public int lp; // Life points

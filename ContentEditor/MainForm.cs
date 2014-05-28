@@ -7,9 +7,11 @@
 //-----------------------------------------------------------------------------
 #endregion
 
-#region Using Statements
+
 using System.Windows.Forms;
-#endregion
+using System.IO;
+using System.IO.Compression;
+
 
 namespace WinFormsGraphicsDevice
 {
@@ -22,6 +24,7 @@ namespace WinFormsGraphicsDevice
     using System.IO;
     using System;
     using Newtonsoft.Json;
+    using Ionic.Zip;
 
 
     /// <summary>
@@ -200,6 +203,124 @@ namespace WinFormsGraphicsDevice
         private void mapEditor_MouseDown(object sender, MouseEventArgs e)
         {
             checkBox1.Checked = true;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void textBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+        }
+
+        private int cX = 1, currentX = 0, cY = 1, currentY = 0;
+        private bool isLoadingMap = true;
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Directory.CreateDirectory(Application.StartupPath + @"\tmp");
+            progressBar1.Value = 0;
+            button7.Enabled = true;
+            button6.Enabled = false;
+            cX = (int)numericUpDown17.Value;
+            cY = (int)numericUpDown16.Value;
+            numericUpDown17.Enabled = false;
+            numericUpDown16.Enabled = false;
+            progressBar1.Maximum = cX * cY * 2 + 1;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            openFileDialog2.ShowDialog();
+        }
+
+
+        private void openFileDialog2_FileOk_1(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            try
+            {
+                isLoadingMap = !isLoadingMap;
+                if (isLoadingMap)
+                {
+                    currentX++;
+                    if (currentX >= cX)
+                    {
+                        currentX = 0;
+                        currentY++;
+                        if (currentY >= cY)
+                        {
+                            currentY = 0;
+                            button7.Enabled = false;
+                            button8.Enabled = true;
+                        }
+                    }
+                    button7.Text = "Load map (" + currentX + ", " + currentY + ")";
+                }
+                else
+                    button7.Text = "Load GameObjectMap (" + currentX + ", " + currentY + ")";
+
+                progressBar1.Value++;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error : not a map file or other weeblee wobly timy spacy related error.");
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            using (ZipFile zip = new ZipFile())
+            {
+                zip.AddDirectory(Application.StartupPath + @"\tmp");
+                zip.Save("file.zip");
+            }
+            MessageBox.Show("File created as \"" + Application.StartupPath + "\\world.gameworld\".");
+            button8.Enabled = false;
+            button6.Enabled = true;
+            numericUpDown17.Enabled = true;
+            numericUpDown16.Enabled = true;
+            progressBar1.Value++;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Shared.Stats npcStats = new Shared.Stats();
+            npcStats.lvl = (int)numericUpDown4.Value;
+            npcStats.lp = (int)numericUpDown4.Value;
+            npcStats.lpmax = (int)numericUpDown5.Value;
+            npcStats.mh = (int)numericUpDown6.Value;
+            npcStats.mhmax = (int)numericUpDown7.Value;
+            npcStats.ch = (int)numericUpDown8.Value;
+            npcStats.chmax = (int)numericUpDown9.Value;
+            npcStats.cbonus = (int)numericUpDown10.Value;
+            npcStats.mp = (int)numericUpDown11.Value;
+            npcStats.mpmax = (int)numericUpDown12.Value;
+            npcStats.force = (int)numericUpDown13.Value;
+            npcStats.intelligence = (int)numericUpDown14.Value;
+            npcStats.defense = (int)numericUpDown15.Value;
+            npcStats.criticalrate = (int)numericUpDown16.Value;
+            npcStats.speed = (float)numericUpDown17.Value;
+
+            Shared.Gob npc = new Shared.Gob();
+            npc.stats = npcStats;
+            npc.name = textBox1.Text;
+            npc.commonName = textBox2.Text;
+            npc.type = "GameObject,Character,Npc";
+            npc.X = Shared.Converter.FloatToString(0);
+            npc.Y = Shared.Converter.FloatToString(0);
+
+
         }
 
     }

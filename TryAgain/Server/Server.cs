@@ -154,10 +154,28 @@ namespace Server
                             continue;
                         }
 
-                        if (message.StartsWith("msg:cmd "))
+                        if (message.StartsWith("msg:\\"))
                         {
-                            message = message.Remove(0, 8);
+                            message = message.Remove(0, 1);
                             if (message == "add")
+                            {
+                                if (!goblist.ContainsKey("monster00"))
+                                {
+                                    Console.WriteLine("monstre spawned");
+                                    GameObject el = new GameObject();
+                                    el.name = "monster00";
+                                    el.ID = "monster00";
+                                    el.spr = "Mbio1";
+                                    el.type = "Monster";
+                                    el.x = 3.0f;
+                                    el.X = Convert.ToBase64String(BitConverter.GetBytes(el.x));
+                                    el.y = 3.0f;
+                                    el.Y = Convert.ToBase64String(BitConverter.GetBytes(el.y));
+                                    goblist.Add("monster00", el);
+                                    igIDs.Add("monster00");
+                                }
+                            }
+                            else if (message == "report")
                             {
                                 if (!goblist.ContainsKey("monster00"))
                                 {

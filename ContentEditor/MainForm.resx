@@ -123,4 +123,12 @@
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>153, 17</value>
   </metadata>
+  <data name="label22.Text" xml:space="preserve">
+    <value>Load multiple maps with the same size and  GameObjectMap in order to compile it in a GameWorld file.
+Charger des cartes de même taille et les fichiers de carte d'élément du jeu afin de les compiler vers un fichier GameWorld.
+</value>
+  </data>
+  <metadata name="openFileDialog2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>293, 17</value>
+  </metadata>
 </root>

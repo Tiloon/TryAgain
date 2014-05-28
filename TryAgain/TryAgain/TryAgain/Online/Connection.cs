@@ -242,7 +242,7 @@ namespace TryAgain.Online
                                         System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0)));*/
                                     GameScreen.GOList[pos].TravelTo(new Vector2(
                                         System.BitConverter.ToSingle(Convert.FromBase64String(gob.X), 0),
-                                        System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0)), 0.2F);
+                                        System.BitConverter.ToSingle(Convert.FromBase64String(gob.Y), 0)), gob.speed);
                                 }
                                 else
                                 {
@@ -279,7 +279,7 @@ namespace TryAgain.Online
                                     System.BitConverter.ToSingle(Convert.FromBase64String(newgob.Y), 0)));*/
                                 GameScreen.GOList[pos].TravelTo(new Vector2(
                                     System.BitConverter.ToSingle(Convert.FromBase64String(newgob.X), 0),
-                                    System.BitConverter.ToSingle(Convert.FromBase64String(newgob.Y), 0)), 0.2F);
+                                    System.BitConverter.ToSingle(Convert.FromBase64String(newgob.Y), 0)), newgob.speed);
                                 GameScreen.GOList[pos].ticked = true;
                                 GameScreen.GOList[pos].toupdate = true;
                             }

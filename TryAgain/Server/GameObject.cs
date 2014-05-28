@@ -10,6 +10,7 @@ namespace Server
     {
         public String X, Y;
         public float x, y;
+        public float speed = 0.09F;
         public String ID;
         public String spr;
         public String type;
@@ -20,7 +21,7 @@ namespace Server
         private bool toUpdate;
         private List<GameObject> near = new List<GameObject>();
         private GameObject target;
-        private Stats stats;
+        private Shared.Stats stats;
 
         public GameObject()
         {

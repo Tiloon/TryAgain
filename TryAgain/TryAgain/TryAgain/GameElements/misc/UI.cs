@@ -101,7 +101,7 @@ namespace TryAgain.GameElements.misc
                     if (items[i].exists)
                         sb.Draw(items[i].getIcon(), new Rectangle(300 + 80 * i, 884, 64, 64), Color.White);
                     else
-                        items[i] = null;
+                        items[i] = Item.voidItem;
                 }
             }
 

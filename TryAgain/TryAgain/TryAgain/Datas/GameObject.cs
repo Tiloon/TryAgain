@@ -10,6 +10,7 @@ namespace Server
     {
         public String X, Y;
         public float x, y;
+        public float speed;
         public String ID;
         public String spr;
         public String type;

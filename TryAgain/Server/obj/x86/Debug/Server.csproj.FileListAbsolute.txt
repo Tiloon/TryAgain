@@ -43,3 +43,5 @@ C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Serve
 C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
 C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\obj\x86\Debug\Server.exe
 C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\obj\x86\Debug\Server.pdb
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\bin\Debug\Shared.dll
+C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\bin\Debug\Shared.pdb
