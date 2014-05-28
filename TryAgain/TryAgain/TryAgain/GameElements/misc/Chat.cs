@@ -41,19 +41,22 @@ namespace TryAgain.GameElements.misc
 
         public static void Draw(SpriteBatch sb)
         {
-            Textures.DrawRectangle(sb, new Rectangle(0, 720, 256, 128), Color.Cyan * opacity);
-            for (int i = 0; i < lastMessages.Length; i++)
+            if (Connection.isOnline())
             {
-                if((lastMessages[i] != null) && (lastMessages[i] != ""))
-                    sb.DrawString(Textures.UIfontSmall, lastMessages[i], new Vector2(0, 720 + 128 - (i + 1) * 15 - 4), lastMessagesColor[i] * (opacity / 2 + 0.5F));
+                Textures.DrawRectangle(sb, new Rectangle(0, 720, 256, 128), Color.Cyan * opacity);
+                for (int i = 0; i < lastMessages.Length; i++)
+                {
+                    if((lastMessages[i] != null) && (lastMessages[i] != ""))
+                        sb.DrawString(Textures.UIfontSmall, lastMessages[i], new Vector2(0, 720 + 128 - (i + 1) * 15 - 4), lastMessagesColor[i] * (opacity / 2 + 0.5F));
+                }
+                if (true)
+                {
+                    Textures.DrawRectangle(sb, new Rectangle(0, 720 + 128, 256, 24), Color.DeepSkyBlue * 0.8F);
+                    sb.DrawString(Textures.UIfontSmall, bufferStr, new Vector2(0, 720 + 128), Color.Black);
+                }
+                if (opacity > 0)
+                    opacity -= 0.01F;
             }
-            if (true)
-            {
-                Textures.DrawRectangle(sb, new Rectangle(0, 720 + 128, 256, 24), Color.DeepSkyBlue * 0.8F);
-                sb.DrawString(Textures.UIfontSmall, bufferStr, new Vector2(0, 720 + 128), Color.Black);
-            }
-            if (opacity > 0)
-                opacity -= 0.01F;
         }
 
         public static void Write()

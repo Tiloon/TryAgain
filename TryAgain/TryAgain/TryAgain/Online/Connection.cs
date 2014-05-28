@@ -164,6 +164,11 @@ namespace TryAgain.Online
             }
         }
 
+        public static bool isOnline()
+        {
+            return online;
+        }
+
         public static void ClientThread()
         {
             float x = 0, y = 0;
