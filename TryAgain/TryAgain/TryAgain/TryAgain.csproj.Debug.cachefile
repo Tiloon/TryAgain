@@ -28,7 +28,6 @@ Content\Sprites\herbe_roche.xnb
 Content\Sprites\halfsable.xnb
 Content\Menu\pause.xnb
 Content\UI\pxl.xnb
-Content\Sprites\persotony.xnb
 Content\Sprites\Ressources\1.xnb
 Content\Sprites\Ressources\10.xnb
 Content\Sprites\Ressources\11.xnb
@@ -50,8 +49,6 @@ Content\Menu\fullscreen.xnb
 Content\Sprites\RandomAnimations\Shield.xnb
 Content\Sprites\RandomAnimations\Missile.xnb
 Content\Sprites\Chosen.xnb
-Content\Fonts\UIfont.xnb
-Content\Fonts\UIfontsmall.xnb
 Content\UI\gauge\health0.xnb
 Content\UI\gauge\health1.xnb
 Content\UI\gauge\health2.xnb
@@ -71,3 +68,6 @@ Content\UI\gauge\mana6.xnb
 Content\UI\gauge\mana7.xnb
 Content\UI\gauge\manaBG.xnb
 Content\UI\gauge\fog.xnb
+Content\Fonts\UIfont.xnb
+Content\Fonts\UIfontsmall.xnb
+Content\Sprites\persotony.xnb
