@@ -2,3 +2,7 @@ C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Shared\bin\Debug\Shared.dll
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Shared\bin\Debug\Shared.pdb
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Shared\obj\x86\Debug\Shared.dll
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Shared\obj\x86\Debug\Shared.pdb
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Shared\bin\Debug\Shared.dll
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Shared\bin\Debug\Shared.pdb
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Shared\obj\x86\Debug\Shared.dll
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Shared\obj\x86\Debug\Shared.pdb
