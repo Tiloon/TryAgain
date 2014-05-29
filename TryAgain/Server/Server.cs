@@ -156,7 +156,7 @@ namespace Server
 
                         if (message.StartsWith("msg:\\"))
                         {
-                            message = message.Remove(0, 1);
+                            message = message.Remove(0, 5);
                             if (message == "add")
                             {
                                 if (!goblist.ContainsKey("monster00"))
@@ -177,21 +177,8 @@ namespace Server
                             }
                             else if (message == "report")
                             {
-                                if (!goblist.ContainsKey("monster00"))
-                                {
-                                    Console.WriteLine("monstre spawned");
-                                    GameObject el = new GameObject();
-                                    el.name = "monster00";
-                                    el.ID = "monster00";
-                                    el.spr = "Mbio1";
-                                    el.type = "Monster";
-                                    el.x = 3.0f;
-                                    el.X = Convert.ToBase64String(BitConverter.GetBytes(el.x));
-                                    el.y = 3.0f;
-                                    el.Y = Convert.ToBase64String(BitConverter.GetBytes(el.y));
-                                    goblist.Add("monster00", el);
-                                    igIDs.Add("monster00");
-                                }
+                                Console.WriteLine("REPORTED");
+                                client.Send("msg:TU VEUX UNE MEDAILLE ?");
                             }
                         }
 
@@ -215,7 +202,7 @@ namespace Server
                                 {
                                     if (goblist[message].type == "Player")
                                     {
-                                        if(clients.Exists(z => z.name == goblist[message].name))
+                                        if (clients.Exists(z => z.name == goblist[message].name))
                                         {
                                             int idx = clients.FindIndex(z => z.name == goblist[message].name);
                                             clients[idx].Send("kick:You are dead : TryAgain");
