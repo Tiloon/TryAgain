@@ -33,6 +33,14 @@ namespace TryAgain.Menu
             return ((mouse_rectangle.Intersects(rectangle)) && (mouse.LeftButton == ButtonState.Pressed));
         }
 
+        public bool IsReleased(MouseState mouse)  //retourne vrai si intersection bouton-souris
+        {
+            rectangle = new Rectangle((int)position.X, (int)position.Y, (int)size.X, (int)size.Y);
+            Rectangle mouse_rectangle = new Rectangle(mouse.X, mouse.Y, 1, 1);
+            return ((mouse_rectangle.Intersects(rectangle)) && (mouse.LeftButton == ButtonState.Released));
+        }
+
+
         public void SetPosition(Vector2 newpos)
         {
             position = newpos;

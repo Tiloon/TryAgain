@@ -27,7 +27,7 @@ namespace TryAgain
         public static Texture2D CraftInterface;
         public static Texture2D GameOver, storyboard;
 
-        public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG, MenuOption, buttonTony, buttonPierre;
+        public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG, MenuOption, buttonTony, buttonPierre, Fleche, Fleche2, soundOff;
         public static Texture2D whitePixel;
 
         public static Texture2D Shield, Missile, Chosen;
@@ -60,6 +60,9 @@ namespace TryAgain
 
             Shield = cm.Load<Texture2D>(@"Sprites\RandomAnimations\Shield");
             Missile = cm.Load<Texture2D>(@"Sprites\RandomAnimations\Missile");
+            Fleche = cm.Load<Texture2D>(@"Menu\fleche");
+            Fleche2 = cm.Load<Texture2D>(@"Menu\fleche2");
+            soundOff = cm.Load<Texture2D>(@"Menu\soundOff");
 
             I = cm.Load<Texture2D>(@"Sprites\Ressources\1");
             II = cm.Load<Texture2D>(@"Sprites\Ressources\2");
