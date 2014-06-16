@@ -16,15 +16,15 @@ namespace TryAgain.GameElements.misc
 {
     class UI
     {
-        Color statcolor = Color.Blue;
-        Color caracolor = Color.Crimson;
-        int lp, lpmax;
-        int cp, cpmax;
-        int mp, mpmax;
-        int lvl;
-        int equiped;
-        int force, intelligence, defense, criticalrate;
-        float speed;
+        public Color statcolor = Color.Blue;
+        public Color caracolor = Color.Crimson;
+        public int lp, lpmax;
+        public int cp, cpmax;
+        public int mp, mpmax;
+        public int lvl;
+        public int equiped;
+        public int force, intelligence, defense, criticalrate;
+        public float speed;
         Item[] items = new Item[10];
 
         public void Draw(SpriteBatch sb)
@@ -74,23 +74,7 @@ namespace TryAgain.GameElements.misc
                 }
             }
 
-            //sb.DrawString(Textures.UIfont, "cafeine : " + cp.ToString() + "/" + cpmax.ToString(), new Vector2(15, 32), statcolor);
-            //sb.DrawString(Textures.UIfont, "mental : " + mp.ToString() + "/" + mpmax.ToString(), new Vector2(15, 52), statcolor);
-            /*sb.DrawString(Textures.UIfont, "Caracteristiques :", new Vector2(15, 100), caracolor);
-            sb.DrawString(Textures.UIfont, "lvl :" + lvl.ToString(), new Vector2(15, 120), caracolor);
-            sb.DrawString(Textures.UIfont, "force :" + force.ToString(), new Vector2(15, 140), caracolor);
-            sb.DrawString(Textures.UIfont, "intelligence :" + intelligence.ToString(), new Vector2(15, 160), caracolor);
-            sb.DrawString(Textures.UIfont, "defense :" + defense.ToString(), new Vector2(15, 180), caracolor);
-            sb.DrawString(Textures.UIfont, "criticalrate :" + criticalrate.ToString(), new Vector2(15, 200), caracolor);
-            sb.DrawString(Textures.UIfont, "speed :" + speed.ToString(), new Vector2(15, 220), caracolor);
-        
-            sb.DrawString(Textures.UIfont, "Quelques commandes: ", new Vector2(15, 260), caracolor);
-            sb.DrawString(Textures.UIfont, "Echap: Pause", new Vector2(15, 280), caracolor);
-            sb.DrawString(Textures.UIfont, "Enter: ecrire", new Vector2(15, 300), caracolor);
-            sb.DrawString(Textures.UIfont, "Alt: gerer la camera", new Vector2(15, 320), caracolor);
-            sb.DrawString(Textures.UIfont, "G: jeter l'objet", new Vector2(15, 340), caracolor);
-            sb.DrawString(Textures.UIfont, "C: CraftInterface", new Vector2(15, 360), caracolor);
-            sb.DrawString(Textures.UIfont, "Clic gauche: beaucoup\n de choses!", new Vector2(15, 380), caracolor);*/
+
             for (int i = 0; i < 10; i++)
             {
                 sb.Draw(Textures.UIitemHolder, new Rectangle(300 + 80*i, 884, 64, 64), Color.White);

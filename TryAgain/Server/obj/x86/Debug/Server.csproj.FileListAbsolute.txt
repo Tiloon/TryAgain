@@ -47,3 +47,13 @@ C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\bin\Debug\Shared.dll
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\bin\Debug\Shared.pdb
 C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\bin\Debug\Shared.dll
 C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\bin\Debug\Shared.pdb
+C:\Users\Totokh\Desktop\TryAgain\tryagain\TryAgain\Server\bin\Debug\Server.exe
+C:\Users\Totokh\Desktop\TryAgain\tryagain\TryAgain\Server\bin\Debug\Server.pdb
+C:\Users\Totokh\Desktop\TryAgain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Totokh\Desktop\TryAgain\tryagain\TryAgain\Server\bin\Debug\Shared.dll
+C:\Users\Totokh\Desktop\TryAgain\tryagain\TryAgain\Server\bin\Debug\Shared.pdb
+C:\Users\Totokh\Desktop\TryAgain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Totokh\Desktop\TryAgain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Totokh\Desktop\TryAgain\tryagain\TryAgain\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\Totokh\Desktop\TryAgain\tryagain\TryAgain\Server\obj\x86\Debug\Server.exe
+C:\Users\Totokh\Desktop\TryAgain\tryagain\TryAgain\Server\obj\x86\Debug\Server.pdb
