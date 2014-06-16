@@ -114,7 +114,7 @@ namespace TryAgain.GameElements.misc
                     hero.setEquipedItem(i);
                 }
             }
-                        
+                  
             lp = hero.getStats().lp;
             lpmax = hero.getStats().lpmax;
             cp = hero.getStats().ch;
