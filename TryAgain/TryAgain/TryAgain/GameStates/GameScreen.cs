@@ -22,7 +22,7 @@ namespace TryAgain.GameStates
     class GameScreen : Screen
     {
         ButtonState previousstate;
-        UI userinterface = new UI();
+        public static UI userinterface = new UI();
         public static Hero hero;
         public static string name;
 
@@ -125,8 +125,7 @@ namespace TryAgain.GameStates
                 KeyboardState newState = Keyboard.GetState();
                 if (newState.IsKeyDown(Keys.C))
                 {
-                    hero.stats.lp--;
-                    //Craft.Draw(sb);
+                    Craft.Draw(sb);
                 }
                 //skills
                 Skills.Draw(sb, hero.getPosition(), hero, newState);
