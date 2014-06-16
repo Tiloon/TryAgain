@@ -15,6 +15,7 @@ using TryAgain.GameStates;
 using TryAgain.Characters;
 using TryAgain.GameElements.Characters;
 using Server;
+using TryAgain.GameElements.Map___environnement;
 
 namespace TryAgain.Online
 {
@@ -209,6 +210,32 @@ namespace TryAgain.Online
                         else if (serverReq.StartsWith("logged:"))
                         {
                             logged = true;
+                        }
+                        else if (serverReq.StartsWith("map:")) // request : "map:xSize&Ysize&JSONMAP"
+                        {
+                            serverReq.Remove(0, 4);
+                            try 
+	                        {	        
+		                        int tokenPos = serverReq.IndexOf('&');
+                                if (tokenPos <= 0)
+                                    throw new Exception("Token not found");
+                                int posX = Convert.ToInt32(serverReq.Substring(0, tokenPos));
+                                serverReq.Remove(0, tokenPos);
+                                tokenPos = serverReq.IndexOf('&');
+                                if((posX <= 0) || (tokenPos <= 0))
+                                    throw new Exception("Token not found or X-size error");
+                                
+                                int posY = Convert.ToInt32(serverReq.Substring(0, tokenPos));
+                                serverReq.Remove(0, tokenPos);
+                                tokenPos = serverReq.IndexOf('&');
+                                if((posY <= 0) || (tokenPos <= 0))
+                                    throw new Exception("Token not found or Y-size error");
+                                Tilemap.tiles = new Tile[posX, posY];
+                                Tilemap.MapLoadFromJSON(serverReq);
+	                        }
+	                        catch (Exception)
+	                        {}
+                            
                         }
                         else if (serverReq.StartsWith("rm:"))
                         {
