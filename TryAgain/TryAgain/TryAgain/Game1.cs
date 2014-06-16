@@ -12,6 +12,7 @@ using TryAgain.GameStates;
 using TryAgain.Datas;
 using TryAgain.Online;
 using DPSF;
+using DPSF_Demo.ParticleSystems;
 
 namespace TryAgain
 {
@@ -21,7 +22,13 @@ namespace TryAgain
         SpriteBatch spriteBatch;
         Screen screen = new MainMenuScreen();
         ScreenType gamestate;
+        ScreenType newscreen;
         public static GraphicsDeviceManager gamegfx;
+
+        DefaultQuadParticleSystemTemplate mcParticleSystem = null;
+        Vector3 cameraPosition = new Vector3(0, 50, -200);
+
+
 
         public Game1()
         {
@@ -49,18 +56,21 @@ namespace TryAgain
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Textures.load(Content);
+            mcParticleSystem = new DefaultQuadParticleSystemTemplate(this);
+            mcParticleSystem.AutoInitialize(this.GraphicsDevice, this.Content, null);
         }
 
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
+            mcParticleSystem.Destroy();
         }
 
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-            ScreenType newscreen = screen.update();
+            newscreen = screen.update();
             if (newscreen != gamestate)
             {
                 if (newscreen == ScreenType.Quit)
@@ -74,6 +84,16 @@ namespace TryAgain
                     gamestate = screen.GetState();
                 }
             }
+
+            if (newscreen == ScreenType.MainMenu)
+            {
+                Matrix sViewMatrix = Matrix.CreateLookAt(cameraPosition, new Vector3(0, 50, 0), Vector3.Up);
+                Matrix sProjectionMatrix = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, (float)GraphicsDevice.Viewport.Width / (float)GraphicsDevice.Viewport.Height, 1, 10000);
+                mcParticleSystem.SetWorldViewProjectionMatrices(Matrix.Identity, sViewMatrix, sProjectionMatrix);
+                mcParticleSystem.SetCameraPosition(cameraPosition);
+                mcParticleSystem.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
+            }
+
             base.Update(gameTime);
         }
 
@@ -84,7 +104,13 @@ namespace TryAgain
             screen.draw(spriteBatch, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
             Connection.Draw(spriteBatch);
             spriteBatch.End();
+            if (newscreen == ScreenType.MainMenu)
+            {
+                mcParticleSystem.Draw();
+            }
             base.Draw(gameTime);
+
+
         }
     }
 }

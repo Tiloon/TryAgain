@@ -486,3 +486,5 @@ C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\D
 C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.pdb
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\Star9.xnb
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\DPSF.dll
+C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\Star9.xnb
+C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\DPSF.dll
