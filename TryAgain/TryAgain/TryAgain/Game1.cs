@@ -26,8 +26,9 @@ namespace TryAgain
         public static GraphicsDeviceManager gamegfx;
 
         DefaultQuadParticleSystemTemplate mcParticleSystem = null;
+        DefaultSpriteParticleSystemTemplate part = null;
         Vector3 cameraPosition = new Vector3(0, 50, -200);
-
+        
 
 
         public Game1()
@@ -56,8 +57,11 @@ namespace TryAgain
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Textures.load(Content);
+
             mcParticleSystem = new DefaultQuadParticleSystemTemplate(this);
             mcParticleSystem.AutoInitialize(this.GraphicsDevice, this.Content, null);
+            part = new DefaultSpriteParticleSystemTemplate(this);
+            part.AutoInitialize(this.GraphicsDevice, this.Content, null);
         }
 
         protected override void UnloadContent()
@@ -87,11 +91,18 @@ namespace TryAgain
 
             if (newscreen == ScreenType.MainMenu)
             {
-                Matrix sViewMatrix = Matrix.CreateLookAt(cameraPosition, new Vector3(0, 50, 0), Vector3.Up);
+                Matrix sViewMatrix = Matrix.CreateLookAt(cameraPosition, new Vector3(0, 50, 0), Vector3.Down);
                 Matrix sProjectionMatrix = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, (float)GraphicsDevice.Viewport.Width / (float)GraphicsDevice.Viewport.Height, 1, 10000);
+                
                 mcParticleSystem.SetWorldViewProjectionMatrices(Matrix.Identity, sViewMatrix, sProjectionMatrix);
                 mcParticleSystem.SetCameraPosition(cameraPosition);
                 mcParticleSystem.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
+
+                //part.Emitter.NumberOfParticlesEmitted = 10; 
+                part.SetDefaultEffect();
+                part.SetCameraPosition(cameraPosition);
+                part.SetWorldViewProjectionMatrices(Matrix.Identity, sViewMatrix, sProjectionMatrix);
+                part.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
             }
 
             base.Update(gameTime);
@@ -107,6 +118,7 @@ namespace TryAgain
             if (newscreen == ScreenType.MainMenu)
             {
                 mcParticleSystem.Draw();
+                part.Draw();
             }
             base.Draw(gameTime);
 
