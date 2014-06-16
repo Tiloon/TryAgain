@@ -184,6 +184,7 @@ namespace TryAgain.Online
                 {
                     if (server_socket.Poll(10, SelectMode.SelectRead))
                     {
+                        
                         serverReq = servReader.ReadLine();
                         if (serverReq == "Pong")
                         {
@@ -211,30 +212,48 @@ namespace TryAgain.Online
                         {
                             logged = true;
                         }
-                        else if (serverReq.StartsWith("map:")) // request : "map:xSize&Ysize&JSONMAP"
+                        else if (serverReq.StartsWith("map:")) // request : "map:JSONMAPAdress"
                         {
-                            serverReq.Remove(0, 4);
+                            serverReq = serverReq.Remove(0, 4);
                             try 
 	                        {	        
-		                        int tokenPos = serverReq.IndexOf('&');
+		                        /*
+                                 * int tokenPos = serverReq.IndexOf('&');
                                 if (tokenPos <= 0)
                                     throw new Exception("Token not found");
                                 int posX = Convert.ToInt32(serverReq.Substring(0, tokenPos));
-                                serverReq.Remove(0, tokenPos);
+                                serverReq = serverReq.Remove(0, tokenPos + 1);
+
                                 tokenPos = serverReq.IndexOf('&');
                                 if((posX <= 0) || (tokenPos <= 0))
-                                    throw new Exception("Token not found or X-size error");
+                                    throw new Exception("Token not found or X-size error" + posX + " " + tokenPos);
                                 
                                 int posY = Convert.ToInt32(serverReq.Substring(0, tokenPos));
-                                serverReq.Remove(0, tokenPos);
-                                tokenPos = serverReq.IndexOf('&');
-                                if((posY <= 0) || (tokenPos <= 0))
-                                    throw new Exception("Token not found or Y-size error");
-                                Tilemap.tiles = new Tile[posX, posY];
-                                Tilemap.MapLoadFromJSON(serverReq);
+                                serverReq = serverReq.Remove(0, tokenPos + 1);
+                                if(posY <= 0)
+                                    throw new Exception("Token not found or Y-size error" + posY);
+                                 * */
+                                byte[] myDataBuffer;
+                                String json;
+                                WebClient myWebClient = new WebClient();
+                                
+                                try
+                                {
+                                    myDataBuffer = myWebClient.DownloadData(serverReq);
+                                }
+                                catch (Exception e)
+                                {
+                                    Console.WriteLine(e.Message);
+                                    throw;
+                                }
+                                json = Encoding.ASCII.GetString(myDataBuffer);
+                                Tilemap.MapLoadFromJSON(json);
+                                Debug.Show("coucou");
 	                        }
-	                        catch (Exception)
-	                        {}
+	                        catch (Exception e)
+	                        {
+                                Debug.Show(e.Message);
+                            }
                             
                         }
                         else if (serverReq.StartsWith("rm:"))

@@ -9,6 +9,7 @@ using System.Net.Sockets;
 using System.Net;
 using Newtonsoft.Json;
 using Microsoft.Xna.Framework;
+using System.IO;
 
 
 namespace Server
@@ -16,6 +17,8 @@ namespace Server
     class Server
     {
         public volatile static bool serverRunning = true;
+        public volatile static string[,] map;
+        public volatile static string mapAdress;
         public const int TICKGAP = 20;
         List<Client> clients;
         Socket socket;
@@ -23,6 +26,25 @@ namespace Server
         List<String> igIDs = new List<string>();
         Dictionary<String, GameObject> goblist = new Dictionary<String, GameObject>();
 
+
+        public static void LoadMap(String path)
+        {
+            mapAdress = path;
+            String json;
+            byte[] myDataBuffer;
+            WebClient myWebClient = new WebClient();
+            try
+            {
+                myDataBuffer = myWebClient.DownloadData(path);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                throw;
+            }
+            json = Encoding.ASCII.GetString(myDataBuffer);
+            map = JsonConvert.DeserializeObject<string[,]>(json);
+        }
 
         public Server(int port)
         {
@@ -59,6 +81,7 @@ namespace Server
                 clients.Add(myClient);
                 //clients.Add(myClient);
                 Console.WriteLine("Connexion from " + myClient.name);
+                myClient.Send("map:" + mapAdress);
             }
         }
 

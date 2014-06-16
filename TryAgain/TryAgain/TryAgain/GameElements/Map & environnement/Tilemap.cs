@@ -35,21 +35,25 @@ namespace TryAgain
 
         public static void MapLoadFromJSON(String JSON)
         {
-            String[][] mapArray = JsonConvert.DeserializeObject<String[][]>(JSON);
-            for (int i = 0; i < mapArray.Length; i++)
-                for (int j = 0; j < mapArray[i].Length; j++)
-                    if ((mapArray[i][j] != null) && (mapArray[i][j] != ""))
-                        MapSetTile(tiles, mapArray[i][j], i, j);
+            String[,] mapArray = JsonConvert.DeserializeObject<String[,]>(JSON);
+            tiles = new Tile[mapArray.GetLength(0), mapArray.GetLength(1)];
+            for (int i = 0; i < mapArray.GetLength(0); i++)
+                for (int j = 0; j < mapArray.GetLength(1); j++)
+                    if ((mapArray[i, j] != null) && (mapArray[i, j] != ""))
+                        MapSetTile(tiles, mapArray[i,j], i, j);
         }
 
         public static void MapFullINIT()
         {
-            MapFirstInit(ref tiles, "Therbe");
+            if (!Online.Connection.isOnline())
+            {
+                MapFirstInit(ref tiles, "Therbe");
 
-            /*MapLoadFromJSON(
-                "[[\"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\", \"Tsable\", \"\", \"Taqua\", \"Tsable\", \"Tsable\", \"\", \"Tsable\", \"\", \"Taqua\", \"Tsable\", \"Tsable\", \"\", \"Tsable\", \"\",\"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"\", \"\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"\", \"\", \"\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\"]]");
-            */
-            MapLoadFromJSON(TryAgain.Datas.Initializer.ReadTextFile("data\\map\\chunk_0_0.json"));
+                /*MapLoadFromJSON(
+                    "[[\"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\", \"Tsable\", \"\", \"Taqua\", \"Tsable\", \"Tsable\", \"\", \"Tsable\", \"\", \"Taqua\", \"Tsable\", \"Tsable\", \"\", \"Tsable\", \"\",\"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"\", \"\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"\", \"\", \"\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\"]]");
+                */
+                MapLoadFromJSON(TryAgain.Datas.Initializer.ReadTextFile("data\\map\\chunk_0_0.json"));
+            }
         }
 
         public static void MapFirstInit(ref Tile[,] map, String basetile)

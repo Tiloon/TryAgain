@@ -237,7 +237,7 @@ namespace WinFormsGraphicsDevice
             cY = (int)numericUpDown16.Value;
             numericUpDown17.Enabled = false;
             numericUpDown16.Enabled = false;
-            progressBar1.Maximum = cX * cY * 2 + 1;
+            progressBar1.Maximum = cX * cY + 1;
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -245,47 +245,68 @@ namespace WinFormsGraphicsDevice
             openFileDialog2.ShowDialog();
         }
 
-
+        String[,] mapArray;
+        int arrayX, arrayY;
         private void openFileDialog2_FileOk_1(object sender, System.ComponentModel.CancelEventArgs e)
         {
             try
             {
-                isLoadingMap = !isLoadingMap;
-                if (isLoadingMap)
+                String json;
+                StreamReader sr = new StreamReader(openFileDialog2.OpenFile());
+                json = sr.ReadToEnd();
+                String[,] array = JsonConvert.DeserializeObject<string[,]>(json);
+                if ((currentX == 0) && (currentY == 0))
                 {
-                    currentX++;
-                    if (currentX >= cX)
-                    {
-                        currentX = 0;
-                        currentY++;
-                        if (currentY >= cY)
-                        {
-                            currentY = 0;
-                            button7.Enabled = false;
-                            button8.Enabled = true;
-                        }
-                    }
-                    button7.Text = "Load map (" + currentX + ", " + currentY + ")";
+                    mapArray = new String[array.GetLength(0) * cX, array.GetLength(1) * cY];
+                    arrayX = array.GetLength(0);
+                    arrayY = array.GetLength(1);
                 }
-                else
-                    button7.Text = "Load GameObjectMap (" + currentX + ", " + currentY + ")";
+
+                if ((arrayX != array.GetLength(0)) || (arrayY != array.GetLength(1)))
+                    throw new Exception("Maps aren't the same size");
+
+                for (int i = 0; i < arrayX; i++)
+                {
+                    for (int j = 0; j < arrayY; j++)
+                    {
+                        mapArray[currentX * arrayX + i, currentY * arrayY + j] = array[i, j]; 
+                    }
+                }
+
+                currentX++;
+                if (currentX >= cX)
+                {
+                    currentX = 0;
+                    currentY++;
+                    if (currentY >= cY)
+                    {
+                        currentY = 0;
+                        button7.Enabled = false;
+                        button8.Enabled = true;
+                    }
+                }
+                button7.Text = "Load map (" + currentX + ", " + currentY + ")";
 
                 progressBar1.Value++;
             }
-            catch (Exception)
+            catch (Exception E)
             {
-                MessageBox.Show("Error : not a map file or other weeblee wobly timy spacy related error.");
+                MessageBox.Show("Error : not a map file or other weeblee wobly timy spacy related error." + E.Message);
             }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
+            string json = JsonConvert.SerializeObject(mapArray);
+            StreamWriter sw = new StreamWriter(Application.StartupPath + @"\tmp\map.json");
+            sw.Write(json);
+            sw.Flush();
             using (ZipFile zip = new ZipFile())
             {
                 zip.AddDirectory(Application.StartupPath + @"\tmp");
-                zip.Save("file.zip");
+                zip.Save("world.zip");
             }
-            MessageBox.Show("File created as \"" + Application.StartupPath + "\\world.gameworld\".");
+            MessageBox.Show("File created as \"" + Application.StartupPath + "\\world.zip\".");
             button8.Enabled = false;
             button6.Enabled = true;
             numericUpDown17.Enabled = true;
@@ -317,9 +338,20 @@ namespace WinFormsGraphicsDevice
             npc.name = textBox1.Text;
             npc.commonName = textBox2.Text;
             npc.type = "GameObject,Character,Npc";
+            npc.script = textBox3.Text;
             npc.X = Shared.Converter.FloatToString(0);
             npc.Y = Shared.Converter.FloatToString(0);
+        }
 
+
+        private String npcPic = "";
+        private void button5_Click(object sender, EventArgs e)
+        {
+            openFileDialog3.ShowDialog();
+        }
+
+        private void openFileDialog3_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
 
         }
 

@@ -9,9 +9,16 @@ namespace Server
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("SERVER V1");
-            Server server = new Server(4242);
-            server.Run();
+            try
+            {                
+                Server.LoadMap("http://tryagain.pimzero.com/map.json");
+                Console.WriteLine("SERVER V1");
+                Server server = new Server(4242);
+                server.Run();
+            }
+            catch (Exception)
+            {
+            }
         }
     }
 }

@@ -75,7 +75,6 @@ namespace WinFormsGraphicsDevice
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.mapEditor = new WinFormsGraphicsDevice.ShowMap();
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
@@ -102,6 +101,9 @@ namespace WinFormsGraphicsDevice
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
+            this.mapEditor = new WinFormsGraphicsDevice.ShowMap();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.SuspendLayout();
@@ -193,6 +195,7 @@ namespace WinFormsGraphicsDevice
             // 
             // splitContainer2.Panel2
             // 
+            this.splitContainer2.Panel2.Controls.Add(this.textBox4);
             this.splitContainer2.Panel2.Controls.Add(this.button5);
             this.splitContainer2.Panel2.Controls.Add(this.button3);
             this.splitContainer2.Panel2.Controls.Add(this.button4);
@@ -547,12 +550,14 @@ namespace WinFormsGraphicsDevice
             // 
             // button5
             // 
+            this.button5.Enabled = false;
             this.button5.Location = new System.Drawing.Point(21, 249);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(126, 23);
             this.button5.TabIndex = 16;
             this.button5.Text = "Change...";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button3
             // 
@@ -578,15 +583,15 @@ namespace WinFormsGraphicsDevice
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(3, 99);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(40, 13);
+            this.label9.Size = new System.Drawing.Size(155, 13);
             this.label9.TabIndex = 5;
-            this.label9.Text = "Sprite :";
+            this.label9.Text = "Sprite (from data.textures.json) :";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(19, 115);
+            this.pictureBox2.Location = new System.Drawing.Point(19, 191);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox2.Size = new System.Drawing.Size(128, 52);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
@@ -663,19 +668,6 @@ namespace WinFormsGraphicsDevice
             this.splitContainer1.Size = new System.Drawing.Size(772, 529);
             this.splitContainer1.SplitterDistance = 617;
             this.splitContainer1.TabIndex = 0;
-            // 
-            // mapEditor
-            // 
-            this.mapEditor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapEditor.Location = new System.Drawing.Point(0, 0);
-            this.mapEditor.Name = "mapEditor";
-            this.mapEditor.Size = new System.Drawing.Size(617, 529);
-            this.mapEditor.TabIndex = 1;
-            this.mapEditor.Text = "spinningTriangleControl";
-            this.mapEditor.Click += new System.EventHandler(this.spinningTriangleControl_Click);
-            this.mapEditor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mapEditor_MouseDown);
-            this.mapEditor.MouseMove += new System.Windows.Forms.MouseEventHandler(this.spinningTriangleControl_MouseMove_1);
-            this.mapEditor.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mapEditor_MouseUp);
             // 
             // button2
             // 
@@ -972,6 +964,31 @@ namespace WinFormsGraphicsDevice
             this.openFileDialog2.FileName = "openFileDialog2";
             this.openFileDialog2.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog2_FileOk_1);
             // 
+            // openFileDialog3
+            // 
+            this.openFileDialog3.FileName = "openFileDialog3";
+            this.openFileDialog3.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog3_FileOk);
+            // 
+            // mapEditor
+            // 
+            this.mapEditor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mapEditor.Location = new System.Drawing.Point(0, 0);
+            this.mapEditor.Name = "mapEditor";
+            this.mapEditor.Size = new System.Drawing.Size(617, 529);
+            this.mapEditor.TabIndex = 1;
+            this.mapEditor.Text = "spinningTriangleControl";
+            this.mapEditor.Click += new System.EventHandler(this.spinningTriangleControl_Click);
+            this.mapEditor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mapEditor_MouseDown);
+            this.mapEditor.MouseMove += new System.Windows.Forms.MouseEventHandler(this.spinningTriangleControl_MouseMove_1);
+            this.mapEditor.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mapEditor_MouseUp);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(6, 115);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(162, 20);
+            this.textBox4.TabIndex = 17;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1103,6 +1120,8 @@ namespace WinFormsGraphicsDevice
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog3;
+        private System.Windows.Forms.TextBox textBox4;
 
 
     }
