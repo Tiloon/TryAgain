@@ -89,27 +89,27 @@ namespace TryAgain.GameElements
         {
             sb.Draw(Textures.CraftInterface, new Vector2(Tilemap.variationsizegraphicsX, 0), Color.White);
             sb.DrawString(Textures.UIfont, "Ressources                   Crafts                Recette", new Vector2(Tilemap.variationsizegraphicsX, 120), Color.Blue);
-            sb.Draw(Textures.I, new Rectangle(Tilemap.variationsizegraphicsX, 160, 40, 40), Color.White);
+            sb.Draw(Textures.O, new Rectangle(Tilemap.variationsizegraphicsX, 160, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[1].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 160), Color.Black);
-            sb.Draw(Textures.II, new Rectangle(Tilemap.variationsizegraphicsX, 200, 40, 40), Color.White);
+            sb.Draw(Textures.I, new Rectangle(Tilemap.variationsizegraphicsX, 200, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[1].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 200), Color.Black);
-            sb.Draw(Textures.III, new Rectangle(Tilemap.variationsizegraphicsX, 240, 40, 40), Color.White);
+            sb.Draw(Textures.II, new Rectangle(Tilemap.variationsizegraphicsX, 240, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[1].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 240), Color.Black);
-            sb.Draw(Textures.IV, new Rectangle(Tilemap.variationsizegraphicsX, 280, 40, 40), Color.White);
+            sb.Draw(Textures.III, new Rectangle(Tilemap.variationsizegraphicsX, 280, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[1].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 280), Color.Black);
-            sb.Draw(Textures.V, new Rectangle(Tilemap.variationsizegraphicsX, 320, 40, 40), Color.White);
+            sb.Draw(Textures.IV, new Rectangle(Tilemap.variationsizegraphicsX, 320, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[1].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 320), Color.Black);
-            sb.Draw(Textures.VI, new Rectangle(Tilemap.variationsizegraphicsX, 360, 40, 40), Color.White);
+            sb.Draw(Textures.V, new Rectangle(Tilemap.variationsizegraphicsX, 360, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[1].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 360), Color.Black);
-            sb.Draw(Textures.VII, new Rectangle(Tilemap.variationsizegraphicsX, 400, 40, 40), Color.White);
+            sb.Draw(Textures.VI, new Rectangle(Tilemap.variationsizegraphicsX, 400, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[1].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 400), Color.Black);
-            sb.Draw(Textures.VIII, new Rectangle(Tilemap.variationsizegraphicsX, 440, 40, 40), Color.White);
+            sb.Draw(Textures.VII, new Rectangle(Tilemap.variationsizegraphicsX, 440, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[1].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 440), Color.Black);
-            sb.Draw(Textures.IX, new Rectangle(Tilemap.variationsizegraphicsX, 480, 40, 40), Color.White);
+            sb.Draw(Textures.VIII, new Rectangle(Tilemap.variationsizegraphicsX, 480, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[1].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 480), Color.Black);
-            sb.Draw(Textures.X, new Rectangle(Tilemap.variationsizegraphicsX, 520, 40, 40), Color.White);
+            sb.Draw(Textures.IX, new Rectangle(Tilemap.variationsizegraphicsX, 520, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[1].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 520), Color.Black);
-            sb.Draw(Textures.XI, new Rectangle(Tilemap.variationsizegraphicsX, 560, 40, 40), Color.White);
+            sb.Draw(Textures.X, new Rectangle(Tilemap.variationsizegraphicsX, 560, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[1].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 560), Color.Black);
         }
     }
