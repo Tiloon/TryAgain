@@ -39,7 +39,6 @@ Content\Menu\Button_SondOff.xnb
 Content\Menu\Button_SondOn.xnb
 Content\Menu\MenuOption.xnb
 Content\Sprites\RandomAnimations\Shield.xnb
-Content\Sprites\RandomAnimations\Missile.xnb
 Content\Sprites\Chosen.xnb
 Content\UI\gauge\health0.xnb
 Content\UI\gauge\health1.xnb
@@ -90,3 +89,4 @@ Content\Menu\fr\Button-francais.xnb
 Content\Menu\eng\Button_English.xnb
 Content\Fonts\UIfont.xnb
 Content\Fonts\UIfontsmall.xnb
+Content\Sprites\RandomAnimations\Missile.xnb
