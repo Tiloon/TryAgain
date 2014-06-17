@@ -76,8 +76,6 @@ Content\Menu\GameOver.xnb
 Content\Menu\eng\Button_About.xnb
 Content\Menu\fr\Button_APropos.xnb
 Content\Menu\eng\Button_Exit.xnb
-Content\Menu\fr\fenetre.xnb
-Content\Menu\eng\fullscreen.xnb
 Content\Menu\fr\Button_jouer.xnb
 Content\Menu\fr\Button_Option.xnb
 Content\Menu\eng\Button_Play.xnb
@@ -86,7 +84,9 @@ Content\Menu\fr\Button_Quitter.xnb
 Content\Menu\fr\Button_Retour.xnb
 Content\Menu\eng\Button_Return.xnb
 Content\Menu\eng\Button_Windowed.xnb
-Content\Fonts\UIfont.xnb
-Content\Fonts\UIfontsmall.xnb
+Content\Menu\eng\fullscreen.xnb
+Content\Menu\fr\fenetre.xnb
 Content\Menu\fr\Button-francais.xnb
 Content\Menu\eng\Button_English.xnb
+Content\Fonts\UIfont.xnb
+Content\Fonts\UIfontsmall.xnb

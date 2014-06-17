@@ -28,31 +28,7 @@
 		"Item2": "Sprites\\Monsters\\bebeglauque",
 	},
 	{
-		"Item1": "UIBplay",
-		"Item2": "Menu\\Button_Play",
-	},
-	{
-		"Item1": "UIBoption",
-		"Item2": "Menu\\Button_Option",
-	},
-	{
-		"Item1": "UIBexit",
-		"Item2": "Menu\\Button_Exit",
-	},
-	{
-		"Item1": "UIBabout",
-		"Item2": "Menu\\Button_About",
-	},
-	{
-		"Item1": "UIBreturn",
-		"Item2": "Menu\\Button_Return",
-	},
-	{
 		"Item1": "UISTRpause",
 		"Item2": "Menu\\pause",
-	},
-	{
-		"Item1": "UIBreturn",
-		"Item2": "Menu\\Button_Return",
 	},
 ]
