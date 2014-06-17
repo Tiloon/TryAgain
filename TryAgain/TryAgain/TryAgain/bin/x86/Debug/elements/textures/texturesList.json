@@ -28,6 +28,10 @@
 		"Item2": "Sprites\\Monsters\\bebeglauque",
 	},
 	{
+		"Item1": "UISTRpause",
+		"Item2": "Menu\\pause",
+	},
+	{
 		"Item1": "Tbrique",
 		"Item2": "Sprites\\terrain\\brique",
 	},
