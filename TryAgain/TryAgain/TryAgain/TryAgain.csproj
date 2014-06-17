@@ -160,6 +160,7 @@
     <Compile Include="Game1.cs" />
     <Compile Include="GameElements\Textures.cs" />
     <Compile Include="GameElements\Map &amp; environnement\Tilemap.cs" />
+    <Compile Include="scenar.cs" />
     <Compile Include="Sounds\Themes.cs" />
   </ItemGroup>
   <ItemGroup>

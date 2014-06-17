@@ -22,12 +22,13 @@ namespace TryAgain
         public static Dictionary<String, Texture2D> Cache = new Dictionary<string, Texture2D>();
 
         public static Texture2D roche_herbe, halfsable;
+        public static Texture2D scenar1, scenar2, scenar3, scenar4;
 
         public static Texture2D O, I, II, III, IV, V, VI, VII, VIII, IX, X, XI;  //numéros de ressources, se reférer à la clase craftinterface
         public static Texture2D CraftInterface;
         public static Texture2D GameOver, storyboard;
 
-        public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG, MenuOption, buttonTony, buttonPierre;
+        public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG, MenuOption, buttonTony, buttonPierre, Fleche, Fleche2, soundOff;
         public static Texture2D whitePixel;
 
         public static Texture2D Shield, Missile, Chosen;
@@ -60,6 +61,14 @@ namespace TryAgain
 
             Shield = cm.Load<Texture2D>(@"Sprites\RandomAnimations\Shield");
             Missile = cm.Load<Texture2D>(@"Sprites\RandomAnimations\Missile");
+            Fleche = cm.Load<Texture2D>(@"Menu\fleche");
+            Fleche2 = cm.Load<Texture2D>(@"Menu\fleche2");
+            soundOff = cm.Load<Texture2D>(@"Menu\soundOff");
+
+            scenar1 = cm.Load<Texture2D>(@"Scenar\Planche1");
+            scenar2 = cm.Load<Texture2D>(@"Scenar\Planche2");
+            scenar3 = cm.Load<Texture2D>(@"Scenar\Planche3");
+            scenar4 = cm.Load<Texture2D>(@"Scenar\Planche4");
 
             I = cm.Load<Texture2D>(@"Sprites\Ressources\1");
             II = cm.Load<Texture2D>(@"Sprites\Ressources\2");

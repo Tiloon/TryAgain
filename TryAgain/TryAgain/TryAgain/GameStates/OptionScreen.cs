@@ -20,6 +20,10 @@ namespace TryAgain.GameStates
         cButton ButtonFenetre;
         cButton ButtonTony;
         cButton ButtonPierre;
+        cButton ButtonFlecheGauche, ButtonFlecheDroite, soundOff;
+        float son = Sounds.Themes.volume;
+        float saveSon = 0;
+        bool u = true;
 
         Tuple<cButton, Vector2>[] resolutions;
 
@@ -97,6 +101,55 @@ namespace TryAgain.GameStates
                 else
                     return ScreenType.MainMenu;
             }
+            if (ButtonFlecheGauche.IsClicked(mouse))
+            {
+                if (Sounds.Themes.volume >= 0.01F)
+                {
+                    Sounds.Themes.volume -= 0.01F;
+                    son = Sounds.Themes.volume;
+                }
+                else
+                {
+                    Sounds.Themes.volume = 0;
+                    son = 0;
+                }
+            }
+            if (ButtonFlecheDroite.IsClicked(mouse))
+            {
+                if (Sounds.Themes.volume <= 0.99F)
+                {
+                    Sounds.Themes.volume += 0.01F;
+                    son = Sounds.Themes.volume;
+                }
+                else
+                {
+                    Sounds.Themes.volume = 1F;
+                    son = 1;
+                }
+            }
+            if (soundOff.IsClicked(mouse))
+            {
+                if (u)
+                {
+                    if (son != 0)
+                    {
+                        saveSon = son;
+                        son = 0;
+                        Sounds.Themes.volume = 0;
+                    }
+                    else
+                    {
+                        son = saveSon;
+                        Sounds.Themes.volume = son;
+                    }
+                    u = false;
+                }
+            }
+            else // u est la pour que le bouton s qctive qu'une fois quand on appuie sur le bouton
+            {
+                if (soundOff.IsReleased(mouse))
+                    u = true;
+            }
             if (ButtonFullscreen.IsClicked(mouse) || ButtonFenetre.IsClicked(mouse))
             {
                 Game1.graphics.ToggleFullScreen();
@@ -118,7 +171,7 @@ namespace TryAgain.GameStates
                 ButtonFenetre.Draw(sb);
             else
                 ButtonFullscreen.Draw(sb);
-            
+
             //choix du personnage
             sb.DrawString(Textures.UIfont, "Choix du personnage:", new Vector2(400, 10), Color.Black);
             if (Online.Connection.avatar == "Ttony")
@@ -129,6 +182,13 @@ namespace TryAgain.GameStates
                 sb.Draw(Textures.Chosen, new Vector2(495, 45), Color.Black);
             sb.DrawString(Textures.UIfont, "Pierre:", new Vector2(400, 100), Color.Black);
             ButtonTony.Draw(sb);
+
+            //changer son
+            ButtonFlecheGauche.Draw(sb);
+            ButtonFlecheDroite.Draw(sb);
+            sb.DrawString(Textures.UIfont, ((int)(son * 100)).ToString() + "%", new Vector2(410, 410), Color.Black);
+            sb.DrawString(Textures.UIfont, "Son :", new Vector2(200, 400), Color.Black, 0F, new Vector2(0, 0), 1.42F, SpriteEffects.None, 0);
+            soundOff.Draw(sb);
 
             // La personne qui arrive à afficher quelque chose grâce à 
             resolutions[0].Item1.Draw(sb); // ça,
@@ -147,10 +207,16 @@ namespace TryAgain.GameStates
             ButtonFullscreen.SetPosition(new Vector2(500, 200));
             ButtonFenetre = new cButton(Textures.FenetreBG, graphics);
             ButtonFenetre.SetPosition(new Vector2(500, 200));
-            ButtonTony = new cButton(Textures.buttonTony, graphics, 22*2, 65*2);
+            ButtonTony = new cButton(Textures.buttonTony, graphics, 22 * 2, 65 * 2);
             ButtonTony.SetPosition(new Vector2(300, 50));
-            ButtonPierre = new cButton(Textures.buttonPierre, graphics, 22*2, 65*2);
+            ButtonPierre = new cButton(Textures.buttonPierre, graphics, 22 * 2, 65 * 2);
             ButtonPierre.SetPosition(new Vector2(500, 50));
+            ButtonFlecheGauche = new cButton(Textures.Fleche, graphics, 50, 50);
+            ButtonFlecheGauche.SetPosition(new Vector2(300, 400));
+            ButtonFlecheDroite = new cButton(Textures.Fleche2, graphics, 50, 50);
+            ButtonFlecheDroite.SetPosition(new Vector2(500, 400));
+            soundOff = new cButton(Textures.soundOff, graphics, 50, 50);
+            soundOff.SetPosition(new Vector2(600, 400));
             loadResoltutions(graphics);
         }
     }
