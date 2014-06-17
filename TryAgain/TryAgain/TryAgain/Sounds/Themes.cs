@@ -148,8 +148,8 @@ namespace TryAgain.Sounds
                     fade = 1.0f;
                     while (fade >= 0f) {
                         waveOut.Volume = volume * fade;
-                        Thread.Sleep(50);
-                        fade -= 0.01f;
+                        Thread.Sleep(20);
+                        fade -= 0.03f;
                     };
                     waveOut.Volume = volume;
                 }

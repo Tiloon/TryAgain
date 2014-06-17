@@ -397,13 +397,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
-      <Time>2014-05-05T23:16:20.3435685+02:00</Time>
-=======
-      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
-      <Time>2014-06-16T16:48:57.2567603+02:00</Time>
->>>>>>> 6befe75d6817615f7b49a8c75dee3e4ef0650612
+      <Time>2014-06-16T20:37:42.2053355+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\storyboard.jpg</Source>
