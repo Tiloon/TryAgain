@@ -21,21 +21,14 @@ namespace TryAgain.GameElements
         Texture2D item;
         int x;
         int y;
+        Random rd = new Random();
 
-        Dictionary<int, Texture2D> idtoitem;
-        public void init()
+        public Ressource(int id)
         {
-            idtoitem.Add(0, Textures.O);
-            idtoitem.Add(1, Textures.I);
-            idtoitem.Add(2, Textures.II);
-            idtoitem.Add(3, Textures.III);
-            idtoitem.Add(4, Textures.IV);
-            idtoitem.Add(5, Textures.V);
-            idtoitem.Add(6, Textures.VI);
-            idtoitem.Add(7, Textures.VII);
-            idtoitem.Add(8, Textures.VIII);
-            idtoitem.Add(9, Textures.IX);
-            idtoitem.Add(10, Textures.X);
+            this.x = rd.Next(Game1.graphics.PreferredBackBufferWidth);
+            this.y = rd.Next(Game1.graphics.PreferredBackBufferHeight);
+            this.id = id;
+            this.item = Ressourceslist.idtoitem[id];
         }
 
         public void Draw(SpriteBatch sb)
@@ -43,8 +36,23 @@ namespace TryAgain.GameElements
             sb.Draw(item, new Rectangle (x, y, item.Width, item.Height), Color.White);
         }
 
-        public void Update(Rectangle persoRectangle)
+        public bool Update(Rectangle persoRectangle)   //retourne en plus s'il y'a intersect et dans ce cas, on enlève ressource de liste
         {
+            if (persoRectangle.Intersects(new Rectangle(x, y, item.Width, item.Height)))
+            {
+                Ressourceslist.quantity[id]++;
+                return true;
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.Right) && (x > 0))
+                x--;
+            if (Keyboard.GetState().IsKeyDown(Keys.Left) && (x < Game1.graphics.PreferredBackBufferWidth))
+                x++;
+            if (Keyboard.GetState().IsKeyDown(Keys.Up) && (y > 0))
+                y--;
+            if (Keyboard.GetState().IsKeyDown(Keys.Down) && (y < Game1.graphics.PreferredBackBufferHeight))
+                y++;
+            return false;
         }
     }
 }

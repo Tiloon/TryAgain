@@ -18,6 +18,7 @@ namespace TryAgain.GameElements
 {
     class Ressourceslist
     {
+        public static Dictionary<int, Texture2D> idtoitem;
         public static int totalnbressources = 10; //+1 en comptant index 0
         public static int[] quantity = new int[totalnbressources];      //un tableau de données avec les quantités de ressources i
         public static string[] names = new string[totalnbressources];   /*juste un tableau informatif avec les noms de ressources
@@ -42,6 +43,18 @@ namespace TryAgain.GameElements
             names[9] = "tete de poney";
             names[10] = "bout de carton";
             names[11] = "feu";
+
+            idtoitem.Add(0, Textures.O);
+            idtoitem.Add(1, Textures.I);
+            idtoitem.Add(2, Textures.II);
+            idtoitem.Add(3, Textures.III);
+            idtoitem.Add(4, Textures.IV);
+            idtoitem.Add(5, Textures.V);
+            idtoitem.Add(6, Textures.VI);
+            idtoitem.Add(7, Textures.VII);
+            idtoitem.Add(8, Textures.VIII);
+            idtoitem.Add(9, Textures.IX);
+            idtoitem.Add(10, Textures.X);
         }
     }
 

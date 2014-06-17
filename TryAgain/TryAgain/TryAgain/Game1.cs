@@ -29,7 +29,7 @@ namespace TryAgain
         DefaultQuadParticleSystemTemplate mcParticleSystem = null;
         DefaultSpriteParticleSystemTemplate part = null;
         Vector3 cameraPosition = new Vector3(0, 50, -200);
-        
+        public static GameTime gmt;
 
 
         public Game1()
@@ -100,14 +100,15 @@ namespace TryAgain
                 mcParticleSystem.SetWorldViewProjectionMatrices(Matrix.Identity, sViewMatrix, sProjectionMatrix);
                 mcParticleSystem.SetCameraPosition(cameraPosition);
                 mcParticleSystem.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
-
-                //part.Emitter.NumberOfParticlesEmitted = 10; 
+ 
+                //part.Emitter pour les propriétés générales
                 part.SetDefaultEffect();
                 part.SetCameraPosition(cameraPosition);
                 part.SetWorldViewProjectionMatrices(Matrix.Identity, sViewMatrix, sProjectionMatrix);
                 part.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
             }
 
+            gmt = gameTime;
             base.Update(gameTime);
         }
 
