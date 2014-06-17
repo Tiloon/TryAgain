@@ -24,6 +24,7 @@ namespace TryAgain
         ScreenType gamestate;
         ScreenType newscreen;
         public static GraphicsDeviceManager gamegfx;
+        bool skip = false;
 
         DefaultQuadParticleSystemTemplate mcParticleSystem = null;
         DefaultSpriteParticleSystemTemplate part = null;
@@ -74,6 +75,8 @@ namespace TryAgain
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape) && (skip == false))
+                skip = true;
             newscreen = screen.update();
             if (newscreen != gamestate)
             {
@@ -114,7 +117,8 @@ namespace TryAgain
             spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointWrap, DepthStencilState.None, RasterizerState.CullCounterClockwise);
             screen.draw(spriteBatch, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
             Connection.Draw(spriteBatch);
-            scenar.Drawlancement(spriteBatch, gameTime, false);
+            if (gameTime.TotalGameTime.TotalSeconds <= 11) 
+                scenar.Drawlancement(spriteBatch, gameTime, skip);
             spriteBatch.End();
             if (newscreen == ScreenType.MainMenu)
             {

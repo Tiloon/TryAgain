@@ -32,6 +32,8 @@ namespace TryAgain
                     sb.Draw(Textures.scenar3, Vector2.Zero, Color.White);
                 else if (gt.TotalGameTime.Seconds < 11)
                     sb.Draw(Textures.scenar4, Vector2.Zero, Color.White);
+                else
+                    skip = true;
             }
         }
     }

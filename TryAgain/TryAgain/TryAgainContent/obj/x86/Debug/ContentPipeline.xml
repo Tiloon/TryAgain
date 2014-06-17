@@ -397,13 +397,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
-      <Time>2014-06-16T20:37:42.2053355+02:00</Time>
-=======
       <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
       <Time>2014-06-16T16:48:57.2567603+02:00</Time>
->>>>>>> 3e6a7842718f1348e5947d5ee786848d4681e872
     </Item>
     <Item>
       <Source>Menu\storyboard.jpg</Source>
@@ -733,24 +728,6 @@
       <Time>2014-06-17T12:20:18.5868268+02:00</Time>
     </Item>
     <Item>
-      <Source>Fonts\UIfont.spritefont</Source>
-      <Name>Fonts\UIfont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfont.xnb</Output>
-      <Time>2014-06-16T14:30:40.920237+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\UIfontsmall.spritefont</Source>
-      <Name>Fonts\UIfontsmall</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
-      <Time>2014-06-16T14:30:40.9212371+02:00</Time>
-    </Item>
-    <Item>
       <Source>Scenar\Planche1.jpg</Source>
       <Name>Scenar\Planche1</Name>
       <Importer>TextureImporter</Importer>
@@ -785,6 +762,24 @@
       <Options>None</Options>
       <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche3.xnb</Output>
       <Time>2014-06-17T12:35:04.3794913+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\UIfont.spritefont</Source>
+      <Name>Fonts\UIfont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfont.xnb</Output>
+      <Time>2014-06-16T14:30:40.920237+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\UIfontsmall.spritefont</Source>
+      <Name>Fonts\UIfontsmall</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
+      <Time>2014-06-16T14:30:40.9212371+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
