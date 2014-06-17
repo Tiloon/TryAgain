@@ -28,7 +28,35 @@
 		"Item2": "Sprites\\Monsters\\bebeglauque",
 	},
 	{
-		"Item1": "UISTRpause",
-		"Item2": "Menu\\pause",
+		"Item1": "Tbrique",
+		"Item2": "Sprites\\terrain\\brique",
+	},
+	{
+		"Item1": "Tglace",
+		"Item2": "Sprites\\terrain\\glace",
+	},
+	{
+		"Item1": "Tneige2",
+		"Item2": "Sprites\\terrain\\neige",
+	},
+	{
+		"Item1": "Tpierrenoi",
+		"Item2": "Sprites\\terrain\\pierrenoir",
+	},
+	{
+		"Item1": "Tsable2",
+		"Item2": "Sprites\\terrain\\sable",
+	},
+	{
+		"Item1": "Tterre",
+		"Item2": "Sprites\\terrain\\terre",
+	},
+	{
+		"Item1": "Tpierre",
+		"Item2": "Sprites\\terrain\\pierre",
+	},
+	{
+		"Item1": "Tpierre2",
+		"Item2": "Sprites\\terrain\\pierre2",
 	},
 ]
