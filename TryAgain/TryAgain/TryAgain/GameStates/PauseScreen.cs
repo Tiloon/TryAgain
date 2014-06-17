@@ -59,7 +59,7 @@ namespace TryAgain.GameStates
             switch (CurrentMenuState)
             {
                 case MenuState.MainMenu:
-                    //sb.Draw(Textures.MainMenuBG, new Rectangle(Width, 0, Width, Height), Color.White);
+                    sb.Draw(Textures.OptionBG, new Rectangle(0, 0, Width, Height), Color.White);
                     sb.Draw(Textures.Cache["UISTRpause"], new Rectangle(Width / 4, Height / 12, Width / 2, Height / 8), Color.White);
                     ButtonPlay.Draw(sb);
                     ButtonOption.Draw(sb);
@@ -86,14 +86,25 @@ namespace TryAgain.GameStates
         }
         public override void init(GraphicsDevice graphics)
         {
-
-            ButtonPlay = new cButton(Textures.Cache["UIBplay"], graphics);
+            if (OptionScreen.eng)
+                ButtonPlay = new cButton(Textures.play, graphics);
+            else
+                ButtonPlay = new cButton(Textures.jouer, graphics);
             ButtonPlay.SetPosition(new Vector2(1062, 145 + 150));
-            ButtonOption = new cButton(Textures.Cache["UIBoption"], graphics);
+
+            ButtonOption = new cButton(Textures.MenuOption, graphics);
             ButtonOption.SetPosition(new Vector2(1062, 235 + 150 + 50));
-            ButtonExit = new cButton(Textures.Cache["UIBexit"], graphics);
+
+            if (OptionScreen.eng)
+                ButtonExit = new cButton(Textures.exit, graphics);
+            else
+                ButtonExit = new cButton(Textures.quitter, graphics);
             ButtonExit.SetPosition(new Vector2(1062, 392 + 150 + 150));
-            ButtonReturn = new cButton(Textures.Cache["UIBreturn"], graphics);
+
+            if (OptionScreen.eng)
+                ButtonReturn = new cButton(Textures.Return, graphics);
+            else
+                ButtonReturn = new cButton(Textures.retour, graphics);
             ButtonReturn.SetPosition(new Vector2(1062, 704 + 100));
         }
     }
