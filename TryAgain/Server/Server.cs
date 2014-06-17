@@ -77,6 +77,8 @@ namespace Server
             clients = new List<Client>();
             socket.Listen(35);
             Console.WriteLine("Connected on port " + ((IPEndPoint)socket.LocalEndPoint).Port);
+
+            this.LoadNPCList("npcs.json");
         }
 
         public void Run()
