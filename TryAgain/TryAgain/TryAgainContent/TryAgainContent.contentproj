@@ -76,38 +76,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu\Button_About.png">
-      <Name>Button_About</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <ProcessorParameters_ColorKeyColor>0, 255, 0, 255</ProcessorParameters_ColorKeyColor>
-    </Compile>
-    <Compile Include="Menu\Button_Exit.png">
-      <Name>Button_Exit</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <ProcessorParameters_ColorKeyColor>0, 255, 0, 255</ProcessorParameters_ColorKeyColor>
-    </Compile>
-    <Compile Include="Menu\Button_Option.png">
-      <Name>Button_Option</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <ProcessorParameters_ColorKeyColor>0, 255, 0, 255</ProcessorParameters_ColorKeyColor>
-    </Compile>
-    <Compile Include="Menu\Button_Play.png">
-      <Name>Button_Play</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <ProcessorParameters_ColorKeyColor>0, 255, 0, 255</ProcessorParameters_ColorKeyColor>
-    </Compile>
-    <Compile Include="Menu\Button_Return.png">
-      <Name>Button_Return</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <ProcessorParameters_ColorKeyColor>0, 255, 0, 255</ProcessorParameters_ColorKeyColor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Sprites\tilecaillou.bmp">
       <Name>tilecaillou</Name>
       <Importer>TextureImporter</Importer>
@@ -330,14 +298,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu\fenetre.png">
-      <Name>fenetre</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <ProcessorParameters_ColorKeyColor>0, 255, 0, 255</ProcessorParameters_ColorKeyColor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Menu\Button_SondOff.png">
       <Name>Button_SondOff</Name>
       <Importer>TextureImporter</Importer>
@@ -358,14 +318,6 @@
       <Name>MenuOption</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Menu\fullscreen.png">
-      <Name>fullscreen</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <ProcessorParameters_ColorKeyColor>0, 255, 0, 255</ProcessorParameters_ColorKeyColor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -579,6 +531,111 @@
   <ItemGroup>
     <Compile Include="Menu\GameOver.jpg">
       <Name>GameOver</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\eng\Button_About.jpg">
+      <Name>Button_About</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\fr\Button_APropos.jpg">
+      <Name>Button_APropos</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\eng\Button_Exit.jpg">
+      <Name>Button_Exit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\fr\Button_jouer.jpg">
+      <Name>Button_jouer</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\fr\Button_Option.jpg">
+      <Name>Button_Option</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\eng\Button_Play.jpg">
+      <Name>Button_Play</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\fr\Button_PleinEcran.jpg">
+      <Name>Button_PleinEcran</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\fr\Button_Quitter.jpg">
+      <Name>Button_Quitter</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\fr\Button_Retour.jpg">
+      <Name>Button_Retour</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\eng\Button_Return.jpg">
+      <Name>Button_Return</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\eng\Button_Windowed.jpg">
+      <Name>Button_Windowed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\eng\fullscreen.jpg">
+      <Name>fullscreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\fr\fenetre.jpg">
+      <Name>fenetre</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\fr\Button-francais.jpg">
+      <Name>Button-francais</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\eng\Button_English.jpg">
+      <Name>Button_English</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

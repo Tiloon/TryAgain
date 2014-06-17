@@ -28,7 +28,10 @@ namespace TryAgain
         public static Texture2D CraftInterface;
         public static Texture2D GameOver, storyboard;
 
-        public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG, MenuOption, buttonTony, buttonPierre, Fleche, Fleche2, soundOff;
+        public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG, MenuOption, Return, exit, play, english;
+        public static Texture2D aPropos, jouer, pleinEcran, quitter, retour, fenetre, francais;
+
+        public static Texture2D buttonTony, buttonPierre, Fleche, Fleche2, soundOff;
         public static Texture2D whitePixel;
 
         public static Texture2D Shield, Missile, Chosen;
@@ -86,11 +89,27 @@ namespace TryAgain
             storyboard = cm.Load<Texture2D>(@"Menu\storyboard");
 
             MainMenuBG = cm.Load<Texture2D>(@"Menu\MainMenu");
-            OptionBG = cm.Load<Texture2D>(@"Menu\Option");
-            AboutBG = cm.Load<Texture2D>(@"Menu\About");
-            FullscreenBG = cm.Load<Texture2D>(@"Menu\fullscreen");
-            FenetreBG = cm.Load<Texture2D>(@"Menu\fenetre");
-            MenuOption = cm.Load<Texture2D>(@"Menu\MenuOption");
+            OptionBG = cm.Load<Texture2D>(@"Menu\MenuOption");
+
+            //eng
+            AboutBG = cm.Load<Texture2D>(@"Menu\eng\Button_About");
+            FullscreenBG = cm.Load<Texture2D>(@"Menu\eng\fullscreen");
+            FenetreBG = cm.Load<Texture2D>(@"Menu\eng\Button_Windowed");
+            MenuOption = cm.Load<Texture2D>(@"Menu\fr\Button_Option");
+            Return = cm.Load<Texture2D>(@"Menu\eng\Button_Exit");
+            exit = cm.Load<Texture2D>(@"Menu\eng\Button_Exit");
+            play = cm.Load<Texture2D>(@"Menu\eng\Button_Play");
+            english = cm.Load<Texture2D>(@"Menu\eng\Button_English");
+
+            //fr
+            aPropos = cm.Load<Texture2D>(@"Menu\fr\Button_APropos");
+            jouer = cm.Load<Texture2D>(@"Menu\fr\Button_jouer");
+            pleinEcran = cm.Load<Texture2D>(@"Menu\fr\Button_PleinEcran");
+            quitter = cm.Load<Texture2D>(@"Menu\fr\Button_Quitter");
+            retour = cm.Load<Texture2D>(@"Menu\fr\Button_Retour");
+            fenetre = cm.Load<Texture2D>(@"Menu\fr\fenetre");
+            francais = cm.Load<Texture2D>(@"Menu\fr\Button-francais");
+
             buttonPierre = cm.Load<Texture2D>(@"Sprites\persopierre");
             buttonTony = cm.Load<Texture2D>(@"Sprites\persotony");
             Chosen = cm.Load<Texture2D>(@"Sprites\Chosen");
