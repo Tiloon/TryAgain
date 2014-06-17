@@ -81,16 +81,32 @@ namespace TryAgain.GameStates
         }
         public override void init(GraphicsDevice graphics)
         {
-            ButtonPlay = new cButton(Textures.Cache["UIBplay"], graphics);
-            ButtonPlay.SetPosition(new Vector2(1062, 145+150));
-            ButtonOption = new cButton(Textures.Cache["UIBoption"], graphics);
-            ButtonOption.SetPosition(new Vector2(1062, 235+150+50));
-            ButtonAbout = new cButton(Textures.Cache["UIBabout"], graphics);
-            ButtonAbout.SetPosition(new Vector2(1062, 313+150+100));
-            ButtonExit = new cButton(Textures.Cache["UIBexit"], graphics);
+            if (OptionScreen.eng)
+                ButtonPlay = new cButton(Textures.play, graphics);
+            else
+                ButtonPlay = new cButton(Textures.jouer, graphics);
+            ButtonPlay.SetPosition(new Vector2(1062, 145 + 150));
+
+            ButtonOption = new cButton(Textures.MenuOption, graphics);
+            ButtonOption.SetPosition(new Vector2(1062, 235 + 150 + 50));
+
+            if (OptionScreen.eng)
+                ButtonAbout = new cButton(Textures.AboutBG, graphics);
+            else
+                ButtonAbout = new cButton(Textures.aPropos, graphics);
+            ButtonAbout.SetPosition(new Vector2(1062, 313 + 150 + 100));
+
+            if (OptionScreen.eng)
+                ButtonExit = new cButton(Textures.exit, graphics);
+            else
+                ButtonExit = new cButton(Textures.quitter, graphics);
             ButtonExit.SetPosition(new Vector2(1062, 392 + 150 + 150));
-            ButtonReturn = new cButton(Textures.Cache["UIBreturn"], graphics);
-            ButtonReturn.SetPosition(new Vector2(1062, 704+100));
+
+            if (OptionScreen.eng)
+                ButtonReturn = new cButton(Textures.Return, graphics);
+            else
+                ButtonReturn = new cButton(Textures.retour, graphics);
+            ButtonReturn.SetPosition(new Vector2(1062, 704 + 100));
             /*
             ButtonOnePlayer = new cButton(Textures.Button_OnePlayer, graphics);
             ButtonOnePlayer.SetPosition(new Vector2(1062, 900));

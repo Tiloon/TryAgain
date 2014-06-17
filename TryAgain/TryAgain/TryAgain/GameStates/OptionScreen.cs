@@ -20,10 +20,13 @@ namespace TryAgain.GameStates
         cButton ButtonFenetre;
         cButton ButtonTony;
         cButton ButtonPierre;
-        cButton ButtonFlecheGauche, ButtonFlecheDroite, soundOff;
+        cButton ButtonFlecheGauche, ButtonFlecheDroite, soundOff, buttonFrancais, buttonEnglish;
         float son = Sounds.Themes.volume;
         float saveSon = 0;
         bool u = true;
+        static public bool eng = true;
+        string sound = "sound";
+        string choix = "Choix du personnage";
 
         Tuple<cButton, Vector2>[] resolutions;
 
@@ -150,6 +153,20 @@ namespace TryAgain.GameStates
                 if (soundOff.IsReleased(mouse))
                     u = true;
             }
+            if (buttonEnglish.IsClicked(mouse))
+            {
+                eng = true;
+                sound = "sound";
+                choix = "choice character";
+                init(Game1.graphics.GraphicsDevice);
+            }
+            if (buttonFrancais.IsClicked(mouse))
+            {
+                eng = false;
+                sound = "son";
+                init(Game1.graphics.GraphicsDevice);
+                choix = "Choix du personnage";
+            }
             if (ButtonFullscreen.IsClicked(mouse) || ButtonFenetre.IsClicked(mouse))
             {
                 Game1.graphics.ToggleFullScreen();
@@ -165,7 +182,7 @@ namespace TryAgain.GameStates
         {
 
             //sb.Draw(Content.Load<Texture2D>("Option"), new Rectangle(0, 0, screenWidth, screenHigh), Color.White);
-            sb.Draw(Textures.MenuOption, new Rectangle(0, 0, Width, Height), Color.White);
+            sb.Draw(Textures.OptionBG, new Rectangle(0, 0, Width, Height), Color.White);
             ButtonReturn.Draw(sb);
             if (Game1.graphics.IsFullScreen)
                 ButtonFenetre.Draw(sb);
@@ -173,7 +190,7 @@ namespace TryAgain.GameStates
                 ButtonFullscreen.Draw(sb);
 
             //choix du personnage
-            sb.DrawString(Textures.UIfont, "Choix du personnage:", new Vector2(400, 10), Color.Black);
+            sb.DrawString(Textures.UIfont, choix + ":", new Vector2(400, 10), Color.Black);
             if (Online.Connection.avatar == "Ttony")
                 sb.Draw(Textures.Chosen, new Vector2(295, 45), Color.Black);
             sb.DrawString(Textures.UIfont, "Tony:", new Vector2(200, 100), Color.Black);
@@ -187,8 +204,12 @@ namespace TryAgain.GameStates
             ButtonFlecheGauche.Draw(sb);
             ButtonFlecheDroite.Draw(sb);
             sb.DrawString(Textures.UIfont, ((int)(son * 100)).ToString() + "%", new Vector2(410, 410), Color.Black);
-            sb.DrawString(Textures.UIfont, "Son :", new Vector2(200, 400), Color.Black, 0F, new Vector2(0, 0), 1.42F, SpriteEffects.None, 0);
+            sb.DrawString(Textures.UIfont, sound + ":", new Vector2(200, 400), Color.Black, 0F, new Vector2(0, 0), 1.42F, SpriteEffects.None, 0);
             soundOff.Draw(sb);
+
+            //changer langue
+            buttonEnglish.Draw(sb);
+            buttonFrancais.Draw(sb);
 
             // La personne qui arrive à afficher quelque chose grâce à 
             resolutions[0].Item1.Draw(sb); // ça,
@@ -201,12 +222,24 @@ namespace TryAgain.GameStates
         }
         public override void init(GraphicsDevice graphics)
         {
-            ButtonReturn = new cButton(Textures.Cache["UIBreturn"], graphics);
+            if (eng)
+                ButtonReturn = new cButton(Textures.Return, graphics);
+            else
+                ButtonReturn = new cButton(Textures.retour, graphics);
             ButtonReturn.SetPosition(new Vector2(1062, 704 + 100));
-            ButtonFullscreen = new cButton(Textures.FullscreenBG, graphics);
+
+            if (eng)
+                ButtonFullscreen = new cButton(Textures.FullscreenBG, graphics);
+            else
+                ButtonFullscreen = new cButton(Textures.pleinEcran, graphics);
             ButtonFullscreen.SetPosition(new Vector2(500, 200));
-            ButtonFenetre = new cButton(Textures.FenetreBG, graphics);
+
+            if (eng)
+                ButtonFenetre = new cButton(Textures.FenetreBG, graphics);
+            else
+                ButtonFenetre = new cButton(Textures.fenetre, graphics);
             ButtonFenetre.SetPosition(new Vector2(500, 200));
+
             ButtonTony = new cButton(Textures.buttonTony, graphics, 22 * 2, 65 * 2);
             ButtonTony.SetPosition(new Vector2(300, 50));
             ButtonPierre = new cButton(Textures.buttonPierre, graphics, 22 * 2, 65 * 2);
@@ -217,6 +250,10 @@ namespace TryAgain.GameStates
             ButtonFlecheDroite.SetPosition(new Vector2(500, 400));
             soundOff = new cButton(Textures.soundOff, graphics, 50, 50);
             soundOff.SetPosition(new Vector2(600, 400));
+            buttonEnglish = new cButton(Textures.english, graphics);
+            buttonEnglish.SetPosition(new Vector2(600, 400));
+            buttonFrancais = new cButton(Textures.francais, graphics);
+            buttonFrancais.SetPosition(new Vector2(600, 600));
             loadResoltutions(graphics);
         }
     }

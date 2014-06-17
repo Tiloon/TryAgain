@@ -8,3 +8,13 @@ C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Js
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\obj\x86\Debug\Server.exe
 C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\Server\obj\x86\Debug\Server.pdb
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\bin\Debug\Server.exe
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\bin\Debug\Server.pdb
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\bin\Debug\Shared.dll
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\bin\Debug\Shared.pdb
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\obj\x86\Debug\Server.exe
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\Server\obj\x86\Debug\Server.pdb
