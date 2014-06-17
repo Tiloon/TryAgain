@@ -16,7 +16,7 @@ namespace TryAgain.GameElements
         static bool shield = false;
         static bool missile = false;
         static Vector2 missilepos;
-        static int missilespeed = 3;
+        static int missilespeed = 23;
         //constructor
 
         //methods
@@ -35,9 +35,11 @@ namespace TryAgain.GameElements
                 missilepos.X += missilespeed;
                 foreach (GameObject obj in GameScreen.GOList)
                 {
-                    if (/*(obj.Type == "GameObject,Character,Monster") && */(new Rectangle((int)missilepos.X, (int)missilepos.Y, Textures.Missile.Width, Textures.Missile.Height).Intersects(new Rectangle((int)obj.getPosition().X, (int)obj.getPosition().Y, 60, 60))))
+                    if (/*(obj.Type == "GameObject,Character,Monster") && */
+                       (new Rectangle((int)missilepos.X, (int)missilepos.Y, Textures.Missile.Width, Textures.Missile.Height).Intersects
+                       (new Rectangle((int)(obj.position.X - (Hero.view.X + Hero.padding.X) *64), (int)(obj.position.Y - (Hero.view.Y + Hero.padding.Y) * 64), 60, 60))))
                     {
-                        obj.pv -= 25;   //il faut une fonction update qui supprime l'objet quand ses pv sont à 0, car le foreach ne permet pas de ref (nécéssaire pour remove)
+                        obj.pv -= 25;
                         missile = false;
                     }
                 }
