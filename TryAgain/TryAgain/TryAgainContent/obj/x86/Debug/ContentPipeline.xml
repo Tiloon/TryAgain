@@ -781,6 +781,33 @@
       <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
       <Time>2014-06-16T14:30:40.9212371+02:00</Time>
     </Item>
+    <Item>
+      <Source>Menu\alogojeu.png</Source>
+      <Name>Menu\alogojeu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\alogojeu.xnb</Output>
+      <Time>2014-06-17T13:17:08.0238355+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\alogogrp.png</Source>
+      <Name>Menu\alogogrp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\alogogrp.xnb</Output>
+      <Time>2014-06-17T13:17:28.9870345+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\GameOver.jpg</Source>
+      <Name>Menu\GameOver</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\GameOver.xnb</Output>
+      <Time>2014-06-17T13:53:42.687363+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

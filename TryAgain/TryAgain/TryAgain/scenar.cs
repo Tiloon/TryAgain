@@ -16,6 +16,13 @@ namespace TryAgain
 {
     class scenar
     {
+        public static void logoDisplay(bool disp)
+        {
+            if (disp)
+            {
+            }
+        }
+
         public static void Update(bool skip)
         {
         }
