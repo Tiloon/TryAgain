@@ -114,10 +114,11 @@ namespace TryAgain
             spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointWrap, DepthStencilState.None, RasterizerState.CullCounterClockwise);
             screen.draw(spriteBatch, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
             Connection.Draw(spriteBatch);
+            scenar.Drawlancement(spriteBatch, gameTime, false);
             spriteBatch.End();
             if (newscreen == ScreenType.MainMenu)
             {
-                mcParticleSystem.Draw();
+                //mcParticleSystem.Draw();
                 part.Draw();
             }
             base.Draw(gameTime);

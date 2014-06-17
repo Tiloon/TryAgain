@@ -22,6 +22,7 @@ namespace TryAgain
         public static Dictionary<String, Texture2D> Cache = new Dictionary<string, Texture2D>();
 
         public static Texture2D roche_herbe, halfsable;
+        public static Texture2D scenar1, scenar2, scenar3, scenar4;
 
         public static Texture2D O, I, II, III, IV, V, VI, VII, VIII, IX, X, XI;  //numéros de ressources, se reférer à la clase craftinterface
         public static Texture2D CraftInterface;
@@ -63,6 +64,11 @@ namespace TryAgain
             Fleche = cm.Load<Texture2D>(@"Menu\fleche");
             Fleche2 = cm.Load<Texture2D>(@"Menu\fleche2");
             soundOff = cm.Load<Texture2D>(@"Menu\soundOff");
+
+            scenar1 = cm.Load<Texture2D>(@"Scenar\Planche1");
+            scenar2 = cm.Load<Texture2D>(@"Scenar\Planche2");
+            scenar3 = cm.Load<Texture2D>(@"Scenar\Planche3");
+            scenar4 = cm.Load<Texture2D>(@"Scenar\Planche4");
 
             I = cm.Load<Texture2D>(@"Sprites\Ressources\1");
             II = cm.Load<Texture2D>(@"Sprites\Ressources\2");
