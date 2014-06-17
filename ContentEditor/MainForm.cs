@@ -314,6 +314,7 @@ namespace WinFormsGraphicsDevice
             progressBar1.Value++;
         }
 
+        Shared.Gob npc;
         private void button4_Click(object sender, EventArgs e)
         {
             Shared.Stats npcStats = new Shared.Stats();
@@ -333,14 +334,15 @@ namespace WinFormsGraphicsDevice
             npcStats.criticalrate = (int)numericUpDown16.Value;
             npcStats.speed = (float)numericUpDown17.Value;
 
-            Shared.Gob npc = new Shared.Gob();
+            npc = new Shared.Gob();
             npc.stats = npcStats;
             npc.name = textBox1.Text;
             npc.commonName = textBox2.Text;
             npc.type = "GameObject,Character,Npc";
             npc.script = textBox3.Text;
-            npc.X = Shared.Converter.FloatToString(0);
-            npc.Y = Shared.Converter.FloatToString(0);
+            npc.X = Shared.Converter.FloatToString((float)numericUpDown18.Value);
+            npc.Y = Shared.Converter.FloatToString((float)numericUpDown19.Value);
+            saveFileDialog2.ShowDialog();
         }
 
 
@@ -353,6 +355,14 @@ namespace WinFormsGraphicsDevice
         private void openFileDialog3_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
         {
 
+        }
+
+        private void saveFileDialog2_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Stream stream = saveFileDialog2.OpenFile();
+            StreamWriter sw = new StreamWriter(stream);
+            sw.Write(JsonConvert.SerializeObject(npc));
+            sw.Flush();
         }
 
     }

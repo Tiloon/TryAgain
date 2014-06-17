@@ -46,6 +46,24 @@ namespace Server
             map = JsonConvert.DeserializeObject<string[,]>(json);
         }
 
+        public static void LoadNPCList(String path)
+        {
+            String json;
+            byte[] myDataBuffer;
+            WebClient myWebClient = new WebClient();
+            try
+            {
+                myDataBuffer = myWebClient.DownloadData(path);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                throw;
+            }
+            json = Encoding.ASCII.GetString(myDataBuffer);
+            Shared.Gob[] npcList = JsonConvert.DeserializeObject<Shared.Gob[]>(json);
+        }
+
         public Server(int port)
         {
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
