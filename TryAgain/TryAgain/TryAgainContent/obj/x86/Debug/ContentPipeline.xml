@@ -46,8 +46,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MainMenu.xnb</Output>
       <Time>2014-05-06T23:04:44.2120822+02:00</Time>
+=======
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MainMenu.xnb</Output>
+      <Time>2014-06-17T13:11:46.4274412+02:00</Time>
+>>>>>>> 3a07fd099cd51a4d83f70123818030314861c546
     </Item>
     <Item>
       <Source>Menu\Option.png</Source>
@@ -397,8 +402,13 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
       <Time>2014-06-16T20:37:42.2053355+02:00</Time>
+=======
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
+      <Time>2014-06-16T16:48:57.2567603+02:00</Time>
+>>>>>>> 3a07fd099cd51a4d83f70123818030314861c546
     </Item>
     <Item>
       <Source>Menu\storyboard.jpg</Source>
@@ -724,8 +734,13 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\soundOff.xnb</Output>
       <Time>2014-06-17T12:47:58.5457616+02:00</Time>
+=======
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\soundOff.xnb</Output>
+      <Time>2014-06-17T12:20:18.5868268+02:00</Time>
+>>>>>>> 3a07fd099cd51a4d83f70123818030314861c546
     </Item>
     <Item>
       <Source>Scenar\Planche1.jpg</Source>
@@ -780,6 +795,51 @@
       <Options>None</Options>
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
       <Time>2014-05-05T13:26:37.1132165+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\UIfont.spritefont</Source>
+      <Name>Fonts\UIfont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfont.xnb</Output>
+      <Time>2014-06-16T14:30:40.920237+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\UIfontsmall.spritefont</Source>
+      <Name>Fonts\UIfontsmall</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
+      <Time>2014-06-16T14:30:40.9212371+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\alogojeu.png</Source>
+      <Name>Menu\alogojeu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\alogojeu.xnb</Output>
+      <Time>2014-06-17T13:17:08.0238355+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\alogogrp.png</Source>
+      <Name>Menu\alogogrp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\alogogrp.xnb</Output>
+      <Time>2014-06-17T13:17:28.9870345+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\GameOver.jpg</Source>
+      <Name>Menu\GameOver</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\GameOver.xnb</Output>
+      <Time>2014-06-17T13:53:42.687363+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

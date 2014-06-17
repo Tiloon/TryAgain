@@ -85,6 +85,8 @@ namespace TryAgain.GameStates
             KeyboardState newState = Keyboard.GetState();
             if (newState.IsKeyDown(Keys.Escape))
                 return ScreenType.Pause;
+            if (newState.IsKeyDown(Keys.NumPad9))
+                hero.stats.lp = 0;
             for (int i = 0; i < GOList.Count; i++)
             {
                 if (!GOList[i].toRemove()) // || !GOList[i].toupdate ???
@@ -105,30 +107,35 @@ namespace TryAgain.GameStates
         }
         public override void draw(SpriteBatch sb, int Width, int Height)
         {
-            if (actualmap == 1)
-                Tilemap.Drawmap(sb, Tilemap.tiles);
-            foreach (var todraw in GOList)
+            if (hero.stats.lp != 0)
             {
-                /*
-                if(todraw.UID != hero.UID)
-                    Chat.AddMessage((todraw.UID));*/
-                if(todraw.toupdate)
-                    todraw.Draw(sb);
-            }
-
-            userinterface.Draw(sb);
-            Chat.Draw(sb);
-
-            //code tony pas super propre mais bon, j'ai la flemme d'utiliser ton screentype que j'ai jamais used ^^
-            if (!Chat.isWriting) // Moi non plus
-            {
-                KeyboardState newState = Keyboard.GetState();
-                if (newState.IsKeyDown(Keys.C))
+                if (actualmap == 1)
+                    Tilemap.Drawmap(sb, Tilemap.tiles);
+                foreach (var todraw in GOList)
                 {
-                    Craft.Draw(sb);
+                    /*
+                    if(todraw.UID != hero.UID)
+                        Chat.AddMessage((todraw.UID));*/
+                    if (todraw.toupdate)
+                        todraw.Draw(sb);
                 }
-                //skills
-                Skills.Draw(sb, hero.getPosition(), hero, newState);
+
+                userinterface.Draw(sb);
+                Chat.Draw(sb);
+
+                if (!Chat.isWriting)
+                {
+                    KeyboardState newState = Keyboard.GetState();
+                    if (newState.IsKeyDown(Keys.C))
+                    {
+                        Craft.Draw(sb);
+                    }
+                    Skills.Draw(sb, hero.getPosition(), hero, newState);
+                }
+            }
+            else
+            {
+                GameOver.Draw(sb, Game1.gmt);
             }
         }
 
@@ -159,11 +166,11 @@ namespace TryAgain.GameStates
                 /*hero2 = new Hero("Tony", Classes.Classe.gunner, Textures.persopierre_texture, Keys.Z, Keys.S, Keys.Q, Keys.D, pos2);
                 GOList.Add(hero2);*/
                 Tilemap.MapFullINIT();
-                /*
-                GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 0.15F, new Vector2(6, 8)));
-                GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 0.15F, new Vector2(5, 5)));
-                GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 0.15F, new Vector2(8, 8)));
-                */
+                
+                //GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 0.15F, new Vector2(6, 8)));
+                //GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 0.15F, new Vector2(5, 5)));
+                //GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 0.15F, new Vector2(8, 8)));
+                
                 hasStarted = true;
             }
         }

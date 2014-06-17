@@ -24,11 +24,12 @@ namespace TryAgain
         ScreenType gamestate;
         ScreenType newscreen;
         public static GraphicsDeviceManager gamegfx;
+        bool skip = false;
 
         DefaultQuadParticleSystemTemplate mcParticleSystem = null;
         DefaultSpriteParticleSystemTemplate part = null;
         Vector3 cameraPosition = new Vector3(0, 50, -200);
-        
+        public static GameTime gmt;
 
 
         public Game1()
@@ -74,6 +75,8 @@ namespace TryAgain
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape) && (skip == false))
+                skip = true;
             newscreen = screen.update();
             if (newscreen != gamestate)
             {
@@ -97,14 +100,15 @@ namespace TryAgain
                 mcParticleSystem.SetWorldViewProjectionMatrices(Matrix.Identity, sViewMatrix, sProjectionMatrix);
                 mcParticleSystem.SetCameraPosition(cameraPosition);
                 mcParticleSystem.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
-
-                //part.Emitter.NumberOfParticlesEmitted = 10; 
+ 
+                //part.Emitter pour les propriétés générales
                 part.SetDefaultEffect();
                 part.SetCameraPosition(cameraPosition);
                 part.SetWorldViewProjectionMatrices(Matrix.Identity, sViewMatrix, sProjectionMatrix);
                 part.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
             }
 
+            gmt = gameTime;
             base.Update(gameTime);
         }
 
@@ -114,7 +118,8 @@ namespace TryAgain
             spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointWrap, DepthStencilState.None, RasterizerState.CullCounterClockwise);
             screen.draw(spriteBatch, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
             Connection.Draw(spriteBatch);
-            scenar.Drawlancement(spriteBatch, gameTime, false);
+            if (gameTime.TotalGameTime.TotalSeconds <= 11) 
+                scenar.Drawlancement(spriteBatch, gameTime, skip);
             spriteBatch.End();
             if (newscreen == ScreenType.MainMenu)
             {

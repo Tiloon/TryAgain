@@ -70,19 +70,19 @@ namespace TryAgain
             scenar3 = cm.Load<Texture2D>(@"Scenar\Planche3");
             scenar4 = cm.Load<Texture2D>(@"Scenar\Planche4");
 
-            I = cm.Load<Texture2D>(@"Sprites\Ressources\1");
-            II = cm.Load<Texture2D>(@"Sprites\Ressources\2");
-            III = cm.Load<Texture2D>(@"Sprites\Ressources\3");
-            IV = cm.Load<Texture2D>(@"Sprites\Ressources\4");
-            V = cm.Load<Texture2D>(@"Sprites\Ressources\5");
-            VI = cm.Load<Texture2D>(@"Sprites\Ressources\6");
-            VII = cm.Load<Texture2D>(@"Sprites\Ressources\7");
-            VIII = cm.Load<Texture2D>(@"Sprites\Ressources\8");
-            IX = cm.Load<Texture2D>(@"Sprites\Ressources\9");
-            X = cm.Load<Texture2D>(@"Sprites\Ressources\10");
-            XI = cm.Load<Texture2D>(@"Sprites\Ressources\11");
+            O = cm.Load<Texture2D>(@"Sprites\Ressources\1");
+            I = cm.Load<Texture2D>(@"Sprites\Ressources\2");
+            II = cm.Load<Texture2D>(@"Sprites\Ressources\3");
+            III = cm.Load<Texture2D>(@"Sprites\Ressources\4");
+            IV = cm.Load<Texture2D>(@"Sprites\Ressources\5");
+            V = cm.Load<Texture2D>(@"Sprites\Ressources\6");
+            VI = cm.Load<Texture2D>(@"Sprites\Ressources\7");
+            VII = cm.Load<Texture2D>(@"Sprites\Ressources\8");
+            VIII = cm.Load<Texture2D>(@"Sprites\Ressources\9");
+            IX = cm.Load<Texture2D>(@"Sprites\Ressources\10");
+            X = cm.Load<Texture2D>(@"Sprites\Ressources\11");
             CraftInterface = cm.Load<Texture2D>(@"Menu\CraftInterface");
-            GameOver = whitePixel;
+            GameOver = cm.Load<Texture2D>(@"Menu\GameOver");
             storyboard = cm.Load<Texture2D>(@"Menu\storyboard");
 
             MainMenuBG = cm.Load<Texture2D>(@"Menu\MainMenu");

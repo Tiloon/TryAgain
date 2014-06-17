@@ -79,3 +79,9 @@ Content\Scenar\Planche4.xnb
 Content\Scenar\Planche3.xnb
 Content\Fonts\UIfont.xnb
 Content\Fonts\UIfontsmall.xnb
+<<<<<<< HEAD
+=======
+Content\Menu\alogojeu.xnb
+Content\Menu\alogogrp.xnb
+Content\Menu\GameOver.xnb
+>>>>>>> 3a07fd099cd51a4d83f70123818030314861c546
