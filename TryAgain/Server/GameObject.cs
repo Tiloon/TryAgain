@@ -15,13 +15,24 @@ namespace Server
         public String spr;
         public String type;
         public String name;
-        public String datas;
+        public String datas = "";
+        private String script = "";
         public bool changed;
         private Rectangle view;
         private bool toUpdate;
         private List<GameObject> near = new List<GameObject>();
         private GameObject target;
         private Shared.Stats stats;
+
+        public void SetScript(String str)
+        {
+            this.script = str;
+        }
+
+        public void SetStats(Shared.Stats stats)
+        {
+            this.stats = stats;
+        }
 
         public GameObject()
         {

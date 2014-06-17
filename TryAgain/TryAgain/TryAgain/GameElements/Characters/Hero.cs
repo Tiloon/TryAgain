@@ -58,7 +58,7 @@ namespace TryAgain.Characters
                 stats = Stats.GetStats(0);
             }
 
-            TryAgain.GameElements.Managers.TimeMGR.AddEvent("HP loss", 2000, -1, () => { if (this.stats.ch > 1) this.stats.ch--; });
+            TryAgain.GameElements.Managers.TimeMGR.AddEvent("Coffee loss", 2000, -1, () => { if (this.stats.ch > 1) this.stats.ch--; else this.stats.lp -= 2; });
 
             oldKeyboardState = newState = Keyboard.GetState();
         }

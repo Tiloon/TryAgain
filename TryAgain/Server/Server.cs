@@ -46,22 +46,28 @@ namespace Server
             map = JsonConvert.DeserializeObject<string[,]>(json);
         }
 
-        public static void LoadNPCList(String path)
+        public void LoadNPCList(String path)
         {
             String json;
-            byte[] myDataBuffer;
-            WebClient myWebClient = new WebClient();
-            try
-            {
-                myDataBuffer = myWebClient.DownloadData(path);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                throw;
-            }
-            json = Encoding.ASCII.GetString(myDataBuffer);
+            StreamReader sr = new StreamReader(path);
+            json = sr.ReadToEnd();
             Shared.Gob[] npcList = JsonConvert.DeserializeObject<Shared.Gob[]>(json);
+            foreach (var npc in npcList)
+            {
+                GameObject e = new GameObject();
+                e.X = npc.X;
+                e.Y = npc.Y;
+                e.x = Shared.Converter.StringToFloat(e.X);
+                e.y = Shared.Converter.StringToFloat(e.Y);
+                e.SetStats(npc.stats);
+                e.SetScript(npc.script);
+                e.name = npc.commonName;
+                e.ID = npc.name;
+                e.spr = npc.spr;
+
+                goblist.Add(npc.name, e);
+                igIDs.Add(npc.name);
+            }
         }
 
         public Server(int port)
