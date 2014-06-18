@@ -25,6 +25,7 @@ namespace TryAgain
         ScreenType newscreen;
         public static GraphicsDeviceManager gamegfx;
         bool skip = false;
+        public static bool cannonpartic = false;
 
         DefaultQuadParticleSystemTemplate mcParticleSystem = null;
         DefaultSpriteParticleSystemTemplate part = null;
@@ -51,6 +52,7 @@ namespace TryAgain
             gamegfx = graphics;
             Initializer.InitAll();
             Textures.LoadTextureList("data.textures.json");
+            TryAgain.GameElements.Ressourceslist.init();
         }
 
         protected override void LoadContent()
@@ -92,22 +94,23 @@ namespace TryAgain
                 }
             }
 
+            Matrix sViewMatrix = Matrix.CreateLookAt(cameraPosition, new Vector3(0, 50, 0), Vector3.Right);
+            Matrix sProjectionMatrix = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, (float)GraphicsDevice.Viewport.Width / (float)GraphicsDevice.Viewport.Height, 1, 10000);
+
             if (newscreen == ScreenType.MainMenu)
             {
-                Matrix sViewMatrix = Matrix.CreateLookAt(cameraPosition, new Vector3(0, 50, 0), Vector3.Down);
-                Matrix sProjectionMatrix = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, (float)GraphicsDevice.Viewport.Width / (float)GraphicsDevice.Viewport.Height, 1, 10000);
-                
-                mcParticleSystem.SetWorldViewProjectionMatrices(Matrix.Identity, sViewMatrix, sProjectionMatrix);
-                mcParticleSystem.SetCameraPosition(cameraPosition);
-                mcParticleSystem.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
- 
                 //part.Emitter pour les propriétés générales
                 part.SetDefaultEffect();
                 part.SetCameraPosition(cameraPosition);
                 part.SetWorldViewProjectionMatrices(Matrix.Identity, sViewMatrix, sProjectionMatrix);
                 part.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
             }
-
+            if (cannonpartic)
+            {
+                mcParticleSystem.SetWorldViewProjectionMatrices(Matrix.Identity, sViewMatrix, sProjectionMatrix);
+                mcParticleSystem.SetCameraPosition(cameraPosition);
+                mcParticleSystem.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
+            }
             gmt = gameTime;
             base.Update(gameTime);
         }
@@ -122,10 +125,9 @@ namespace TryAgain
                 scenar.Drawlancement(spriteBatch, gameTime, skip);
             spriteBatch.End();
             if (newscreen == ScreenType.MainMenu)
-            {
-                //mcParticleSystem.Draw();
                 part.Draw();
-            }
+            if (cannonpartic)
+                mcParticleSystem.Draw();
             base.Draw(gameTime);
 
 
