@@ -88,16 +88,6 @@ Content\Menu\eng\fullscreen.xnb
 Content\Menu\fr\fenetre.xnb
 Content\Menu\fr\Button-francais.xnb
 Content\Menu\eng\Button_English.xnb
-Content\Fonts\UIfont.xnb
-Content\Fonts\UIfontsmall.xnb
-Content\Sprites\brique.xnb
-Content\Sprites\glace.xnb
-Content\Sprites\neige.xnb
-Content\Sprites\pierre.xnb
-Content\Sprites\pierre2.xnb
-Content\Sprites\pierrenoir.xnb
-Content\Sprites\sable.xnb
-Content\Sprites\terre.xnb
 Content\Sprites\terrain\brique.xnb
 Content\Sprites\terrain\glace.xnb
 Content\Sprites\terrain\neige.xnb
@@ -106,3 +96,5 @@ Content\Sprites\terrain\pierre2.xnb
 Content\Sprites\terrain\pierrenoir.xnb
 Content\Sprites\terrain\sable.xnb
 Content\Sprites\terrain\terre.xnb
+Content\Fonts\UIfont.xnb
+Content\Fonts\UIfontsmall.xnb
