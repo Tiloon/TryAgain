@@ -26,7 +26,7 @@ namespace TryAgain.GameElements
             if (keyBoardState.IsKeyDown(Keys.Space) && !missile)
             {
                 missile = true;
-                missilepos = new Vector2((hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64);
+                missilepos = new Vector2(Textures.Missile.Width+(hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64);
             }
             if (missile)
             {
@@ -45,13 +45,13 @@ namespace TryAgain.GameElements
                 }
                 if (missilepos.X - missilespeed > Game1.graphics.PreferredBackBufferWidth)
                     missile = false;
-                if (Keyboard.GetState().IsKeyDown(Keys.Right) && (missilepos.X > 0))
+                if (keyBoardState.IsKeyDown(Keys.Right) && (missilepos.X > 0))
                     missilepos.X += 20 * hero.getStats().speed;
-                if (Keyboard.GetState().IsKeyDown(Keys.Left) && (missilepos.X < Game1.graphics.PreferredBackBufferWidth))
+                if (keyBoardState.IsKeyDown(Keys.Left) && (missilepos.X < Game1.graphics.PreferredBackBufferWidth))
                     missilepos.X -= 20 * hero.getStats().speed;
-                if (Keyboard.GetState().IsKeyDown(Keys.Up) && (missilepos.Y > 0))
+                if (keyBoardState.IsKeyDown(Keys.Up) && (missilepos.Y > 0))
                     missilepos.Y += 20 * hero.getStats().speed;
-                if (Keyboard.GetState().IsKeyDown(Keys.Down) && (missilepos.Y < Game1.graphics.PreferredBackBufferHeight))
+                if (keyBoardState.IsKeyDown(Keys.Down) && (missilepos.Y < Game1.graphics.PreferredBackBufferHeight))
                     missilepos.Y -= 20 * hero.getStats().speed;
             }
         }
