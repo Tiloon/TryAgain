@@ -200,6 +200,12 @@ namespace TryAgain.GameElements
             sb.Draw(Textures.c2gun1, new Rectangle(315, 240, 40, 40), Color.White);
             sb.Draw(Textures.c3bottes, new Rectangle(315, 280, 40, 40), Color.White);
             sb.Draw(Textures.c4cannon, new Rectangle(315, 320, 40, 40), Color.White);
+            sb.Draw(Textures.c5soda, new Rectangle(315, 360, 40, 40), Color.White);
+
+            string msg;
+            /*for(int i = 0; i<
+            if(CraftInventory[i])
+                msg = "*/
         }
     }
 }
