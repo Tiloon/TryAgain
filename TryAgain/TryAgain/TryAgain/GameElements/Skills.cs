@@ -68,11 +68,21 @@ namespace TryAgain.GameElements
             }
         }
 
+        public static void Boots(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState)
+        {
+            if((keyBoardState.IsKeyDown(Keys.LeftControl) && (hero.stats.speed < 0.65F)))
+                hero.stats.speed+=0.01F;
+            if((keyBoardState.IsKeyDown(Keys.LeftShift) && (hero.stats.speed > 0.15F)))
+                hero.stats.speed-=0.01F;
+                
+        }
+
         //update draw
         static public void Draw(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState)
         {
             Shield(sb, pos, hero, keyBoardState);
             Missile(sb, pos, hero, keyBoardState);
+            Boots(sb, pos, hero, keyBoardState);
         }
     }
 }

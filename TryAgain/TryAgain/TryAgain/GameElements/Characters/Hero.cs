@@ -96,22 +96,22 @@ namespace TryAgain.Characters
                 Vector2 normalizedSpeed = new Vector2(0, 0);
                 if (newState.IsKeyDown(keyup))
                 {
-                    normalizedSpeed += new Vector2(0, -1);
+                    normalizedSpeed += new Vector2(0, -stats.speed);
                     directiontournee = Direction.haut;
                 }
                 if (newState.IsKeyDown(keydown))
                 {
-                    normalizedSpeed += new Vector2(0, 1);
+                    normalizedSpeed += new Vector2(0, +stats.speed);
                     directiontournee = Direction.bas;
                 }
                 if (newState.IsKeyDown(keyright))
                 {
-                    normalizedSpeed += new Vector2(1, 0);
+                    normalizedSpeed += new Vector2(stats.speed, 0);
                     directiontournee = Direction.droite;
                 }
                 if (newState.IsKeyDown(keyleft))
                 {
-                    normalizedSpeed += new Vector2(-1, 0);
+                    normalizedSpeed += new Vector2(-stats.speed, 0);
                     directiontournee = Direction.gauche;
                 }
 

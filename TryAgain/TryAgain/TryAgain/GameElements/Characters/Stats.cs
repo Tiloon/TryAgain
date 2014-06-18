@@ -65,7 +65,7 @@ namespace TryAgain.Characters
                 stats.intelligence = 10;
                 stats.defense = 10;
                 stats.criticalrate = 0;
-                stats.speed = 0.15F;
+                stats.speed = 0.3F;
             }
             else
             {
@@ -83,7 +83,7 @@ namespace TryAgain.Characters
                 stats.intelligence = 1;
                 stats.defense = 1;
                 stats.criticalrate = 1;
-                stats.speed = 0;
+                stats.speed = 0.3F;
             }
             return stats;
         }
