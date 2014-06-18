@@ -20,6 +20,13 @@ namespace TryAgain.GameElements
         //constructor
 
         //methods
+        public static void ParticuleCannon(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState)
+        {
+            if ((keyBoardState.IsKeyDown(Keys.Tab)))
+                Game1.cannonpartic = true;
+            else
+                Game1.cannonpartic = false;
+        }
         public static void Coca(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState)
         {
             if ((keyBoardState.IsKeyDown(Keys.M) && (hero.stats.ch < hero.stats.chmax)))
@@ -96,6 +103,7 @@ namespace TryAgain.GameElements
             Missile(sb, pos, hero, keyBoardState);
             Boots(sb, pos, hero, keyBoardState);
             Coca(sb, pos, hero, keyBoardState);
+            ParticuleCannon(sb, pos, hero, keyBoardState);
         }
     }
 }
