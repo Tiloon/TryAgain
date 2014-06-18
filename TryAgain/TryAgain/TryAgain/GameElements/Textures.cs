@@ -34,7 +34,7 @@ namespace TryAgain
         public static Texture2D buttonTony, buttonPierre, Fleche, Fleche2, soundOff;
         public static Texture2D whitePixel;
 
-        public static Texture2D Shield, Missile, Chosen;
+        public static Texture2D Shield1, Shield2, Missile, Chosen;
 
         public static SpriteFont UIfont, UIfontSmall;
         public static Texture2D UIitemHolder, UIitemSelected;
@@ -64,7 +64,8 @@ namespace TryAgain
             */
             whitePixel = cm.Load<Texture2D>(@"UI/pxl");
 
-            Shield = cm.Load<Texture2D>(@"Sprites\RandomAnimations\Shield");
+            Shield1 = cm.Load<Texture2D>(@"Sprites\RandomAnimations\bouclier1");
+            Shield2 = cm.Load<Texture2D>(@"Sprites\RandomAnimations\bouclier2");
             Missile = cm.Load<Texture2D>(@"Sprites\RandomAnimations\Missile");
             Fleche = cm.Load<Texture2D>(@"Menu\fleche");
             Fleche2 = cm.Load<Texture2D>(@"Menu\fleche2");

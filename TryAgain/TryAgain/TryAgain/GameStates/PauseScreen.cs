@@ -82,7 +82,7 @@ namespace TryAgain.GameStates
                         sb.DrawString(Textures.UIfont, "Alt: move the camera", new Vector2(15, 320), GameScreen.userinterface.caracolor);
                         sb.DrawString(Textures.UIfont, "G: throw the objet", new Vector2(15, 340), GameScreen.userinterface.caracolor);
                         sb.DrawString(Textures.UIfont, "C: Craft interface", new Vector2(15, 360), GameScreen.userinterface.caracolor);
-                        sb.DrawString(Textures.UIfont, "Clic gauche: lots\n of things!", new Vector2(15, 380), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "Left click: lots\n of things!", new Vector2(15, 380), GameScreen.userinterface.caracolor);
                     }
                     else
                     {

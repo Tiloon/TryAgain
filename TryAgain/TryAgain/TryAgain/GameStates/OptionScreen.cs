@@ -25,8 +25,6 @@ namespace TryAgain.GameStates
         float saveSon = 0;
         bool u = true;
         static public bool eng = true;
-        string sound = "sound";
-        string choix = "Choix du personnage";
 
         Tuple<cButton, Vector2>[] resolutions;
 
@@ -111,16 +109,12 @@ namespace TryAgain.GameStates
             if (buttonEnglish.IsClicked(mouse))
             {
                 eng = true;
-                sound = "sound";
-                choix = "choice character";
                 init(Game1.graphics.GraphicsDevice);
             }
             if (buttonFrancais.IsClicked(mouse))
             {
                 eng = false;
-                sound = "son";
                 init(Game1.graphics.GraphicsDevice);
-                choix = "Choix du personnage";
             }
             if (ButtonFullscreen.IsClicked(mouse) || ButtonFenetre.IsClicked(mouse))
             {
@@ -145,7 +139,10 @@ namespace TryAgain.GameStates
                 ButtonFullscreen.Draw(sb);
 
             //choix du personnage
-            sb.DrawString(Textures.UIfont, choix + ":", new Vector2(400, 10), Color.Black);
+            if (eng)
+                sb.DrawString(Textures.UIfont, "Character choice:", new Vector2(400, 10), Color.Black);
+            else
+                sb.DrawString(Textures.UIfont, "Choix du personnage:", new Vector2(400, 10), Color.Black);
             if (Online.Connection.avatar == "Ttony")
                 sb.Draw(Textures.Chosen, new Vector2(295, 45), Color.Black);
             sb.DrawString(Textures.UIfont, "Tony:", new Vector2(200, 100), Color.Black);
@@ -159,11 +156,14 @@ namespace TryAgain.GameStates
             ButtonFlecheGauche.Draw(sb);
             ButtonFlecheDroite.Draw(sb);
             sb.DrawString(Textures.UIfont, ((int)(son * 100)).ToString() + "%", new Vector2(410, 410), Color.Black);
-            sb.DrawString(Textures.UIfont, sound + ":", new Vector2(200, 400), Color.Black, 0F, new Vector2(0, 0), 1.42F, SpriteEffects.None, 0);
+            if (eng)
+                sb.DrawString(Textures.UIfont, "Sound:", new Vector2(200, 400), Color.Black, 0F, new Vector2(0, 0), 1.42F, SpriteEffects.None, 0);
+            else
+                sb.DrawString(Textures.UIfont, "Son:", new Vector2(200, 400), Color.Black, 0F, new Vector2(0, 0), 1.42F, SpriteEffects.None, 0);
             soundOff.Draw(sb);
 
             //changer langue
-            if(eng)
+            if (eng)
                 sb.DrawString(Textures.UIfont, "Choose language:", new Vector2(200, 550), Color.Black);
             else
                 sb.DrawString(Textures.UIfont, "Choisir la langue:", new Vector2(200, 550), Color.Black);

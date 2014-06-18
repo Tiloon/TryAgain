@@ -964,6 +964,30 @@
       <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
       <Time>2014-05-05T14:33:34.1926301+02:00</Time>
     </Item>
+    <Item>
+      <Source>Sprites\RandomAnimations\bouclier1.png</Source>
+      <Name>Sprites\RandomAnimations\bouclier1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\bouclier1.xnb</Output>
+      <Time>2014-06-18T18:47:21.9970303+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RandomAnimations\bouclier2.png</Source>
+      <Name>Sprites\RandomAnimations\bouclier2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\bouclier2.xnb</Output>
+      <Time>2014-06-18T18:47:29.265446+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
