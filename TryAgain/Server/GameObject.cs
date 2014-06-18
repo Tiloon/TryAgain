@@ -55,6 +55,7 @@ namespace Server
 
         public void Update()
         {
+            Console.WriteLine(this.type);
             if (this.type == "Monster")
             {
                 if (this.target != null)

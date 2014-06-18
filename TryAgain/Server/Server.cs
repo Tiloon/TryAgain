@@ -44,6 +44,7 @@ namespace Server
             }
             json = Encoding.ASCII.GetString(myDataBuffer);
             map = JsonConvert.DeserializeObject<string[,]>(json);
+            Console.WriteLine("Map loaded (size : (" + map.GetLength(0) + ":" + map.GetLength(1) + ")");
         }
 
         public void LoadNPCList(String path)
@@ -64,9 +65,11 @@ namespace Server
                 e.name = npc.commonName;
                 e.ID = npc.name;
                 e.spr = npc.spr;
+                e.type = npc.type;
 
                 goblist.Add(npc.name, e);
                 igIDs.Add(npc.name);
+                Console.WriteLine("Loaded : " + npc.name + "(poistion : (" + e.x.ToString() + ":" + e.y.ToString() + ")");
             }
         }
 

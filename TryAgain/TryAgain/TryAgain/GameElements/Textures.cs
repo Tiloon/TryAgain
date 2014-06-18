@@ -39,6 +39,8 @@ namespace TryAgain
         public static SpriteFont UIfont, UIfontSmall;
         public static Texture2D UIitemHolder, UIitemSelected;
 
+        public static bool everythingLoaded = false;
+
         // UI gauges
         public static Texture2D[] healthGauge = new Texture2D[9]; // BG + 8 others
         public static Texture2D[] manaGauge = new Texture2D[9]; // BG + 8 others
@@ -133,6 +135,7 @@ namespace TryAgain
 
             fogCafeine = cm.Load<Texture2D>(@"UI\gauge\fog");
 
+            everythingLoaded = true;
             Themes.PlayTheme();
         }
 

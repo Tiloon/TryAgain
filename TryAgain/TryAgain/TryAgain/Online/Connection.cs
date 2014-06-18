@@ -216,7 +216,9 @@ namespace TryAgain.Online
                         {
                             serverReq = serverReq.Remove(0, 4);
                             try 
-	                        {	        
+	                        {
+
+                                GameStates.MainMenuScreen.isPlayable = false;
 		                        /*
                                  * int tokenPos = serverReq.IndexOf('&');
                                 if (tokenPos <= 0)
@@ -247,8 +249,9 @@ namespace TryAgain.Online
                                     throw;
                                 }
                                 json = Encoding.ASCII.GetString(myDataBuffer);
+                                while (!Textures.everythingLoaded) { };
                                 Tilemap.MapLoadFromJSON(json);
-                                Debug.Show("coucou");
+                                GameStates.MainMenuScreen.isPlayable = true;
 	                        }
 	                        catch (Exception e)
 	                        {

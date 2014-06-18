@@ -28,6 +28,7 @@ namespace TryAgain.GameStates
         cButton ButtonAbout;
         cButton ButtonExit;
         cButton ButtonReturn;
+        public static bool isPlayable = true;
 
         public MainMenuScreen()
         {
@@ -40,7 +41,7 @@ namespace TryAgain.GameStates
             switch (CurrentMenuState)
             {
                 case MenuState.MainMenu:
-                    if (ButtonPlay.IsClicked(mouse))
+                    if (ButtonPlay.IsClicked(mouse) && isPlayable)
                         return ScreenType.Game;
                     if (ButtonExit.IsClicked(mouse))
                         return ScreenType.Quit;

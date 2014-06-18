@@ -22,6 +22,7 @@ namespace Shared
         public int defense;
         public int criticalrate;
         public float speed;
+        public string strspeed;
         public static Stats operator +(Stats s1, Stats s2)
         {
             Stats stats;
@@ -40,6 +41,7 @@ namespace Shared
             stats.defense = s1.defense + s2.defense;
             stats.criticalrate = s1.criticalrate + s2.criticalrate;
             stats.speed = s1.speed + s2.speed;
+            stats.strspeed = Shared.Converter.FloatToString(stats.speed);
             return stats;
         }
     }

@@ -37,6 +37,11 @@ namespace WinFormsGraphicsDevice
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label27 = new System.Windows.Forms.Label();
+            this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
             this.label21 = new System.Windows.Forms.Label();
             this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
             this.label19 = new System.Windows.Forms.Label();
@@ -76,6 +81,7 @@ namespace WinFormsGraphicsDevice
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.mapEditor = new WinFormsGraphicsDevice.ShowMap();
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
@@ -103,13 +109,9 @@ namespace WinFormsGraphicsDevice
             this.label22 = new System.Windows.Forms.Label();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
-            this.label25 = new System.Windows.Forms.Label();
-            this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
-            this.mapEditor = new WinFormsGraphicsDevice.ShowMap();
             this.saveFileDialog2 = new System.Windows.Forms.SaveFileDialog();
+            this.label28 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.SuspendLayout();
@@ -120,6 +122,8 @@ namespace WinFormsGraphicsDevice
             this.splitContainer2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
@@ -147,8 +151,6 @@ namespace WinFormsGraphicsDevice
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             this.SuspendLayout();
             // 
             // saveFileDialog1
@@ -203,6 +205,8 @@ namespace WinFormsGraphicsDevice
             // 
             // splitContainer2.Panel2
             // 
+            this.splitContainer2.Panel2.Controls.Add(this.textBox5);
+            this.splitContainer2.Panel2.Controls.Add(this.label28);
             this.splitContainer2.Panel2.Controls.Add(this.textBox4);
             this.splitContainer2.Panel2.Controls.Add(this.button5);
             this.splitContainer2.Panel2.Controls.Add(this.button3);
@@ -267,6 +271,79 @@ namespace WinFormsGraphicsDevice
             this.tabPage3.Text = "Stats";
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(109, 367);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(18, 13);
+            this.label27.TabIndex = 30;
+            this.label27.Text = "y :";
+            // 
+            // numericUpDown19
+            // 
+            this.numericUpDown19.DecimalPlaces = 4;
+            this.numericUpDown19.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.numericUpDown19.Location = new System.Drawing.Point(133, 365);
+            this.numericUpDown19.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numericUpDown19.Name = "numericUpDown19";
+            this.numericUpDown19.Size = new System.Drawing.Size(99, 20);
+            this.numericUpDown19.TabIndex = 29;
+            this.numericUpDown19.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(109, 341);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(18, 13);
+            this.label26.TabIndex = 28;
+            this.label26.Text = "x :";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(3, 346);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(50, 13);
+            this.label25.TabIndex = 27;
+            this.label25.Text = "Position :";
+            // 
+            // numericUpDown18
+            // 
+            this.numericUpDown18.DecimalPlaces = 4;
+            this.numericUpDown18.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.numericUpDown18.Location = new System.Drawing.Point(133, 339);
+            this.numericUpDown18.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numericUpDown18.Name = "numericUpDown18";
+            this.numericUpDown18.Size = new System.Drawing.Size(99, 20);
+            this.numericUpDown18.TabIndex = 26;
+            this.numericUpDown18.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             // 
             // label21
             // 
@@ -567,6 +644,7 @@ namespace WinFormsGraphicsDevice
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(162, 20);
             this.textBox4.TabIndex = 17;
+            this.textBox4.Text = "Mbio1";
             // 
             // button5
             // 
@@ -688,6 +766,19 @@ namespace WinFormsGraphicsDevice
             this.splitContainer1.Size = new System.Drawing.Size(772, 529);
             this.splitContainer1.SplitterDistance = 617;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // mapEditor
+            // 
+            this.mapEditor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mapEditor.Location = new System.Drawing.Point(0, 0);
+            this.mapEditor.Name = "mapEditor";
+            this.mapEditor.Size = new System.Drawing.Size(617, 529);
+            this.mapEditor.TabIndex = 1;
+            this.mapEditor.Text = "spinningTriangleControl";
+            this.mapEditor.Click += new System.EventHandler(this.spinningTriangleControl_Click);
+            this.mapEditor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mapEditor_MouseDown);
+            this.mapEditor.MouseMove += new System.Windows.Forms.MouseEventHandler(this.spinningTriangleControl_MouseMove_1);
+            this.mapEditor.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mapEditor_MouseUp);
             // 
             // button2
             // 
@@ -989,95 +1080,26 @@ namespace WinFormsGraphicsDevice
             this.openFileDialog3.FileName = "openFileDialog3";
             this.openFileDialog3.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog3_FileOk);
             // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(3, 346);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(50, 13);
-            this.label25.TabIndex = 27;
-            this.label25.Text = "Position :";
-            // 
-            // numericUpDown18
-            // 
-            this.numericUpDown18.DecimalPlaces = 4;
-            this.numericUpDown18.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            this.numericUpDown18.Location = new System.Drawing.Point(133, 339);
-            this.numericUpDown18.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numericUpDown18.Name = "numericUpDown18";
-            this.numericUpDown18.Size = new System.Drawing.Size(99, 20);
-            this.numericUpDown18.TabIndex = 26;
-            this.numericUpDown18.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(109, 341);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(18, 13);
-            this.label26.TabIndex = 28;
-            this.label26.Text = "x :";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(109, 367);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(18, 13);
-            this.label27.TabIndex = 30;
-            this.label27.Text = "y :";
-            // 
-            // numericUpDown19
-            // 
-            this.numericUpDown19.DecimalPlaces = 4;
-            this.numericUpDown19.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            this.numericUpDown19.Location = new System.Drawing.Point(133, 365);
-            this.numericUpDown19.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numericUpDown19.Name = "numericUpDown19";
-            this.numericUpDown19.Size = new System.Drawing.Size(99, 20);
-            this.numericUpDown19.TabIndex = 29;
-            this.numericUpDown19.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            // 
-            // mapEditor
-            // 
-            this.mapEditor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapEditor.Location = new System.Drawing.Point(0, 0);
-            this.mapEditor.Name = "mapEditor";
-            this.mapEditor.Size = new System.Drawing.Size(617, 529);
-            this.mapEditor.TabIndex = 1;
-            this.mapEditor.Text = "spinningTriangleControl";
-            this.mapEditor.Click += new System.EventHandler(this.spinningTriangleControl_Click);
-            this.mapEditor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mapEditor_MouseDown);
-            this.mapEditor.MouseMove += new System.Windows.Forms.MouseEventHandler(this.spinningTriangleControl_MouseMove_1);
-            this.mapEditor.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mapEditor_MouseUp);
-            // 
             // saveFileDialog2
             // 
             this.saveFileDialog2.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog2_FileOk);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(16, 295);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(37, 13);
+            this.label28.TabIndex = 18;
+            this.label28.Text = "Type :";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(19, 314);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 19;
+            this.textBox5.Text = "Monster";
             // 
             // MainForm
             // 
@@ -1101,6 +1123,8 @@ namespace WinFormsGraphicsDevice
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
@@ -1131,8 +1155,6 @@ namespace WinFormsGraphicsDevice
             this.tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1220,6 +1242,8 @@ namespace WinFormsGraphicsDevice
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.NumericUpDown numericUpDown18;
         private System.Windows.Forms.SaveFileDialog saveFileDialog2;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label28;
 
 
     }
