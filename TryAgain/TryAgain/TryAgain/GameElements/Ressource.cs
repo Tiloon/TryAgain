@@ -31,6 +31,14 @@ namespace TryAgain.GameElements
             this.item = Ressourceslist.idtoitem[id];
         }
 
+        public Ressource()
+        {
+            this.x = rd.Next(Game1.graphics.PreferredBackBufferWidth);
+            this.y = rd.Next(Game1.graphics.PreferredBackBufferHeight);
+            this.id = rd.Next(11);
+            this.item = Ressourceslist.idtoitem[id];
+        }
+
         public void Draw(SpriteBatch sb)
         {
             sb.Draw(item, new Rectangle (x, y, item.Width, item.Height), Color.White);
@@ -45,13 +53,13 @@ namespace TryAgain.GameElements
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.Right) && (x > 0))
-                x--;
+                x-=4;
             if (Keyboard.GetState().IsKeyDown(Keys.Left) && (x < Game1.graphics.PreferredBackBufferWidth))
-                x++;
+                x+=4;
             if (Keyboard.GetState().IsKeyDown(Keys.Up) && (y > 0))
-                y--;
+                y+=4;
             if (Keyboard.GetState().IsKeyDown(Keys.Down) && (y < Game1.graphics.PreferredBackBufferHeight))
-                y++;
+                y-=4;
             return false;
         }
     }
