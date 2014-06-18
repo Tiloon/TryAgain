@@ -1,0 +1,58 @@
+[
+	{
+		"Item1": "Therbe",
+		"Item2": "Sprites\\tileherbe.png",
+	},
+	{
+		"Item1": "Tsable",
+		"Item2": "Sprites\\tilesable.png",
+	},
+	{
+		"Item1": "Tneige",
+		"Item2": "Sprites\\tileneige.png",
+	},
+	{
+		"Item1": "Tcaillou",
+		"Item2": "Sprites\\tilecaillou.png",
+	},
+	{
+		"Item1": "Taqua",
+		"Item2": "Sprites\\Halfwalkable\\tileaqua.png",
+	},
+	{
+		"Item1": "Tfire",
+		"Item2": "Sprites\\Halfwalkable\\tilefire.png",
+	},
+	{
+		"Item1": "Tbrique",
+		"Item2": "Sprites\\terrain\\brique.png",
+	},
+	{
+		"Item1": "Tglace",
+		"Item2": "Sprites\\terrain\\glace.png",
+	},
+	{
+		"Item1": "Tneige2",
+		"Item2": "Sprites\\terrain\\neige.png",
+	},
+	{
+		"Item1": "Tpierrenoi",
+		"Item2": "Sprites\\terrain\\pierrenoir.png",
+	},
+	{
+		"Item1": "Tsable2",
+		"Item2": "Sprites\\terrain\\sable.png",
+	},
+	{
+		"Item1": "Tterre",
+		"Item2": "Sprites\\terrain\\terre.png",
+	},
+	{
+		"Item1": "Tpierre",
+		"Item2": "Sprites\\terrain\\pierre.png",
+	},
+	{
+		"Item1": "Tpierre2",
+		"Item2": "Sprites\\terrain\\pierre2.png",
+	},
+]
