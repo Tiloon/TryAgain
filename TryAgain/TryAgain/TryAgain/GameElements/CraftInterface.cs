@@ -29,7 +29,7 @@ namespace TryAgain.GameElements
             for (int i = 0; i < totalnbressources; i++)
                 quantity[i] = 2;
             for (int i = 0; i < Craft.nbcraftpossibles; i++)
-                Craft.CraftInventory[i] = false;
+                Craft.CraftInventory[i] = true;
 
             names[0] = "branche d'arbre";
             names[1] = "tas de bois";
@@ -179,7 +179,11 @@ namespace TryAgain.GameElements
             sb.Draw(Textures.X, new Rectangle(Tilemap.variationsizegraphicsX, 560, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[10].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 560), Color.Black);
 
-
+            sb.Draw(Textures.c0potion, new Rectangle(315, 160, 40, 40), Color.White);
+            sb.Draw(Textures.c1shield, new Rectangle(315, 200, 40, 40), Color.White);
+            sb.Draw(Textures.c2gun1, new Rectangle(315, 240, 40, 40), Color.White);
+            sb.Draw(Textures.c3bottes, new Rectangle(315, 280, 40, 40), Color.White);
+            sb.Draw(Textures.c4cannon, new Rectangle(315, 320, 40, 40), Color.White);
         }
     }
 }

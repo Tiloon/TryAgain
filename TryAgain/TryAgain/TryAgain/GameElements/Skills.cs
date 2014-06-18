@@ -97,15 +97,15 @@ namespace TryAgain.GameElements
                 if (shieldtimer < 10)
                 {
                     //sb.Draw(Textures.Shield1, new Vector2((hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), null, Color.White, 0f, Vector2.Zero,
-        //new Vector2(64.0F / (float)(Textures.Shield1.Width), 64.0F / (float)(Textures.Shield1.Height)), SpriteEffects.None, 0f);
+                    //new Vector2(64.0F / (float)(Textures.Shield1.Width), 64.0F / (float)(Textures.Shield1.Height)), SpriteEffects.None, 0f);
                     sb.Draw(Textures.Shield1, new Vector2((hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), null, Color.White, 0f, Vector2.Zero,
-    new Vector2(96.0F / (float)(Textures.Shield1.Width), 96.0F / (float)(Textures.Shield1.Height)), SpriteEffects.None, 0f); 
+    new Vector2(96.0F / (float)(Textures.Shield1.Width), 96.0F / (float)(Textures.Shield1.Height)), SpriteEffects.None, 0f);
                     shieldtimer++;
                 }
                 if (shieldtimer >= 10)
                 {
                     sb.Draw(Textures.Shield2, new Vector2((hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), null, Color.White, 0f, Vector2.Zero,
-    new Vector2(96.0F / (float)(Textures.Shield2.Width), 96.0F / (float)(Textures.Shield2.Height)), SpriteEffects.None, 0f); 
+    new Vector2(96.0F / (float)(Textures.Shield2.Width), 96.0F / (float)(Textures.Shield2.Height)), SpriteEffects.None, 0f);
                     shieldtimer++;
                 }
                 if (shieldtimer == 20)
@@ -124,11 +124,16 @@ namespace TryAgain.GameElements
         //update draw
         static public void Draw(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState)
         {
-            Shield(sb, pos, hero, keyBoardState);
-            Missile(sb, pos, hero, keyBoardState);
-            Boots(sb, pos, hero, keyBoardState);
-            Coca(sb, pos, hero, keyBoardState);
-            ParticuleCannon(sb, pos, hero, keyBoardState);
+            if (Craft.CraftInventory[0])
+                Shield(sb, pos, hero, keyBoardState);
+            if (Craft.CraftInventory[1])
+                Missile(sb, pos, hero, keyBoardState);
+            if (Craft.CraftInventory[2])
+                Boots(sb, pos, hero, keyBoardState);
+            if (Craft.CraftInventory[3])
+                Coca(sb, pos, hero, keyBoardState);
+            if (Craft.CraftInventory[4])
+                ParticuleCannon(sb, pos, hero, keyBoardState);
         }
     }
 }
