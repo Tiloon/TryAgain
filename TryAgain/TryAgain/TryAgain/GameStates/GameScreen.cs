@@ -25,7 +25,7 @@ namespace TryAgain.GameStates
         public static UI userinterface = new UI();
         public static Hero hero;
         public static string name;
-
+        KeyboardState ancienState, newState;
         public static List<Ressource> RessList = new List<Ressource>();
         public static List<GameObject> GOList = new List<GameObject>();
         private static bool hasStarted = false;
@@ -83,11 +83,18 @@ namespace TryAgain.GameStates
             }
 
             previousstate = mouse.LeftButton;
-            KeyboardState newState = Keyboard.GetState();
+            ancienState = newState;
+            newState = Keyboard.GetState();
             if (newState.IsKeyDown(Keys.Escape))
                 return ScreenType.Pause;
             if (newState.IsKeyDown(Keys.NumPad9))
                 hero.stats.lp = 0;
+            if (newState.IsKeyDown(Keys.W) && ancienState.IsKeyUp(Keys.W))
+            {
+                RessList.Clear();
+                RessList.Add(new Ressource());
+            }
+
             for (int i = 0; i < GOList.Count; i++)
             {
                 if (!GOList[i].toRemove()) // || !GOList[i].toupdate ???
@@ -109,7 +116,7 @@ namespace TryAgain.GameStates
                     if (r.Update(herorect))
                         RessList.Remove(r);
             }*/
-            if (RessList.Count!=0)
+            if (RessList.Count != 0)
                 if (RessList[0].Update(herorect))
                     RessList.Remove(RessList[0]);
             if (RessList.Count == 0)
@@ -135,6 +142,9 @@ namespace TryAgain.GameStates
                 userinterface.Draw(sb);
                 Chat.Draw(sb);
 
+                foreach (Ressource r in RessList)
+                    r.Draw(sb);
+
                 if (!Chat.isWriting)
                 {
                     KeyboardState newState = Keyboard.GetState();
@@ -149,9 +159,6 @@ namespace TryAgain.GameStates
             {
                 GameOver.Draw(sb, Game1.gmt);
             }
-
-            foreach (Ressource r in RessList)
-                r.Draw(sb);
         }
 
         public GameObject GetClicked(MouseState mouse)

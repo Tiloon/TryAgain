@@ -52,13 +52,13 @@ namespace TryAgain.GameElements
                 return true;
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.Right) && (x > 0))
+            if (Keyboard.GetState().IsKeyDown(Keys.Right) && (x > 5))
                 x-=5;
-            if (Keyboard.GetState().IsKeyDown(Keys.Left) && (x < Game1.graphics.PreferredBackBufferWidth))
+            if (Keyboard.GetState().IsKeyDown(Keys.Left) && (x < Game1.graphics.PreferredBackBufferWidth - 5))
                 x+=5;
-            if (Keyboard.GetState().IsKeyDown(Keys.Up) && (y > 0))
+            if (Keyboard.GetState().IsKeyDown(Keys.Up) && (y > 5))
                 y+=5;
-            if (Keyboard.GetState().IsKeyDown(Keys.Down) && (y < Game1.graphics.PreferredBackBufferHeight))
+            if (Keyboard.GetState().IsKeyDown(Keys.Down) && (y < Game1.graphics.PreferredBackBufferHeight -5))
                 y-=5;
             return false;
         }

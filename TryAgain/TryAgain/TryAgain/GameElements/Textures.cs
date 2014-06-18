@@ -35,6 +35,7 @@ namespace TryAgain
         public static Texture2D whitePixel;
 
         public static Texture2D Shield1, Shield2, Missile, Chosen;
+        public static Texture2D c0potion, c1shield, c2gun1, c3bottes, c4cannon;
 
         public static SpriteFont UIfont, UIfontSmall;
         public static Texture2D UIitemHolder, UIitemSelected;
@@ -88,6 +89,12 @@ namespace TryAgain
             IX = cm.Load<Texture2D>(@"Sprites\Ressources\10");
             X = cm.Load<Texture2D>(@"Sprites\Ressources\11");
             CraftInterface = cm.Load<Texture2D>(@"Menu\CraftInterface");
+            c0potion = cm.Load<Texture2D>(@"Crafts\0potion");
+            c1shield = cm.Load<Texture2D>(@"Crafts\1shield");
+            c2gun1 = cm.Load<Texture2D>(@"Crafts\2gun1");
+            c3bottes = cm.Load<Texture2D>(@"Crafts\3bottes");
+            c4cannon = cm.Load<Texture2D>(@"Crafts\4canon");
+
             GameOver = cm.Load<Texture2D>(@"Menu\GameOver");
             storyboard = cm.Load<Texture2D>(@"Menu\storyboard");
 

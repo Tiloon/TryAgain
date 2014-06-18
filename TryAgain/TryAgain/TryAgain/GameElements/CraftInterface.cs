@@ -57,14 +57,14 @@ namespace TryAgain.GameElements
         }
     }
 
-    enum Craftpossible { torche, bouclier, gun1, bottes, coca, particulecannon }
+    enum Craftpossible { potion, bouclier, gun1, bottes, coca, particulecannon }
     class Craft
     {
         public static int nbcraftpossibles = 6;
         public static bool[] CraftInventory = new bool[nbcraftpossibles];
         static public bool Crafter(Craftpossible test)
         {
-            if (test == Craftpossible.torche) //Torche = 2 feu + branche
+            if (test == Craftpossible.potion) //Potion = 2 feu + branche
             {
                 if (Ressourceslist.quantity[0] < 1 && Ressourceslist.quantity[11] < 2)
                     return false;
@@ -178,6 +178,8 @@ namespace TryAgain.GameElements
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[9].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 520), Color.Black);
             sb.Draw(Textures.X, new Rectangle(Tilemap.variationsizegraphicsX, 560, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[10].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 560), Color.Black);
+
+
         }
     }
 }
