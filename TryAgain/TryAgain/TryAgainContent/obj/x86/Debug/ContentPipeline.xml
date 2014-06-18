@@ -939,6 +939,9 @@
       <Name>Textures\flame</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 0, 0, 255</Data>
+      </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\flame.xnb</Output>
       <Time>2014-06-18T12:30:07.3521881+02:00</Time>

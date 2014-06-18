@@ -30,14 +30,14 @@ namespace DPSF_Demo.ParticleSystems
 #if (WINDOWS)
 	[Serializable]
 #endif
-	class DefaultSpriteParticleSystemTemplate : DefaultSpriteParticleSystem
+	class FlameParticle : DefaultSpriteParticleSystem
 	{
 		/// <summary>
 		/// Constructor
 		/// </summary>
 		/// <param name="cGame">Handle to the Game object being used. Pass in null for this 
 		/// parameter if not using a Game object.</param>
-		public DefaultSpriteParticleSystemTemplate(Game cGame) : base(cGame) { }
+		public FlameParticle(Game cGame) : base(cGame) { }
 
 		//===========================================================
 		// Structures and Variables
@@ -77,7 +77,7 @@ namespace DPSF_Demo.ParticleSystems
 			// TODO: Change any Initialization parameters desired and the Name
 			//-----------------------------------------------------------
 			// Initialize the Particle System before doing anything else
-			InitializeSpriteParticleSystem(cGraphicsDevice, cContentManager, 1000, 50000, "Textures/Star9", cSpriteBatch);
+			InitializeSpriteParticleSystem(cGraphicsDevice, cContentManager, 1000, 50000, "Textures/Flame", cSpriteBatch);
 			
 			// Set the Name of the Particle System
 			Name = "Default Sprite Particle System Template";
@@ -111,22 +111,22 @@ namespace DPSF_Demo.ParticleSystems
 			// Setup the Initial Properties of the Particles.
 			// These are only applied if using InitializeParticleUsingInitialProperties 
 			// as the Particle Initialization Function.
-			InitialProperties.LifetimeMin = 2.0f;
-			InitialProperties.LifetimeMax = 2.0f;
-			InitialProperties.PositionMin = Vector3.Zero;
-			InitialProperties.PositionMax = Vector3.Zero;
+			InitialProperties.LifetimeMin = 1.0f;
+			InitialProperties.LifetimeMax = 1.0f;
+			InitialProperties.PositionMin = new Vector3(-500, 200, 0);
+            InitialProperties.PositionMax = new Vector3(-500, 200, 800);
 			InitialProperties.VelocityMin = new Vector3(-200, -200, 0);
 			InitialProperties.VelocityMax = new Vector3(200, -400, 0);
-			InitialProperties.RotationMin = 0.0f;
+            InitialProperties.RotationMin = 0.0f;
 			InitialProperties.RotationMax = MathHelper.Pi;
 			InitialProperties.RotationalVelocityMin = -MathHelper.Pi;
 			InitialProperties.RotationalVelocityMax = MathHelper.Pi;
-			InitialProperties.StartWidthMin = mfSizeMin;
-			InitialProperties.StartWidthMax = mfSizeMax;
-			InitialProperties.StartHeightMin = mfSizeMin;
-			InitialProperties.StartHeightMax = mfSizeMax;
-			InitialProperties.EndWidthMin = 30;
-			InitialProperties.EndWidthMax = 30;
+			InitialProperties.StartWidthMin = 0;
+			InitialProperties.StartWidthMax = 0;
+			InitialProperties.StartHeightMin = 600;
+			InitialProperties.StartHeightMax = 600;
+			InitialProperties.EndWidthMin = 300;
+			InitialProperties.EndWidthMax = 300;
 			InitialProperties.EndHeightMin = 30;
 			InitialProperties.EndHeightMax = 30;
 			InitialProperties.StartColorMin = Color.Black;
@@ -155,7 +155,7 @@ namespace DPSF_Demo.ParticleSystems
 			ParticleSystemEvents.AddTimedEvent(0.5f, UpdateParticleSystemEmitParticlesAutomaticallyOff);
 
 			// Setup the Emitter
-			Emitter.ParticlesPerSecond = 25;
+			Emitter.ParticlesPerSecond = 18;
 			Emitter.PositionData.Position = new Vector3(GraphicsDevice.Viewport.Width / 2, GraphicsDevice.Viewport.Height, 0);
 		}
 

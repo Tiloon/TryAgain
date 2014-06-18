@@ -28,7 +28,7 @@ namespace TryAgain
         public static bool cannonpartic = false;
 
         DefaultQuadParticleSystemTemplate mcParticleSystem = null;
-        DefaultSpriteParticleSystemTemplate part = null;
+        FlameParticle part = null;
         Vector3 cameraPosition = new Vector3(0, 50, -200);
         public static GameTime gmt;
 
@@ -62,8 +62,8 @@ namespace TryAgain
             Textures.load(Content);
 
             mcParticleSystem = new DefaultQuadParticleSystemTemplate(this);
-            mcParticleSystem.AutoInitialize(this.GraphicsDevice, this.Content, null);
-            part = new DefaultSpriteParticleSystemTemplate(this);
+            mcParticleSystem.AutoInitialize(this.GraphicsDevice, this.Content, null); //null
+            part = new FlameParticle(this);
             part.AutoInitialize(this.GraphicsDevice, this.Content, null);
         }
 
