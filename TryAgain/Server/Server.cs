@@ -217,7 +217,7 @@ namespace Server
                                     GameObject el = new GameObject();
                                     el.name = "monster00";
                                     el.ID = "monster00";
-                                    el.spr = "Mbio1";
+                                    el.spr = "Mghost";
                                     el.type = "Monster";
                                     el.x = 3.0f;
                                     el.X = Convert.ToBase64String(BitConverter.GetBytes(el.x));

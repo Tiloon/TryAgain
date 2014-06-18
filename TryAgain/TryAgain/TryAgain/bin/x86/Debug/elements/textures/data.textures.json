@@ -11,4 +11,20 @@
 		"Item1": "Tpierre",
 		"Item2": "pim.png",
 	},
+	{
+		"Item1": "Mdragon",
+		"Item2": "dragon.png",
+	},
+	{
+		"Item1": "Mghost",
+		"Item2": "ghost.png",
+	},
+	{
+		"Item1": "Mspider",
+		"Item2": "spider.png",
+	},
+	{
+		"Item1": "Mzombie",
+		"Item2": "zombie.png",
+	},
 ]

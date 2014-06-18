@@ -138,6 +138,12 @@ namespace TryAgain
             everythingLoaded = true;
             Themes.PlayTheme();
         }
+        /*
+        public static Texture2D GetOrLoad(string name)
+        {
+            if(
+
+        }*/
 
         public static Texture2D Crop(Texture2D image, Rectangle source)
         {

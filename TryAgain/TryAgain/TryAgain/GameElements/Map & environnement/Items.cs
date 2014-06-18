@@ -162,6 +162,16 @@ namespace TryAgain
             this.position = pos;
             this.size = new Vector2(64, 64);
         }
+        /*
+        public GObItem(String name, String sprite, Vector2 position)
+            : base("GObItem", name)
+        {
+            this.bindedItem = new Item(name, name, 
+            //this.bindedItem = item;
+            //this.position = pos;
+            this.size = new Vector2(64, 64);
+        }*/
+
         public override void update()
         {
 

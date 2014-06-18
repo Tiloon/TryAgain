@@ -340,6 +340,10 @@ namespace TryAgain.Online
                                     gobElement = new Player(newgob.ID, newgob.spr, new Vector2(
                                     System.BitConverter.ToSingle(Convert.FromBase64String(newgob.X), 0),
                                     System.BitConverter.ToSingle(Convert.FromBase64String(newgob.Y), 0)));
+                                else if (newgob.type == "Item")
+                                    gobElement = new Player(newgob.ID, newgob.spr, new Vector2(
+                                    System.BitConverter.ToSingle(Convert.FromBase64String(newgob.X), 0),
+                                    System.BitConverter.ToSingle(Convert.FromBase64String(newgob.Y), 0)));
                                 else
                                     gobElement = new Player(newgob.ID, newgob.spr, new Vector2(
                                     System.BitConverter.ToSingle(Convert.FromBase64String(newgob.X), 0),
