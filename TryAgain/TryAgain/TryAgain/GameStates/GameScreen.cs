@@ -151,6 +151,7 @@ namespace TryAgain.GameStates
                     if (newState.IsKeyDown(Keys.C))
                     {
                         Craft.Draw(sb);
+                        Craft.Update(newState);
                     }
                     Skills.Draw(sb, hero.getPosition(), hero, newState);
                 }

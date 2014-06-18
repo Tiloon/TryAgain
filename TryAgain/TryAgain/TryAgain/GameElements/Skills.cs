@@ -54,9 +54,9 @@ namespace TryAgain.GameElements
                 missilepos.X += missilespeed;
                 foreach (GameObject obj in GameScreen.GOList)
                 {
-                    if (/*(obj.Type == "GameObject,Character,Monster") && */
+                    if ((obj.Type == "GameObject,Character,Monster") &&
                        (new Rectangle((int)missilepos.X, (int)missilepos.Y, Textures.Missile.Width, Textures.Missile.Height).Intersects
-                       (new Rectangle((int)(obj.position.X - (Hero.view.X + Hero.padding.X) * 64), (int)(obj.position.Y - (Hero.view.Y + Hero.padding.Y) * 64), 60, 60))))
+                       (new Rectangle((int)((obj.position.X - (Hero.view.X + Hero.padding.X)) * 64), ((int)(obj.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), 60, 60))))
                     {
                         obj.pv -= 25;
                         missile = false;
@@ -126,7 +126,7 @@ namespace TryAgain.GameElements
         {
             if (Craft.CraftInventory[0])
                 Shield(sb, pos, hero, keyBoardState);
-            if (Craft.CraftInventory[1])
+            //if (Craft.CraftInventory[1])
                 Missile(sb, pos, hero, keyBoardState);
             if (Craft.CraftInventory[2])
                 Boots(sb, pos, hero, keyBoardState);

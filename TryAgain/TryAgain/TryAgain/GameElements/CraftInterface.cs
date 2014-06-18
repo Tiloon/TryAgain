@@ -29,7 +29,7 @@ namespace TryAgain.GameElements
             for (int i = 0; i < totalnbressources; i++)
                 quantity[i] = 2;
             for (int i = 0; i < Craft.nbcraftpossibles; i++)
-                Craft.CraftInventory[i] = true;
+                Craft.CraftInventory[i] = false;
 
             names[0] = "branche d'arbre";
             names[1] = "tas de bois";
@@ -62,6 +62,22 @@ namespace TryAgain.GameElements
     {
         public static int nbcraftpossibles = 6;
         public static bool[] CraftInventory = new bool[nbcraftpossibles];
+
+        static public void Update(KeyboardState ks)
+        {
+            if (ks.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.NumPad0) && !CraftInventory[0])
+                Crafter(Craftpossible.potion);
+            if (ks.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.NumPad1) && !CraftInventory[1])
+                Crafter(Craftpossible.bouclier);
+            if (ks.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.NumPad2) && !CraftInventory[2])
+                Crafter(Craftpossible.gun1);
+            if (ks.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.NumPad3) && !CraftInventory[3])
+                Crafter(Craftpossible.bottes);
+            if (ks.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.NumPad4) && !CraftInventory[4])
+                Crafter(Craftpossible.coca);
+            if (ks.IsKeyDown(Microsoft.Xna.Framework.Input.Keys.NumPad5) && !CraftInventory[5])
+                Crafter(Craftpossible.particulecannon);
+        }
         static public bool Crafter(Craftpossible test)
         {
             if (test == Craftpossible.potion) //Potion = 2 feu + branche
