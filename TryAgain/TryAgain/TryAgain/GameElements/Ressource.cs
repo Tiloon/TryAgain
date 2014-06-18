@@ -33,8 +33,8 @@ namespace TryAgain.GameElements
 
         public Ressource()
         {
-            this.x = rd.Next(Game1.graphics.PreferredBackBufferWidth);
-            this.y = rd.Next(Game1.graphics.PreferredBackBufferHeight);
+            this.x = rd.Next(50, Game1.graphics.PreferredBackBufferWidth);
+            this.y = rd.Next(20, Game1.graphics.PreferredBackBufferHeight);
             this.id = rd.Next(11);
             this.item = Ressourceslist.idtoitem[id];
         }
@@ -46,20 +46,20 @@ namespace TryAgain.GameElements
 
         public bool Update(Rectangle persoRectangle)   //retourne en plus s'il y'a intersect et dans ce cas, on enlève ressource de liste
         {
-            if (persoRectangle.Intersects(new Rectangle(x, y, item.Width, item.Height)))
+            if (persoRectangle.Intersects(new Rectangle(x - item.Width, y - item.Height/2, item.Width, item.Height)))
             {
                 Ressourceslist.quantity[id]++;
                 return true;
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.Right) && (x > 0))
-                x-=4;
+                x-=5;
             if (Keyboard.GetState().IsKeyDown(Keys.Left) && (x < Game1.graphics.PreferredBackBufferWidth))
-                x+=4;
+                x+=5;
             if (Keyboard.GetState().IsKeyDown(Keys.Up) && (y > 0))
-                y+=4;
+                y+=5;
             if (Keyboard.GetState().IsKeyDown(Keys.Down) && (y < Game1.graphics.PreferredBackBufferHeight))
-                y-=4;
+                y-=5;
             return false;
         }
     }
