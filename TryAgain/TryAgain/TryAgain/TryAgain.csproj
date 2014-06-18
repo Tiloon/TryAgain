@@ -155,7 +155,7 @@
     <Compile Include="GameElements\cButton.cs" />
     <Compile Include="Online\Connection.cs" />
     <Compile Include="Particles\DefaultQuadParticleSystemTemplate.cs" />
-    <Compile Include="Particles\DefaultSpriteParticleSystemTemplate.cs" />
+    <Compile Include="Particles\Flameparticule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
