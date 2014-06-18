@@ -82,38 +82,38 @@ namespace TryAgain.GameElements
         {
             if (test == Craftpossible.potion) //Potion = 2 feu + branche
             {
-                if (Ressourceslist.quantity[0] < 1 && Ressourceslist.quantity[11] < 2)
+                if (Ressourceslist.quantity[0] < 1 && Ressourceslist.quantity[10] < 2)
                     return false;
                 else
                 {
                     Ressourceslist.quantity[0]--;
-                    Ressourceslist.quantity[11] -= 2;
+                    Ressourceslist.quantity[10] -= 2;
                     CraftInventory[0] = true;
                     return true;
                 }
             }
             else if (test == Craftpossible.bouclier) //Bouclier = 1 pierre + 1 bout de carton + 1 fer
             {
-                if (Ressourceslist.quantity[4] < 1 && Ressourceslist.quantity[5] < 1 && Ressourceslist.quantity[10] < 1)
+                if (Ressourceslist.quantity[4] < 1 && Ressourceslist.quantity[5] < 1 && Ressourceslist.quantity[9] < 1)
                     return false;
                 else
                 {
                     Ressourceslist.quantity[4]--;
                     Ressourceslist.quantity[5]--;
-                    Ressourceslist.quantity[10]--;
+                    Ressourceslist.quantity[9]--;
                     CraftInventory[1] = true;
                     return true;
                 }
             }
             else if (test == Craftpossible.gun1)  //gun1 = 1 poney + 1 fer + 1 terre
             {
-                if (Ressourceslist.quantity[8] < 1 && Ressourceslist.quantity[5] < 1 && Ressourceslist.quantity[9] < 1)
+                if (Ressourceslist.quantity[8] < 1 && Ressourceslist.quantity[5] < 1 && Ressourceslist.quantity[1] < 1)
                     return false;
                 else
                 {
                     Ressourceslist.quantity[8]--;
                     Ressourceslist.quantity[5]--;
-                    Ressourceslist.quantity[9]--;
+                    Ressourceslist.quantity[1]--;
                     CraftInventory[2] = true;
                     return true;
                 }
@@ -203,9 +203,17 @@ namespace TryAgain.GameElements
             sb.Draw(Textures.c5soda, new Rectangle(315, 360, 40, 40), Color.White);
 
             string msg;
-            /*for(int i = 0; i<
-            if(CraftInventory[i])
-                msg = "*/
+            for (int i = 0; i < nbcraftpossibles; i++)
+            {
+                if (CraftInventory[i])
+                    if (TryAgain.GameStates.OptionScreen.eng)
+                        msg = "Already crafted";
+                    else
+                        msg = "Craft fait";
+                else
+                    msg = "Craft : NumPAD" + i;
+                sb.DrawString(Textures.UIfont, msg, new Vector2(355, 160 + 40 *i), Color.White);
+            }
         }
     }
 }
