@@ -45,6 +45,14 @@ namespace TryAgain.GameElements
                 }
                 if (missilepos.X - missilespeed > Game1.graphics.PreferredBackBufferWidth)
                     missile = false;
+                if (Keyboard.GetState().IsKeyDown(Keys.Right) && (missilepos.X > 0))
+                    missilepos.X += 20 * hero.getStats().speed;
+                if (Keyboard.GetState().IsKeyDown(Keys.Left) && (missilepos.X < Game1.graphics.PreferredBackBufferWidth))
+                    missilepos.X -= 20 * hero.getStats().speed;
+                if (Keyboard.GetState().IsKeyDown(Keys.Up) && (missilepos.Y > 0))
+                    missilepos.Y += 20 * hero.getStats().speed;
+                if (Keyboard.GetState().IsKeyDown(Keys.Down) && (missilepos.Y < Game1.graphics.PreferredBackBufferHeight))
+                    missilepos.Y -= 20 * hero.getStats().speed;
             }
         }
 
