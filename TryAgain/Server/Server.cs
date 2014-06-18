@@ -227,6 +227,24 @@ namespace Server
                                     igIDs.Add("monster00");
                                 }
                             }
+                            else if (message == "additem")
+                            {
+                                if (!goblist.ContainsKey("item00"))
+                                {
+                                    Console.WriteLine("item added");
+                                    GameObject el = new GameObject();
+                                    el.name = "item00";
+                                    el.ID = "item00";
+                                    el.spr = "Mbio1";
+                                    el.type = "Item";
+                                    el.x = 3.0f;
+                                    el.X = Convert.ToBase64String(BitConverter.GetBytes(el.x));
+                                    el.y = 3.0f;
+                                    el.Y = Convert.ToBase64String(BitConverter.GetBytes(el.y));
+                                    goblist.Add("item00", el);
+                                    igIDs.Add("item00");
+                                }
+                            }
                             else if (message == "report")
                             {
                                 Console.WriteLine("REPORTED");
