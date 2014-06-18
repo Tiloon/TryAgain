@@ -21,6 +21,8 @@ namespace Server
             catch (Exception)
             {
             }
+            Console.WriteLine("Server stopped. Press [enter] to close.");
+            Console.Read();
         }
     }
 }
