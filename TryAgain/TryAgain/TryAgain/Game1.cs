@@ -29,6 +29,7 @@ namespace TryAgain
 
         DefaultQuadParticleSystemTemplate mcParticleSystem = null;
         FlameParticle part = null;
+        FlameParticle part2 = null;
         Vector3 cameraPosition = new Vector3(0, 50, -200);
         public static GameTime gmt;
 
@@ -65,6 +66,10 @@ namespace TryAgain
             mcParticleSystem.AutoInitialize(this.GraphicsDevice, this.Content, null); //null
             part = new FlameParticle(this);
             part.AutoInitialize(this.GraphicsDevice, this.Content, null);
+            part2 = new FlameParticle(this);
+            part2.AutoInitialize(this.GraphicsDevice, this.Content, null);
+            part2.InitialProperties.PositionMin.X = 500;
+            part2.InitialProperties.PositionMax.X = 500;
         }
 
         protected override void UnloadContent()
@@ -104,6 +109,10 @@ namespace TryAgain
                 part.SetCameraPosition(cameraPosition);
                 part.SetWorldViewProjectionMatrices(Matrix.Identity, sViewMatrix, sProjectionMatrix);
                 part.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
+                part2.SetDefaultEffect();
+                part2.SetCameraPosition(cameraPosition);
+                part2.SetWorldViewProjectionMatrices(Matrix.Identity, sViewMatrix, sProjectionMatrix);
+                part2.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
             }
             if (cannonpartic)
             {
@@ -125,7 +134,10 @@ namespace TryAgain
                 scenar.Drawlancement(spriteBatch, gameTime, skip);
             spriteBatch.End();
             if (newscreen == ScreenType.MainMenu)
+            {
                 part.Draw();
+                part2.Draw();
+            }
             if (cannonpartic)
                 mcParticleSystem.Draw();
             base.Draw(gameTime);
