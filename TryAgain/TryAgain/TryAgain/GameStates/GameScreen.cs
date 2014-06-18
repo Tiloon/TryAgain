@@ -26,6 +26,7 @@ namespace TryAgain.GameStates
         public static Hero hero;
         public static string name;
 
+        public static List<Ressource> RessList = new List<Ressource>();
         public static List<GameObject> GOList = new List<GameObject>();
         private static bool hasStarted = false;
 
@@ -80,7 +81,7 @@ namespace TryAgain.GameStates
                     GOList.Add(new GobVoid(new Vector2(mouse.X, mouse.Y)));
                 }
             }
-            
+
             previousstate = mouse.LeftButton;
             KeyboardState newState = Keyboard.GetState();
             if (newState.IsKeyDown(Keys.Escape))
@@ -97,11 +98,22 @@ namespace TryAgain.GameStates
                 }
                 else
                 {
-                    if(GOList[i].toupdate)
+                    if (GOList[i].toupdate)
                         GOList[i].update();
                 }
             }
-
+            Rectangle herorect = new Rectangle((int)(hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (int)(hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64, 20, 60);
+            /*if (RessList.Count != 0)
+            {
+                foreach (Ressource r in RessList)
+                    if (r.Update(herorect))
+                        RessList.Remove(r);
+            }*/
+            if (RessList.Count!=0)
+                if (RessList[0].Update(herorect))
+                    RessList.Remove(RessList[0]);
+            if (RessList.Count == 0)
+                RessList.Add(new Ressource());
             userinterface.update(ref hero);
             return this.GetState();
         }
@@ -137,6 +149,9 @@ namespace TryAgain.GameStates
             {
                 GameOver.Draw(sb, Game1.gmt);
             }
+
+            foreach (Ressource r in RessList)
+                r.Draw(sb);
         }
 
         public GameObject GetClicked(MouseState mouse)
@@ -144,7 +159,7 @@ namespace TryAgain.GameStates
             Rectangle mouse_rectangle = new Rectangle(mouse.X, mouse.Y, 1, 1);
             foreach (var gobject in GOList)
             {
-                
+
                 //Rectangle rectangle = new Rectangle((int)gobject.getPosition().X, (int)gobject.getPosition().Y, (int)gobject.getSize().X, (int)gobject.getSize().Y);
                 //Rectangle rectangle = new Rectangle((int)gobject.getPosition().X, (int)gobject.getPosition().Y, (int)gobject.getSize().X, (int)gobject.getSize().Y);
                 Rectangle rectangle = new Rectangle((int)((gobject.X - (Hero.view.X + Hero.padding.X)) * 64 + 64 * 4), (int)((gobject.Y - (Hero.view.Y + Hero.padding.Y)) * 64), 64, 64);
@@ -166,11 +181,11 @@ namespace TryAgain.GameStates
                 /*hero2 = new Hero("Tony", Classes.Classe.gunner, Textures.persopierre_texture, Keys.Z, Keys.S, Keys.Q, Keys.D, pos2);
                 GOList.Add(hero2);*/
                 Tilemap.MapFullINIT();
-                
+
                 GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 0.15F, new Vector2(6, 8)));
                 //GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 0.15F, new Vector2(5, 5)));
                 //GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 0.15F, new Vector2(8, 8)));
-                
+
                 hasStarted = true;
             }
         }
