@@ -21,6 +21,8 @@ namespace TryAgain.GameElements
     class GameOver
     {
         static int actualpoints = 3;
+        static Ranks actuelRang = Ranks.bronze;
+
         static bool lose = false;
         public static int PointsObtenus(GameTime gmt)
         {
@@ -66,10 +68,13 @@ namespace TryAgain.GameElements
         public static void Draw(SpriteBatch sb, GameTime gmt)     //faut que je pense a uploader des images de rang
         {
             if (!lose)
+            {
                 actualpoints = PointsObtenus(gmt);
+                actuelRang = Rang(PointsObtenus(gmt));
+            }
             sb.Draw(Textures.GameOver, new Vector2(Game1.graphics.PreferredBackBufferWidth / 2, Game1.graphics.PreferredBackBufferHeight / 2), Color.White);
             sb.DrawString(Textures.UIfont, "      POINTS: " + actualpoints.ToString(), new Vector2(Tilemap.variationsizegraphicsX + 64 * 5, 120 + 64 * 10), Color.Red);
-            sb.DrawString(Textures.UIfont, "      RANG: " + Rang(PointsObtenus(gmt)).ToString(), new Vector2(Tilemap.variationsizegraphicsX + 64 * 5, 120 + 64 * 11), Color.Red);
+            sb.DrawString(Textures.UIfont, "      RANG: " + actuelRang.ToString(), new Vector2(Tilemap.variationsizegraphicsX + 64 * 5, 120 + 64 * 11), Color.Red);
             SendScore(PointsObtenus(gmt));
         }
     }
