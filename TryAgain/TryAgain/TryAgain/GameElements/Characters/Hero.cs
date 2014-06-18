@@ -207,8 +207,7 @@ namespace TryAgain.Characters
                     }
                 }
 
-                if ((newState.IsKeyDown(Keys.M) && (stats.ch < stats.chmax)))
-                    stats.ch++;
+
 
             }
             else

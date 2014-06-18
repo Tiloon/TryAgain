@@ -20,7 +20,11 @@ namespace TryAgain.GameElements
         //constructor
 
         //methods
-
+        public static void Coca(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState)
+        {
+            if ((keyBoardState.IsKeyDown(Keys.M) && (hero.stats.ch < hero.stats.chmax)))
+                hero.stats.ch++;
+        }
         public static void Missile(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState)
         {
             if (keyBoardState.IsKeyDown(Keys.Space) && !missile)
@@ -45,8 +49,8 @@ namespace TryAgain.GameElements
                 }
                 if (missilepos.X - missilespeed > Game1.graphics.PreferredBackBufferWidth)
                     missile = false;
-                if (keyBoardState.IsKeyDown(Keys.Right) && (missilepos.X > 0))
-                    missilepos.X += 20 * hero.getStats().speed;
+                /*if (keyBoardState.IsKeyDown(Keys.Right) && (missilepos.X > 0))
+                    missilepos.X += 20 * hero.getStats().speed;*/
                 if (keyBoardState.IsKeyDown(Keys.Left) && (missilepos.X < Game1.graphics.PreferredBackBufferWidth))
                     missilepos.X -= 20 * hero.getStats().speed;
                 if (keyBoardState.IsKeyDown(Keys.Up) && (missilepos.Y > 0))
@@ -91,6 +95,7 @@ namespace TryAgain.GameElements
             Shield(sb, pos, hero, keyBoardState);
             Missile(sb, pos, hero, keyBoardState);
             Boots(sb, pos, hero, keyBoardState);
+            Coca(sb, pos, hero, keyBoardState);
         }
     }
 }
