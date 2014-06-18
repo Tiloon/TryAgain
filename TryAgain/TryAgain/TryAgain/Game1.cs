@@ -52,6 +52,7 @@ namespace TryAgain
             gamegfx = graphics;
             Initializer.InitAll();
             Textures.LoadTextureList("data.textures.json");
+            TryAgain.GameElements.Ressourceslist.init();
         }
 
         protected override void LoadContent()
@@ -98,7 +99,6 @@ namespace TryAgain
 
             if (newscreen == ScreenType.MainMenu)
             {
- 
                 //part.Emitter pour les propriétés générales
                 part.SetDefaultEffect();
                 part.SetCameraPosition(cameraPosition);

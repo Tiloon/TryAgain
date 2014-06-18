@@ -934,6 +934,15 @@
       <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
       <Time>2014-06-16T14:30:40.9212371+02:00</Time>
     </Item>
+    <Item>
+      <Source>Textures\flame.png</Source>
+      <Name>Textures\flame</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\flame.xnb</Output>
+      <Time>2014-06-18T12:30:07.3521881+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
