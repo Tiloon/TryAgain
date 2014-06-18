@@ -18,7 +18,7 @@ namespace TryAgain.GameElements
 {
     class Ressourceslist
     {
-        public static Dictionary<int, Texture2D> idtoitem = new Dictionary<int,Texture2D>();
+        public static Dictionary<int, Texture2D> idtoitem = new Dictionary<int, Texture2D>();
         public static int totalnbressources = 11;
         public static int[] quantity = new int[totalnbressources];      //un tableau de données avec les quantités de ressources i
         public static string[] names = new string[totalnbressources];   /*juste un tableau informatif avec les noms de ressources
@@ -83,7 +83,7 @@ namespace TryAgain.GameElements
                 else
                 {
                     Ressourceslist.quantity[4]--;
-                    Ressourceslist.quantity[5] --;
+                    Ressourceslist.quantity[5]--;
                     Ressourceslist.quantity[10]--;
                     CraftInventory[1] = true;
                     return true;
@@ -140,7 +140,7 @@ namespace TryAgain.GameElements
                     Ressourceslist.quantity[7]--;
                     CraftInventory[5] = true;
                     return true;
-                } 
+                }
             }
             return false;   //pas encore prêts les autres trucs
         }
@@ -152,7 +152,10 @@ namespace TryAgain.GameElements
         static public void Draw(SpriteBatch sb)    // ici, drawer les images des ressources et des items craftés a coté des quantités
         {
             sb.Draw(Textures.CraftInterface, new Vector2(Tilemap.variationsizegraphicsX, 0), Color.White);
-            sb.DrawString(Textures.UIfont, "Ressources                   Crafts                Recette", new Vector2(Tilemap.variationsizegraphicsX, 120), Color.Blue);
+            if (GameStates.OptionScreen.eng)
+                sb.DrawString(Textures.UIfont, "Resources                    Crafts                Recipes", new Vector2(Tilemap.variationsizegraphicsX, 120), Color.Blue);
+            else
+                sb.DrawString(Textures.UIfont, "Ressources                   Artisanat             Recette", new Vector2(Tilemap.variationsizegraphicsX, 120), Color.Blue);
             sb.Draw(Textures.O, new Rectangle(Tilemap.variationsizegraphicsX, 160, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[0].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 160), Color.Black);
             sb.Draw(Textures.I, new Rectangle(Tilemap.variationsizegraphicsX, 200, 40, 40), Color.White);

@@ -75,7 +75,10 @@ namespace TryAgain.GameStates
 
                 case MenuState.About:
                     sb.Draw(Textures.storyboard, Vector2.Zero, Color.White);
-                    sb.DrawString(Textures.UIfont, "Voici le beau scenario de TryAgain", new Vector2(1050, 100), Color.Black);
+                    if (OptionScreen.eng)
+                        sb.DrawString(Textures.UIfont, "Here is the scenario of TryAgain", new Vector2(1050, 100), Color.Black);
+                    else
+                        sb.DrawString(Textures.UIfont, "Voici le scenario de TryAgain", new Vector2(1050, 100), Color.Black);
                     ButtonReturn.Draw(sb);
                     break;
             }

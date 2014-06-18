@@ -22,11 +22,17 @@ Content\Sprites\herbe_roche.xnb
 Content\Sprites\halfsable.xnb
 Content\Menu\pause.xnb
 Content\UI\pxl.xnb
+Content\Sprites\Ressources\1.xnb
+Content\Sprites\Ressources\10.xnb
 Content\Sprites\Ressources\11.xnb
+Content\Sprites\Ressources\2.xnb
+Content\Sprites\Ressources\3.xnb
+Content\Sprites\Ressources\4.xnb
 Content\Sprites\Ressources\5.xnb
 Content\Sprites\Ressources\6.xnb
 Content\Sprites\Ressources\7.xnb
 Content\Sprites\Ressources\8.xnb
+Content\Sprites\Ressources\9.xnb
 Content\Menu\CraftInterface.xnb
 Content\Menu\storyboard.xnb
 Content\Menu\Button_SondOff.xnb
@@ -93,9 +99,3 @@ Content\Sprites\terrain\terre.xnb
 Content\Textures\flame.xnb
 Content\Fonts\UIfont.xnb
 Content\Fonts\UIfontsmall.xnb
-Content\Sprites\Ressources\1.xnb
-Content\Sprites\Ressources\10.xnb
-Content\Sprites\Ressources\2.xnb
-Content\Sprites\Ressources\3.xnb
-Content\Sprites\Ressources\4.xnb
-Content\Sprites\Ressources\9.xnb

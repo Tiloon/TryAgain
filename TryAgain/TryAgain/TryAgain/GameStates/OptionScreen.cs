@@ -163,6 +163,10 @@ namespace TryAgain.GameStates
             soundOff.Draw(sb);
 
             //changer langue
+            if(eng)
+                sb.DrawString(Textures.UIfont, "Choose language:", new Vector2(200, 550), Color.Black);
+            else
+                sb.DrawString(Textures.UIfont, "Choisir la langue:", new Vector2(200, 550), Color.Black);
             buttonEnglish.Draw(sb);
             buttonFrancais.Draw(sb);
 
@@ -199,7 +203,7 @@ namespace TryAgain.GameStates
             soundOff = new cButton(Textures.soundOff, graphics, 50, 50);
             soundOff.SetPosition(new Vector2(600, 400));
             buttonEnglish = new cButton(Textures.english, graphics);
-            buttonEnglish.SetPosition(new Vector2(600, 400));
+            buttonEnglish.SetPosition(new Vector2(200, 600));
             buttonFrancais = new cButton(Textures.francais, graphics);
             buttonFrancais.SetPosition(new Vector2(600, 600));
         }

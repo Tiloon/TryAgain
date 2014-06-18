@@ -64,23 +64,46 @@ namespace TryAgain.GameStates
                     ButtonPlay.Draw(sb);
                     ButtonOption.Draw(sb);
                     ButtonExit.Draw(sb);
-                    sb.DrawString(Textures.UIfont, "cafeine : " + GameScreen.userinterface.cp.ToString() + "/" + GameScreen.userinterface.cpmax.ToString(), new Vector2(15, 32), GameScreen.userinterface.statcolor);
-                    sb.DrawString(Textures.UIfont, "mental : " + GameScreen.userinterface.mp.ToString() + "/" + GameScreen.userinterface.mpmax.ToString(), new Vector2(15, 52), GameScreen.userinterface.statcolor);
-                    sb.DrawString(Textures.UIfont, "Caracteristiques :", new Vector2(15, 100), GameScreen.userinterface.caracolor);
-                    sb.DrawString(Textures.UIfont, "lvl :" + GameScreen.userinterface.lvl.ToString(), new Vector2(15, 120), GameScreen.userinterface.caracolor);
-                    sb.DrawString(Textures.UIfont, "force :" + GameScreen.userinterface.force.ToString(), new Vector2(15, 140), GameScreen.userinterface.caracolor);
-                    sb.DrawString(Textures.UIfont, "intelligence :" + GameScreen.userinterface.intelligence.ToString(), new Vector2(15, 160), GameScreen.userinterface.caracolor);
-                    sb.DrawString(Textures.UIfont, "defense :" + GameScreen.userinterface.defense.ToString(), new Vector2(15, 180), GameScreen.userinterface.caracolor);
-                    sb.DrawString(Textures.UIfont, "criticalrate :" + GameScreen.userinterface.criticalrate.ToString(), new Vector2(15, 200), GameScreen.userinterface.caracolor);
-                    sb.DrawString(Textures.UIfont, "speed :" + GameScreen.userinterface.speed.ToString(), new Vector2(15, 220), GameScreen.userinterface.caracolor);
+                    if (OptionScreen.eng)
+                    {
+                        sb.DrawString(Textures.UIfont, "caffeine : " + GameScreen.userinterface.cp.ToString() + "/" + GameScreen.userinterface.cpmax.ToString(), new Vector2(15, 32), GameScreen.userinterface.statcolor);
+                        sb.DrawString(Textures.UIfont, "mental : " + GameScreen.userinterface.mp.ToString() + "/" + GameScreen.userinterface.mpmax.ToString(), new Vector2(15, 52), GameScreen.userinterface.statcolor);
+                        sb.DrawString(Textures.UIfont, "characteristic :", new Vector2(15, 100), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "level :" + GameScreen.userinterface.lvl.ToString(), new Vector2(15, 120), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "strenght :" + GameScreen.userinterface.force.ToString(), new Vector2(15, 140), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "intelligence :" + GameScreen.userinterface.intelligence.ToString(), new Vector2(15, 160), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "defense :" + GameScreen.userinterface.defense.ToString(), new Vector2(15, 180), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "critical rate :" + GameScreen.userinterface.criticalrate.ToString(), new Vector2(15, 200), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "speed :" + GameScreen.userinterface.speed.ToString(), new Vector2(15, 220), GameScreen.userinterface.caracolor);
 
-                    sb.DrawString(Textures.UIfont, "Quelques commandes: ", new Vector2(15, 260), GameScreen.userinterface.caracolor);
-                    sb.DrawString(Textures.UIfont, "Echap: Pause", new Vector2(15, 280), GameScreen.userinterface.caracolor);
-                    sb.DrawString(Textures.UIfont, "Enter: ecrire", new Vector2(15, 300), GameScreen.userinterface.caracolor);
-                    sb.DrawString(Textures.UIfont, "Alt: gerer la camera", new Vector2(15, 320), GameScreen.userinterface.caracolor);
-                    sb.DrawString(Textures.UIfont, "G: jeter l'objet", new Vector2(15, 340), GameScreen.userinterface.caracolor);
-                    sb.DrawString(Textures.UIfont, "C: CraftInterface", new Vector2(15, 360), GameScreen.userinterface.caracolor);
-                    sb.DrawString(Textures.UIfont, "Clic gauche: beaucoup\n de choses!", new Vector2(15, 380), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "some commands: ", new Vector2(15, 260), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "Echap: Pause", new Vector2(15, 280), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "Enter: write", new Vector2(15, 300), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "Alt: move the camera", new Vector2(15, 320), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "G: throw the objet", new Vector2(15, 340), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "C: Craft interface", new Vector2(15, 360), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "Clic gauche: lots\n of things!", new Vector2(15, 380), GameScreen.userinterface.caracolor);
+                    }
+                    else
+                    {
+                        sb.DrawString(Textures.UIfont, "cafeine : " + GameScreen.userinterface.cp.ToString() + "/" + GameScreen.userinterface.cpmax.ToString(), new Vector2(15, 32), GameScreen.userinterface.statcolor);
+                        sb.DrawString(Textures.UIfont, "mental : " + GameScreen.userinterface.mp.ToString() + "/" + GameScreen.userinterface.mpmax.ToString(), new Vector2(15, 52), GameScreen.userinterface.statcolor);
+                        sb.DrawString(Textures.UIfont, "Caracteristiques :", new Vector2(15, 100), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "niveau :" + GameScreen.userinterface.lvl.ToString(), new Vector2(15, 120), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "force :" + GameScreen.userinterface.force.ToString(), new Vector2(15, 140), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "intelligence :" + GameScreen.userinterface.intelligence.ToString(), new Vector2(15, 160), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "defense :" + GameScreen.userinterface.defense.ToString(), new Vector2(15, 180), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "taux de critique :" + GameScreen.userinterface.criticalrate.ToString(), new Vector2(15, 200), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "vitesse :" + GameScreen.userinterface.speed.ToString(), new Vector2(15, 220), GameScreen.userinterface.caracolor);
+
+                        sb.DrawString(Textures.UIfont, "Quelques commandes: ", new Vector2(15, 260), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "Echap: Pause", new Vector2(15, 280), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "Enter: ecrire", new Vector2(15, 300), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "Alt: gerer la camera", new Vector2(15, 320), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "G: jeter l'objet", new Vector2(15, 340), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "C: interface d'artisanat", new Vector2(15, 360), GameScreen.userinterface.caracolor);
+                        sb.DrawString(Textures.UIfont, "Clic gauche: beaucoup\n de choses!", new Vector2(15, 380), GameScreen.userinterface.caracolor);
+                    }
                     break;
             }
         }
