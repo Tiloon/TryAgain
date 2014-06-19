@@ -18,6 +18,8 @@ namespace TryAgain.GameElements
         static Vector2 missilepos;
         static int missilespeed = 23;
         static int shieldtimer;
+        static Texture2D swap;
+        static bool onetime = false;
         //constructor
 
         //methods
@@ -46,7 +48,7 @@ namespace TryAgain.GameElements
                 missile = true;
                 missilepos = new Vector2(Textures.Missile.Width + (hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64);
                 //sb.Draw(Textures.c2gun1, new Vector2(21+(hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, 38+(hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), Color.White);
-                Texture2D swap = hero.apparence;
+                swap = hero.apparence;
                 if (GameScreen.name == "Tony")
                     hero.apparence = Textures.TonyGun;
                 else
@@ -73,10 +75,14 @@ namespace TryAgain.GameElements
                     {
                         obj.pv -= 25;
                         missile = false;
+                        onetime = true;
                     }
                 }
                 if (missilepos.X - missilespeed > Game1.graphics.PreferredBackBufferWidth)
+                {
                     missile = false;
+                    onetime = true;
+                }
                 /*if (keyBoardState.IsKeyDown(Keys.Right) && (missilepos.X > 0))
                     missilepos.X += 20 * hero.getStats().speed;*/
                 if (keyBoardState.IsKeyDown(Keys.Left) && (missilepos.X < Game1.graphics.PreferredBackBufferWidth))
@@ -85,6 +91,11 @@ namespace TryAgain.GameElements
                     missilepos.Y += 20 * hero.getStats().speed;
                 if (keyBoardState.IsKeyDown(Keys.Down) && (missilepos.Y < Game1.graphics.PreferredBackBufferHeight))
                     missilepos.Y -= 20 * hero.getStats().speed;
+            }
+            if(onetime)
+            {
+                onetime = false;
+                hero.apparence = swap;
             }
         }
 

@@ -24,7 +24,7 @@ namespace TryAgain.GameStates
         ButtonState previousstate;
         public static UI userinterface = new UI();
         public static Hero hero;
-        public static string name;
+        public static string name = "Tony";
         KeyboardState ancienState, newState;
         public static List<Ressource> RessList = new List<Ressource>();
         public static List<GameObject> GOList = new List<GameObject>();
