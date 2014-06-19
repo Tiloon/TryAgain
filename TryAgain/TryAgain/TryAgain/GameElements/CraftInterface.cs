@@ -216,6 +216,11 @@ namespace TryAgain.GameElements
             }
 
             sb.DrawString(Textures.UIfont, "2*ress0 + ress10", new Vector2(Tilemap.variationsizegraphicsX + 560, 160), Color.Black);
+            sb.DrawString(Textures.UIfont, "ress4 + ress5 + ress9", new Vector2(Tilemap.variationsizegraphicsX + 560, 200), Color.Black);
+            sb.DrawString(Textures.UIfont, "ress1 + ress5 + ress8", new Vector2(Tilemap.variationsizegraphicsX + 560, 200), Color.Black);
+            sb.DrawString(Textures.UIfont, "ress3 + 2*ress6", new Vector2(Tilemap.variationsizegraphicsX + 560, 160), Color.Black);
+            sb.DrawString(Textures.UIfont, "2*ress8 + ress10", new Vector2(Tilemap.variationsizegraphicsX + 560, 160), Color.Black);
+            sb.DrawString(Textures.UIfont, "ress2 + ress6 + ress7", new Vector2(Tilemap.variationsizegraphicsX + 560, 200), Color.Black);
         }
     }
 }

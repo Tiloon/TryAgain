@@ -224,6 +224,15 @@
       <Time>2014-05-06T18:05:56.028505+02:00</Time>
     </Item>
     <Item>
+<<<<<<< HEAD
+      <Source>Menu\CraftInterface.png</Source>
+      <Name>Menu\CraftInterface</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
+      <Time>2014-06-19T11:47:33.3329243+02:00</Time>
+=======
       <Source>Menu\eng\hard.jpg</Source>
       <Name>Menu\eng\hard</Name>
       <Importer>TextureImporter</Importer>
@@ -231,6 +240,7 @@
       <Options>None</Options>
       <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\hard.xnb</Output>
       <Time>2014-06-19T14:43:14.3479951+02:00</Time>
+>>>>>>> 508e6184a6b928837fb41d64b2df06a06134f5a2
     </Item>
     <Item>
       <Source>Menu\storyboard.jpg</Source>
@@ -922,8 +932,13 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
+<<<<<<< HEAD
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\5soda.xnb</Output>
+      <Time>2014-06-18T23:28:04.0767132+02:00</Time>
+=======
       <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\5soda.xnb</Output>
       <Time>2014-06-19T10:50:23.087459+02:00</Time>
+>>>>>>> 508e6184a6b928837fb41d64b2df06a06134f5a2
     </Item>
     <Item>
       <Source>Sprites\Ressources\1.png</Source>
@@ -1031,6 +1046,27 @@
       <Time>2014-05-06T18:05:55.9724653+02:00</Time>
     </Item>
     <Item>
+      <Source>Sprites\Ressources\6.PNG</Source>
+      <Name>Sprites\Ressources\6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\6.xnb</Output>
+      <Time>2014-06-19T12:56:24.4592113+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Ressources\7.PNG</Source>
+      <Name>Sprites\Ressources\7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\7.xnb</Output>
+      <Time>2014-06-19T12:45:50.6889617+02:00</Time>
+    </Item>
+    <Item>
       <Source>Sprites\Ressources\8.PNG</Source>
       <Name>Sprites\Ressources\8</Name>
       <Importer>TextureImporter</Importer>
@@ -1134,6 +1170,24 @@
       <Options>None</Options>
       <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
       <Time>2014-06-19T14:47:37.6079732+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\UIfont.spritefont</Source>
+      <Name>Fonts\UIfont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfont.xnb</Output>
+      <Time>2014-06-16T14:30:40.920237+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\UIfontsmall.spritefont</Source>
+      <Name>Fonts\UIfontsmall</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
+      <Time>2014-06-16T14:30:40.9212371+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
