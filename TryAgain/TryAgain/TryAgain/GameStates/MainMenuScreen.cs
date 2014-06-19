@@ -11,6 +11,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using TryAgain.Menu;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace TryAgain.GameStates
 {
@@ -28,7 +29,7 @@ namespace TryAgain.GameStates
         cButton ButtonAbout;
         cButton ButtonExit;
         cButton ButtonReturn;
-        public static bool isPlayable = true;
+        public static bool isPlayable = true, isMapLoaded = false;
 
         public MainMenuScreen()
         {
@@ -41,7 +42,7 @@ namespace TryAgain.GameStates
             switch (CurrentMenuState)
             {
                 case MenuState.MainMenu:
-                    if (ButtonPlay.IsClicked(mouse) && isPlayable)
+                    if (ButtonPlay.IsClicked(mouse) && isPlayable && isMapLoaded)
                         return ScreenType.Game;
                     if (ButtonExit.IsClicked(mouse))
                         return ScreenType.Quit;
@@ -85,6 +86,9 @@ namespace TryAgain.GameStates
         }
         public override void init(GraphicsDevice graphics)
         {
+            Thread initMap = new Thread(new ThreadStart(Tilemap.MapFullINIT));
+            initMap.Start();
+
             if (OptionScreen.eng)
                 ButtonPlay = new cButton(Textures.play, graphics);
             else

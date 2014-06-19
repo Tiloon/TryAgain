@@ -826,8 +826,18 @@
         <Data Key="ColorKeyColor">0, 0, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
+<<<<<<< HEAD
       <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\flame.xnb</Output>
       <Time>2014-06-18T12:30:07.3521881+02:00</Time>
+=======
+<<<<<<< HEAD
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\flame.xnb</Output>
+      <Time>2014-06-19T20:44:48.1416806+02:00</Time>
+=======
+      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\flame.xnb</Output>
+      <Time>2014-06-18T15:25:28.3991721+02:00</Time>
+>>>>>>> 4082ba0ae7758b20e1b37cf433211556f50fd31f
+>>>>>>> 2eb71e3081bcd0b659124671513b88c6c1791fcf
     </Item>
     <Item>
       <Source>Sprites\RandomAnimations\bouclier1.png</Source>

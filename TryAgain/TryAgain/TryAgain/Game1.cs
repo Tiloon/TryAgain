@@ -75,7 +75,7 @@ namespace TryAgain
             part.AutoInitialize(this.GraphicsDevice, this.Content, null);
             part2 = new FlameParticle(this);
             part2.AutoInitialize(this.GraphicsDevice, this.Content, null);
-            part2.InitialProperties.PositionMin.X = 500;
+            part.InitialProperties.PositionMin.X = 500;
             part2.InitialProperties.PositionMax.X = 500;
         }
 
@@ -169,7 +169,7 @@ namespace TryAgain
             if (newscreen == ScreenType.MainMenu)
             {
                 part.Draw();
-                part2.Draw();
+                //part2.Draw();
             }
             if (cannonpartic)
                 mcParticleSystem.Draw();

@@ -188,7 +188,7 @@ namespace TryAgain.GameStates
                 GOList.Add(hero);
                 /*hero2 = new Hero("Tony", Classes.Classe.gunner, Textures.persopierre_texture, Keys.Z, Keys.S, Keys.Q, Keys.D, pos2);
                 GOList.Add(hero2);*/
-                Tilemap.MapFullINIT();
+                //Tilemap.MapFullINIT();
 
                 GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 0.15F, new Vector2(6, 8)));
                 //GOList.Add(new Monster(Monstertype.minion, 50, 10, 20, 0.15F, new Vector2(5, 5)));
