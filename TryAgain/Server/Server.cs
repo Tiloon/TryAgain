@@ -27,7 +27,7 @@ namespace Server
         Dictionary<String, GameObject> goblist = new Dictionary<String, GameObject>();
 
 
-        public static void LoadMap(String path)
+        public static void LoadMapFromWeb(String path)
         {
             mapAdress = path;
             String json;
@@ -43,6 +43,16 @@ namespace Server
                 throw;
             }
             json = Encoding.ASCII.GetString(myDataBuffer);
+            map = JsonConvert.DeserializeObject<string[,]>(json);
+            Console.WriteLine("Map loaded (size : (" + map.GetLength(0) + ":" + map.GetLength(1) + ")");
+        }
+
+        public static void LoadMap(String path)
+        {
+            mapAdress = null;
+            String json;
+            StreamReader sr = new StreamReader(path);
+            json = sr.ReadToEnd();
             map = JsonConvert.DeserializeObject<string[,]>(json);
             Console.WriteLine("Map loaded (size : (" + map.GetLength(0) + ":" + map.GetLength(1) + ")");
         }
@@ -110,7 +120,8 @@ namespace Server
                 clients.Add(myClient);
                 //clients.Add(myClient);
                 Console.WriteLine("Connexion from " + myClient.name);
-                myClient.Send("map:" + mapAdress);
+                if(mapAdress != null)
+                    myClient.Send("map:" + mapAdress);
             }
         }
 

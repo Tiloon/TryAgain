@@ -111,13 +111,10 @@ Content\Menu\eng\medium.xnb
 Content\Menu\fr\Button_difficile.xnb
 Content\Menu\fr\button_facil.xnb
 Content\Menu\fr\button_moyen.xnb
+Content\Menu\buttonCraftInterface.xnb
 Content\Menu\CraftInterface.xnb
 Content\Fonts\UIfont.xnb
 Content\Fonts\UIfontsmall.xnb
-<<<<<<< HEAD
-Content\Menu\buttonCraftInterface.xnb
-Content\Menu\CraftInterface.xnb
-=======
 Content\video.xnb
 Content\video.wmv
->>>>>>> 69ea56c29377143939679512e1b3ffdd9c8391f9
+Content\video.wmv

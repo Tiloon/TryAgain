@@ -150,6 +150,8 @@ namespace TryAgain
             if (!lavideoestfini)
             {
                 lavideoestfini = player.State == MediaState.Stopped;
+                if (Keyboard.GetState().IsKeyDown(Keys.Escape) && (skip == false))
+                    lavideoestfini = true;
                 if (player.State != MediaState.Stopped)
                 {
 
