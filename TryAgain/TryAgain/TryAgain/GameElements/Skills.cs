@@ -47,7 +47,16 @@ namespace TryAgain.GameElements
                 missilepos = new Vector2(Textures.Missile.Width + (hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64);
                 //sb.Draw(Textures.c2gun1, new Vector2(21+(hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, 38+(hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), Color.White);
                 Texture2D swap = hero.apparence;
-                hero.apparence = Textures.TonyGun;
+                if (GameScreen.name == "Tony")
+                    hero.apparence = Textures.TonyGun;
+                else
+                    if (GameScreen.name == "Pierre")
+                        hero.apparence = Textures.Pierregun;
+                    else
+                        if (GameScreen.name == "Denis")
+                            hero.apparence = Textures.Tilongun;
+                        else
+                            hero.apparence = Textures.Aldricgun;
             }
             if (missile)
             {

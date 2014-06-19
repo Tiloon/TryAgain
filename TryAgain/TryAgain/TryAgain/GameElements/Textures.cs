@@ -31,7 +31,7 @@ namespace TryAgain
         public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG, MenuOption, Return, exit, play, english, easy, medium, hard;
         public static Texture2D aPropos, jouer, pleinEcran, quitter, retour, fenetre, francais, facile, moyen, dur;
 
-        public static Texture2D TonyGun;
+        public static Texture2D TonyGun, Tilongun, Pierregun, Aldricgun;
         public static Texture2D buttonTony, buttonPierre, Fleche, Fleche2, soundOff;
         public static Texture2D whitePixel;
 
@@ -79,6 +79,9 @@ namespace TryAgain
             scenar4 = cm.Load<Texture2D>(@"Scenar\Planche4");
 
             TonyGun = cm.Load<Texture2D>(@"Sprites\tonygun");
+            Pierregun = cm.Load<Texture2D>(@"Sprites\pimgun");
+            Tilongun = cm.Load<Texture2D>(@"Sprites\tilongun");
+            Aldricgun = cm.Load<Texture2D>(@"Sprites\aldouxgun");
 
             O = cm.Load<Texture2D>(@"Sprites\Ressources\1");
             I = cm.Load<Texture2D>(@"Sprites\Ressources\2");

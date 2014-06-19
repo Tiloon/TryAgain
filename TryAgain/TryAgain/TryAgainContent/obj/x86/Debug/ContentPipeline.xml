@@ -826,13 +826,8 @@
         <Data Key="ColorKeyColor">0, 0, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\flame.xnb</Output>
-      <Time>2014-06-19T21:31:37.8349223+02:00</Time>
-=======
       <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\flame.xnb</Output>
       <Time>2014-06-19T20:56:34.4539658+02:00</Time>
->>>>>>> 551070f491570d560a22a1384741283c792bf355
     </Item>
     <Item>
       <Source>Sprites\RandomAnimations\bouclier1.png</Source>
@@ -1057,15 +1052,6 @@
       <Time>2014-06-19T17:45:50.4084038+02:00</Time>
     </Item>
     <Item>
-      <Source>Menu\eng\easy.jpg</Source>
-      <Name>Menu\eng\easy</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\easy.xnb</Output>
-      <Time>2014-06-19T21:59:20.0733469+02:00</Time>
-    </Item>
-    <Item>
       <Source>Menu\eng\medium.jpg</Source>
       <Name>Menu\eng\medium</Name>
       <Importer>TextureImporter</Importer>
@@ -1120,6 +1106,39 @@
       <Time>2014-06-19T17:45:50.3093981+02:00</Time>
     </Item>
     <Item>
+      <Source>Menu\eng\easy.jpg</Source>
+      <Name>Menu\eng\easy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\easy.xnb</Output>
+      <Time>2014-06-19T21:59:20.0733469+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Crafts\2gun1.png</Source>
+      <Name>Crafts\2gun1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\2gun1.xnb</Output>
+      <Time>2014-06-19T22:34:50.8352195+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\tonygun.bmp</Source>
+      <Name>Sprites\tonygun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tonygun.xnb</Output>
+      <Time>2014-06-19T23:03:00.0208354+02:00</Time>
+    </Item>
+    <Item>
       <Source>Fonts\UIfont.spritefont</Source>
       <Name>Fonts\UIfont</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -1148,28 +1167,40 @@
       <Time>2014-06-19T17:45:50.5074095+02:00</Time>
     </Item>
     <Item>
-      <Source>Crafts\2gun1.png</Source>
-      <Name>Crafts\2gun1</Name>
+      <Source>Sprites\aldouxgun.bmp</Source>
+      <Name>Sprites\aldouxgun</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\2gun1.xnb</Output>
-      <Time>2014-06-19T22:34:50.8352195+02:00</Time>
+      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\aldouxgun.xnb</Output>
+      <Time>2014-06-19T23:36:49.4619128+02:00</Time>
     </Item>
     <Item>
-      <Source>Sprites\tonygun.bmp</Source>
-      <Name>Sprites\tonygun</Name>
+      <Source>Sprites\pimgun.png</Source>
+      <Name>Sprites\pimgun</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tonygun.xnb</Output>
-      <Time>2014-06-19T23:03:00.0208354+02:00</Time>
+      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\pimgun.xnb</Output>
+      <Time>2014-06-19T23:36:49.4649129+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\tilongun.png</Source>
+      <Name>Sprites\tilongun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilongun.xnb</Output>
+      <Time>2014-06-19T23:36:49.4679131+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
