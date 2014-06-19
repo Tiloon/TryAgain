@@ -53,9 +53,19 @@ namespace Server
             stats.speed = 0.15F;
         }
 
+        public void TakeDamages(int points)
+        {
+            this.stats.lp -= points;
+        }
+
         public void Update()
         {
-            Console.WriteLine(this.type);
+            if (this.stats.lp <= 0)
+            {
+                Server.goblist.Remove(this.ID);
+                Server.igIDs.Remove(this.ID);
+                return;
+            }
             if (this.type == "Monster")
             {
                 if (this.target != null)

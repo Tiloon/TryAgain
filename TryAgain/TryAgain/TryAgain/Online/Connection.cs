@@ -146,6 +146,15 @@ namespace TryAgain.Online
             }
         }
 
+        public static void SendDamage(String id, int damages)
+        {
+            if (online)
+            {
+                servWriter.WriteLine("dam:" + JsonConvert.SerializeObject(new Tuple<string, int>(id, damages)));
+                servWriter.Flush();
+            }
+        }
+
         public static void Command(String str)
         {
             if (online)

@@ -25,28 +25,44 @@ namespace Server
         Random rand = new Random();
         int idmob = 0;
 
-        List<String> igIDs = new List<string>();
-        Dictionary<String, GameObject> goblist = new Dictionary<String, GameObject>();
+        public volatile static List<String> igIDs = new List<string>();
+        public volatile static Dictionary<String, GameObject> goblist = new Dictionary<String, GameObject>();
 
         private void AddMob(float x, float y)
         {
             idmob++;
+            int type = rand.Next(0, 10);
             if (!goblist.ContainsKey("monster0" + idmob.ToString()))
             {
                 string id = "monster0" + idmob.ToString();
-                Console.WriteLine("monstre spawned");
                 GameObject el = new GameObject();
-                el.name = id;
-                el.ID = id;
-                el.spr = "Mghost";
-                el.type = "Monster";
-                el.x = x;
-                el.X = Convert.ToBase64String(BitConverter.GetBytes(el.x));
-                el.y = y;
-                el.Y = Convert.ToBase64String(BitConverter.GetBytes(el.y));
-                el.speed += ((float)rand.Next(-6, 6)) / 200;
+                if (type <= 6)
+                {
+                    el.name = "ghost";
+                    el.ID = id;
+                    el.spr = "Mghost";
+                    el.type = "Monster";
+                    el.x = x;
+                    el.X = Convert.ToBase64String(BitConverter.GetBytes(el.x));
+                    el.y = y;
+                    el.Y = Convert.ToBase64String(BitConverter.GetBytes(el.y));
+                    el.speed += ((float)rand.Next(-6, 6)) / 200;
+                }
+                else
+                {
+                    el.name = "dragon";
+                    el.ID = id;
+                    el.spr = "Mdragon";
+                    el.type = "Monster";
+                    el.x = x;
+                    el.X = Convert.ToBase64String(BitConverter.GetBytes(el.x));
+                    el.y = y;
+                    el.Y = Convert.ToBase64String(BitConverter.GetBytes(el.y));
+                    el.speed += ((float)rand.Next(-2, 12)) / 180;
+                }
                 goblist.Add(id, el);
                 igIDs.Add(id);
+                Console.WriteLine("Npc spawned : " + el.name + "pos : (" + el.x.ToString() + ";" + el.y.ToString() + ")");
             }
         }
 
@@ -100,8 +116,8 @@ namespace Server
                 e.spr = npc.spr;
                 e.type = npc.type;
 
-                goblist.Add(npc.name, e);
-                igIDs.Add(npc.name);
+                goblist.Add(e.ID, e);
+                igIDs.Add(e.ID);
                 Console.WriteLine("Loaded : " + npc.name + "(poistion : (" + e.x.ToString() + ":" + e.y.ToString() + ")");
             }
         }
@@ -323,6 +339,24 @@ namespace Server
 
                             foreach (Client sclient in clients)
                                 sclient.Send("rm:" + message);
+                            continue;
+                        }
+
+                        if (message.StartsWith("dam:"))
+                        {
+                            message = message.Remove(0, 4);
+                            Tuple<string, int> data = JsonConvert.DeserializeObject<Tuple<string, int>>(message);
+                            Console.WriteLine(data.Item1 + " got damaged : " + data.Item2 + "damages");
+                            try
+                            {
+                                if (goblist.ContainsKey(data.Item1))
+                                {
+                                    goblist[data.Item1].TakeDamages(data.Item2);
+                                }
+                            }
+                            catch (Exception)
+                            { }
+
                             continue;
                         }
 

@@ -36,7 +36,7 @@ namespace TryAgain.GameElements
         {
             return size;
         }
-
+        
         public GameObject(String type, String UID)
         {
             this.Type = "GameObject," + type;
