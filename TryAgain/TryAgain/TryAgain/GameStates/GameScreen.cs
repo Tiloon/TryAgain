@@ -118,7 +118,7 @@ namespace TryAgain.GameStates
                         RessList.Remove(r);
             }*/
             if (RessList.Count != 0)
-                if (RessList[0].Update(herorect, expos, hero.position) || RessList[0].resstime.TotalGameTime.Seconds > Game1.gmt.TotalGameTime.Seconds + 5)
+                if (RessList[0].Update(herorect, expos, hero.position) || RessList[0].resstime > Game1.gmt.TotalGameTime.Seconds + 2)
                     RessList.Remove(RessList[0]);
             if (RessList.Count == 0)
                 RessList.Add(new Ressource());
@@ -131,6 +131,8 @@ namespace TryAgain.GameStates
             {
                 if (actualmap == 1)
                     Tilemap.Drawmap(sb, Tilemap.tiles);
+                foreach (Ressource r in RessList)
+                    r.Draw(sb);
                 foreach (var todraw in GOList)
                 {
                     /*
@@ -142,9 +144,6 @@ namespace TryAgain.GameStates
 
                 userinterface.Draw(sb);
                 Chat.Draw(sb);
-
-                foreach (Ressource r in RessList)
-                    r.Draw(sb);
 
                 if (!Chat.isWriting)
                 {

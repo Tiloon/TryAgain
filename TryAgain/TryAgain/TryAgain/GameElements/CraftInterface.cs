@@ -221,6 +221,8 @@ namespace TryAgain.GameElements
             sb.DrawString(Textures.UIfont, "ress3 + 2*ress6", new Vector2(Tilemap.variationsizegraphicsX + 560, 280), Color.White);
             sb.DrawString(Textures.UIfont, "2*ress8 + ress10", new Vector2(Tilemap.variationsizegraphicsX + 560, 320), Color.White);
             sb.DrawString(Textures.UIfont, "ress2 + ress6 + ress7", new Vector2(Tilemap.variationsizegraphicsX + 560, 360), Color.White);
+
+            sb.DrawString(Textures.UIfont, "touche p: soin de 20pv", new Vector2(Tilemap.variationsizegraphicsX + 860, 160), Color.White);
         }
     }
 }

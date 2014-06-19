@@ -121,19 +121,29 @@ namespace TryAgain.GameElements
                 hero.stats.speed -= 0.01F;
         }
 
+        public static void Potion(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState) //boots
+        {
+            if ((keyBoardState.IsKeyDown(Keys.P)))
+            {
+                hero.pv += 20;
+                Craft.CraftInventory[0] = false;
+            }
+        }
         //update draw
         static public void Draw(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState)
         {
             if (Craft.CraftInventory[0])
                 Shield(sb, pos, hero, keyBoardState);
             if (Craft.CraftInventory[1])
-                Missile(sb, pos, hero, keyBoardState);
+                Shield(sb, pos, hero, keyBoardState);
             if (Craft.CraftInventory[2])
-                Boots(sb, pos, hero, keyBoardState);
+                Missile(sb, pos, hero, keyBoardState);
             if (Craft.CraftInventory[3])
-                Coca(sb, pos, hero, keyBoardState);
+                Boots(sb, pos, hero, keyBoardState);
             if (Craft.CraftInventory[4])
                 ParticuleCannon(sb, pos, hero, keyBoardState);
+            if (Craft.CraftInventory[5])
+                Coca(sb, pos, hero, keyBoardState);
         }
     }
 }
