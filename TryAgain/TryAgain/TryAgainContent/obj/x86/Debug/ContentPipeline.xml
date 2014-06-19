@@ -224,36 +224,13 @@
       <Time>2014-06-16T14:30:41.2612565+02:00</Time>
     </Item>
     <Item>
-      <Source>Sprites\Ressources\6.PNG</Source>
-      <Name>Sprites\Ressources\6</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\6.xnb</Output>
-      <Time>2014-06-19T12:56:24.4592113+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\Ressources\7.PNG</Source>
-      <Name>Sprites\Ressources\7</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\7.xnb</Output>
-      <Time>2014-06-19T12:45:50.6889617+02:00</Time>
-    </Item>
-    <Item>
       <Source>Menu\CraftInterface.png</Source>
       <Name>Menu\CraftInterface</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
       <Time>2014-06-19T11:47:33.3329243+02:00</Time>
-=======
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
-      <Time>2014-06-19T12:19:15.5671863+02:00</Time>
->>>>>>> 4fdb55634142c20bea1f6292b7ecf34344f6968d
     </Item>
     <Item>
       <Source>Menu\storyboard.jpg</Source>
@@ -949,24 +926,6 @@
       <Time>2014-06-18T23:28:04.0767132+02:00</Time>
     </Item>
     <Item>
-      <Source>Fonts\UIfont.spritefont</Source>
-      <Name>Fonts\UIfont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfont.xnb</Output>
-      <Time>2014-06-16T14:30:40.920237+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\UIfontsmall.spritefont</Source>
-      <Name>Fonts\UIfontsmall</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
-      <Time>2014-06-16T14:30:40.9212371+02:00</Time>
-    </Item>
-    <Item>
       <Source>Sprites\Ressources\1.png</Source>
       <Name>Sprites\Ressources\1</Name>
       <Importer>TextureImporter</Importer>
@@ -1051,6 +1010,27 @@
       <Time>2014-06-19T12:56:02.5389575+02:00</Time>
     </Item>
     <Item>
+      <Source>Sprites\Ressources\6.PNG</Source>
+      <Name>Sprites\Ressources\6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\6.xnb</Output>
+      <Time>2014-06-19T12:56:24.4592113+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Ressources\7.PNG</Source>
+      <Name>Sprites\Ressources\7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\7.xnb</Output>
+      <Time>2014-06-19T12:45:50.6889617+02:00</Time>
+    </Item>
+    <Item>
       <Source>Sprites\Ressources\8.PNG</Source>
       <Name>Sprites\Ressources\8</Name>
       <Importer>TextureImporter</Importer>
@@ -1073,6 +1053,24 @@
       <Options>None</Options>
       <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\9.xnb</Output>
       <Time>2014-06-19T12:57:35.175256+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\UIfont.spritefont</Source>
+      <Name>Fonts\UIfont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfont.xnb</Output>
+      <Time>2014-06-16T14:30:40.920237+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\UIfontsmall.spritefont</Source>
+      <Name>Fonts\UIfontsmall</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
+      <Time>2014-06-16T14:30:40.9212371+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
