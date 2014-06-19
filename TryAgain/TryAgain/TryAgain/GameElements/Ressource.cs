@@ -51,15 +51,15 @@ namespace TryAgain.GameElements
                 Ressourceslist.quantity[id]++;
                 return true;
             }
-
+            float t=33.7F;
             if (Keyboard.GetState().IsKeyDown(Keys.Right) && (x > 10))
-                x-=10;
+                x -= (int)(GameScreen.hero.stats.speed * t);
             if (Keyboard.GetState().IsKeyDown(Keys.Left) && (x < Game1.graphics.PreferredBackBufferWidth - 10))
-                x+=10;
+                x += (int)(GameScreen.hero.stats.speed * t);
             if (Keyboard.GetState().IsKeyDown(Keys.Up) && (y > 10))
-                y+=10;
+                y += (int)(GameScreen.hero.stats.speed * t);
             if (Keyboard.GetState().IsKeyDown(Keys.Down) && (y < Game1.graphics.PreferredBackBufferHeight - 10))
-                y-=10;
+                y -= (int)(GameScreen.hero.stats.speed * t);
             return false;
         }
     }
