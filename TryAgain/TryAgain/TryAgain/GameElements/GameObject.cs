@@ -77,6 +77,8 @@ namespace TryAgain.GameElements
             }
         }
 
+        public virtual void TakeDamages(int points)
+        {}
         public abstract void Draw(SpriteBatch sb);
         protected bool exists = true;
         public bool toRemove()

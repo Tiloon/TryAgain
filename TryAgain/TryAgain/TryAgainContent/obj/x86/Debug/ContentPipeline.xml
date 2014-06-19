@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tileherbe.xnb</Output>
-      <Time>2014-05-02T17:20:41.3195852+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tileherbe.xnb</Output>
+      <Time>2014-03-10T20:09:43.9213422+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\tilesable.bmp</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilesable.xnb</Output>
-      <Time>2014-05-02T17:20:41.4485926+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilesable.xnb</Output>
+      <Time>2014-03-10T20:19:02.691302+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\persopierre.png</Source>
@@ -28,8 +28,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\persopierre.xnb</Output>
-      <Time>2014-05-02T17:20:41.3095846+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\persopierre.xnb</Output>
+      <Time>2014-03-08T15:16:27.9347178+01:00</Time>
     </Item>
     <Item>
       <Source>Menu\About.png</Source>
@@ -37,8 +37,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\About.xnb</Output>
-      <Time>2014-05-02T17:20:41.192578+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\About.xnb</Output>
+      <Time>2014-03-08T15:16:27.746707+01:00</Time>
     </Item>
     <Item>
       <Source>Menu\Option.png</Source>
@@ -46,8 +46,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Option.xnb</Output>
-      <Time>2014-05-02T17:20:41.2365805+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Option.xnb</Output>
+      <Time>2014-03-08T15:16:27.8377123+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\tilecaillou.bmp</Source>
@@ -55,8 +55,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilecaillou.xnb</Output>
-      <Time>2014-05-02T17:20:41.3145849+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilecaillou.xnb</Output>
+      <Time>2014-03-10T20:13:47.9142978+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\tileneige.bmp</Source>
@@ -64,8 +64,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tileneige.xnb</Output>
-      <Time>2014-05-02T17:20:41.4235912+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tileneige.xnb</Output>
+      <Time>2014-03-08T15:16:27.9747201+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Unwalkable\tileneigetrou.bmp</Source>
@@ -73,8 +73,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tileneigetrou.xnb</Output>
-      <Time>2014-05-02T17:20:41.2995841+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tileneigetrou.xnb</Output>
+      <Time>2014-03-08T15:16:28.0667253+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Unwalkable\tilecascadegauche.bmp</Source>
@@ -82,8 +82,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tilecascadegauche.xnb</Output>
-      <Time>2014-05-02T17:20:41.297584+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tilecascadegauche.xnb</Output>
+      <Time>2014-03-08T15:16:28.0527245+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Unwalkable\tilecascadedroite.bmp</Source>
@@ -91,8 +91,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tilecascadedroite.xnb</Output>
-      <Time>2014-05-02T17:20:41.2505813+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tilecascadedroite.xnb</Output>
+      <Time>2014-03-08T15:16:28.0377237+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Unwalkable\Arbre\013.bmp</Source>
@@ -100,8 +100,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\013.xnb</Output>
-      <Time>2014-05-02T17:20:41.246581+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\013.xnb</Output>
+      <Time>2014-03-08T15:16:28.0937269+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Unwalkable\Arbre\017.bmp</Source>
@@ -109,8 +109,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\017.xnb</Output>
-      <Time>2014-05-02T17:20:41.2475811+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\017.xnb</Output>
+      <Time>2014-03-08T15:16:28.1087278+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Unwalkable\Arbre\026.bmp</Source>
@@ -118,8 +118,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\026.xnb</Output>
-      <Time>2014-05-02T17:20:41.2495812+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\026.xnb</Output>
+      <Time>2014-03-08T15:16:28.1677311+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Halfwalkable\tileaqua.bmp</Source>
@@ -127,8 +127,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Halfwalkable\tileaqua.xnb</Output>
-      <Time>2014-05-02T17:20:41.2415808+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Halfwalkable\tileaqua.xnb</Output>
+      <Time>2014-03-10T20:17:45.9939151+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Halfwalkable\tilefire.bmp</Source>
@@ -136,8 +136,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Halfwalkable\tilefire.xnb</Output>
-      <Time>2014-05-02T17:20:41.2425808+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Halfwalkable\tilefire.xnb</Output>
+      <Time>2014-03-08T15:16:28.0207227+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Monsters\bebeglauque.png</Source>
@@ -148,8 +148,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Monsters\bebeglauque.xnb</Output>
-      <Time>2014-05-02T17:20:41.2435809+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Monsters\bebeglauque.xnb</Output>
+      <Time>2014-03-09T02:25:13.2167527+01:00</Time>
     </Item>
     <Item>
       <Source>UI\uiitems.png</Source>
@@ -157,8 +157,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\uiitems.xnb</Output>
-      <Time>2014-05-02T17:20:41.5005956+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\uiitems.xnb</Output>
+      <Time>2014-03-08T23:11:20.1493793+01:00</Time>
     </Item>
     <Item>
       <Source>UI\uiselected.png</Source>
@@ -166,8 +166,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\uiselected.xnb</Output>
-      <Time>2014-05-02T17:20:41.5165965+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\uiselected.xnb</Output>
+      <Time>2014-03-09T17:05:54.4390159+01:00</Time>
     </Item>
     <Item>
       <Source>Menu\Button_1player.png</Source>
@@ -175,8 +175,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_1player.xnb</Output>
-      <Time>2014-05-02T17:20:41.193578+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_1player.xnb</Output>
+      <Time>2014-03-09T18:35:50.1836348+01:00</Time>
     </Item>
     <Item>
       <Source>Menu\Button_2players.png</Source>
@@ -184,8 +184,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_2players.xnb</Output>
-      <Time>2014-05-02T17:20:41.1945781+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_2players.xnb</Output>
+      <Time>2014-03-09T18:35:50.1846349+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\herbe_roche.png</Source>
@@ -193,8 +193,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\herbe_roche.xnb</Output>
-      <Time>2014-05-02T17:20:41.3075845+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\herbe_roche.xnb</Output>
+      <Time>2014-03-10T20:55:50.9466069+01:00</Time>
     </Item>
     <Item>
       <Source>Sprites\halfsable.png</Source>
@@ -202,8 +202,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\halfsable.xnb</Output>
-      <Time>2014-05-02T17:20:41.3055844+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\halfsable.xnb</Output>
+      <Time>2014-03-10T21:10:28.7728157+01:00</Time>
     </Item>
     <Item>
       <Source>Menu\pause fail.png</Source>
@@ -211,8 +211,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\pause fail.xnb</Output>
-      <Time>2014-06-19T17:45:50.3964031+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\pause fail.xnb</Output>
+      <Time>2014-06-19T17:36:14.4305734+02:00</Time>
     </Item>
     <Item>
       <Source>UI\pxl.png</Source>
@@ -220,8 +220,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\pxl.xnb</Output>
-      <Time>2014-05-04T23:19:06.1904269+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\pxl.xnb</Output>
+      <Time>2014-05-04T22:11:18.208462+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\hard.jpg</Source>
@@ -229,8 +229,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\hard.xnb</Output>
-      <Time>2014-06-19T17:45:50.3303993+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\hard.xnb</Output>
+      <Time>2014-06-19T17:36:14.3635695+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\storyboard.jpg</Source>
@@ -238,8 +238,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\storyboard.xnb</Output>
-      <Time>2014-05-06T21:51:13.8839347+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\storyboard.xnb</Output>
+      <Time>2014-05-06T21:52:26.9110028+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\Button_SondOff.png</Source>
@@ -250,8 +250,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_SondOff.xnb</Output>
-      <Time>2014-05-06T23:16:27.7464309+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_SondOff.xnb</Output>
+      <Time>2014-05-06T23:03:08.3886014+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\Button_SondOn.png</Source>
@@ -262,8 +262,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_SondOn.xnb</Output>
-      <Time>2014-05-06T23:16:27.7524313+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_SondOn.xnb</Output>
+      <Time>2014-05-06T23:03:11.178761+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\MenuOption.png</Source>
@@ -271,8 +271,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MenuOption.xnb</Output>
-      <Time>2014-05-06T23:16:27.7694322+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MenuOption.xnb</Output>
+      <Time>2014-05-06T23:08:05.4175905+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RandomAnimations\Shield.png</Source>
@@ -283,8 +283,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\Shield.xnb</Output>
-      <Time>2014-05-25T00:34:12.7621237+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\Shield.xnb</Output>
+      <Time>2014-05-26T13:38:56.9677381+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RandomAnimations\Missile.PNG</Source>
@@ -295,8 +295,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\Missile.xnb</Output>
-      <Time>2014-06-18T00:18:02.630316+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\Missile.xnb</Output>
+      <Time>2014-06-18T00:23:54.9690924+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Chosen.png</Source>
@@ -307,8 +307,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Chosen.xnb</Output>
-      <Time>2014-05-25T23:13:42.9715364+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Chosen.xnb</Output>
+      <Time>2014-05-26T13:38:56.9587376+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health0.png</Source>
@@ -316,8 +316,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health0.xnb</Output>
-      <Time>2014-05-26T14:54:53.2628031+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health0.xnb</Output>
+      <Time>2014-05-26T14:13:18.5356531+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health1.png</Source>
@@ -325,8 +325,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health1.xnb</Output>
-      <Time>2014-05-26T14:54:53.2638031+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health1.xnb</Output>
+      <Time>2014-05-26T14:13:18.5376532+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health2.png</Source>
@@ -334,8 +334,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health2.xnb</Output>
-      <Time>2014-05-26T14:54:53.2658032+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health2.xnb</Output>
+      <Time>2014-05-26T14:13:18.5396533+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health3.png</Source>
@@ -343,8 +343,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health3.xnb</Output>
-      <Time>2014-05-26T14:54:53.2668033+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health3.xnb</Output>
+      <Time>2014-05-26T14:13:18.5406533+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health4.png</Source>
@@ -352,8 +352,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health4.xnb</Output>
-      <Time>2014-05-26T14:54:53.2688034+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health4.xnb</Output>
+      <Time>2014-05-26T14:13:18.5426535+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health5.png</Source>
@@ -361,8 +361,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health5.xnb</Output>
-      <Time>2014-05-26T14:54:53.2698035+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health5.xnb</Output>
+      <Time>2014-05-26T14:13:18.5446536+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health6.png</Source>
@@ -370,8 +370,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health6.xnb</Output>
-      <Time>2014-05-26T14:54:53.2928048+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health6.xnb</Output>
+      <Time>2014-05-26T14:13:18.5466537+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health7.png</Source>
@@ -379,8 +379,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health7.xnb</Output>
-      <Time>2014-05-26T14:54:53.2938048+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health7.xnb</Output>
+      <Time>2014-05-26T14:13:18.5486538+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\healthBG.png</Source>
@@ -388,8 +388,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\healthBG.xnb</Output>
-      <Time>2014-05-26T14:54:53.295805+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\healthBG.xnb</Output>
+      <Time>2014-05-26T14:13:18.5496539+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana0.png</Source>
@@ -397,8 +397,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana0.xnb</Output>
-      <Time>2014-05-26T15:31:40.574054+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana0.xnb</Output>
+      <Time>2014-05-26T15:20:25.6959934+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana1.png</Source>
@@ -406,8 +406,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana1.xnb</Output>
-      <Time>2014-05-26T15:31:40.5800544+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana1.xnb</Output>
+      <Time>2014-05-26T15:20:25.6979936+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana2.png</Source>
@@ -415,8 +415,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana2.xnb</Output>
-      <Time>2014-05-26T15:31:40.5860547+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana2.xnb</Output>
+      <Time>2014-05-26T15:20:25.6999937+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana3.png</Source>
@@ -424,8 +424,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana3.xnb</Output>
-      <Time>2014-05-26T15:31:40.591055+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana3.xnb</Output>
+      <Time>2014-05-26T15:20:25.7019938+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana4.png</Source>
@@ -433,8 +433,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana4.xnb</Output>
-      <Time>2014-05-26T15:31:40.5930551+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana4.xnb</Output>
+      <Time>2014-05-26T15:20:25.7179947+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana5.png</Source>
@@ -442,8 +442,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana5.xnb</Output>
-      <Time>2014-05-26T15:31:40.6100561+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana5.xnb</Output>
+      <Time>2014-05-26T15:20:25.7199948+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana6.png</Source>
@@ -451,8 +451,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana6.xnb</Output>
-      <Time>2014-05-26T15:31:40.6120562+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana6.xnb</Output>
+      <Time>2014-05-26T15:20:25.7219949+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana7.png</Source>
@@ -460,8 +460,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana7.xnb</Output>
-      <Time>2014-05-26T15:31:40.6140563+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana7.xnb</Output>
+      <Time>2014-05-26T15:20:25.722995+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\manaBG.png</Source>
@@ -469,8 +469,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\manaBG.xnb</Output>
-      <Time>2014-05-26T15:31:40.6160565+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\manaBG.xnb</Output>
+      <Time>2014-05-26T15:20:25.7249951+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\fog.png</Source>
@@ -478,8 +478,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\fog.xnb</Output>
-      <Time>2014-05-28T00:56:18.7224656+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\fog.xnb</Output>
+      <Time>2014-05-26T16:22:51.6582502+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\persotony.png</Source>
@@ -490,8 +490,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\persotony.xnb</Output>
-      <Time>2014-05-29T02:23:54.9517454+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\persotony.xnb</Output>
+      <Time>2014-05-29T16:49:52.5620092+02:00</Time>
     </Item>
     <Item>
       <Source>Textures\Star9.png</Source>
@@ -499,8 +499,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\Star9.xnb</Output>
-      <Time>2014-06-16T19:54:18.6912567+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\Star9.xnb</Output>
+      <Time>2014-06-16T14:06:28.5887214+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fleche.png</Source>
@@ -511,8 +511,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fleche.xnb</Output>
-      <Time>2014-06-17T00:39:20.9744513+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fleche.xnb</Output>
+      <Time>2014-06-17T12:47:58.4947587+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fleche2.png</Source>
@@ -523,8 +523,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fleche2.xnb</Output>
-      <Time>2014-06-17T00:55:34.8841558+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fleche2.xnb</Output>
+      <Time>2014-06-17T12:47:58.4957588+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\soundOff.png</Source>
@@ -535,8 +535,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\soundOff.xnb</Output>
-      <Time>2014-06-17T01:20:12.2666572+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\soundOff.xnb</Output>
+      <Time>2014-06-17T12:47:58.5457616+02:00</Time>
     </Item>
     <Item>
       <Source>Scenar\Planche1.jpg</Source>
@@ -544,8 +544,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche1.xnb</Output>
-      <Time>2014-06-17T14:48:05.1173302+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche1.xnb</Output>
+      <Time>2014-06-17T12:47:58.551762+02:00</Time>
     </Item>
     <Item>
       <Source>Scenar\Planche2.jpg</Source>
@@ -553,8 +553,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche2.xnb</Output>
-      <Time>2014-06-17T14:48:05.1273308+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche2.xnb</Output>
+      <Time>2014-06-17T12:47:58.5567623+02:00</Time>
     </Item>
     <Item>
       <Source>Scenar\Planche4.jpg</Source>
@@ -562,8 +562,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche4.xnb</Output>
-      <Time>2014-06-17T14:48:05.1423316+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche4.xnb</Output>
+      <Time>2014-06-17T12:47:58.5657628+02:00</Time>
     </Item>
     <Item>
       <Source>Scenar\Planche3.jpg</Source>
@@ -571,8 +571,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche3.xnb</Output>
-      <Time>2014-06-17T14:48:05.1343312+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche3.xnb</Output>
+      <Time>2014-06-17T12:47:58.5607625+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\MainMenu.png</Source>
@@ -580,8 +580,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MainMenu.xnb</Output>
-      <Time>2014-06-17T14:48:05.0933288+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MainMenu.xnb</Output>
+      <Time>2014-06-17T15:09:23.0030448+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\alogojeu.png</Source>
@@ -589,8 +589,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\alogojeu.xnb</Output>
-      <Time>2014-06-17T14:48:05.1043294+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\alogojeu.xnb</Output>
+      <Time>2014-06-17T15:09:23.0070451+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\alogogrp.png</Source>
@@ -598,8 +598,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\alogogrp.xnb</Output>
-      <Time>2014-06-17T14:48:05.0983291+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\alogogrp.xnb</Output>
+      <Time>2014-06-17T15:09:23.005045+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\GameOver.jpg</Source>
@@ -607,8 +607,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\GameOver.xnb</Output>
-      <Time>2014-06-17T14:48:05.0733277+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\GameOver.xnb</Output>
+      <Time>2014-06-17T15:09:22.4920156+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\Button_About.jpg</Source>
@@ -616,8 +616,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_About.xnb</Output>
-      <Time>2014-06-17T17:27:13.2464519+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_About.xnb</Output>
+      <Time>2014-06-17T20:34:55.6242469+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button_APropos.jpg</Source>
@@ -625,8 +625,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_APropos.xnb</Output>
-      <Time>2014-06-17T17:27:51.0736155+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_APropos.xnb</Output>
+      <Time>2014-06-17T20:34:56.1412764+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\Button_Exit.jpg</Source>
@@ -634,8 +634,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Exit.xnb</Output>
-      <Time>2014-06-17T17:27:13.2524523+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Exit.xnb</Output>
+      <Time>2014-06-17T20:34:55.9562659+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button_jouer.jpg</Source>
@@ -643,8 +643,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_jouer.xnb</Output>
-      <Time>2014-06-17T17:27:51.0896164+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_jouer.xnb</Output>
+      <Time>2014-06-17T20:34:56.3192866+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button_Option.jpg</Source>
@@ -652,8 +652,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_Option.xnb</Output>
-      <Time>2014-06-17T17:27:51.0936167+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_Option.xnb</Output>
+      <Time>2014-06-17T20:34:56.2332817+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\Button_Play.jpg</Source>
@@ -661,8 +661,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Play.xnb</Output>
-      <Time>2014-06-17T17:27:13.265453+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Play.xnb</Output>
+      <Time>2014-06-17T20:34:55.9682665+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button_PleinEcran.jpg</Source>
@@ -670,8 +670,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_PleinEcran.xnb</Output>
-      <Time>2014-06-17T17:27:51.098617+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_PleinEcran.xnb</Output>
+      <Time>2014-06-17T20:34:56.2442823+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button_Quitter.jpg</Source>
@@ -679,8 +679,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_Quitter.xnb</Output>
-      <Time>2014-06-17T17:27:51.1026172+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_Quitter.xnb</Output>
+      <Time>2014-06-17T20:34:56.2952852+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button_Retour.jpg</Source>
@@ -688,8 +688,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_Retour.xnb</Output>
-      <Time>2014-06-17T17:27:51.1066174+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_Retour.xnb</Output>
+      <Time>2014-06-17T20:34:56.3072859+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\Button_Return.jpg</Source>
@@ -697,8 +697,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Return.xnb</Output>
-      <Time>2014-06-17T17:27:13.2714534+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Return.xnb</Output>
+      <Time>2014-06-17T20:34:55.9912679+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\Button_Windowed.jpg</Source>
@@ -706,8 +706,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Windowed.xnb</Output>
-      <Time>2014-06-17T17:27:13.2814539+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Windowed.xnb</Output>
+      <Time>2014-06-17T20:34:56.0032685+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\fullscreen.jpg</Source>
@@ -715,8 +715,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\fullscreen.xnb</Output>
-      <Time>2014-06-17T17:27:13.2604527+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\fullscreen.xnb</Output>
+      <Time>2014-06-17T20:34:56.0152692+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\fenetre.jpg</Source>
@@ -724,8 +724,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\fenetre.xnb</Output>
-      <Time>2014-06-17T17:27:51.0846161+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\fenetre.xnb</Output>
+      <Time>2014-06-17T20:34:56.3312873+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button-francais.jpg</Source>
@@ -733,8 +733,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button-francais.xnb</Output>
-      <Time>2014-06-17T19:30:06.5391802+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button-francais.xnb</Output>
+      <Time>2014-06-17T20:34:56.1302758+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\Button_English.jpg</Source>
@@ -742,8 +742,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_English.xnb</Output>
-      <Time>2014-06-17T19:29:56.3455971+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_English.xnb</Output>
+      <Time>2014-06-17T20:34:55.6362476+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\brique.png</Source>
@@ -751,8 +751,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\brique.xnb</Output>
-      <Time>2014-06-18T15:25:28.3491692+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\brique.xnb</Output>
+      <Time>2014-05-24T11:17:48.0862555+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\glace.png</Source>
@@ -760,8 +760,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\glace.xnb</Output>
-      <Time>2014-06-18T15:25:28.3701704+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\glace.xnb</Output>
+      <Time>2014-05-24T11:17:50.6954047+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\neige.png</Source>
@@ -769,8 +769,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\neige.xnb</Output>
-      <Time>2014-06-18T15:25:28.3751707+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\neige.xnb</Output>
+      <Time>2014-05-24T11:17:54.336613+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\pierre.png</Source>
@@ -778,8 +778,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\pierre.xnb</Output>
-      <Time>2014-06-18T15:25:28.3781709+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\pierre.xnb</Output>
+      <Time>2014-05-24T11:17:48.2462646+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\pierre2.png</Source>
@@ -787,8 +787,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\pierre2.xnb</Output>
-      <Time>2014-06-18T15:25:28.3811711+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\pierre2.xnb</Output>
+      <Time>2014-05-24T11:17:48.2572652+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\pierrenoir.png</Source>
@@ -796,8 +796,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\pierrenoir.xnb</Output>
-      <Time>2014-06-18T15:25:28.3861713+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\pierrenoir.xnb</Output>
+      <Time>2014-05-24T11:17:47.9782493+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\sable.png</Source>
@@ -805,8 +805,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\sable.xnb</Output>
-      <Time>2014-06-18T15:25:28.3921717+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\sable.xnb</Output>
+      <Time>2014-05-24T11:17:54.3266124+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\terre.png</Source>
@@ -814,8 +814,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\terre.xnb</Output>
-      <Time>2014-06-18T15:25:28.3961719+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\terre.xnb</Output>
+      <Time>2014-05-24T11:17:49.1743177+02:00</Time>
     </Item>
     <Item>
       <Source>Textures\flame.png</Source>
@@ -826,13 +826,8 @@
         <Data Key="ColorKeyColor">0, 0, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\flame.xnb</Output>
       <Time>2014-06-19T20:44:48.1416806+02:00</Time>
-=======
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\flame.xnb</Output>
-      <Time>2014-06-19T20:56:34.4539658+02:00</Time>
->>>>>>> b82d396c0b6f3d2dbe9084b434d136c1ebb0bb59
     </Item>
     <Item>
       <Source>Sprites\RandomAnimations\bouclier1.png</Source>
@@ -843,8 +838,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\bouclier1.xnb</Output>
-      <Time>2014-06-18T18:47:21.9970303+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\bouclier1.xnb</Output>
+      <Time>2014-06-18T20:43:19.968632+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RandomAnimations\bouclier2.png</Source>
@@ -855,8 +850,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\bouclier2.xnb</Output>
-      <Time>2014-06-18T18:47:29.265446+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\bouclier2.xnb</Output>
+      <Time>2014-06-18T20:43:19.968632+02:00</Time>
     </Item>
     <Item>
       <Source>Crafts\0potion.PNG</Source>
@@ -867,8 +862,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\0potion.xnb</Output>
-      <Time>2014-06-18T20:10:06.0149558+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\0potion.xnb</Output>
+      <Time>2014-06-18T20:43:19.9646318+02:00</Time>
     </Item>
     <Item>
       <Source>Crafts\1shield.PNG</Source>
@@ -879,8 +874,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\1shield.xnb</Output>
-      <Time>2014-06-18T20:10:06.016956+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\1shield.xnb</Output>
+      <Time>2014-06-18T20:43:19.9656319+02:00</Time>
     </Item>
     <Item>
       <Source>Crafts\3bottes.png</Source>
@@ -891,8 +886,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\3bottes.xnb</Output>
-      <Time>2014-06-18T20:10:06.0189561+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\3bottes.xnb</Output>
+      <Time>2014-06-18T20:43:19.9666319+02:00</Time>
     </Item>
     <Item>
       <Source>Crafts\4canon.png</Source>
@@ -903,8 +898,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\4canon.xnb</Output>
-      <Time>2014-06-18T20:10:06.0209562+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\4canon.xnb</Output>
+      <Time>2014-06-18T20:43:19.967632+02:00</Time>
     </Item>
     <Item>
       <Source>Crafts\5soda.png</Source>
@@ -915,8 +910,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\5soda.xnb</Output>
-      <Time>2014-06-19T17:45:50.2913971+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\5soda.xnb</Output>
+      <Time>2014-06-18T23:34:24.0577044+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\1.png</Source>
@@ -927,8 +922,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\1.xnb</Output>
-      <Time>2014-06-18T15:25:28.3171674+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\1.xnb</Output>
+      <Time>2014-06-18T17:09:06.0524301+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\10.png</Source>
@@ -939,8 +934,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\10.xnb</Output>
-      <Time>2014-06-18T15:25:28.3181675+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\10.xnb</Output>
+      <Time>2014-06-18T17:09:06.0554303+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\11.PNG</Source>
@@ -951,8 +946,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\11.xnb</Output>
-      <Time>2014-06-19T17:45:50.411404+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\11.xnb</Output>
+      <Time>2014-06-19T17:36:14.4455742+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\2.png</Source>
@@ -963,8 +958,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\2.xnb</Output>
-      <Time>2014-06-18T15:25:28.3201676+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\2.xnb</Output>
+      <Time>2014-06-18T17:09:06.0574304+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\3.png</Source>
@@ -975,8 +970,8 @@
         <Data Key="ColorKeyColor">255, 0, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\3.xnb</Output>
-      <Time>2014-06-18T15:25:28.3211676+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\3.xnb</Output>
+      <Time>2014-06-18T17:09:06.0604306+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\4.PNG</Source>
@@ -987,8 +982,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\4.xnb</Output>
-      <Time>2014-06-18T15:25:28.3231677+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\4.xnb</Output>
+      <Time>2014-06-18T17:09:06.0624307+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\5.PNG</Source>
@@ -999,8 +994,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\5.xnb</Output>
-      <Time>2014-06-19T17:45:50.4134041+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\5.xnb</Output>
+      <Time>2014-06-19T17:36:14.4475743+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\6.PNG</Source>
@@ -1011,8 +1006,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\6.xnb</Output>
-      <Time>2014-06-19T17:45:50.4154042+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\6.xnb</Output>
+      <Time>2014-06-19T17:36:14.4495745+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\7.PNG</Source>
@@ -1020,8 +1015,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\7.xnb</Output>
-      <Time>2014-05-05T22:13:31.7591207+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\7.xnb</Output>
+      <Time>2014-05-05T20:20:18.6614749+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\8.PNG</Source>
@@ -1032,8 +1027,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\8.xnb</Output>
-      <Time>2014-06-19T17:45:50.4174043+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\8.xnb</Output>
+      <Time>2014-06-19T17:36:14.4525746+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\9.PNG</Source>
@@ -1044,8 +1039,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\9.xnb</Output>
-      <Time>2014-06-19T17:45:50.4194044+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\9.xnb</Output>
+      <Time>2014-06-19T17:36:14.4545747+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\pause.jpg</Source>
@@ -1053,13 +1048,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\pause.xnb</Output>
       <Time>2014-06-19T17:36:14.4425741+02:00</Time>
-=======
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\pause.xnb</Output>
-      <Time>2014-06-19T17:45:50.4084038+02:00</Time>
->>>>>>> b82d396c0b6f3d2dbe9084b434d136c1ebb0bb59
     </Item>
     <Item>
       <Source>Menu\eng\medium.jpg</Source>
@@ -1067,8 +1057,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\medium.xnb</Output>
-      <Time>2014-06-19T17:45:50.3414+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\medium.xnb</Output>
+      <Time>2014-06-19T17:36:14.3745702+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button_difficile.jpg</Source>
@@ -1076,8 +1066,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_difficile.xnb</Output>
-      <Time>2014-06-19T17:45:50.3534006+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_difficile.xnb</Output>
+      <Time>2014-06-19T17:36:14.3925712+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\button_facil.jpg</Source>
@@ -1085,8 +1075,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\button_facil.xnb</Output>
-      <Time>2014-06-19T17:45:50.3654013+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\button_facil.xnb</Output>
+      <Time>2014-06-19T17:36:14.4035718+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\button_moyen.jpg</Source>
@@ -1094,8 +1084,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\button_moyen.xnb</Output>
-      <Time>2014-06-19T17:45:50.377402+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\button_moyen.xnb</Output>
+      <Time>2014-06-19T17:36:14.4145725+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\buttonCraftInterface.jpg</Source>
@@ -1103,8 +1093,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\buttonCraftInterface.xnb</Output>
-      <Time>2014-06-19T17:45:50.3113982+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\buttonCraftInterface.xnb</Output>
+      <Time>2014-06-19T17:36:14.3435684+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\CraftInterface.png</Source>
@@ -1112,8 +1102,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
-      <Time>2014-06-19T17:45:50.3093981+02:00</Time>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
+      <Time>2014-06-19T17:36:14.3395682+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\eng\easy.jpg</Source>
+      <Name>Menu\eng\easy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\easy.xnb</Output>
+      <Time>2014-06-19T22:05:07.3493235+02:00</Time>
     </Item>
     <Item>
       <Source>Crafts\2gun1.png</Source>
@@ -1136,13 +1135,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tonygun.xnb</Output>
       <Time>2014-06-19T23:49:48.5535879+02:00</Time>
-=======
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tonygun.xnb</Output>
-      <Time>2014-06-19T23:03:00.0208354+02:00</Time>
->>>>>>> b82d396c0b6f3d2dbe9084b434d136c1ebb0bb59
     </Item>
     <Item>
       <Source>Sprites\aldouxgun.bmp</Source>
@@ -1208,44 +1202,16 @@
       <Extra>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\video.wmv</Extra>
       <Time>2014-06-19T17:36:14.5035775+02:00</Time>
     </Item>
-    <Item>
-      <Source>Fonts\UIfont.spritefont</Source>
-      <Name>Fonts\UIfont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfont.xnb</Output>
-      <Time>2014-05-02T17:20:41.1915779+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\UIfontsmall.spritefont</Source>
-      <Name>Fonts\UIfontsmall</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
-      <Time>2014-05-05T14:33:34.1926301+02:00</Time>
-    </Item>
-    <Item>
-      <Source>video.wmv</Source>
-      <Name>video</Name>
-      <Importer>WmvImporter</Importer>
-      <Processor>VideoProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\video.xnb</Output>
-      <Extra>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\video.wmv</Extra>
-      <Time>2014-06-19T17:45:50.5074095+02:00</Time>
-    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgainContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgainContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Pim\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -1274,7 +1240,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-12-15T03:57:42.1106379+01:00</Value>
+        <Value>2013-11-13T22:22:11.495442+01:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
