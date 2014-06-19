@@ -19,7 +19,7 @@ namespace TryAgain.GameStates
         cButton ButtonFullscreen;
         cButton ButtonFenetre;
         cButton ButtonTony;
-        cButton ButtonPierre;
+        cButton ButtonPierre, ButtonDenis, ButtonAldric;
         cButton ButtonFlecheGauche, ButtonFlecheDroite, soundOff, buttonFrancais, buttonEnglish;
         float son = Sounds.Themes.volume;
         float saveSon = 0;
@@ -49,6 +49,16 @@ namespace TryAgain.GameStates
             {
                 GameScreen.name = "Pierre";
                 Online.Connection.avatar = "Tpierre";
+            }
+            if (ButtonDenis.IsClicked(mouse))
+            {
+                GameScreen.name = "Denis";
+                Online.Connection.avatar = "Tdenis";
+            }
+            if (ButtonAldric.IsClicked(mouse))
+            {
+                GameScreen.name = "Aldoux";
+                Online.Connection.avatar = "Taldric";
             }
             if (ButtonReturn.IsClicked(mouse))
             {
@@ -143,14 +153,26 @@ namespace TryAgain.GameStates
                 sb.DrawString(Textures.UIfont, "Character choice:", new Vector2(400, 10), Color.Black);
             else
                 sb.DrawString(Textures.UIfont, "Choix du personnage:", new Vector2(400, 10), Color.Black);
+
             if (Online.Connection.avatar == "Ttony")
                 sb.Draw(Textures.Chosen, new Vector2(295, 45), Color.Black);
             sb.DrawString(Textures.UIfont, "Tony:", new Vector2(200, 100), Color.Black);
             ButtonPierre.Draw(sb);
+
             if (Online.Connection.avatar == "Tpierre")
                 sb.Draw(Textures.Chosen, new Vector2(495, 45), Color.Black);
             sb.DrawString(Textures.UIfont, "Pierre:", new Vector2(400, 100), Color.Black);
             ButtonTony.Draw(sb);
+
+            if (Online.Connection.avatar == "Tdenis")
+                sb.Draw(Textures.Chosen, new Vector2(695, 45), Color.Black);
+            sb.DrawString(Textures.UIfont, "Denis:", new Vector2(600, 100), Color.Black);
+            ButtonDenis.Draw(sb);
+
+            if (Online.Connection.avatar == "Taldric")
+                sb.Draw(Textures.Chosen, new Vector2(895, 45), Color.Black);
+            sb.DrawString(Textures.UIfont, "Pierre:", new Vector2(800, 100), Color.Black);
+            ButtonAldric.Draw(sb);
 
             //changer son
             ButtonFlecheGauche.Draw(sb);
@@ -196,6 +218,10 @@ namespace TryAgain.GameStates
             ButtonTony.SetPosition(new Vector2(300, 50));
             ButtonPierre = new cButton(Textures.buttonPierre, graphics, 22 * 2, 65 * 2);
             ButtonPierre.SetPosition(new Vector2(500, 50));
+            ButtonDenis = new cButton(Textures.Cache["Tdenis"], graphics, 65 * 2, 65 * 2);
+            ButtonDenis.SetPosition(new Vector2(657, 50));
+            ButtonAldric = new cButton(Textures.Cache["Taldric"], graphics, 65 * 2, 65 * 2);
+            ButtonAldric.SetPosition(new Vector2(857, 50));
             ButtonFlecheGauche = new cButton(Textures.Fleche, graphics, 50, 50);
             ButtonFlecheGauche.SetPosition(new Vector2(300, 400));
             ButtonFlecheDroite = new cButton(Textures.Fleche2, graphics, 50, 50);
