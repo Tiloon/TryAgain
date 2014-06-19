@@ -22,6 +22,7 @@ namespace TryAgain.GameElements
         int x;
         int y;
         Random rd = new Random();
+        public GameTime resstime;
 
         public Ressource(int id)
         {
@@ -29,6 +30,7 @@ namespace TryAgain.GameElements
             this.y = rd.Next(Game1.graphics.PreferredBackBufferHeight);
             this.id = id;
             this.item = Ressourceslist.idtoitem[id];
+            resstime = Game1.gmt;
         }
 
         public Ressource()
@@ -37,6 +39,7 @@ namespace TryAgain.GameElements
             this.y = rd.Next(20, Game1.graphics.PreferredBackBufferHeight);
             this.id = rd.Next(11);
             this.item = Ressourceslist.idtoitem[id];
+            resstime = Game1.gmt;
         }
 
         public void Draw(SpriteBatch sb)
@@ -44,7 +47,7 @@ namespace TryAgain.GameElements
             sb.Draw(item, new Rectangle (x, y, item.Width, item.Height), Color.White);
         }
 
-        public bool Update(Rectangle persoRectangle)   //retourne en plus s'il y'a intersect et dans ce cas, on enlève ressource de liste
+        public bool Update(Rectangle persoRectangle, Vector2 expos, Vector2 newpos)   //retourne en plus s'il y'a intersect et dans ce cas, on enlève ressource de liste
         {
             if (persoRectangle.Intersects(new Rectangle(x - item.Width, y - item.Height/2, item.Width, item.Height)))
             {
@@ -52,13 +55,13 @@ namespace TryAgain.GameElements
                 return true;
             }
             float t=33.7F;
-            if (Keyboard.GetState().IsKeyDown(Keys.Right) && (x > 10))
+            if (Keyboard.GetState().IsKeyDown(Keys.Right) /*&& (x > 10)*/ && (expos != newpos))
                 x -= (int)(GameScreen.hero.stats.speed * t);
-            if (Keyboard.GetState().IsKeyDown(Keys.Left) && (x < Game1.graphics.PreferredBackBufferWidth - 10))
+            if (Keyboard.GetState().IsKeyDown(Keys.Left) /* && (x < Game1.graphics.PreferredBackBufferWidth - 10*/ && (expos != newpos))
                 x += (int)(GameScreen.hero.stats.speed * t);
-            if (Keyboard.GetState().IsKeyDown(Keys.Up) && (y > 10))
+            if (Keyboard.GetState().IsKeyDown(Keys.Up) /*&& (y > 10*/ && (expos != newpos))
                 y += (int)(GameScreen.hero.stats.speed * t);
-            if (Keyboard.GetState().IsKeyDown(Keys.Down) && (y < Game1.graphics.PreferredBackBufferHeight - 10))
+            if (Keyboard.GetState().IsKeyDown(Keys.Down) /*&& (y < Game1.graphics.PreferredBackBufferHeight - 10)*/ && (expos != newpos))
                 y -= (int)(GameScreen.hero.stats.speed * t);
             return false;
         }

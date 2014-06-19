@@ -22,11 +22,7 @@ Content\Sprites\herbe_roche.xnb
 Content\Sprites\halfsable.xnb
 Content\Menu\pause fail.xnb
 Content\UI\pxl.xnb
-<<<<<<< HEAD
-Content\Menu\CraftInterface.xnb
-=======
 Content\Menu\eng\hard.xnb
->>>>>>> 508e6184a6b928837fb41d64b2df06a06134f5a2
 Content\Menu\storyboard.xnb
 Content\Menu\Button_SondOff.xnb
 Content\Menu\Button_SondOn.xnb
@@ -109,10 +105,6 @@ Content\Sprites\Ressources\6.xnb
 Content\Sprites\Ressources\7.xnb
 Content\Sprites\Ressources\8.xnb
 Content\Sprites\Ressources\9.xnb
-<<<<<<< HEAD
-Content\Fonts\UIfont.xnb
-Content\Fonts\UIfontsmall.xnb
-=======
 Content\Menu\pause.xnb
 Content\Menu\eng\easy.xnb
 Content\Menu\eng\medium.xnb
@@ -121,5 +113,5 @@ Content\Menu\fr\button_facil.xnb
 Content\Menu\fr\button_moyen.xnb
 Content\Fonts\UIfont.xnb
 Content\Fonts\UIfontsmall.xnb
+Content\Menu\buttonCraftInterface.xnb
 Content\Menu\CraftInterface.xnb
->>>>>>> 508e6184a6b928837fb41d64b2df06a06134f5a2

@@ -257,3 +257,11 @@ C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x8
 C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\button_facil.xnb
 C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\button_moyen.xnb
 C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb
+C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\pause fail.xnb
+C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\hard.xnb
+C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\easy.xnb
+C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\medium.xnb
+C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_difficile.xnb
+C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\button_facil.xnb
+C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\button_moyen.xnb
+C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\buttonCraftInterface.xnb

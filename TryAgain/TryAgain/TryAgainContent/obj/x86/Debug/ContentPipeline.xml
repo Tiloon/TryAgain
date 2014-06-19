@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tileherbe.xnb</Output>
-      <Time>2014-05-06T18:05:55.9944813+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tileherbe.xnb</Output>
+      <Time>2014-06-16T14:30:41.2062534+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\tilesable.bmp</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilesable.xnb</Output>
-      <Time>2014-05-06T18:05:56.0024866+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilesable.xnb</Output>
+      <Time>2014-06-16T14:30:41.2142538+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\persopierre.png</Source>
@@ -28,8 +28,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\persopierre.xnb</Output>
-      <Time>2014-05-06T18:05:55.987476+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\persopierre.xnb</Output>
+      <Time>2014-06-16T14:30:41.1972528+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\About.png</Source>
@@ -37,8 +37,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\About.xnb</Output>
-      <Time>2014-05-06T18:05:55.9404427+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\About.xnb</Output>
+      <Time>2014-06-16T14:30:40.9222371+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\Option.png</Source>
@@ -46,8 +46,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Option.xnb</Output>
-      <Time>2014-05-06T18:05:55.959469+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Option.xnb</Output>
+      <Time>2014-06-16T14:30:41.0392438+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\tilecaillou.bmp</Source>
@@ -55,8 +55,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilecaillou.xnb</Output>
-      <Time>2014-05-06T18:05:55.9914788+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tilecaillou.xnb</Output>
+      <Time>2014-06-16T14:30:41.200253+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\tileneige.bmp</Source>
@@ -64,8 +64,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tileneige.xnb</Output>
-      <Time>2014-05-06T18:05:55.9994845+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tileneige.xnb</Output>
+      <Time>2014-06-16T14:30:41.2102536+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Unwalkable\tileneigetrou.bmp</Source>
@@ -73,8 +73,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tileneigetrou.xnb</Output>
-      <Time>2014-05-06T18:05:55.9854745+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tileneigetrou.xnb</Output>
+      <Time>2014-06-16T14:30:41.1752516+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Unwalkable\tilecascadegauche.bmp</Source>
@@ -82,8 +82,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tilecascadegauche.xnb</Output>
-      <Time>2014-05-06T18:05:55.9844738+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tilecascadegauche.xnb</Output>
+      <Time>2014-06-16T14:30:41.1742515+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Unwalkable\tilecascadedroite.bmp</Source>
@@ -91,8 +91,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tilecascadedroite.xnb</Output>
-      <Time>2014-05-06T18:05:55.9824724+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\tilecascadedroite.xnb</Output>
+      <Time>2014-06-16T14:30:41.1462499+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Unwalkable\Arbre\013.bmp</Source>
@@ -100,8 +100,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\013.xnb</Output>
-      <Time>2014-05-06T18:05:55.9774697+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\013.xnb</Output>
+      <Time>2014-06-16T14:30:41.1432498+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Unwalkable\Arbre\017.bmp</Source>
@@ -109,8 +109,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\017.xnb</Output>
-      <Time>2014-05-06T18:05:55.9794699+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\017.xnb</Output>
+      <Time>2014-06-16T14:30:41.1442498+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Unwalkable\Arbre\026.bmp</Source>
@@ -118,8 +118,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\026.xnb</Output>
-      <Time>2014-05-06T18:05:55.980471+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Unwalkable\Arbre\026.xnb</Output>
+      <Time>2014-06-16T14:30:41.1452499+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Halfwalkable\tileaqua.bmp</Source>
@@ -127,8 +127,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Halfwalkable\tileaqua.xnb</Output>
-      <Time>2014-05-06T18:05:55.9654604+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Halfwalkable\tileaqua.xnb</Output>
+      <Time>2014-06-16T14:30:41.0612451+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Halfwalkable\tilefire.bmp</Source>
@@ -136,8 +136,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Halfwalkable\tilefire.xnb</Output>
-      <Time>2014-05-06T18:05:55.9664615+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Halfwalkable\tilefire.xnb</Output>
+      <Time>2014-06-16T14:30:41.0622451+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Monsters\bebeglauque.png</Source>
@@ -148,8 +148,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Monsters\bebeglauque.xnb</Output>
-      <Time>2014-05-06T18:05:55.9674618+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Monsters\bebeglauque.xnb</Output>
+      <Time>2014-06-16T14:30:41.0652453+02:00</Time>
     </Item>
     <Item>
       <Source>UI\uiitems.png</Source>
@@ -157,8 +157,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\uiitems.xnb</Output>
-      <Time>2014-05-06T18:05:56.028505+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\uiitems.xnb</Output>
+      <Time>2014-06-16T14:30:41.2622566+02:00</Time>
     </Item>
     <Item>
       <Source>UI\uiselected.png</Source>
@@ -166,8 +166,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\uiselected.xnb</Output>
-      <Time>2014-05-06T18:05:56.0295155+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\uiselected.xnb</Output>
+      <Time>2014-06-16T14:30:41.2632566+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\Button_1player.png</Source>
@@ -175,8 +175,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_1player.xnb</Output>
-      <Time>2014-05-06T18:05:55.9414438+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_1player.xnb</Output>
+      <Time>2014-06-16T14:30:40.9232372+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\Button_2players.png</Source>
@@ -184,8 +184,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_2players.xnb</Output>
-      <Time>2014-05-06T18:05:55.9414438+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_2players.xnb</Output>
+      <Time>2014-06-16T14:30:40.9242372+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\herbe_roche.png</Source>
@@ -193,8 +193,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\herbe_roche.xnb</Output>
-      <Time>2014-05-06T18:05:55.987476+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\herbe_roche.xnb</Output>
+      <Time>2014-06-16T14:30:41.1772517+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\halfsable.png</Source>
@@ -202,8 +202,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\halfsable.xnb</Output>
-      <Time>2014-05-06T18:05:55.9864753+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\halfsable.xnb</Output>
+      <Time>2014-06-16T14:30:41.1762516+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\pause fail.png</Source>
@@ -211,8 +211,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\pause fail.xnb</Output>
-      <Time>2014-05-06T18:05:55.961458+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\pause fail.xnb</Output>
+      <Time>2014-06-19T15:06:17.2156013+02:00</Time>
     </Item>
     <Item>
       <Source>UI\pxl.png</Source>
@@ -220,27 +220,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\pxl.xnb</Output>
-      <Time>2014-05-06T18:05:56.028505+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\pxl.xnb</Output>
+      <Time>2014-06-16T14:30:41.2612565+02:00</Time>
     </Item>
     <Item>
-<<<<<<< HEAD
-      <Source>Menu\CraftInterface.png</Source>
-      <Name>Menu\CraftInterface</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
-      <Time>2014-06-19T11:47:33.3329243+02:00</Time>
-=======
       <Source>Menu\eng\hard.jpg</Source>
       <Name>Menu\eng\hard</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\hard.xnb</Output>
-      <Time>2014-06-19T14:43:14.3479951+02:00</Time>
->>>>>>> 508e6184a6b928837fb41d64b2df06a06134f5a2
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\hard.xnb</Output>
+      <Time>2014-06-19T15:06:17.1405971+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\storyboard.jpg</Source>
@@ -248,8 +238,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\storyboard.xnb</Output>
-      <Time>2014-05-24T18:37:39.9656138+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\storyboard.xnb</Output>
+      <Time>2014-06-16T14:30:41.0462442+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\Button_SondOff.png</Source>
@@ -260,8 +250,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_SondOff.xnb</Output>
-      <Time>2014-05-24T18:37:39.9355938+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_SondOff.xnb</Output>
+      <Time>2014-06-16T14:30:40.9452384+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\Button_SondOn.png</Source>
@@ -272,8 +262,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_SondOn.xnb</Output>
-      <Time>2014-05-24T18:37:39.9375969+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\Button_SondOn.xnb</Output>
+      <Time>2014-06-16T14:30:40.9482386+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\MenuOption.png</Source>
@@ -281,8 +271,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MenuOption.xnb</Output>
-      <Time>2014-05-24T18:37:39.9586088+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MenuOption.xnb</Output>
+      <Time>2014-06-16T14:30:41.0372437+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RandomAnimations\Shield.png</Source>
@@ -293,8 +283,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\Shield.xnb</Output>
-      <Time>2014-05-25T12:28:52.8019122+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\Shield.xnb</Output>
+      <Time>2014-06-16T14:30:41.0692455+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RandomAnimations\Missile.PNG</Source>
@@ -305,8 +295,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\Missile.xnb</Output>
-      <Time>2014-06-19T10:50:23.2725885+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\Missile.xnb</Output>
+      <Time>2014-06-18T00:10:18.6585676+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Chosen.png</Source>
@@ -317,8 +307,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Chosen.xnb</Output>
-      <Time>2014-05-29T11:53:42.4548693+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Chosen.xnb</Output>
+      <Time>2014-06-16T14:30:41.0472443+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health0.png</Source>
@@ -326,8 +316,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health0.xnb</Output>
-      <Time>2014-05-29T11:53:42.4668658+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health0.xnb</Output>
+      <Time>2014-06-16T14:30:41.2442555+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health1.png</Source>
@@ -335,8 +325,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health1.xnb</Output>
-      <Time>2014-05-29T11:53:42.4668658+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health1.xnb</Output>
+      <Time>2014-06-16T14:30:41.2452556+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health2.png</Source>
@@ -344,8 +334,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health2.xnb</Output>
-      <Time>2014-05-29T11:53:42.4678657+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health2.xnb</Output>
+      <Time>2014-06-16T14:30:41.2462556+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health3.png</Source>
@@ -353,8 +343,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health3.xnb</Output>
-      <Time>2014-05-29T11:53:42.4678657+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health3.xnb</Output>
+      <Time>2014-06-16T14:30:41.2472557+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health4.png</Source>
@@ -362,8 +352,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health4.xnb</Output>
-      <Time>2014-05-29T11:53:42.4688664+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health4.xnb</Output>
+      <Time>2014-06-16T14:30:41.2472557+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health5.png</Source>
@@ -371,8 +361,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health5.xnb</Output>
-      <Time>2014-05-29T11:53:42.4698821+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health5.xnb</Output>
+      <Time>2014-06-16T14:30:41.2482558+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health6.png</Source>
@@ -380,8 +370,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health6.xnb</Output>
-      <Time>2014-05-29T11:53:42.4698821+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health6.xnb</Output>
+      <Time>2014-06-16T14:30:41.2492558+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\health7.png</Source>
@@ -389,8 +379,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health7.xnb</Output>
-      <Time>2014-05-29T11:53:42.4708841+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\health7.xnb</Output>
+      <Time>2014-06-16T14:30:41.2512559+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\healthBG.png</Source>
@@ -398,8 +388,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\healthBG.xnb</Output>
-      <Time>2014-05-29T11:53:42.4708841+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\healthBG.xnb</Output>
+      <Time>2014-06-16T14:30:41.252256+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana0.png</Source>
@@ -407,8 +397,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana0.xnb</Output>
-      <Time>2014-05-29T11:53:42.4718685+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana0.xnb</Output>
+      <Time>2014-06-16T14:30:41.252256+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana1.png</Source>
@@ -416,8 +406,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana1.xnb</Output>
-      <Time>2014-05-29T11:53:42.4718685+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana1.xnb</Output>
+      <Time>2014-06-16T14:30:41.253256+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana2.png</Source>
@@ -425,8 +415,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana2.xnb</Output>
-      <Time>2014-05-29T11:53:42.4728692+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana2.xnb</Output>
+      <Time>2014-06-16T14:30:41.2552562+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana3.png</Source>
@@ -434,8 +424,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana3.xnb</Output>
-      <Time>2014-05-29T11:53:42.4738832+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana3.xnb</Output>
+      <Time>2014-06-16T14:30:41.2562562+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana4.png</Source>
@@ -443,8 +433,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana4.xnb</Output>
-      <Time>2014-05-29T11:53:42.4738832+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana4.xnb</Output>
+      <Time>2014-06-16T14:30:41.2562562+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana5.png</Source>
@@ -452,8 +442,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana5.xnb</Output>
-      <Time>2014-05-29T11:53:42.4748702+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana5.xnb</Output>
+      <Time>2014-06-16T14:30:41.2572563+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana6.png</Source>
@@ -461,8 +451,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana6.xnb</Output>
-      <Time>2014-05-29T11:53:42.4748702+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana6.xnb</Output>
+      <Time>2014-06-16T14:30:41.2582563+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\mana7.png</Source>
@@ -470,8 +460,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana7.xnb</Output>
-      <Time>2014-05-29T11:53:42.4758714+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\mana7.xnb</Output>
+      <Time>2014-06-16T14:30:41.2602565+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\manaBG.png</Source>
@@ -479,8 +469,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\manaBG.xnb</Output>
-      <Time>2014-05-29T11:53:42.4768772+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\manaBG.xnb</Output>
+      <Time>2014-06-16T14:30:41.2602565+02:00</Time>
     </Item>
     <Item>
       <Source>UI\gauge\fog.png</Source>
@@ -488,8 +478,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\fog.xnb</Output>
-      <Time>2014-05-29T11:53:42.465881+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\UI\gauge\fog.xnb</Output>
+      <Time>2014-06-16T14:30:41.2442555+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\persotony.png</Source>
@@ -500,8 +490,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\persotony.xnb</Output>
-      <Time>2014-05-29T11:53:42.4568575+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\persotony.xnb</Output>
+      <Time>2014-06-16T14:30:41.1982529+02:00</Time>
     </Item>
     <Item>
       <Source>Textures\Star9.png</Source>
@@ -509,8 +499,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\Star9.xnb</Output>
-      <Time>2014-06-19T10:50:23.3446394+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\Star9.xnb</Output>
+      <Time>2014-06-16T14:30:41.2152539+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fleche.png</Source>
@@ -521,8 +511,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fleche.xnb</Output>
-      <Time>2014-06-19T10:50:23.1715171+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fleche.xnb</Output>
+      <Time>2014-06-17T12:20:18.5838266+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fleche2.png</Source>
@@ -533,8 +523,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fleche2.xnb</Output>
-      <Time>2014-06-19T10:50:23.1715171+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fleche2.xnb</Output>
+      <Time>2014-06-17T12:20:18.5848267+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\soundOff.png</Source>
@@ -545,8 +535,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\soundOff.xnb</Output>
-      <Time>2014-06-19T10:50:23.241567+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\soundOff.xnb</Output>
+      <Time>2014-06-17T12:20:18.5868268+02:00</Time>
     </Item>
     <Item>
       <Source>Scenar\Planche1.jpg</Source>
@@ -554,8 +544,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche1.xnb</Output>
-      <Time>2014-06-19T10:50:23.2455698+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche1.xnb</Output>
+      <Time>2014-06-17T12:34:12.4745225+02:00</Time>
     </Item>
     <Item>
       <Source>Scenar\Planche2.jpg</Source>
@@ -563,8 +553,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche2.xnb</Output>
-      <Time>2014-06-19T10:50:23.2485719+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche2.xnb</Output>
+      <Time>2014-06-17T12:34:43.3932909+02:00</Time>
     </Item>
     <Item>
       <Source>Scenar\Planche4.jpg</Source>
@@ -572,8 +562,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche4.xnb</Output>
-      <Time>2014-06-19T10:50:23.2715882+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche4.xnb</Output>
+      <Time>2014-06-17T12:35:28.6498794+02:00</Time>
     </Item>
     <Item>
       <Source>Scenar\Planche3.jpg</Source>
@@ -581,8 +571,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche3.xnb</Output>
-      <Time>2014-06-19T10:50:23.251574+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Scenar\Planche3.xnb</Output>
+      <Time>2014-06-17T12:35:04.3794913+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\MainMenu.png</Source>
@@ -590,8 +580,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MainMenu.xnb</Output>
-      <Time>2014-06-19T10:50:23.0984672+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\MainMenu.xnb</Output>
+      <Time>2014-06-17T13:11:46.4274412+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\alogojeu.png</Source>
@@ -599,8 +589,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\alogojeu.xnb</Output>
-      <Time>2014-06-19T10:50:23.1014676+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\alogojeu.xnb</Output>
+      <Time>2014-06-17T13:17:08.0238355+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\alogogrp.png</Source>
@@ -608,8 +598,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\alogogrp.xnb</Output>
-      <Time>2014-06-19T10:50:23.0994679+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\alogogrp.xnb</Output>
+      <Time>2014-06-17T13:17:28.9870345+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\GameOver.jpg</Source>
@@ -617,8 +607,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\GameOver.xnb</Output>
-      <Time>2014-06-19T10:50:23.08946+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\GameOver.xnb</Output>
+      <Time>2014-06-17T13:53:42.687363+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\Button_About.jpg</Source>
@@ -626,8 +616,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_About.xnb</Output>
-      <Time>2014-06-19T10:50:23.1204832+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_About.xnb</Output>
+      <Time>2014-06-17T23:12:09.8240177+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button_APropos.jpg</Source>
@@ -635,8 +625,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_APropos.xnb</Output>
-      <Time>2014-06-19T10:50:23.1875284+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_APropos.xnb</Output>
+      <Time>2014-06-17T23:12:09.9390243+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\Button_Exit.jpg</Source>
@@ -644,8 +634,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Exit.xnb</Output>
-      <Time>2014-06-19T10:50:23.137493+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Exit.xnb</Output>
+      <Time>2014-06-17T23:12:09.8480191+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button_jouer.jpg</Source>
@@ -653,8 +643,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_jouer.xnb</Output>
-      <Time>2014-06-19T10:50:23.2315595+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_jouer.xnb</Output>
+      <Time>2014-06-17T23:12:10.0270293+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button_Option.jpg</Source>
@@ -662,8 +652,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_Option.xnb</Output>
-      <Time>2014-06-19T10:50:23.1995369+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_Option.xnb</Output>
+      <Time>2014-06-17T23:12:09.9730262+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\Button_Play.jpg</Source>
@@ -671,8 +661,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Play.xnb</Output>
-      <Time>2014-06-19T10:50:23.1454987+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Play.xnb</Output>
+      <Time>2014-06-17T23:12:09.8670202+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button_PleinEcran.jpg</Source>
@@ -680,8 +670,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_PleinEcran.xnb</Output>
-      <Time>2014-06-19T10:50:23.2105451+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_PleinEcran.xnb</Output>
+      <Time>2014-06-17T23:12:09.9990277+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button_Quitter.jpg</Source>
@@ -689,8 +679,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_Quitter.xnb</Output>
-      <Time>2014-06-19T10:50:23.2165506+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_Quitter.xnb</Output>
+      <Time>2014-06-17T23:12:10.0070282+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button_Retour.jpg</Source>
@@ -698,8 +688,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_Retour.xnb</Output>
-      <Time>2014-06-19T10:50:23.2235538+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_Retour.xnb</Output>
+      <Time>2014-06-17T23:12:10.0150286+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\Button_Return.jpg</Source>
@@ -707,8 +697,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Return.xnb</Output>
-      <Time>2014-06-19T10:50:23.1535048+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Return.xnb</Output>
+      <Time>2014-06-17T23:12:09.8830211+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\Button_Windowed.jpg</Source>
@@ -716,8 +706,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Windowed.xnb</Output>
-      <Time>2014-06-19T10:50:23.1625107+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_Windowed.xnb</Output>
+      <Time>2014-06-17T23:12:09.8950218+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\fullscreen.jpg</Source>
@@ -725,8 +715,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\fullscreen.xnb</Output>
-      <Time>2014-06-19T10:50:23.1705168+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\fullscreen.xnb</Output>
+      <Time>2014-06-17T23:12:09.9140229+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\fenetre.jpg</Source>
@@ -734,8 +724,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\fenetre.xnb</Output>
-      <Time>2014-06-19T10:50:23.2395656+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\fenetre.xnb</Output>
+      <Time>2014-06-17T23:12:10.03903+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button-francais.jpg</Source>
@@ -743,8 +733,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button-francais.xnb</Output>
-      <Time>2014-06-19T10:50:23.1805234+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button-francais.xnb</Output>
+      <Time>2014-06-17T23:12:09.9270236+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\Button_English.jpg</Source>
@@ -752,8 +742,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_English.xnb</Output>
-      <Time>2014-06-19T10:50:23.1294874+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\Button_English.xnb</Output>
+      <Time>2014-06-17T23:12:09.8360184+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\brique.png</Source>
@@ -761,8 +751,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\brique.xnb</Output>
-      <Time>2014-06-19T10:50:23.3326313+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\brique.xnb</Output>
+      <Time>2014-06-18T11:20:02.8100668+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\glace.png</Source>
@@ -770,8 +760,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\glace.xnb</Output>
-      <Time>2014-06-19T10:50:23.333632+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\glace.xnb</Output>
+      <Time>2014-06-18T11:20:02.8150671+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\neige.png</Source>
@@ -779,8 +769,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\neige.xnb</Output>
-      <Time>2014-06-19T10:50:23.3356334+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\neige.xnb</Output>
+      <Time>2014-06-18T11:20:02.8200674+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\pierre.png</Source>
@@ -788,8 +778,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\pierre.xnb</Output>
-      <Time>2014-06-19T10:50:23.3366341+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\pierre.xnb</Output>
+      <Time>2014-06-18T11:20:02.8250677+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\pierre2.png</Source>
@@ -797,8 +787,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\pierre2.xnb</Output>
-      <Time>2014-06-19T10:50:23.337634+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\pierre2.xnb</Output>
+      <Time>2014-06-18T11:20:02.8280679+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\pierrenoir.png</Source>
@@ -806,8 +796,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\pierrenoir.xnb</Output>
-      <Time>2014-06-19T10:50:23.3406365+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\pierrenoir.xnb</Output>
+      <Time>2014-06-18T11:20:02.8370684+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\sable.png</Source>
@@ -815,8 +805,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\sable.xnb</Output>
-      <Time>2014-06-19T10:50:23.3416377+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\sable.xnb</Output>
+      <Time>2014-06-18T11:20:02.8430687+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\terrain\terre.png</Source>
@@ -824,8 +814,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\terre.xnb</Output>
-      <Time>2014-06-19T10:50:23.3426379+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\terrain\terre.xnb</Output>
+      <Time>2014-06-18T11:20:02.8530693+02:00</Time>
     </Item>
     <Item>
       <Source>Textures\flame.png</Source>
@@ -836,8 +826,8 @@
         <Data Key="ColorKeyColor">0, 0, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\flame.xnb</Output>
-      <Time>2014-06-19T10:50:23.3456401+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Textures\flame.xnb</Output>
+      <Time>2014-06-18T12:30:07.3521881+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RandomAnimations\bouclier1.png</Source>
@@ -848,8 +838,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\bouclier1.xnb</Output>
-      <Time>2014-06-19T10:50:23.2735896+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\bouclier1.xnb</Output>
+      <Time>2014-06-18T19:06:19.2974513+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RandomAnimations\bouclier2.png</Source>
@@ -860,8 +850,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\bouclier2.xnb</Output>
-      <Time>2014-06-19T10:50:23.2906008+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\RandomAnimations\bouclier2.xnb</Output>
+      <Time>2014-06-18T19:06:19.2984513+02:00</Time>
     </Item>
     <Item>
       <Source>Crafts\0potion.PNG</Source>
@@ -872,8 +862,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\0potion.xnb</Output>
-      <Time>2014-06-19T10:50:23.0844577+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\0potion.xnb</Output>
+      <Time>2014-06-18T19:42:11.6965614+02:00</Time>
     </Item>
     <Item>
       <Source>Crafts\1shield.PNG</Source>
@@ -884,8 +874,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\1shield.xnb</Output>
-      <Time>2014-06-19T10:50:23.0844577+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\1shield.xnb</Output>
+      <Time>2014-06-18T19:42:11.7005617+02:00</Time>
     </Item>
     <Item>
       <Source>Crafts\2gun1.PNG</Source>
@@ -896,8 +886,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\2gun1.xnb</Output>
-      <Time>2014-06-19T10:50:23.0854563+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\2gun1.xnb</Output>
+      <Time>2014-06-18T19:42:11.7015617+02:00</Time>
     </Item>
     <Item>
       <Source>Crafts\3bottes.png</Source>
@@ -908,8 +898,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\3bottes.xnb</Output>
-      <Time>2014-06-19T10:50:23.0854563+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\3bottes.xnb</Output>
+      <Time>2014-06-18T19:42:11.706562+02:00</Time>
     </Item>
     <Item>
       <Source>Crafts\4canon.png</Source>
@@ -920,8 +910,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\4canon.xnb</Output>
-      <Time>2014-06-19T10:50:23.0864574+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\4canon.xnb</Output>
+      <Time>2014-06-18T19:42:11.7085621+02:00</Time>
     </Item>
     <Item>
       <Source>Crafts\5soda.png</Source>
@@ -932,13 +922,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-<<<<<<< HEAD
       <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\5soda.xnb</Output>
       <Time>2014-06-18T23:28:04.0767132+02:00</Time>
-=======
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\5soda.xnb</Output>
-      <Time>2014-06-19T10:50:23.087459+02:00</Time>
->>>>>>> 508e6184a6b928837fb41d64b2df06a06134f5a2
     </Item>
     <Item>
       <Source>Sprites\Ressources\1.png</Source>
@@ -949,8 +934,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\1.xnb</Output>
-      <Time>2014-06-19T10:50:23.292603+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\1.xnb</Output>
+      <Time>2014-06-19T12:45:50.6729608+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\10.png</Source>
@@ -961,8 +946,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\10.xnb</Output>
-      <Time>2014-06-19T10:50:23.2936029+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\10.xnb</Output>
+      <Time>2014-06-19T12:45:50.6749609+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\11.PNG</Source>
@@ -973,8 +958,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\11.xnb</Output>
-      <Time>2014-06-19T13:02:55.9619925+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\11.xnb</Output>
+      <Time>2014-06-19T12:53:38.622726+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\2.png</Source>
@@ -985,8 +970,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\2.xnb</Output>
-      <Time>2014-06-19T10:50:23.2936029+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\2.xnb</Output>
+      <Time>2014-06-19T12:45:50.6789611+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\3.png</Source>
@@ -997,8 +982,8 @@
         <Data Key="ColorKeyColor">255, 0, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\3.xnb</Output>
-      <Time>2014-06-19T10:50:23.294604+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\3.xnb</Output>
+      <Time>2014-06-19T12:45:50.6809612+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\4.PNG</Source>
@@ -1009,8 +994,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\4.xnb</Output>
-      <Time>2014-06-19T10:50:23.2956051+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\4.xnb</Output>
+      <Time>2014-06-19T12:45:50.6829613+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\5.PNG</Source>
@@ -1021,29 +1006,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\5.xnb</Output>
-      <Time>2014-06-19T13:02:55.9629932+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\Ressources\6.PNG</Source>
-      <Name>Sprites\Ressources\6</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\6.xnb</Output>
-      <Time>2014-06-19T13:02:55.9639828+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Sprites\Ressources\7.PNG</Source>
-      <Name>Sprites\Ressources\7</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\7.xnb</Output>
-      <Time>2014-05-06T18:05:55.9724653+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\5.xnb</Output>
+      <Time>2014-06-19T12:56:02.5389575+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\6.PNG</Source>
@@ -1075,8 +1039,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\8.xnb</Output>
-      <Time>2014-06-19T13:02:55.9649827+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\8.xnb</Output>
+      <Time>2014-06-19T12:57:07.8876952+02:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Ressources\9.PNG</Source>
@@ -1087,8 +1051,8 @@
         <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\9.xnb</Output>
-      <Time>2014-06-19T13:02:55.9659919+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\Ressources\9.xnb</Output>
+      <Time>2014-06-19T12:57:35.175256+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\pause.jpg</Source>
@@ -1096,8 +1060,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\pause.xnb</Output>
-      <Time>2014-06-19T14:42:26.942519+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\pause.xnb</Output>
+      <Time>2014-06-19T15:06:17.2286021+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\easy.jpg</Source>
@@ -1105,8 +1069,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\easy.xnb</Output>
-      <Time>2014-06-19T14:43:13.7575772+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\easy.xnb</Output>
+      <Time>2014-06-19T15:06:17.1285964+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\eng\medium.jpg</Source>
@@ -1114,8 +1078,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\medium.xnb</Output>
-      <Time>2014-06-19T14:43:15.0935209+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\eng\medium.xnb</Output>
+      <Time>2014-06-19T15:06:17.1535978+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\Button_difficile.jpg</Source>
@@ -1123,8 +1087,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_difficile.xnb</Output>
-      <Time>2014-06-19T14:43:30.914698+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\Button_difficile.xnb</Output>
+      <Time>2014-06-19T15:06:17.1665985+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\button_facil.jpg</Source>
@@ -1132,8 +1096,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\button_facil.xnb</Output>
-      <Time>2014-06-19T14:43:31.557151+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\button_facil.xnb</Output>
+      <Time>2014-06-19T15:06:17.1805993+02:00</Time>
     </Item>
     <Item>
       <Source>Menu\fr\button_moyen.jpg</Source>
@@ -1141,35 +1105,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\button_moyen.xnb</Output>
-      <Time>2014-06-19T14:43:32.1105423+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\UIfont.spritefont</Source>
-      <Name>Fonts\UIfont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfont.xnb</Output>
-      <Time>2014-05-06T18:05:55.9374406+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Fonts\UIfontsmall.spritefont</Source>
-      <Name>Fonts\UIfontsmall</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
-      <Time>2014-05-06T18:05:55.939442+02:00</Time>
-    </Item>
-    <Item>
-      <Source>Menu\CraftInterface.jpg</Source>
-      <Name>Menu\CraftInterface</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
-      <Time>2014-06-19T14:47:37.6079732+02:00</Time>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\fr\button_moyen.xnb</Output>
+      <Time>2014-06-19T15:06:17.1926+02:00</Time>
     </Item>
     <Item>
       <Source>Fonts\UIfont.spritefont</Source>
@@ -1189,45 +1126,63 @@
       <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Fonts\UIfontsmall.xnb</Output>
       <Time>2014-06-16T14:30:40.9212371+02:00</Time>
     </Item>
+    <Item>
+      <Source>Menu\buttonCraftInterface.jpg</Source>
+      <Name>Menu\buttonCraftInterface</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\buttonCraftInterface.xnb</Output>
+      <Time>2014-06-19T15:31:39.4106659+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Menu\CraftInterface.png</Source>
+      <Name>Menu\CraftInterface</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Menu\CraftInterface.xnb</Output>
+      <Time>2014-06-19T15:32:55.919042+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgainContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgainContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgainContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+02:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2010-08-23T13:41:18+02:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+02:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+02:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2010-08-23T13:41:18+02:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2010-08-23T13:41:18+02:00</Value>
+        <Value>2010-08-23T12:41:18+02:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-12-25T19:39:19.7481345+01:00</Value>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-06-14T12:38:54.1748515+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

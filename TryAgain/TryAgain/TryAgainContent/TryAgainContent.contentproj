@@ -829,7 +829,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu\CraftInterface.jpg">
+    <Compile Include="Menu\buttonCraftInterface.jpg">
+      <Name>buttonCraftInterface</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu\CraftInterface.png">
       <Name>CraftInterface</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>

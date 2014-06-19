@@ -29,7 +29,7 @@ namespace TryAgain.GameStates
         public static List<Ressource> RessList = new List<Ressource>();
         public static List<GameObject> GOList = new List<GameObject>();
         private static bool hasStarted = false;
-
+        Vector2 expos;
         static public int actualmap = 1;
 
         public GameScreen()
@@ -41,6 +41,7 @@ namespace TryAgain.GameStates
         {
             MouseState mouse = Mouse.GetState();
             GameObject gob = null;
+            expos = hero.position;
 
             TimeMGR.Update();
 
@@ -117,7 +118,7 @@ namespace TryAgain.GameStates
                         RessList.Remove(r);
             }*/
             if (RessList.Count != 0)
-                if (RessList[0].Update(herorect))
+                if (RessList[0].Update(herorect, expos, hero.position) || RessList[0].resstime.TotalGameTime.Seconds > Game1.gmt.TotalGameTime.Seconds + 5)
                     RessList.Remove(RessList[0]);
             if (RessList.Count == 0)
                 RessList.Add(new Ressource());
