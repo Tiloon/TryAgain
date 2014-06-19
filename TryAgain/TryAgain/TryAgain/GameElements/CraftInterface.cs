@@ -214,15 +214,44 @@ namespace TryAgain.GameElements
                     msg = "Craft : NumPAD" + i;
                 sb.DrawString(Textures.UIfont, msg, new Vector2(355, 160 + 40 *i), Color.White);
             }
-
+            /*
             sb.DrawString(Textures.UIfont, "2*ress0 + ress10", new Vector2(Tilemap.variationsizegraphicsX + 560, 160), Color.White);
             sb.DrawString(Textures.UIfont, "ress4 + ress5 + ress9", new Vector2(Tilemap.variationsizegraphicsX + 560, 200), Color.White);
             sb.DrawString(Textures.UIfont, "ress1 + ress5 + ress8", new Vector2(Tilemap.variationsizegraphicsX + 560, 240), Color.White);
             sb.DrawString(Textures.UIfont, "ress3 + 2*ress6", new Vector2(Tilemap.variationsizegraphicsX + 560, 280), Color.White);
             sb.DrawString(Textures.UIfont, "2*ress8 + ress10", new Vector2(Tilemap.variationsizegraphicsX + 560, 320), Color.White);
             sb.DrawString(Textures.UIfont, "ress2 + ress6 + ress7", new Vector2(Tilemap.variationsizegraphicsX + 560, 360), Color.White);
+            */
+            sb.Draw(Textures.O, new Rectangle(560, 160, 40, 40), Color.White);
+            sb.Draw(Textures.O, new Rectangle(600, 160, 40, 40), Color.White);
+            sb.Draw(Textures.X, new Rectangle(640, 160, 40, 40), Color.White);
 
-            sb.DrawString(Textures.UIfont, "touche p: soin de 20pv", new Vector2(Tilemap.variationsizegraphicsX + 860, 160), Color.White);
+            sb.Draw(Textures.IV, new Rectangle(560, 200, 40, 40), Color.White);
+            sb.Draw(Textures.V, new Rectangle(600, 200, 40, 40), Color.White);
+            sb.Draw(Textures.IX, new Rectangle(640, 200, 40, 40), Color.White);
+
+            sb.Draw(Textures.I, new Rectangle(560, 240, 40, 40), Color.White);
+            sb.Draw(Textures.V, new Rectangle(600, 240, 40, 40), Color.White);
+            sb.Draw(Textures.VIII, new Rectangle(640, 240, 40, 40), Color.White);
+
+            sb.Draw(Textures.III, new Rectangle(560, 280, 40, 40), Color.White);
+            sb.Draw(Textures.VI, new Rectangle(600, 280, 40, 40), Color.White);
+            sb.Draw(Textures.VI, new Rectangle(640, 280, 40, 40), Color.White);
+
+            sb.Draw(Textures.VIII, new Rectangle(560, 320, 40, 40), Color.White);
+            sb.Draw(Textures.VIII, new Rectangle(600, 320, 40, 40), Color.White);
+            sb.Draw(Textures.X, new Rectangle(640, 320, 40, 40), Color.White);
+
+            sb.Draw(Textures.II, new Rectangle(560, 360, 40, 40), Color.White);
+            sb.Draw(Textures.VI, new Rectangle(600, 360, 40, 40), Color.White);
+            sb.Draw(Textures.VII, new Rectangle(640, 360, 40, 40), Color.White);
+
+
+            sb.DrawString(Textures.UIfont, "key p: heal 20 lp", new Vector2(Tilemap.variationsizegraphicsX + 800, 160), Color.White);
+            sb.DrawString(Textures.UIfont, "key s: bouclier", new Vector2(Tilemap.variationsizegraphicsX + 800, 200), Color.White);
+            sb.DrawString(Textures.UIfont, "key space: shot a bullet (most important one)", new Vector2(Tilemap.variationsizegraphicsX + 800, 240), Color.White);
+            sb.DrawString(Textures.UIfont, "key tab: use a canon", new Vector2(Tilemap.variationsizegraphicsX + 800, 280), Color.White);
+            sb.DrawString(Textures.UIfont, "key m: drink coca for some caffeine back", new Vector2(Tilemap.variationsizegraphicsX + 800, 320), Color.White);
         }
     }
 }
