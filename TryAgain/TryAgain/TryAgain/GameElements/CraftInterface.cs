@@ -169,9 +169,9 @@ namespace TryAgain.GameElements
         {
             sb.Draw(Textures.CraftInterface, new Vector2(Tilemap.variationsizegraphicsX, 0), Color.White);
             if (GameStates.OptionScreen.eng)
-                sb.DrawString(Textures.UIfont, "Resources                    Crafts                Recipes", new Vector2(Tilemap.variationsizegraphicsX, 120), Color.Blue);
+                sb.DrawString(Textures.UIfont, "Resources                    Crafts                Recipes                Effect", new Vector2(Tilemap.variationsizegraphicsX, 120), Color.Blue);
             else
-                sb.DrawString(Textures.UIfont, "Ressources                   Artisanat             Recette", new Vector2(Tilemap.variationsizegraphicsX, 120), Color.Blue);
+                sb.DrawString(Textures.UIfont, "Ressources                   Artisanat             Recette                Effet", new Vector2(Tilemap.variationsizegraphicsX, 120), Color.Blue);
             sb.Draw(Textures.O, new Rectangle(Tilemap.variationsizegraphicsX, 160, 40, 40), Color.White);
             sb.DrawString(Textures.UIfont, "* " + Ressourceslist.quantity[0].ToString(), new Vector2(Tilemap.variationsizegraphicsX + 50, 160), Color.Black);
             sb.Draw(Textures.I, new Rectangle(Tilemap.variationsizegraphicsX, 200, 40, 40), Color.White);
@@ -214,6 +214,8 @@ namespace TryAgain.GameElements
                     msg = "Craft : NumPAD" + i;
                 sb.DrawString(Textures.UIfont, msg, new Vector2(355, 160 + 40 *i), Color.White);
             }
+
+            sb.DrawString(Textures.UIfont, "2 feu + branche", new Vector2(Tilemap.variationsizegraphicsX + 550, 160), Color.Black);
         }
     }
 }
