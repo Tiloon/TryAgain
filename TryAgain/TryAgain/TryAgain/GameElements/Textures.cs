@@ -149,7 +149,6 @@ namespace TryAgain
             fogCafeine = cm.Load<Texture2D>(@"UI\gauge\fog");
 
             everythingLoaded = true;
-            Themes.PlayTheme();
         }
         /*
         public static Texture2D GetOrLoad(string name)

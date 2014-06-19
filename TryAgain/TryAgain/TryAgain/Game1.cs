@@ -109,7 +109,6 @@ namespace TryAgain
             if ((player.State == MediaState.Stopped) && (!lavideoaetelancee))
             {
                 lavideoaetelancee = true;
-
                 player.Play(video);
             }
 
@@ -150,11 +149,15 @@ namespace TryAgain
             if (!lavideoestfini)
             {
                 lavideoestfini = player.State == MediaState.Stopped;
+                if(lavideoestfini)
+                    Sounds.Themes.PlayTheme();
                 if (Keyboard.GetState().IsKeyDown(Keys.Escape) && (skip == false))
+                {
                     lavideoestfini = true;
+                    Sounds.Themes.PlayTheme();
+                }
                 if (player.State != MediaState.Stopped)
                 {
-
                     videoTexture = player.GetTexture();
                 }
                 if (videoTexture != null)
