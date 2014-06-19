@@ -46,8 +46,8 @@ namespace DPSF_Demo.ParticleSystems
 		//-----------------------------------------------------------
 		// TODO: Place any Particle System properties here
 		//-----------------------------------------------------------
-		float mfSizeMin = 32;
-		float mfSizeMax = 128;
+		float mfSizeMin = 1;
+		float mfSizeMax = 4;
 
 		//===========================================================
 		// Overridden Particle System Functions
@@ -111,10 +111,10 @@ namespace DPSF_Demo.ParticleSystems
 			// Setup the Initial Properties of the Particles.
 			// These are only applied if using InitializeParticleUsingInitialProperties 
 			// as the Particle Initialization Function.
-			InitialProperties.LifetimeMin = 1.0f;
-			InitialProperties.LifetimeMax = 1.0f;
-			InitialProperties.PositionMin = new Vector3(-500, 200, 0);
-            InitialProperties.PositionMax = new Vector3(-500, 200, 800);
+			InitialProperties.LifetimeMin = 0.2f;
+			InitialProperties.LifetimeMax = 0.5f;
+			InitialProperties.PositionMin = new Vector3(-0, 0, 0);
+            InitialProperties.PositionMax = new Vector3(-0, 0, 800);
 			InitialProperties.VelocityMin = new Vector3(-200, -200, 0);
 			InitialProperties.VelocityMax = new Vector3(200, -400, 0);
             InitialProperties.RotationMin = 0.0f;

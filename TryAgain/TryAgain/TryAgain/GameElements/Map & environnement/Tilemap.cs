@@ -25,7 +25,7 @@ namespace TryAgain
 
 
         //public static Texture2D[,] map1 = new Texture2D[lgmap, lgmap];
-        public static Tile[,] tiles = new Tile[32, 32];
+        public volatile static Tile[,] tiles = new Tile[32, 32];
         public static Item[,] map1contains = new Item[lgmap + 3, lgmap + 3];
 
         public static Texture2D[,] map2 = new Texture2D[lgbigmapunscrolled, lgbigmapunscrolled];
@@ -40,20 +40,15 @@ namespace TryAgain
             for (int i = 0; i < mapArray.GetLength(0); i++)
                 for (int j = 0; j < mapArray.GetLength(1); j++)
                     if ((mapArray[i, j] != null) && (mapArray[i, j] != ""))
-                        MapSetTile(tiles, mapArray[i,j], i, j);
+                        MapSetTile(tiles, mapArray[i, j], i, j);
         }
 
         public static void MapFullINIT()
         {
-            if (!Online.Connection.isOnline())
-            {
-                MapFirstInit(ref tiles, "Therbe");
+            MapFirstInit(ref tiles, "Therbe");
 
-                /*MapLoadFromJSON(
-                    "[[\"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\", \"Tsable\", \"\", \"Taqua\", \"Tsable\", \"Tsable\", \"\", \"Tsable\", \"\", \"Taqua\", \"Tsable\", \"Tsable\", \"\", \"Tsable\", \"\",\"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\"], [\"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"\", \"\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"\", \"\", \"\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\", \"Taqua\"]]");
-                */
-                MapLoadFromJSON(TryAgain.Datas.Initializer.ReadTextFile("data\\map\\map.json"));
-            }
+            MapLoadFromJSON(TryAgain.Datas.Initializer.ReadTextFile("data\\map\\map.json"));
+            GameStates.MainMenuScreen.isMapLoaded = true;
         }
 
         public static void MapFirstInit(ref Tile[,] map, String basetile)
@@ -92,7 +87,7 @@ namespace TryAgain
                 for (int j = -2; j < Hero.view.Height + 1; j++)
                 {
                     //sb.Draw(map[i, j], new Vector2(variationsizegraphicsX + 64 * i, 64 * j), Color.White);
-      
+
                     int x = (i + Hero.view.X) % map.GetLength(0),
                         y = (j + Hero.view.Y) % map.GetLength(1);
 
