@@ -69,6 +69,8 @@ namespace WinFormsGraphicsDevice
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -81,7 +83,6 @@ namespace WinFormsGraphicsDevice
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.mapEditor = new WinFormsGraphicsDevice.ShowMap();
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
@@ -110,8 +111,8 @@ namespace WinFormsGraphicsDevice
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog2 = new System.Windows.Forms.SaveFileDialog();
-            this.label28 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.mapEditor = new WinFormsGraphicsDevice.ShowMap();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.SuspendLayout();
@@ -638,6 +639,23 @@ namespace WinFormsGraphicsDevice
             this.tabPage6.Text = "Events";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(19, 314);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 19;
+            this.textBox5.Text = "Monster";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(16, 295);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(37, 13);
+            this.label28.TabIndex = 18;
+            this.label28.Text = "Type :";
+            // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(6, 115);
@@ -766,19 +784,6 @@ namespace WinFormsGraphicsDevice
             this.splitContainer1.Size = new System.Drawing.Size(772, 529);
             this.splitContainer1.SplitterDistance = 617;
             this.splitContainer1.TabIndex = 0;
-            // 
-            // mapEditor
-            // 
-            this.mapEditor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapEditor.Location = new System.Drawing.Point(0, 0);
-            this.mapEditor.Name = "mapEditor";
-            this.mapEditor.Size = new System.Drawing.Size(617, 529);
-            this.mapEditor.TabIndex = 1;
-            this.mapEditor.Text = "spinningTriangleControl";
-            this.mapEditor.Click += new System.EventHandler(this.spinningTriangleControl_Click);
-            this.mapEditor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mapEditor_MouseDown);
-            this.mapEditor.MouseMove += new System.Windows.Forms.MouseEventHandler(this.spinningTriangleControl_MouseMove_1);
-            this.mapEditor.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mapEditor_MouseUp);
             // 
             // button2
             // 
@@ -952,6 +957,7 @@ namespace WinFormsGraphicsDevice
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.button9);
             this.tabPage7.Controls.Add(this.button8);
             this.tabPage7.Controls.Add(this.progressBar1);
             this.tabPage7.Controls.Add(this.button7);
@@ -971,7 +977,6 @@ namespace WinFormsGraphicsDevice
             // 
             // button8
             // 
-            this.button8.Enabled = false;
             this.button8.Location = new System.Drawing.Point(9, 240);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(212, 23);
@@ -1084,22 +1089,28 @@ namespace WinFormsGraphicsDevice
             // 
             this.saveFileDialog2.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog2_FileOk);
             // 
-            // label28
+            // button9
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(16, 295);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(37, 13);
-            this.label28.TabIndex = 18;
-            this.label28.Text = "Type :";
+            this.button9.Location = new System.Drawing.Point(6, 350);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(215, 23);
+            this.button9.TabIndex = 9;
+            this.button9.Text = "Aldrication";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // textBox5
+            // mapEditor
             // 
-            this.textBox5.Location = new System.Drawing.Point(19, 314);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 19;
-            this.textBox5.Text = "Monster";
+            this.mapEditor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mapEditor.Location = new System.Drawing.Point(0, 0);
+            this.mapEditor.Name = "mapEditor";
+            this.mapEditor.Size = new System.Drawing.Size(617, 529);
+            this.mapEditor.TabIndex = 1;
+            this.mapEditor.Text = "spinningTriangleControl";
+            this.mapEditor.Click += new System.EventHandler(this.spinningTriangleControl_Click);
+            this.mapEditor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mapEditor_MouseDown);
+            this.mapEditor.MouseMove += new System.Windows.Forms.MouseEventHandler(this.spinningTriangleControl_MouseMove_1);
+            this.mapEditor.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mapEditor_MouseUp);
             // 
             // MainForm
             // 
@@ -1244,6 +1255,7 @@ namespace WinFormsGraphicsDevice
         private System.Windows.Forms.SaveFileDialog saveFileDialog2;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Button button9;
 
 
     }

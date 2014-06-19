@@ -126,7 +126,7 @@ namespace TryAgain.GameElements
         {
             if (Craft.CraftInventory[0])
                 Shield(sb, pos, hero, keyBoardState);
-            //if (Craft.CraftInventory[1])
+            if (Craft.CraftInventory[1])
                 Missile(sb, pos, hero, keyBoardState);
             if (Craft.CraftInventory[2])
                 Boots(sb, pos, hero, keyBoardState);

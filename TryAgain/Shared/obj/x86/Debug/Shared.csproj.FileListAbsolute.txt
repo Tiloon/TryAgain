@@ -8,3 +8,8 @@ C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\Shared\bin\Debug\Shared.pdb
 C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\Shared\obj\x86\Debug\Shared.csprojResolveAssemblyReference.cache
 C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\Shared\obj\x86\Debug\Shared.dll
 C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\Shared\obj\x86\Debug\Shared.pdb
+C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\Shared\bin\Debug\Shared.dll
+C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\Shared\bin\Debug\Shared.pdb
+C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\Shared\obj\x86\Debug\Shared.csprojResolveAssemblyReference.cache
+C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\Shared\obj\x86\Debug\Shared.dll
+C:\Users\g33kp_000\Documents\tryagain\tryagain\TryAgain\Shared\obj\x86\Debug\Shared.pdb

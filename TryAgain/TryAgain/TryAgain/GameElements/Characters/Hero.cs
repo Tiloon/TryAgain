@@ -23,7 +23,7 @@ namespace TryAgain.Characters
 
     class Hero : Character
     {
-        public static Rectangle view = new Rectangle(0, 0, 24, 15);
+        public static Rectangle view = new Rectangle(316, 348, 24, 15);
         public static Vector2 padding = new Vector2(0, 0);
         // Si quelqu'un trouve un meilleur nom de variable.... Décalage pour rendre le déplacement de l'écran fluide.
         public static Direction directiontournee = Direction.bas;

@@ -246,31 +246,38 @@ namespace WinFormsGraphicsDevice
 
         String[,] mapArray;
         int arrayX, arrayY;
+
+        private void AddMapToWorld(StreamReader sr)
+        {
+            String json;
+            json = sr.ReadToEnd();
+            String[,] array = JsonConvert.DeserializeObject<string[,]>(json);
+            if ((currentX == 0) && (currentY == 0))
+            {
+                mapArray = new String[array.GetLength(0) * cX, array.GetLength(1) * cY];
+                arrayX = array.GetLength(0);
+                arrayY = array.GetLength(1);
+            }
+
+            if ((arrayX != array.GetLength(0)) || (arrayY != array.GetLength(1)))
+                throw new Exception("Maps aren't the same size");
+
+            for (int i = 0; i < arrayX; i++)
+            {
+                for (int j = 0; j < arrayY; j++)
+                {
+                    mapArray[currentX * arrayX + i, currentY * arrayY + j] = array[i, j];
+                }
+            }
+        }
+
         private void openFileDialog2_FileOk_1(object sender, System.ComponentModel.CancelEventArgs e)
         {
             try
             {
-                String json;
+
                 StreamReader sr = new StreamReader(openFileDialog2.OpenFile());
-                json = sr.ReadToEnd();
-                String[,] array = JsonConvert.DeserializeObject<string[,]>(json);
-                if ((currentX == 0) && (currentY == 0))
-                {
-                    mapArray = new String[array.GetLength(0) * cX, array.GetLength(1) * cY];
-                    arrayX = array.GetLength(0);
-                    arrayY = array.GetLength(1);
-                }
-
-                if ((arrayX != array.GetLength(0)) || (arrayY != array.GetLength(1)))
-                    throw new Exception("Maps aren't the same size");
-
-                for (int i = 0; i < arrayX; i++)
-                {
-                    for (int j = 0; j < arrayY; j++)
-                    {
-                        mapArray[currentX * arrayX + i, currentY * arrayY + j] = array[i, j]; 
-                    }
-                }
+                AddMapToWorld(sr);
 
                 currentX++;
                 if (currentX >= cX)
@@ -364,6 +371,31 @@ namespace WinFormsGraphicsDevice
             StreamWriter sw = new StreamWriter(stream);
             sw.Write(JsonConvert.SerializeObject(npc));
             sw.Flush();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 15; i++)
+			{
+                for (int j = 1; j < 17; j++)
+			    {
+                    try
+                    {
+                        StreamReader sr = new StreamReader("gay/" + i.ToString() + "." + j.ToString());
+                        AddMapToWorld(sr);
+                    }
+                    catch (Exception E)
+                    {
+                        System.Windows.Forms.MessageBox.Show(E.Message);
+                    }
+
+                    currentX++;
+			    }
+                currentX = 0;
+                currentY++;
+			}
+            System.Windows.Forms.MessageBox.Show("fini");
+            
         }
 
     }
