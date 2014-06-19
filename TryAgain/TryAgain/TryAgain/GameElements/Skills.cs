@@ -45,9 +45,13 @@ namespace TryAgain.GameElements
             {
                 missile = true;
                 missilepos = new Vector2(Textures.Missile.Width + (hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64);
+                //sb.Draw(Textures.c2gun1, new Vector2(21+(hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, 38+(hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), Color.White);
+                Texture2D swap = hero.apparence;
+                hero.apparence = Textures.TonyGun;
             }
             if (missile)
             {
+                //sb.Draw(Textures.c2gun1, new Vector2(21 + (hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, 38 + (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), Color.White);
                 sb.DrawString(Textures.UIfont, "Missile!", new Vector2((hero.position.X - (Hero.view.X + Hero.padding.X)) * 64 + 50, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), Color.Red);
                 sb.Draw(Textures.Missile, missilepos, null, Color.White, 0f, Vector2.Zero,
     new Vector2(64.0F / (float)(Textures.Missile.Width), 64.0F / (float)(Textures.Missile.Height)), SpriteEffects.None, 0f);

@@ -878,18 +878,6 @@
       <Time>2014-06-18T20:10:06.016956+02:00</Time>
     </Item>
     <Item>
-      <Source>Crafts\2gun1.PNG</Source>
-      <Name>Crafts\2gun1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Parameters>
-        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
-      </Parameters>
-      <Options>None</Options>
-      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\2gun1.xnb</Output>
-      <Time>2014-06-18T20:10:06.017956+02:00</Time>
-    </Item>
-    <Item>
       <Source>Crafts\3bottes.png</Source>
       <Name>Crafts\3bottes</Name>
       <Importer>TextureImporter</Importer>
@@ -1153,6 +1141,30 @@
       <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\video.xnb</Output>
       <Extra>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\video.wmv</Extra>
       <Time>2014-06-19T17:45:50.5074095+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Crafts\2gun1.png</Source>
+      <Name>Crafts\2gun1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Crafts\2gun1.xnb</Output>
+      <Time>2014-06-19T22:34:50.8352195+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\tonygun.bmp</Source>
+      <Name>Sprites\tonygun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor">0, 255, 0, 255</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tonygun.xnb</Output>
+      <Time>2014-06-19T23:03:00.0208354+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

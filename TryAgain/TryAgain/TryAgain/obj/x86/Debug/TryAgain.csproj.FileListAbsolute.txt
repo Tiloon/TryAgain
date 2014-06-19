@@ -406,3 +406,4 @@ C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\D
 C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.exe
 C:\Users\Totokh\Documents\TryAgain\tryagain\TryAgain\TryAgain\TryAgain\obj\x86\Debug\TryAgain.pdb
+C:\Users\DENIS\Documents\git\TryAgain\tryagainrepository\tryagain\TryAgain\TryAgain\TryAgain\bin\x86\Debug\Content\Sprites\tonygun.xnb

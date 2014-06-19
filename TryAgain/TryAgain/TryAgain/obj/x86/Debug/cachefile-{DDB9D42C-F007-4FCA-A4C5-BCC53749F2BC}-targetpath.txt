@@ -90,7 +90,6 @@ Content\Sprites\RandomAnimations\bouclier1.xnb
 Content\Sprites\RandomAnimations\bouclier2.xnb
 Content\Crafts\0potion.xnb
 Content\Crafts\1shield.xnb
-Content\Crafts\2gun1.xnb
 Content\Crafts\3bottes.xnb
 Content\Crafts\4canon.xnb
 Content\Crafts\5soda.xnb
@@ -117,4 +116,6 @@ Content\Fonts\UIfont.xnb
 Content\Fonts\UIfontsmall.xnb
 Content\video.xnb
 Content\video.wmv
+Content\Crafts\2gun1.xnb
+Content\Sprites\tonygun.xnb
 Content\video.wmv

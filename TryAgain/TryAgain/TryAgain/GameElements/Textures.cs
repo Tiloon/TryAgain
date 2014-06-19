@@ -28,9 +28,10 @@ namespace TryAgain
         public static Texture2D CraftInterface;
         public static Texture2D GameOver, storyboard;
 
-        public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG, MenuOption, Return, exit, play, english, easy, medium, hard, pause, craftInterface;
+        public static Texture2D MainMenuBG, OptionBG, AboutBG, FullscreenBG, FenetreBG, MenuOption, Return, exit, play, english, easy, medium, hard;
         public static Texture2D aPropos, jouer, pleinEcran, quitter, retour, fenetre, francais, facile, moyen, dur;
 
+        public static Texture2D TonyGun;
         public static Texture2D buttonTony, buttonPierre, Fleche, Fleche2, soundOff;
         public static Texture2D whitePixel;
 
@@ -76,6 +77,8 @@ namespace TryAgain
             scenar2 = cm.Load<Texture2D>(@"Scenar\Planche2");
             scenar3 = cm.Load<Texture2D>(@"Scenar\Planche3");
             scenar4 = cm.Load<Texture2D>(@"Scenar\Planche4");
+
+            TonyGun = cm.Load<Texture2D>(@"Sprites\tonygun");
 
             O = cm.Load<Texture2D>(@"Sprites\Ressources\1");
             I = cm.Load<Texture2D>(@"Sprites\Ressources\2");
