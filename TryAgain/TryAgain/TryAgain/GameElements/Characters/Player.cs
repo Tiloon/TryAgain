@@ -20,7 +20,7 @@ namespace TryAgain.GameElements.Characters
         public Player(String name, String sprite, Vector2 position)
             : base("Player", "Player")
         {
-            this.stats.lp = 60;
+            this.stats.lp = GameStates.OptionScreen.lp;
             this.position = new Vector2(position.X, position.Y);
             this.X = position.X;
             this.Y = position.Y;

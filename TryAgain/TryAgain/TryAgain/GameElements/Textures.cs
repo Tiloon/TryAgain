@@ -121,6 +121,9 @@ namespace TryAgain
             retour = cm.Load<Texture2D>(@"Menu\fr\Button_Retour");
             fenetre = cm.Load<Texture2D>(@"Menu\fr\fenetre");
             francais = cm.Load<Texture2D>(@"Menu\fr\Button-francais");
+            facile = cm.Load<Texture2D>(@"Menu\fr\button_facil");
+            moyen = cm.Load<Texture2D>(@"Menu\fr\button_moyen");
+            dur = cm.Load<Texture2D>(@"Menu\fr\button_difficile");
 
             buttonPierre = cm.Load<Texture2D>(@"Sprites\persopierre");
             buttonTony = cm.Load<Texture2D>(@"Sprites\persotony");

@@ -33,6 +33,10 @@ namespace TryAgain
         Vector3 cameraPosition = new Vector3(0, 50, -200);
         public static GameTime gmt;
 
+        Video video;
+        VideoPlayer player;
+        Texture2D videoTexture;
+
 
         public Game1()
         {
@@ -62,6 +66,9 @@ namespace TryAgain
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Textures.load(Content);
 
+            video = Content.Load<Video>("video");
+            player = new VideoPlayer();
+
             mcParticleSystem = new DefaultQuadParticleSystemTemplate(this);
             mcParticleSystem.AutoInitialize(this.GraphicsDevice, this.Content, null); //null
             part = new FlameParticle(this);
@@ -82,8 +89,8 @@ namespace TryAgain
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-            if (Keyboard.GetState().IsKeyDown(Keys.Escape) && (skip == false))
-                skip = true;
+            //if (Keyboard.GetState().IsKeyDown(Keys.Escape) && (skip == false))
+            //    skip = true;
             newscreen = screen.update();
             if (newscreen != gamestate)
             {
@@ -97,6 +104,13 @@ namespace TryAgain
                     screen.init(graphics.GraphicsDevice);
                     gamestate = screen.GetState();
                 }
+            }
+
+            if ((player.State == MediaState.Stopped) && (!lavideoaetelancee))
+            {
+                lavideoaetelancee = true;
+
+                player.Play(video);
             }
 
             Matrix sViewMatrix = Matrix.CreateLookAt(cameraPosition, new Vector3(0, 50, 0), Vector3.Right);
@@ -123,15 +137,29 @@ namespace TryAgain
             gmt = gameTime;
             base.Update(gameTime);
         }
-
+        private bool lavideoaetelancee = false, lavideoestfini = false;
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.White);
             spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointWrap, DepthStencilState.None, RasterizerState.CullCounterClockwise);
             screen.draw(spriteBatch, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight);
+
             Connection.Draw(spriteBatch);
-            if (gameTime.TotalGameTime.TotalSeconds <= 11) 
-                scenar.Drawlancement(spriteBatch, gameTime, skip);
+            //if (gameTime.TotalGameTime.TotalSeconds <= 11) 
+            //    scenar.Drawlancement(spriteBatch, gameTime, skip);
+            if (!lavideoestfini)
+            {
+                lavideoestfini = player.State == MediaState.Stopped;
+                if (player.State != MediaState.Stopped)
+                {
+
+                    videoTexture = player.GetTexture();
+                }
+                if (videoTexture != null)
+                {
+                    spriteBatch.Draw(videoTexture, new Rectangle(0, 0, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight), Color.White);
+                }
+            }
             spriteBatch.End();
             if (newscreen == ScreenType.MainMenu)
             {
