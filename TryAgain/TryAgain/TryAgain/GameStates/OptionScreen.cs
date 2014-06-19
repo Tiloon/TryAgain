@@ -21,10 +21,12 @@ namespace TryAgain.GameStates
         cButton ButtonTony;
         cButton ButtonPierre, ButtonDenis, ButtonAldric;
         cButton ButtonFlecheGauche, ButtonFlecheDroite, soundOff, buttonFrancais, buttonEnglish;
+        cButton ButtonEasy, ButtonMedium, ButtonHard;
         float son = Sounds.Themes.volume;
         float saveSon = 0;
         bool u = true;
         static public bool eng = true;
+        string mode = "medium";
 
         Tuple<cButton, Vector2>[] resolutions;
 
@@ -126,6 +128,15 @@ namespace TryAgain.GameStates
                 eng = false;
                 init(Game1.graphics.GraphicsDevice);
             }
+            if (ButtonEasy.IsClicked(mouse))
+            {
+            }
+            if (ButtonMedium.IsClicked(mouse))
+            {
+            }
+            if (ButtonHard.IsClicked(mouse))
+            {
+            }
             if (ButtonFullscreen.IsClicked(mouse) || ButtonFenetre.IsClicked(mouse))
             {
                 Game1.graphics.ToggleFullScreen();
@@ -192,6 +203,11 @@ namespace TryAgain.GameStates
             buttonEnglish.Draw(sb);
             buttonFrancais.Draw(sb);
 
+            //changer difficulté
+            ButtonEasy.Draw(sb);
+            ButtonMedium.Draw(sb);
+            ButtonHard.Draw(sb);
+
             // Normalement ça devrait afficher EXACTEMENT la même chose que le bouton return (voir au dessus)
         }
         public override void init(GraphicsDevice graphics)
@@ -229,9 +245,24 @@ namespace TryAgain.GameStates
             soundOff = new cButton(Textures.soundOff, graphics, 50, 50);
             soundOff.SetPosition(new Vector2(600, 400));
             buttonEnglish = new cButton(Textures.english, graphics);
-            buttonEnglish.SetPosition(new Vector2(200, 600));
+            buttonEnglish.SetPosition(new Vector2(200, 550));
             buttonFrancais = new cButton(Textures.francais, graphics);
-            buttonFrancais.SetPosition(new Vector2(600, 600));
+            buttonFrancais.SetPosition(new Vector2(600, 550));
+            if (eng)
+                ButtonEasy= new cButton(Textures.easy, graphics);
+            else
+                ButtonEasy= new cButton(Textures.facile, graphics);
+            ButtonEasy.SetPosition(new Vector2(200, 700));
+            if (eng)
+                ButtonMedium = new cButton(Textures.medium, graphics);
+            else
+                ButtonMedium= new cButton(Textures.moyen, graphics);
+            ButtonMedium.SetPosition(new Vector2(600, 700));
+            if (eng)
+                ButtonHard   = new cButton(Textures.hard, graphics);
+            else
+                ButtonHard= new cButton(Textures.dur, graphics);
+            ButtonHard.SetPosition(new Vector2(1000, 700));
         }
     }
 }
