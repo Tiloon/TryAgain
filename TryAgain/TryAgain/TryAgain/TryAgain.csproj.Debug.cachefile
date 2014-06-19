@@ -90,7 +90,6 @@ Content\Sprites\RandomAnimations\bouclier1.xnb
 Content\Sprites\RandomAnimations\bouclier2.xnb
 Content\Crafts\0potion.xnb
 Content\Crafts\1shield.xnb
-Content\Crafts\2gun1.xnb
 Content\Crafts\3bottes.xnb
 Content\Crafts\4canon.xnb
 Content\Crafts\5soda.xnb
@@ -113,8 +112,16 @@ Content\Menu\fr\button_moyen.xnb
 Content\Menu\buttonCraftInterface.xnb
 Content\Menu\CraftInterface.xnb
 Content\Menu\eng\easy.xnb
+<<<<<<< HEAD
+=======
+Content\Crafts\2gun1.xnb
+Content\Sprites\tonygun.xnb
+>>>>>>> 3826185d97dde6955d3ce98297365f019e3fc16d
 Content\Fonts\UIfont.xnb
 Content\Fonts\UIfontsmall.xnb
 Content\video.xnb
+Content\Sprites\aldouxgun.xnb
+Content\Sprites\pimgun.xnb
+Content\Sprites\tilongun.xnb
 Content\video.wmv
 Content\video.wmv

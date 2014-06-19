@@ -23,7 +23,7 @@ namespace TryAgain.Characters
         {
             return stats;
         }
-        protected Texture2D apparence;
+        public Texture2D apparence;
         public string name;
         public int longueur, largeur;
         public override void Draw(SpriteBatch sb)

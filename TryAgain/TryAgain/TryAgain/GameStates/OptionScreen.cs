@@ -29,8 +29,6 @@ namespace TryAgain.GameStates
         string mode = "medium";
         public static int lp = 60;
 
-        Tuple<cButton, Vector2>[] resolutions;
-
         static public bool fullscreen = false;
 
 
@@ -133,6 +131,7 @@ namespace TryAgain.GameStates
             {
                 mode = "easy";
                 lp = 100;
+                
             }
             if (ButtonMedium.IsClicked(mouse))
             {
