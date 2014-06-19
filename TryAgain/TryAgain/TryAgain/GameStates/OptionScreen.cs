@@ -27,6 +27,7 @@ namespace TryAgain.GameStates
         bool u = true;
         static public bool eng = true;
         string mode = "medium";
+        public static int lp = 60;
 
         Tuple<cButton, Vector2>[] resolutions;
 
@@ -130,12 +131,18 @@ namespace TryAgain.GameStates
             }
             if (ButtonEasy.IsClicked(mouse))
             {
+                mode = "easy";
+                lp = 100;
             }
             if (ButtonMedium.IsClicked(mouse))
             {
+                mode = "medium";
+                lp = 60;
             }
             if (ButtonHard.IsClicked(mouse))
             {
+                mode = "hard";
+                lp = 80;
             }
             if (ButtonFullscreen.IsClicked(mouse) || ButtonFenetre.IsClicked(mouse))
             {
@@ -207,7 +214,24 @@ namespace TryAgain.GameStates
             ButtonEasy.Draw(sb);
             ButtonMedium.Draw(sb);
             ButtonHard.Draw(sb);
-
+            if (eng)
+            {
+                if (mode == "easy")
+                    sb.DrawString(Textures.UIfont, "mode: easy", new Vector2(200, 800), Color.Black);
+                if (mode == "medium")
+                    sb.DrawString(Textures.UIfont, "mode: medium", new Vector2(200, 800), Color.Black);
+                if (mode == "hard")
+                    sb.DrawString(Textures.UIfont, "mode: hard", new Vector2(200, 800), Color.Black);
+            }
+            else
+            {
+                if (mode == "easy")
+                    sb.DrawString(Textures.UIfont, "mode: facile", new Vector2(200, 800), Color.Black);
+                if (mode == "medium")
+                    sb.DrawString(Textures.UIfont, "mode: moyen", new Vector2(200, 800), Color.Black);
+                if (mode == "hard")
+                    sb.DrawString(Textures.UIfont, "mode: dur", new Vector2(200, 800), Color.Black);
+            }
             // Normalement ça devrait afficher EXACTEMENT la même chose que le bouton return (voir au dessus)
         }
         public override void init(GraphicsDevice graphics)
