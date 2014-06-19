@@ -22,10 +22,33 @@ namespace Server
         public const int TICKGAP = 20;
         List<Client> clients;
         Socket socket;
+        Random rand = new Random();
+        int idmob = 0;
 
         List<String> igIDs = new List<string>();
         Dictionary<String, GameObject> goblist = new Dictionary<String, GameObject>();
 
+        private void AddMob(float x, float y)
+        {
+            idmob++;
+            if (!goblist.ContainsKey("monster0" + idmob.ToString()))
+            {
+                string id = "monster0" + idmob.ToString();
+                Console.WriteLine("monstre spawned");
+                GameObject el = new GameObject();
+                el.name = id;
+                el.ID = id;
+                el.spr = "Mghost";
+                el.type = "Monster";
+                el.x = x;
+                el.X = Convert.ToBase64String(BitConverter.GetBytes(el.x));
+                el.y = y;
+                el.Y = Convert.ToBase64String(BitConverter.GetBytes(el.y));
+                el.speed += ((float)rand.Next(-6, 6)) / 200;
+                goblist.Add(id, el);
+                igIDs.Add(id);
+            }
+        }
 
         public static void LoadMapFromWeb(String path)
         {
@@ -120,7 +143,7 @@ namespace Server
                 clients.Add(myClient);
                 //clients.Add(myClient);
                 Console.WriteLine("Connexion from " + myClient.name);
-                if(mapAdress != null)
+                if (mapAdress != null)
                     myClient.Send("map:" + mapAdress);
             }
         }
@@ -312,6 +335,24 @@ namespace Server
                             SRectangle rect = JsonConvert.DeserializeObject<SRectangle>(message);
                             Rectangle view = new Rectangle(rect.X, rect.Y, rect.Width, rect.Height);
 
+
+                            for (int x = 0; x < rect.Width; x++)
+                            {
+                                if (rand.Next(0, 10000) < 1)
+                                    AddMob(rect.X + x, rect.Y - 2);
+
+                                if (rand.Next(0, 10000) < 1)
+                                    AddMob(rect.X + x + 1, rect.Y + rect.Height + 1);
+                            }
+
+                            for (int y = 0; y < rect.Height; y++)
+                            {
+                                if (rand.Next(0, 10000) < 1)
+                                    AddMob(rect.X - 2, rect.Y + y);
+
+                                if (rand.Next(0, 10000) < 1)
+                                    AddMob(rect.X + rect.Width + 1, rect.Y + y + 1);
+                            }
 
                             try
                             {

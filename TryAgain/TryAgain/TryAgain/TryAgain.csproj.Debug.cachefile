@@ -106,13 +106,13 @@ Content\Sprites\Ressources\7.xnb
 Content\Sprites\Ressources\8.xnb
 Content\Sprites\Ressources\9.xnb
 Content\Menu\pause.xnb
-Content\Menu\eng\easy.xnb
 Content\Menu\eng\medium.xnb
 Content\Menu\fr\Button_difficile.xnb
 Content\Menu\fr\button_facil.xnb
 Content\Menu\fr\button_moyen.xnb
 Content\Menu\buttonCraftInterface.xnb
 Content\Menu\CraftInterface.xnb
+Content\Menu\eng\easy.xnb
 Content\Fonts\UIfont.xnb
 Content\Fonts\UIfontsmall.xnb
 Content\video.xnb

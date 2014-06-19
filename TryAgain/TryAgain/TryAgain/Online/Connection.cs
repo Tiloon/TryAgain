@@ -214,11 +214,13 @@ namespace TryAgain.Online
                         }
                         else if (serverReq.StartsWith("map:")) // request : "map:JSONMAPAdress"
                         {
+                            /*
                             serverReq = serverReq.Remove(0, 4);
                             try 
 	                        {
 
                                 GameStates.MainMenuScreen.isPlayable = false;
+                             * */
 		                        /*
                                  * int tokenPos = serverReq.IndexOf('&');
                                 if (tokenPos <= 0)
@@ -235,6 +237,7 @@ namespace TryAgain.Online
                                 if(posY <= 0)
                                     throw new Exception("Token not found or Y-size error" + posY);
                                  * */
+                            /*
                                 byte[] myDataBuffer;
                                 String json;
                                 WebClient myWebClient = new WebClient();
@@ -257,7 +260,7 @@ namespace TryAgain.Online
 	                        {
                                 Debug.Show(e.Message);
                             }
-                            
+                            */
                         }
                         else if (serverReq.StartsWith("rm:"))
                         {
