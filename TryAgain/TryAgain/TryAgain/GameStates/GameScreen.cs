@@ -183,7 +183,7 @@ namespace TryAgain.GameStates
             {
                 Connection.Command("login:" + Connection.avatar);
                 Themes.currentTheme = 1;
-                Vector2 pos1 = new Vector2(5, 5);
+                Vector2 pos1 = new Vector2(327.5F, 354.5F);
                 hero = new Hero(name, Classes.Classe.gunner, Textures.Cache[Connection.avatar], Keys.Up, Keys.Down, Keys.Left, Keys.Right, pos1);
                 GOList.Add(hero);
                 /*hero2 = new Hero("Tony", Classes.Classe.gunner, Textures.persopierre_texture, Keys.Z, Keys.S, Keys.Q, Keys.D, pos2);
