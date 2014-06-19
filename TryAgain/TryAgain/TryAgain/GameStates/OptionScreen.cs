@@ -189,7 +189,7 @@ namespace TryAgain.GameStates
 
             if (Online.Connection.avatar == "Taldric")
                 sb.Draw(Textures.Chosen, new Vector2(895, 45), Color.Black);
-            sb.DrawString(Textures.UIfont, "Pierre:", new Vector2(800, 100), Color.Black);
+            sb.DrawString(Textures.UIfont, "Aldric:", new Vector2(800, 100), Color.Black);
             ButtonAldric.Draw(sb);
 
             //changer son
