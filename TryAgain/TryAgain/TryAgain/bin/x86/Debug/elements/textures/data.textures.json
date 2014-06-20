@@ -35,4 +35,8 @@
 		"Item1": "Mzombie",
 		"Item2": "zombie.png",
 	},
+	{
+		"Item1": "Mkris",
+		"Item2": "kris.png",
+	},
 ]

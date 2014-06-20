@@ -74,7 +74,7 @@ namespace TryAgain.GameElements.misc
                 }
             }
 
-
+            /*
             for (int i = 0; i < 10; i++)
             {
                 sb.Draw(Textures.UIitemHolder, new Rectangle(300 + 80*i, 884, 64, 64), Color.White);
@@ -87,7 +87,7 @@ namespace TryAgain.GameElements.misc
                     else
                         items[i] = Item.voidItem;
                 }
-            }
+            }*/
 
             /*
             if (false) // Debug shit

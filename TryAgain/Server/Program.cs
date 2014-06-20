@@ -19,8 +19,9 @@ namespace Server
                 server = new Server(4242);
                 server.Run();
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Console.WriteLine(e.Message);
             }
             Console.WriteLine("Server stopped. Press [enter] to close.");
             Console.Read();
