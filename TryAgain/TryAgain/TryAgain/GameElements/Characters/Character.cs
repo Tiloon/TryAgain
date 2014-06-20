@@ -39,6 +39,7 @@ namespace TryAgain.Characters
 
         public override void TakeDamages(int points)
         {
+            GameOver.actualpoints += points / 2;
             if (Online.Connection.isOnline())
                 Online.Connection.SendDamage(this.UID, points);
             this.stats.lp -= points;

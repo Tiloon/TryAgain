@@ -62,6 +62,7 @@ namespace Server
                     Server.goblist.Remove(this.ID);
                 if(Server.igIDs.Contains(this.ID))
                     Server.igIDs.Remove(this.ID);
+                Program.server.Remove(this.ID);
             }
 
             Console.WriteLine("Stills " + this.stats.lp + " live points");
@@ -80,11 +81,14 @@ namespace Server
                 if (this.target != null)
                 {
                     Vector2 direction = new Vector2(this.target.x - this.x, this.target.y - this.y);
-                    this.x += direction.X * 0.1f;
-                    this.y += direction.Y * 0.1f;
+                    if((this.name != "bio") || (Server.map[(int)Math.Ceiling(this.x + direction.X * 0.1f), (int)this.y] != "Taqua"))
+                        this.x += direction.X * 0.1f;
+                    if ((this.name != "bio") || (Server.map[(int)this.x, (int)Math.Ceiling(this.y + direction.Y * 0.1f)] != "Taqua"))
+                        this.y += direction.Y * 0.1f;
                     this.X = Convert.ToBase64String(BitConverter.GetBytes(this.x));
                     this.Y = Convert.ToBase64String(BitConverter.GetBytes(this.y));
-
+                    
+                        
                     target = null;
                 }
             }
