@@ -62,6 +62,7 @@ namespace Server
                     Server.goblist.Remove(this.ID);
                 if(Server.igIDs.Contains(this.ID))
                     Server.igIDs.Remove(this.ID);
+                Program.server.Remove(this.ID);
             }
 
             Console.WriteLine("Stills " + this.stats.lp + " live points");

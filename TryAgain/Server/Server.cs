@@ -31,12 +31,12 @@ namespace Server
         private void AddMob(float x, float y)
         {
             idmob++;
-            int type = rand.Next(0, 10);
+            int type = rand.Next(0, 100);
             if (!goblist.ContainsKey("monster0" + idmob.ToString()))
             {
                 string id = "monster0" + idmob.ToString();
                 GameObject el = new GameObject();
-                if (type <= 6)
+                if (type <= 50)
                 {
                     el.SetLp(10);
                     el.name = "ghost";
@@ -49,7 +49,20 @@ namespace Server
                     el.Y = Convert.ToBase64String(BitConverter.GetBytes(el.y));
                     el.speed += ((float)rand.Next(-6, 6)) / 200;
                 }
-                else
+                else if (type <= 60)
+                {
+                    el.SetLp(150);
+                    el.name = "bio";
+                    el.ID = id;
+                    el.spr = "Mbio1";
+                    el.type = "Monster";
+                    el.x = x;
+                    el.X = Convert.ToBase64String(BitConverter.GetBytes(el.x));
+                    el.y = y;
+                    el.Y = Convert.ToBase64String(BitConverter.GetBytes(el.y));
+                    el.speed += ((float)rand.Next(-2, 12)) / 180;
+                }
+                else if ((map[(int)x, (int)y] == "Tfire") || (map[(int)x, (int)y] == "Tpierrenoi"))
                 {
                     el.SetLp(150);
                     el.name = "dragon";
@@ -62,6 +75,8 @@ namespace Server
                     el.Y = Convert.ToBase64String(BitConverter.GetBytes(el.y));
                     el.speed += ((float)rand.Next(-2, 12)) / 180;
                 }
+                else
+                    return;
                 goblist.Add(id, el);
                 igIDs.Add(id);
                 Console.WriteLine("Npc spawned : " + el.name + "pos : (" + el.x.ToString() + ";" + el.y.ToString() + ")");
@@ -164,6 +179,12 @@ namespace Server
                 if (mapAdress != null)
                     myClient.Send("map:" + mapAdress);
             }
+        }
+
+        public void Remove(string id)
+        {
+            foreach (Client sclient in clients)
+                sclient.Send("rm:" + id);
         }
 
         public void Loop()

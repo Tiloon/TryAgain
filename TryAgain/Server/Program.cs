@@ -7,6 +7,7 @@ namespace Server
 {
     class Program
     {
+        public static Server server;
         static void Main(string[] args)
         {
             try
@@ -15,7 +16,7 @@ namespace Server
                 //Server.LoadMap("http://tryagain.pimzero.com/map.json");
                 //http://127.0.0.1/map.json
                 Server.LoadMap("./map.json");
-                Server server = new Server(4242);
+                server = new Server(4242);
                 server.Run();
             }
             catch (Exception)
