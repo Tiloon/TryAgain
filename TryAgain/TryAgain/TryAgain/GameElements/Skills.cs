@@ -13,6 +13,7 @@ namespace TryAgain.GameElements
     class Skills
     {
         //proprietes
+        public static bool gauche = false;
         static bool shield = false;
         static bool missile = false;
         static Vector2 missilepos;
@@ -58,7 +59,12 @@ namespace TryAgain.GameElements
                 missileNormal = missileNormal * (1.0F / sqrtsum);
 
                 missile = true;
-                missilepos = new Vector2(50 + (hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64);
+                if (!gauche)
+                {
+                    missilepos = new Vector2(50 + (hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64);
+                }
+                else
+                    missilepos = new Vector2(-50 + (hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64);
                 //sb.Draw(Textures.c2gun1, new Vector2(21+(hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, 38+(hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), Color.White);
                 swap = hero.apparence;
                 if (GameScreen.name == "Tony")
@@ -78,8 +84,16 @@ namespace TryAgain.GameElements
                 sb.DrawString(Textures.UIfont, "Missile!", new Vector2((hero.position.X - (Hero.view.X + Hero.padding.X)) * 64 + 50, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), Color.Red);
                 sb.Draw(Textures.Missile, missilepos, null, Color.White, 0f, Vector2.Zero,
     new Vector2(64.0F / (float)(Textures.Missile.Width), 64.0F / (float)(Textures.Missile.Height)), SpriteEffects.None, 0f);
-                missilepos.X += missilespeed * missileNormal.X;
-                missilepos.Y += missilespeed * missileNormal.Y;
+                if (!gauche)
+                {
+                    missilepos.X += missilespeed * missileNormal.X;
+                    missilepos.Y += missilespeed * missileNormal.Y;
+                }
+                else
+                {
+                    missilepos.X -= missilespeed * missileNormal.X;
+                    missilepos.Y -= missilespeed * missileNormal.Y;
+                }
                 foreach (GameObject obj in GameScreen.GOList)
                 {
                     if (/*(obj.Type == "GameObject,Character,Monster") &&*/
@@ -91,7 +105,7 @@ namespace TryAgain.GameElements
                         onetime = true;
                     }
                 }
-                if (missilepos.X - missilespeed > Game1.graphics.PreferredBackBufferWidth)
+                if ((missilepos.X - missilespeed > Game1.graphics.PreferredBackBufferWidth) || (missilepos.X + missilespeed < 0))
                 {
                     missile = false;
                     onetime = true;
@@ -110,6 +124,8 @@ namespace TryAgain.GameElements
                 onetime = false;
                 hero.apparence = swap;
             }
+            if (ammos == 0)
+                Craft.CraftInventory[2] = false;
         }
 
         public static void Shield(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState) //shield
@@ -176,7 +192,7 @@ namespace TryAgain.GameElements
         static public void Draw(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState)
         {
             if (Craft.CraftInventory[0])
-                Shield(sb, pos, hero, keyBoardState);
+                Potion(sb, pos, hero, keyBoardState);
             if (Craft.CraftInventory[1])
                 Shield(sb, pos, hero, keyBoardState);
             if (Craft.CraftInventory[2])
