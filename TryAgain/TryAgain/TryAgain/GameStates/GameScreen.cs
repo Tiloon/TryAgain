@@ -118,7 +118,7 @@ namespace TryAgain.GameStates
                         RessList.Remove(r);
             }*/
             if (RessList.Count != 0)
-                if (RessList[0].Update(herorect, expos, hero.position) || RessList[0].resstime > Game1.gmt.TotalGameTime.Seconds + 2)
+                if (RessList[0].Update(herorect, expos, hero.position) || RessList[0].t > 250)
                     RessList.Remove(RessList[0]);
             if (RessList.Count == 0)
                 RessList.Add(new Ressource());

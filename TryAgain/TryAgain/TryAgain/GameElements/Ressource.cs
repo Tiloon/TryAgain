@@ -22,7 +22,7 @@ namespace TryAgain.GameElements
         int x;
         int y;
         Random rd = new Random();
-        public int resstime;
+        public int t = 0;
 
         public Ressource(int id)
         {
@@ -30,7 +30,7 @@ namespace TryAgain.GameElements
             this.y = rd.Next(Game1.graphics.PreferredBackBufferHeight);
             this.id = id;
             this.item = Ressourceslist.idtoitem[id];
-            resstime = Game1.gmt.TotalGameTime.Seconds;
+            t = 0;
         }
 
         public Ressource()
@@ -39,7 +39,7 @@ namespace TryAgain.GameElements
             this.y = rd.Next(20, Game1.graphics.PreferredBackBufferHeight);
             this.id = rd.Next(11);
             this.item = Ressourceslist.idtoitem[id];
-            resstime = Game1.gmt.TotalGameTime.Seconds;
+            t = 0;
         }
 
         public void Draw(SpriteBatch sb)
@@ -54,6 +54,7 @@ namespace TryAgain.GameElements
                 Ressourceslist.quantity[id]++;
                 return true;
             }
+            this.t++;
             float t=33.7F;
             if (Keyboard.GetState().IsKeyDown(Keys.Right) /*&& (x > 10)*/ && (expos != newpos))
                 x -= (int)(GameScreen.hero.stats.speed * t);
