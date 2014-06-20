@@ -177,11 +177,11 @@ namespace Server
 
                 if (Math.Abs(lastTick.Millisecond - DateTime.Now.Millisecond) > TICKGAP) // Tick
                 {
-                    foreach (String id in igIDs)
+                    for (int i = 0; i < igIDs.Count; i++)
                     {
-                        if (goblist[id].IsToUpdate())
+                        if (goblist[igIDs[i]].IsToUpdate())
                         {
-                            goblist[id].Update();
+                            goblist[igIDs[i]].Update();
                         }
                     }
                     lastTick = DateTime.Now;
@@ -345,7 +345,9 @@ namespace Server
                         if (message.StartsWith("dam:"))
                         {
                             message = message.Remove(0, 4);
-                            Tuple<string, int> data = JsonConvert.DeserializeObject<Tuple<string, int>>(message);
+                            string id = message.Substring(0, message.IndexOf('&'));
+                            int damages = Convert.ToInt32(message.Substring(message.IndexOf('&') + 1));
+                            Tuple<string, int> data = new Tuple<string,int>(id, damages);
                             Console.WriteLine(data.Item1 + " got damaged : " + data.Item2 + "damages");
                             try
                             {

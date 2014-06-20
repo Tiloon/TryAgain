@@ -46,7 +46,7 @@ namespace TryAgain.GameElements
             if (keyBoardState.IsKeyDown(Keys.Space) && !missile)
             {
                 missile = true;
-                missilepos = new Vector2(Textures.Missile.Width + (hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64);
+                missilepos = new Vector2(50 + (hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64);
                 //sb.Draw(Textures.c2gun1, new Vector2(21+(hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, 38+(hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), Color.White);
                 swap = hero.apparence;
                 if (GameScreen.name == "Tony")
@@ -69,11 +69,11 @@ namespace TryAgain.GameElements
                 missilepos.X += missilespeed;
                 foreach (GameObject obj in GameScreen.GOList)
                 {
-                    if ((obj.Type == "GameObject,Character,Monster") &&
+                    if (/*(obj.Type == "GameObject,Character,Monster") &&*/
                        (new Rectangle((int)missilepos.X, (int)missilepos.Y, Textures.Missile.Width, Textures.Missile.Height).Intersects
                        (new Rectangle((int)((obj.position.X - (Hero.view.X + Hero.padding.X)) * 64), ((int)(obj.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), 60, 60))))
                     {
-                        obj.pv -= 25;
+                        obj.TakeDamages(25);
                         missile = false;
                         onetime = true;
                     }
@@ -92,7 +92,7 @@ namespace TryAgain.GameElements
                 if (keyBoardState.IsKeyDown(Keys.Down) && (missilepos.Y < Game1.graphics.PreferredBackBufferHeight))
                     missilepos.Y -= 20 * hero.getStats().speed;
             }
-            if(onetime)
+            if (onetime)
             {
                 onetime = false;
                 hero.apparence = swap;

@@ -32,6 +32,13 @@ namespace TryAgain.GameElements.Characters
             //System.Windows.Forms.MessageBox.Show(this.Type);
         }
 
+        public override void TakeDamages(int points)
+        {
+            if (Online.Connection.isOnline())
+                Online.Connection.SendDamage(this.UID, points);
+            this.stats.lp -= points;
+        }
+
         public void Collision()
         { }
 

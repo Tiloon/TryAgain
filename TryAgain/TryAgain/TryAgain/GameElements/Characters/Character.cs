@@ -37,7 +37,7 @@ namespace TryAgain.Characters
                 //sb.Draw(apparence, new Vector2((position.X - (Hero.view.X + Hero.padding.X)) * 64 + 64 * 4, (position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), Color.White);
         }
 
-        public void TakeDamages(int points)
+        public override void TakeDamages(int points)
         {
             if (Online.Connection.isOnline())
                 Online.Connection.SendDamage(this.UID, points);

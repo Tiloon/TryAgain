@@ -150,7 +150,7 @@ namespace TryAgain.Online
         {
             if (online)
             {
-                servWriter.WriteLine("dam:" + JsonConvert.SerializeObject(new Tuple<string, int>(id, damages)));
+                servWriter.WriteLine("dam:" + id + "&" + damages.ToString());
                 servWriter.Flush();
             }
         }
