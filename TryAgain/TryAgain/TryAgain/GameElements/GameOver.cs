@@ -72,7 +72,7 @@ namespace TryAgain.GameElements
                 actualpoints = PointsObtenus(gmt);
                 actuelRang = Rang(PointsObtenus(gmt));
             }
-            sb.Draw(Textures.GameOver, new Vector2(Game1.graphics.PreferredBackBufferWidth / 2, Game1.graphics.PreferredBackBufferHeight / 2 - 400), Color.White);
+            sb.Draw(Textures.GameOver, new Vector2(Game1.graphics.PreferredBackBufferWidth / 4, 0), Color.White);
             sb.DrawString(Textures.UIfont, "      POINTS: " + actualpoints.ToString(), new Vector2(Tilemap.variationsizegraphicsX + 64 * 5, 120 + 64 * 10), Color.Red);
             sb.DrawString(Textures.UIfont, "      RANG: " + actuelRang.ToString(), new Vector2(Tilemap.variationsizegraphicsX + 64 * 5, 120 + 64 * 11), Color.Red);
             SendScore(PointsObtenus(gmt));

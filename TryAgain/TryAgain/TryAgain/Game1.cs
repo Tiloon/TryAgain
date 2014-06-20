@@ -168,7 +168,7 @@ namespace TryAgain
             spriteBatch.End();
             if (newscreen == ScreenType.MainMenu)
             {
-                part.Draw();
+                //part.Draw();
                 //part2.Draw();
             }
             if (cannonpartic)
