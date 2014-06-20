@@ -86,6 +86,8 @@ namespace TryAgain.GameStates
             previousstate = mouse.LeftButton;
             ancienState = newState;
             newState = Keyboard.GetState();
+            if(newState.IsKeyDown(Keys.RightControl) && ancienState.IsKeyUp(Keys.RightControl)) 
+                Skills.gauche = !Skills.gauche;
             if (newState.IsKeyDown(Keys.Escape))
                 return ScreenType.Pause;
             if (newState.IsKeyDown(Keys.NumPad9))
