@@ -59,11 +59,28 @@ namespace TryAgain.Characters
             }
 
             TryAgain.GameElements.Managers.TimeMGR.AddEvent("Coffee loss", 2000, -1, () => { if (this.stats.ch > 1) this.stats.ch--; else this.stats.lp -= 2; });
+            TryAgain.GameElements.Managers.TimeMGR.AddEvent("Mana restore", 1000, -1, () =>
+            {
+                if (this.stats.mp < this.stats.mpmax)
+                {
+                    this.stats.mp += 1 * OptionScreen.restore;
+                    if (this.stats.mp > this.stats.mpmax)
+                        this.stats.mp = this.stats.mpmax;
+                }
+            });
 
             oldKeyboardState = newState = Keyboard.GetState();
         }
 
-
+        public bool UseMana(int points)
+        {
+            if (this.stats.mp >= points)
+            {
+                this.stats.mp -= points;
+                return true;
+            } else
+                return false;
+        }
 
         //Rectangle rectangcascade = new Rectangle(Tilemap.variationsizegraphicsX + (Tilemap.lgmap - 2) * 64, 0, 64 * 2, 64 * 4);
         private KeyboardState oldKeyboardState, newState;

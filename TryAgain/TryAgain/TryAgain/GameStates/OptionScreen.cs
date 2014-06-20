@@ -27,6 +27,7 @@ namespace TryAgain.GameStates
         bool u = true;
         static public bool eng = true;
         string mode = "medium";
+        static public int restore = 2;
         public static int lp = 60;
 
         static public bool fullscreen = false;
@@ -129,17 +130,20 @@ namespace TryAgain.GameStates
             }
             if (ButtonEasy.IsClicked(mouse))
             {
+                restore = 3;
                 mode = "easy";
                 lp = 100;
                 
             }
             if (ButtonMedium.IsClicked(mouse))
             {
+                restore = 2;
                 mode = "medium";
                 lp = 60;
             }
             if (ButtonHard.IsClicked(mouse))
             {
+                restore = 1;
                 mode = "hard";
                 lp = 80;
             }

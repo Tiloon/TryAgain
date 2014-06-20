@@ -38,6 +38,7 @@ namespace Server
                 GameObject el = new GameObject();
                 if (type <= 6)
                 {
+                    el.SetLp(10);
                     el.name = "ghost";
                     el.ID = id;
                     el.spr = "Mghost";
@@ -50,6 +51,7 @@ namespace Server
                 }
                 else
                 {
+                    el.SetLp(150);
                     el.name = "dragon";
                     el.ID = id;
                     el.spr = "Mdragon";
@@ -348,7 +350,7 @@ namespace Server
                             string id = message.Substring(0, message.IndexOf('&'));
                             int damages = Convert.ToInt32(message.Substring(message.IndexOf('&') + 1));
                             Tuple<string, int> data = new Tuple<string,int>(id, damages);
-                            Console.WriteLine(data.Item1 + " got damaged : " + data.Item2 + "damages");
+                            Console.Write(data.Item1 + " got damaged : " + data.Item2 + "damages.");
                             try
                             {
                                 if (goblist.ContainsKey(data.Item1))

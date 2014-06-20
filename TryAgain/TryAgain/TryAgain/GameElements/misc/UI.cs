@@ -119,8 +119,8 @@ namespace TryAgain.GameElements.misc
             lpmax = hero.getStats().lpmax;
             cp = hero.getStats().ch;
             cpmax = hero.getStats().chmax;
-            mp = hero.getStats().mh;
-            mpmax = hero.getStats().mhmax;
+            mp = hero.getStats().mp;
+            mpmax = hero.getStats().mpmax;
             equiped = hero.getEquipedItem();
             lvl = hero.getStats().lvl;
             force = hero.getStats().force;

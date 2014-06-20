@@ -59,8 +59,8 @@ namespace TryAgain.Characters
                 stats.ch = 80;
                 stats.chmax = 100;
                 stats.cbonus = 0;
-                stats.mp = 0;
-                stats.mpmax = 0;
+                stats.mp = 70;
+                stats.mpmax = 70;
                 stats.force = 10;
                 stats.intelligence = 10;
                 stats.defense = 10;

@@ -41,9 +41,10 @@ namespace TryAgain.GameElements
                 sb.DrawString(Textures.UIfont, "Mmh coca!", new Vector2((hero.position.X - (Hero.view.X + Hero.padding.X)) * 64 - 60, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), Color.Brown);
             }
         }
+
         public static void Missile(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState) //missile
         {
-            if (keyBoardState.IsKeyDown(Keys.Space) && !missile)
+            if (keyBoardState.IsKeyDown(Keys.Space) && !missile && GameScreen.hero.UseMana(4))
             {
                 missile = true;
                 missilepos = new Vector2(50 + (hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64);

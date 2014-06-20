@@ -56,16 +56,25 @@ namespace Server
         public void TakeDamages(int points)
         {
             this.stats.lp -= points;
+            if (this.stats.lp <= 0)
+            {
+                if (Server.goblist.ContainsKey(this.ID))
+                    Server.goblist.Remove(this.ID);
+                if(Server.igIDs.Contains(this.ID))
+                    Server.igIDs.Remove(this.ID);
+            }
+
+            Console.WriteLine("Stills " + this.stats.lp + " live points");
+        }
+
+        public void SetLp(int lp)
+        {
+            this.stats.lp = lp;
+            this.stats.lpmax = lp;
         }
 
         public void Update()
         {
-            if (this.stats.lp <= 0)
-            {
-                Server.goblist.Remove(this.ID);
-                Server.igIDs.Remove(this.ID);
-                return;
-            }
             if (this.type == "Monster")
             {
                 if (this.target != null)
