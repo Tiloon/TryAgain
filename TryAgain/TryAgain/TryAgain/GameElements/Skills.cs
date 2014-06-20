@@ -39,7 +39,10 @@ namespace TryAgain.GameElements
         {
             if ((keyBoardState.IsKeyDown(Keys.M) && (hero.stats.ch < hero.stats.chmax)))
             {
-                hero.stats.ch++;
+                hero.stats.ch += 40;
+                if (hero.stats.ch > hero.stats.chmax)
+                    hero.stats.ch = hero.stats.chmax;
+                Craft.CraftInventory[5] = false;
                 sb.DrawString(Textures.UIfont, "Mmh coca!", new Vector2((hero.position.X - (Hero.view.X + Hero.padding.X)) * 64 - 60, (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64), Color.Brown);
             }
         }
@@ -150,9 +153,15 @@ namespace TryAgain.GameElements
         public static void Boots(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState) //boots
         {
             if ((keyBoardState.IsKeyDown(Keys.LeftControl) && (hero.stats.speed < 0.65F)))
+            {
                 hero.stats.speed += 0.01F;
+                hero.stats.mp--;
+            }
             if ((keyBoardState.IsKeyDown(Keys.LeftShift) && (hero.stats.speed > 0.15F)))
+            {
+                hero.stats.mp++;
                 hero.stats.speed -= 0.01F;
+            }
         }
 
         public static void Potion(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState) //boots

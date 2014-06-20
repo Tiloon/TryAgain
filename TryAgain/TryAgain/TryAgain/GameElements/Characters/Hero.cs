@@ -100,6 +100,12 @@ namespace TryAgain.Characters
 
             }
 
+
+            if (Skills.ammos <= 0)
+            {
+                Craft.CraftInventory[2] = false;
+            }
+
             oldKeyboardState = newState;
             newState = Keyboard.GetState();
 

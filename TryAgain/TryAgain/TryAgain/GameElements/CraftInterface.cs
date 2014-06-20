@@ -27,7 +27,7 @@ namespace TryAgain.GameElements
         public static void init()
         {
             for (int i = 0; i < totalnbressources; i++)
-                quantity[i] = 2;
+                quantity[i] = 5;
             for (int i = 0; i < Craft.nbcraftpossibles; i++)
                 Craft.CraftInventory[i] = false;
 
@@ -164,10 +164,6 @@ namespace TryAgain.GameElements
         }
         static public void Update()
         {
-            if (Skills.ammos <= 0)
-            {
-                CraftInventory[2] = false;
-            }
             //si une certaine touche, alors, qqs ressources générées, vu que pas encore added pour l'instant.?
         }
 
