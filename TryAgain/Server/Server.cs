@@ -51,7 +51,7 @@ namespace Server
                 }
                 else if (type <= 60)
                 {
-                    el.SetLp(150);
+                    el.SetLp(40);
                     el.name = "bio";
                     el.ID = id;
                     el.spr = "Mbio1";
@@ -60,11 +60,11 @@ namespace Server
                     el.X = Convert.ToBase64String(BitConverter.GetBytes(el.x));
                     el.y = y;
                     el.Y = Convert.ToBase64String(BitConverter.GetBytes(el.y));
-                    el.speed += ((float)rand.Next(-2, 12)) / 180;
+                    el.speed += ((float)rand.Next(0, 14)) / 180;
                 }
                 else if ((map[(int)x, (int)y] == "Tfire") || (map[(int)x, (int)y] == "Tpierrenoi"))
                 {
-                    el.SetLp(150);
+                    el.SetLp(180);
                     el.name = "dragon";
                     el.ID = id;
                     el.spr = "Mdragon";
@@ -397,19 +397,19 @@ namespace Server
 
                             for (int x = 0; x < rect.Width; x++)
                             {
-                                if (rand.Next(0, 10000) < 1)
+                                if (rand.Next(0, 8000) < 1)
                                     AddMob(rect.X + x, rect.Y - 2);
 
-                                if (rand.Next(0, 10000) < 1)
+                                if (rand.Next(0, 8000) < 1)
                                     AddMob(rect.X + x + 1, rect.Y + rect.Height + 1);
                             }
 
                             for (int y = 0; y < rect.Height; y++)
                             {
-                                if (rand.Next(0, 10000) < 1)
+                                if (rand.Next(0, 8000) < 1)
                                     AddMob(rect.X - 2, rect.Y + y);
 
-                                if (rand.Next(0, 10000) < 1)
+                                if (rand.Next(0, 8000) < 1)
                                     AddMob(rect.X + rect.Width + 1, rect.Y + y + 1);
                             }
 

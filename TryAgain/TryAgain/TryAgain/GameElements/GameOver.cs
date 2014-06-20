@@ -20,7 +20,7 @@ namespace TryAgain.GameElements
     enum Ranks { bronze, argent, or }
     class GameOver
     {
-        static int actualpoints = 3;
+        public static int actualpoints = 3;
         static Ranks actuelRang = Ranks.bronze;
 
         static bool lose = false;

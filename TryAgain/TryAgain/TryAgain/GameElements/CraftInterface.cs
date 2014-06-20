@@ -111,6 +111,7 @@ namespace TryAgain.GameElements
                     return false;
                 else
                 {
+                    Skills.ammos += 20;
                     Ressourceslist.quantity[8]--;
                     Ressourceslist.quantity[5]--;
                     Ressourceslist.quantity[1]--;
@@ -151,6 +152,7 @@ namespace TryAgain.GameElements
                     return false;
                 else
                 {
+                    Skills.ammos += 20;
                     Ressourceslist.quantity[2]--;
                     Ressourceslist.quantity[6]--;
                     Ressourceslist.quantity[7]--;
@@ -162,6 +164,10 @@ namespace TryAgain.GameElements
         }
         static public void Update()
         {
+            if (Skills.ammos <= 0)
+            {
+                CraftInventory[2] = false;
+            }
             //si une certaine touche, alors, qqs ressources générées, vu que pas encore added pour l'instant.?
         }
 
@@ -251,7 +257,8 @@ namespace TryAgain.GameElements
             sb.DrawString(Textures.UIfont, "key s: bouclier", new Vector2(Tilemap.variationsizegraphicsX + 800, 200), Color.White);
             sb.DrawString(Textures.UIfont, "key space: shot a bullet (most important one)", new Vector2(Tilemap.variationsizegraphicsX + 800, 240), Color.White);
             sb.DrawString(Textures.UIfont, "key tab: use a canon", new Vector2(Tilemap.variationsizegraphicsX + 800, 280), Color.White);
-            sb.DrawString(Textures.UIfont, "key m: drink coca for some caffeine back", new Vector2(Tilemap.variationsizegraphicsX + 800, 320), Color.White);
+            sb.DrawString(Textures.UIfont, "key m: drink coca for some caffeine back", new Vector2(Tilemap.variationsizegraphicsX + 800, 320), Color.White); // Skills.ammos + " ammos"
+            sb.DrawString(Textures.UIfont, Skills.ammos + " ammos. (Tip : craft weapon to get ammos)", new Vector2(Tilemap.variationsizegraphicsX + 800, 380), Color.White);
         }
     }
 }

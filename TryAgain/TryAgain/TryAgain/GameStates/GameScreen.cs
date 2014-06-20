@@ -142,18 +142,21 @@ namespace TryAgain.GameStates
                         todraw.Draw(sb);
                 }
 
+                KeyboardState newState = Keyboard.GetState();
+
+                if (!Chat.isWriting)
+                    Skills.Draw(sb, hero.getPosition(), hero, newState);
+
                 userinterface.Draw(sb);
                 Chat.Draw(sb);
 
                 if (!Chat.isWriting)
                 {
-                    KeyboardState newState = Keyboard.GetState();
                     if (newState.IsKeyDown(Keys.C))
                     {
                         Craft.Draw(sb);
                         Craft.Update(newState);
                     }
-                    Skills.Draw(sb, hero.getPosition(), hero, newState);
                 }
             }
             else

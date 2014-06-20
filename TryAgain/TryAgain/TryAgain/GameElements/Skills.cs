@@ -21,6 +21,7 @@ namespace TryAgain.GameElements
         static int shieldtimer;
         static Texture2D swap;
         static bool onetime = false;
+        public static int ammos = 0;
         //constructor
 
         //methods
@@ -45,8 +46,9 @@ namespace TryAgain.GameElements
 
         public static void Missile(SpriteBatch sb, Vector2 pos, Hero hero, KeyboardState keyBoardState) //missile
         {
-            if (keyBoardState.IsKeyDown(Keys.Space) && !missile && GameScreen.hero.UseMana(4))
+            if (keyBoardState.IsKeyDown(Keys.Space) && !missile && (ammos > 0) && GameScreen.hero.UseMana(4))
             {
+                ammos--;
                 
                 missileNormal = new Vector2(Mouse.GetState().X - 50 + (hero.position.X - (Hero.view.X + Hero.padding.X)) * 64, Mouse.GetState().Y - (hero.position.Y - (Hero.view.Y + Hero.padding.Y)) * 64);
                 float sqrtsum = (float)Math.Sqrt(Math.Abs(missileNormal.X * missileNormal.X) + Math.Abs(missileNormal.Y * missileNormal.Y));
